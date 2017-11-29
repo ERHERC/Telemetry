@@ -78,5 +78,9 @@ Namespace Libraries
             Next
             Return Output
         End Function
+
+        Public Function ArrayHasLength(Array As Object(), Length As Integer)
+            If Array.Length >= Length Then Return True Else Return False
+        End Function
     End Module
 End Namespace

@@ -5,6 +5,10 @@ Public Class MainForm
 
     Public Running As Boolean
 
+    'API Visible Fields
+    Public MaxSpeed As Double = 100D
+    Public Speed As Double = 25D
+
     Public Sub New()
         Control.CheckForIllegalCrossThreadCalls = False
         ' This call is required by the designer.
@@ -21,21 +25,18 @@ Public Class MainForm
                 HudElement.BackColor = Color.Transparent
             End If
         Next
+
+        Globals.Mainform = Me
     End Sub
 
 
     Private Sub SpeedLbl_Paint(sender As Object, Paintbrush As PaintEventArgs) Handles SpeedLbl.Paint
+        Dim BarAngle = CInt(Math.Max(Math.Min(Math.Ceiling((Speed / MaxSpeed) * 270), 270), 0))
+
         Paintbrush.Graphics.DrawArc(SpeedBar_Circle_Pencil, 16, 16, 224, 224, 135, 270)
-        Paintbrush.Graphics.DrawArc(SpeedBar_Background_Pencil, 16, 16, 224, 224, 135, 135)
-        Paintbrush.Graphics.DrawArc(SpeedBar_Foreground_Pencil, 16, 16, 224, 224, 135, 135)
-    End Sub
 
-    Private Sub BatteryBarPanel_Paint(sender As Object, e As PaintEventArgs) Handles BatteryBarPanel.Paint
-
-    End Sub
-
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles AlertBox.Click
-
+        Paintbrush.Graphics.DrawArc(SpeedBar_Background_Pencil, 16, 16, 224, 224, 135, BarAngle)
+        Paintbrush.Graphics.DrawArc(SpeedBar_Foreground_Pencil, 16, 16, 224, 224, 135, BarAngle)
     End Sub
 
     Private Sub MainForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
@@ -43,6 +44,7 @@ Public Class MainForm
         'Dim BackgroundTask As Task = New Task(AddressOf ParalelSub)
         'BackgroundTask.Start()
         Call SlowDown()
+        IntercomApiManager.StartAPI()
     End Sub
 
     Private Sub SlowDown()
@@ -78,5 +80,20 @@ Public Class MainForm
 
     Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Running = False
+        IntercomApiManager.StopAPI()
+    End Sub
+
+    Private Sub LostSignalFlicker_Tick(sender As Object, e As EventArgs) Handles LostSignalFlicker.Tick
+        'LostSignalPanel.Transparent = Not LostSignalPanel.Transparent
+        With LostSignalPanel
+            Select Case CBool(.Tag)
+                Case True
+                    .Opacity = 0.25
+                    .Tag = False
+                Case False
+                    .Opacity = 0.5
+                    .Tag = True
+            End Select
+        End With
     End Sub
 End Class

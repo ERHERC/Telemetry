@@ -22,6 +22,7 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.SpeedIndicatorPanel = New System.Windows.Forms.Panel()
         Me.SpeedLbl = New System.Windows.Forms.Label()
         Me.MainPanel = New System.Windows.Forms.Panel()
@@ -35,6 +36,8 @@ Partial Class MainForm
         Me.BatteryProgress = New System.Windows.Forms.Panel()
         Me.BatteryIconPanel = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.AnimationWorker = New System.ComponentModel.BackgroundWorker()
+        Me.LostSignalFlicker = New System.Windows.Forms.Timer(Me.components)
         Me.PingPanel = New Telemetry.TransparentControl()
         Me.PingLbl = New System.Windows.Forms.Label()
         Me.SignalIconPanel = New System.Windows.Forms.Panel()
@@ -46,7 +49,6 @@ Partial Class MainForm
         Me.AlertIconPanel = New Telemetry.TransparentControl()
         Me.AlertIcon = New System.Windows.Forms.Panel()
         Me.AlertBox = New System.Windows.Forms.PictureBox()
-        Me.AnimationWorker = New System.ComponentModel.BackgroundWorker()
         Me.SpeedIndicatorPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
         Me.TimerPanel.SuspendLayout()
@@ -216,6 +218,15 @@ Partial Class MainForm
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
+        'AnimationWorker
+        '
+        Me.AnimationWorker.WorkerSupportsCancellation = True
+        '
+        'LostSignalFlicker
+        '
+        Me.LostSignalFlicker.Enabled = True
+        Me.LostSignalFlicker.Interval = 250
+        '
         'PingPanel
         '
         Me.PingPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -274,6 +285,7 @@ Partial Class MainForm
         Me.LostSignalPanel.Opacity = 0.25R
         Me.LostSignalPanel.Size = New System.Drawing.Size(512, 128)
         Me.LostSignalPanel.TabIndex = 4
+        Me.LostSignalPanel.Tag = "True"
         Me.LostSignalPanel.Text = "TransparentControl1"
         Me.LostSignalPanel.Transparent = True
         Me.LostSignalPanel.TransparentColor = System.Drawing.Color.Red
@@ -356,16 +368,13 @@ Partial Class MainForm
         Me.AlertBox.TabIndex = 0
         Me.AlertBox.TabStop = False
         '
-        'AnimationWorker
-        '
-        Me.AnimationWorker.WorkerSupportsCancellation = True
-        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1208, 690)
         Me.Controls.Add(Me.MainPanel)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MainForm"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -418,4 +427,5 @@ Partial Class MainForm
     Friend WithEvents AlertLabel As Label
     Friend WithEvents PingPanel As TransparentControl
     Friend WithEvents AnimationWorker As System.ComponentModel.BackgroundWorker
+    Friend WithEvents LostSignalFlicker As Timer
 End Class
