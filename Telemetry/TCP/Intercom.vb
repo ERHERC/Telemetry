@@ -28,11 +28,11 @@ Public Class Intercom : Implements IntercomInterface
         Globals.MainForm.SpeedLbl.Invalidate()
     End Sub
 
-    Public Sub ShowSignalLost(Visible As Boolean) Implements IntercomInterface.ShowSignalLost
-
+    Public Sub ShowSignalLost(Value As Boolean) Implements IntercomInterface.ShowSignalLost
+        Globals.MainForm.LostSignalPanel.Visible = Value
     End Sub
 
-    Public Sub ShowSlowDown(Visible As Boolean) Implements IntercomInterface.ShowSlowDown
-
+    Public Sub ShowSlowDown(Value As Boolean) Implements IntercomInterface.ShowSlowDown
+        Globals.MainForm.SlowDownAlertBox.Visible = Value
     End Sub
 End Class
