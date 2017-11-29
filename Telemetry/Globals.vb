@@ -1,3 +1,3 @@
 Module Globals
-    Public Mainform As MainForm
+    Public MainForm As MainForm
 End Module

@@ -1,5 +1,5 @@
 Public Interface IntercomInterface
-    Sub SendMessage(Command As String, Parameter As String)
+    Sub SendMessage(Command As String, ParamArray Parameters() As String)
     Sub ShowSlowDown(Visible As Boolean)
     Sub ShowSignalLost(Visible As Boolean)
     Sub SetBatteryPercentage(Value As Integer)
