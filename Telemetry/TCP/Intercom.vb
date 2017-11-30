@@ -1,5 +1,7 @@
+Imports System.ServiceModel
 Imports Telemetry
 
+<ServiceBehavior(IncludeExceptionDetailInFaults:=True)>
 Public Class Intercom : Implements IntercomInterface
     Public Sub SendMessage(Command As String, ParamArray Parameters() As String) Implements IntercomInterface.SendMessage
 
