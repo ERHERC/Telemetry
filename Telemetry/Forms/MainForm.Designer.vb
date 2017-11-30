@@ -26,17 +26,6 @@ Partial Class MainForm
         Me.SpeedIndicatorPanel = New System.Windows.Forms.Panel()
         Me.SpeedLbl = New System.Windows.Forms.Label()
         Me.MainPanel = New System.Windows.Forms.Panel()
-        Me.PingPanel = New Telemetry.TransparentControl()
-        Me.PingLbl = New System.Windows.Forms.Label()
-        Me.SignalIconPanel = New System.Windows.Forms.Panel()
-        Me.SignalIcon = New System.Windows.Forms.PictureBox()
-        Me.LostSignalPanel = New Telemetry.TransparentControl()
-        Me.LostSignalLabel = New System.Windows.Forms.Label()
-        Me.SlowDownAlertBox = New Telemetry.TransparentControl()
-        Me.AlertLabel = New System.Windows.Forms.Label()
-        Me.AlertIconPanel = New Telemetry.TransparentControl()
-        Me.AlertIcon = New System.Windows.Forms.Panel()
-        Me.AlertBox = New System.Windows.Forms.PictureBox()
         Me.TimerPanel = New System.Windows.Forms.Panel()
         Me.TimerLbl = New System.Windows.Forms.Label()
         Me.StopwatchIconPanel = New System.Windows.Forms.Panel()
@@ -50,16 +39,19 @@ Partial Class MainForm
         Me.AnimationWorker = New System.ComponentModel.BackgroundWorker()
         Me.LostSignalFlicker = New System.Windows.Forms.Timer(Me.components)
         Me.AppHaltedLbl = New System.Windows.Forms.Label()
+        Me.PingPanel = New Telemetry.TransparentControl()
+        Me.PingLbl = New System.Windows.Forms.Label()
+        Me.SignalIconPanel = New System.Windows.Forms.Panel()
+        Me.SignalIcon = New System.Windows.Forms.PictureBox()
+        Me.LostSignalPanel = New Telemetry.TransparentControl()
+        Me.LostSignalLabel = New System.Windows.Forms.Label()
+        Me.SlowDownAlertBox = New Telemetry.TransparentControl()
+        Me.AlertLabel = New System.Windows.Forms.Label()
+        Me.AlertIconPanel = New Telemetry.TransparentControl()
+        Me.AlertIcon = New System.Windows.Forms.Panel()
+        Me.AlertBox = New System.Windows.Forms.PictureBox()
         Me.SpeedIndicatorPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
-        Me.PingPanel.SuspendLayout()
-        Me.SignalIconPanel.SuspendLayout()
-        CType(Me.SignalIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.LostSignalPanel.SuspendLayout()
-        Me.SlowDownAlertBox.SuspendLayout()
-        Me.AlertIconPanel.SuspendLayout()
-        Me.AlertIcon.SuspendLayout()
-        CType(Me.AlertBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TimerPanel.SuspendLayout()
         Me.StopwatchIconPanel.SuspendLayout()
         CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,6 +60,14 @@ Partial Class MainForm
         Me.BatteryBarBackground.SuspendLayout()
         Me.BatteryIconPanel.SuspendLayout()
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PingPanel.SuspendLayout()
+        Me.SignalIconPanel.SuspendLayout()
+        CType(Me.SignalIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.LostSignalPanel.SuspendLayout()
+        Me.SlowDownAlertBox.SuspendLayout()
+        Me.AlertIconPanel.SuspendLayout()
+        Me.AlertIcon.SuspendLayout()
+        CType(Me.AlertBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SpeedIndicatorPanel
@@ -75,7 +75,7 @@ Partial Class MainForm
         Me.SpeedIndicatorPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.SpeedIndicatorPanel.BackColor = System.Drawing.Color.DimGray
         Me.SpeedIndicatorPanel.Controls.Add(Me.SpeedLbl)
-        Me.SpeedIndicatorPanel.Location = New System.Drawing.Point(933, 415)
+        Me.SpeedIndicatorPanel.Location = New System.Drawing.Point(842, 252)
         Me.SpeedIndicatorPanel.Name = "SpeedIndicatorPanel"
         Me.SpeedIndicatorPanel.Size = New System.Drawing.Size(256, 256)
         Me.SpeedIndicatorPanel.TabIndex = 0
@@ -108,147 +108,9 @@ Partial Class MainForm
         Me.MainPanel.Margin = New System.Windows.Forms.Padding(16)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.Padding = New System.Windows.Forms.Padding(16)
-        Me.MainPanel.Size = New System.Drawing.Size(1208, 690)
+        Me.MainPanel.Size = New System.Drawing.Size(1117, 527)
         Me.MainPanel.TabIndex = 2
         Me.MainPanel.Visible = False
-        '
-        'PingPanel
-        '
-        Me.PingPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PingPanel.Controls.Add(Me.PingLbl)
-        Me.PingPanel.Controls.Add(Me.SignalIconPanel)
-        Me.PingPanel.Location = New System.Drawing.Point(1061, 19)
-        Me.PingPanel.MinimumSize = New System.Drawing.Size(128, 32)
-        Me.PingPanel.Name = "PingPanel"
-        Me.PingPanel.Opacity = 0.5R
-        Me.PingPanel.Size = New System.Drawing.Size(128, 32)
-        Me.PingPanel.TabIndex = 5
-        Me.PingPanel.Transparent = True
-        Me.PingPanel.TransparentColor = System.Drawing.Color.Silver
-        '
-        'PingLbl
-        '
-        Me.PingLbl.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PingLbl.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PingLbl.ForeColor = System.Drawing.Color.White
-        Me.PingLbl.Location = New System.Drawing.Point(32, 0)
-        Me.PingLbl.Name = "PingLbl"
-        Me.PingLbl.Size = New System.Drawing.Size(96, 32)
-        Me.PingLbl.TabIndex = 0
-        Me.PingLbl.Text = "145 ms"
-        Me.PingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'SignalIconPanel
-        '
-        Me.SignalIconPanel.Controls.Add(Me.SignalIcon)
-        Me.SignalIconPanel.Dock = System.Windows.Forms.DockStyle.Left
-        Me.SignalIconPanel.Location = New System.Drawing.Point(0, 0)
-        Me.SignalIconPanel.Name = "SignalIconPanel"
-        Me.SignalIconPanel.Padding = New System.Windows.Forms.Padding(4)
-        Me.SignalIconPanel.Size = New System.Drawing.Size(32, 32)
-        Me.SignalIconPanel.TabIndex = 3
-        '
-        'SignalIcon
-        '
-        Me.SignalIcon.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SignalIcon.Image = Global.Telemetry.My.Resources.Resources.Signal
-        Me.SignalIcon.Location = New System.Drawing.Point(4, 4)
-        Me.SignalIcon.Name = "SignalIcon"
-        Me.SignalIcon.Size = New System.Drawing.Size(24, 24)
-        Me.SignalIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.SignalIcon.TabIndex = 0
-        Me.SignalIcon.TabStop = False
-        '
-        'LostSignalPanel
-        '
-        Me.LostSignalPanel.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.LostSignalPanel.Controls.Add(Me.LostSignalLabel)
-        Me.LostSignalPanel.Location = New System.Drawing.Point(348, 281)
-        Me.LostSignalPanel.MinimumSize = New System.Drawing.Size(100, 75)
-        Me.LostSignalPanel.Name = "LostSignalPanel"
-        Me.LostSignalPanel.Opacity = 0.25R
-        Me.LostSignalPanel.Size = New System.Drawing.Size(512, 128)
-        Me.LostSignalPanel.TabIndex = 4
-        Me.LostSignalPanel.Tag = "True"
-        Me.LostSignalPanel.Transparent = True
-        Me.LostSignalPanel.TransparentColor = System.Drawing.Color.Red
-        '
-        'LostSignalLabel
-        '
-        Me.LostSignalLabel.BackColor = System.Drawing.Color.Transparent
-        Me.LostSignalLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LostSignalLabel.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LostSignalLabel.ForeColor = System.Drawing.Color.White
-        Me.LostSignalLabel.Location = New System.Drawing.Point(0, 0)
-        Me.LostSignalLabel.Name = "LostSignalLabel"
-        Me.LostSignalLabel.Size = New System.Drawing.Size(512, 128)
-        Me.LostSignalLabel.TabIndex = 1
-        Me.LostSignalLabel.Tag = "0"
-        Me.LostSignalLabel.Text = "SIGNAL" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "PERDU"
-        Me.LostSignalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'SlowDownAlertBox
-        '
-        Me.SlowDownAlertBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.SlowDownAlertBox.Controls.Add(Me.AlertLabel)
-        Me.SlowDownAlertBox.Controls.Add(Me.AlertIconPanel)
-        Me.SlowDownAlertBox.Location = New System.Drawing.Point(348, 0)
-        Me.SlowDownAlertBox.MinimumSize = New System.Drawing.Size(100, 75)
-        Me.SlowDownAlertBox.Name = "SlowDownAlertBox"
-        Me.SlowDownAlertBox.Opacity = 0.5R
-        Me.SlowDownAlertBox.Size = New System.Drawing.Size(512, 128)
-        Me.SlowDownAlertBox.TabIndex = 3
-        Me.SlowDownAlertBox.Transparent = True
-        Me.SlowDownAlertBox.TransparentColor = System.Drawing.Color.White
-        '
-        'AlertLabel
-        '
-        Me.AlertLabel.BackColor = System.Drawing.Color.Transparent
-        Me.AlertLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AlertLabel.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AlertLabel.ForeColor = System.Drawing.Color.White
-        Me.AlertLabel.Location = New System.Drawing.Point(128, 0)
-        Me.AlertLabel.Name = "AlertLabel"
-        Me.AlertLabel.Size = New System.Drawing.Size(384, 128)
-        Me.AlertLabel.TabIndex = 5
-        Me.AlertLabel.Text = "RALENTIR !"
-        Me.AlertLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AlertIconPanel
-        '
-        Me.AlertIconPanel.Controls.Add(Me.AlertIcon)
-        Me.AlertIconPanel.Dock = System.Windows.Forms.DockStyle.Left
-        Me.AlertIconPanel.Location = New System.Drawing.Point(0, 0)
-        Me.AlertIconPanel.MinimumSize = New System.Drawing.Size(100, 75)
-        Me.AlertIconPanel.Name = "AlertIconPanel"
-        Me.AlertIconPanel.Opacity = 0R
-        Me.AlertIconPanel.Padding = New System.Windows.Forms.Padding(8)
-        Me.AlertIconPanel.Size = New System.Drawing.Size(128, 128)
-        Me.AlertIconPanel.TabIndex = 4
-        Me.AlertIconPanel.Text = "TransparentControl1"
-        Me.AlertIconPanel.Transparent = True
-        Me.AlertIconPanel.TransparentColor = System.Drawing.Color.White
-        '
-        'AlertIcon
-        '
-        Me.AlertIcon.Controls.Add(Me.AlertBox)
-        Me.AlertIcon.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AlertIcon.Location = New System.Drawing.Point(0, 0)
-        Me.AlertIcon.Name = "AlertIcon"
-        Me.AlertIcon.Padding = New System.Windows.Forms.Padding(8)
-        Me.AlertIcon.Size = New System.Drawing.Size(128, 128)
-        Me.AlertIcon.TabIndex = 1
-        '
-        'AlertBox
-        '
-        Me.AlertBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AlertBox.Image = Global.Telemetry.My.Resources.Resources.Warning
-        Me.AlertBox.Location = New System.Drawing.Point(8, 8)
-        Me.AlertBox.Name = "AlertBox"
-        Me.AlertBox.Size = New System.Drawing.Size(112, 112)
-        Me.AlertBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.AlertBox.TabIndex = 0
-        Me.AlertBox.TabStop = False
         '
         'TimerPanel
         '
@@ -256,7 +118,7 @@ Partial Class MainForm
         Me.TimerPanel.BackColor = System.Drawing.Color.DimGray
         Me.TimerPanel.Controls.Add(Me.TimerLbl)
         Me.TimerPanel.Controls.Add(Me.StopwatchIconPanel)
-        Me.TimerPanel.Location = New System.Drawing.Point(442, 607)
+        Me.TimerPanel.Location = New System.Drawing.Point(396, 444)
         Me.TimerPanel.Name = "TimerPanel"
         Me.TimerPanel.Size = New System.Drawing.Size(325, 64)
         Me.TimerPanel.TabIndex = 1
@@ -301,7 +163,7 @@ Partial Class MainForm
         Me.BatteryPanel.BackColor = System.Drawing.Color.DimGray
         Me.BatteryPanel.Controls.Add(Me.BatteryBarPanel)
         Me.BatteryPanel.Controls.Add(Me.BatteryIconPanel)
-        Me.BatteryPanel.Location = New System.Drawing.Point(19, 89)
+        Me.BatteryPanel.Location = New System.Drawing.Point(19, 7)
         Me.BatteryPanel.Name = "BatteryPanel"
         Me.BatteryPanel.Size = New System.Drawing.Size(48, 512)
         Me.BatteryPanel.TabIndex = 1
@@ -375,19 +237,156 @@ Partial Class MainForm
         Me.AppHaltedLbl.ForeColor = System.Drawing.Color.Blue
         Me.AppHaltedLbl.Location = New System.Drawing.Point(0, 0)
         Me.AppHaltedLbl.Name = "AppHaltedLbl"
-        Me.AppHaltedLbl.Size = New System.Drawing.Size(1208, 690)
+        Me.AppHaltedLbl.Size = New System.Drawing.Size(1117, 527)
         Me.AppHaltedLbl.TabIndex = 3
         Me.AppHaltedLbl.Text = "Initializing internal service ..."
         Me.AppHaltedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PingPanel
+        '
+        Me.PingPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PingPanel.Controls.Add(Me.PingLbl)
+        Me.PingPanel.Controls.Add(Me.SignalIconPanel)
+        Me.PingPanel.Location = New System.Drawing.Point(970, 19)
+        Me.PingPanel.MinimumSize = New System.Drawing.Size(128, 32)
+        Me.PingPanel.Name = "PingPanel"
+        Me.PingPanel.Opacity = 0.5R
+        Me.PingPanel.Size = New System.Drawing.Size(128, 32)
+        Me.PingPanel.TabIndex = 5
+        Me.PingPanel.Transparent = True
+        Me.PingPanel.TransparentColor = System.Drawing.Color.Silver
+        '
+        'PingLbl
+        '
+        Me.PingLbl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PingLbl.Font = New System.Drawing.Font("Tahoma", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PingLbl.ForeColor = System.Drawing.Color.White
+        Me.PingLbl.Location = New System.Drawing.Point(32, 0)
+        Me.PingLbl.Name = "PingLbl"
+        Me.PingLbl.Size = New System.Drawing.Size(96, 32)
+        Me.PingLbl.TabIndex = 0
+        Me.PingLbl.Text = "145 ms"
+        Me.PingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'SignalIconPanel
+        '
+        Me.SignalIconPanel.Controls.Add(Me.SignalIcon)
+        Me.SignalIconPanel.Dock = System.Windows.Forms.DockStyle.Left
+        Me.SignalIconPanel.Location = New System.Drawing.Point(0, 0)
+        Me.SignalIconPanel.Name = "SignalIconPanel"
+        Me.SignalIconPanel.Padding = New System.Windows.Forms.Padding(4)
+        Me.SignalIconPanel.Size = New System.Drawing.Size(32, 32)
+        Me.SignalIconPanel.TabIndex = 3
+        '
+        'SignalIcon
+        '
+        Me.SignalIcon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SignalIcon.Image = Global.Telemetry.My.Resources.Resources.Signal
+        Me.SignalIcon.Location = New System.Drawing.Point(4, 4)
+        Me.SignalIcon.Name = "SignalIcon"
+        Me.SignalIcon.Size = New System.Drawing.Size(24, 24)
+        Me.SignalIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.SignalIcon.TabIndex = 0
+        Me.SignalIcon.TabStop = False
+        '
+        'LostSignalPanel
+        '
+        Me.LostSignalPanel.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.LostSignalPanel.Controls.Add(Me.LostSignalLabel)
+        Me.LostSignalPanel.Location = New System.Drawing.Point(302, 199)
+        Me.LostSignalPanel.MinimumSize = New System.Drawing.Size(100, 75)
+        Me.LostSignalPanel.Name = "LostSignalPanel"
+        Me.LostSignalPanel.Opacity = 0.25R
+        Me.LostSignalPanel.Size = New System.Drawing.Size(512, 128)
+        Me.LostSignalPanel.TabIndex = 4
+        Me.LostSignalPanel.Tag = "True"
+        Me.LostSignalPanel.Transparent = True
+        Me.LostSignalPanel.TransparentColor = System.Drawing.Color.Red
+        '
+        'LostSignalLabel
+        '
+        Me.LostSignalLabel.BackColor = System.Drawing.Color.Transparent
+        Me.LostSignalLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LostSignalLabel.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LostSignalLabel.ForeColor = System.Drawing.Color.White
+        Me.LostSignalLabel.Location = New System.Drawing.Point(0, 0)
+        Me.LostSignalLabel.Name = "LostSignalLabel"
+        Me.LostSignalLabel.Size = New System.Drawing.Size(512, 128)
+        Me.LostSignalLabel.TabIndex = 1
+        Me.LostSignalLabel.Tag = "0"
+        Me.LostSignalLabel.Text = "SIGNAL" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "PERDU"
+        Me.LostSignalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'SlowDownAlertBox
+        '
+        Me.SlowDownAlertBox.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.SlowDownAlertBox.Controls.Add(Me.AlertLabel)
+        Me.SlowDownAlertBox.Controls.Add(Me.AlertIconPanel)
+        Me.SlowDownAlertBox.Location = New System.Drawing.Point(302, 0)
+        Me.SlowDownAlertBox.MinimumSize = New System.Drawing.Size(100, 75)
+        Me.SlowDownAlertBox.Name = "SlowDownAlertBox"
+        Me.SlowDownAlertBox.Opacity = 0.5R
+        Me.SlowDownAlertBox.Size = New System.Drawing.Size(512, 128)
+        Me.SlowDownAlertBox.TabIndex = 3
+        Me.SlowDownAlertBox.Transparent = True
+        Me.SlowDownAlertBox.TransparentColor = System.Drawing.Color.White
+        '
+        'AlertLabel
+        '
+        Me.AlertLabel.BackColor = System.Drawing.Color.Transparent
+        Me.AlertLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.AlertLabel.Font = New System.Drawing.Font("Consolas", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AlertLabel.ForeColor = System.Drawing.Color.White
+        Me.AlertLabel.Location = New System.Drawing.Point(128, 0)
+        Me.AlertLabel.Name = "AlertLabel"
+        Me.AlertLabel.Size = New System.Drawing.Size(384, 128)
+        Me.AlertLabel.TabIndex = 5
+        Me.AlertLabel.Text = "RALENTIR !"
+        Me.AlertLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AlertIconPanel
+        '
+        Me.AlertIconPanel.Controls.Add(Me.AlertIcon)
+        Me.AlertIconPanel.Dock = System.Windows.Forms.DockStyle.Left
+        Me.AlertIconPanel.Location = New System.Drawing.Point(0, 0)
+        Me.AlertIconPanel.MinimumSize = New System.Drawing.Size(100, 75)
+        Me.AlertIconPanel.Name = "AlertIconPanel"
+        Me.AlertIconPanel.Opacity = 0R
+        Me.AlertIconPanel.Padding = New System.Windows.Forms.Padding(8)
+        Me.AlertIconPanel.Size = New System.Drawing.Size(128, 128)
+        Me.AlertIconPanel.TabIndex = 4
+        Me.AlertIconPanel.Text = "TransparentControl1"
+        Me.AlertIconPanel.Transparent = True
+        Me.AlertIconPanel.TransparentColor = System.Drawing.Color.White
+        '
+        'AlertIcon
+        '
+        Me.AlertIcon.Controls.Add(Me.AlertBox)
+        Me.AlertIcon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.AlertIcon.Location = New System.Drawing.Point(0, 0)
+        Me.AlertIcon.Name = "AlertIcon"
+        Me.AlertIcon.Padding = New System.Windows.Forms.Padding(8)
+        Me.AlertIcon.Size = New System.Drawing.Size(128, 128)
+        Me.AlertIcon.TabIndex = 1
+        '
+        'AlertBox
+        '
+        Me.AlertBox.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.AlertBox.Image = Global.Telemetry.My.Resources.Resources.Warning
+        Me.AlertBox.Location = New System.Drawing.Point(8, 8)
+        Me.AlertBox.Name = "AlertBox"
+        Me.AlertBox.Size = New System.Drawing.Size(112, 112)
+        Me.AlertBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.AlertBox.TabIndex = 0
+        Me.AlertBox.TabStop = False
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1208, 690)
+        Me.ClientSize = New System.Drawing.Size(1117, 527)
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.AppHaltedLbl)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MainForm"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -395,14 +394,6 @@ Partial Class MainForm
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.SpeedIndicatorPanel.ResumeLayout(False)
         Me.MainPanel.ResumeLayout(False)
-        Me.PingPanel.ResumeLayout(False)
-        Me.SignalIconPanel.ResumeLayout(False)
-        CType(Me.SignalIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.LostSignalPanel.ResumeLayout(False)
-        Me.SlowDownAlertBox.ResumeLayout(False)
-        Me.AlertIconPanel.ResumeLayout(False)
-        Me.AlertIcon.ResumeLayout(False)
-        CType(Me.AlertBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TimerPanel.ResumeLayout(False)
         Me.StopwatchIconPanel.ResumeLayout(False)
         CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).EndInit()
@@ -411,6 +402,14 @@ Partial Class MainForm
         Me.BatteryBarBackground.ResumeLayout(False)
         Me.BatteryIconPanel.ResumeLayout(False)
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PingPanel.ResumeLayout(False)
+        Me.SignalIconPanel.ResumeLayout(False)
+        CType(Me.SignalIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.LostSignalPanel.ResumeLayout(False)
+        Me.SlowDownAlertBox.ResumeLayout(False)
+        Me.AlertIconPanel.ResumeLayout(False)
+        Me.AlertIcon.ResumeLayout(False)
+        CType(Me.AlertBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
