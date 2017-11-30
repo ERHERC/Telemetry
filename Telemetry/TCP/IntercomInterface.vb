@@ -22,4 +22,10 @@ Public Interface IntercomInterface
 
     <OperationContract()>
     Sub SetPing(Value As Integer)
+
+    <OperationContract()>
+    Sub SetFullscreen(Value As Boolean)
+
+    <OperationContract()>
+    Function GetMainForm() As MainForm
 End Interface

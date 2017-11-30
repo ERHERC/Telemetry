@@ -49,6 +49,7 @@ Partial Class MainForm
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.AnimationWorker = New System.ComponentModel.BackgroundWorker()
         Me.LostSignalFlicker = New System.Windows.Forms.Timer(Me.components)
+        Me.AppHaltedLbl = New System.Windows.Forms.Label()
         Me.SpeedIndicatorPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
         Me.PingPanel.SuspendLayout()
@@ -109,6 +110,7 @@ Partial Class MainForm
         Me.MainPanel.Padding = New System.Windows.Forms.Padding(16)
         Me.MainPanel.Size = New System.Drawing.Size(1208, 690)
         Me.MainPanel.TabIndex = 2
+        Me.MainPanel.Visible = False
         '
         'PingPanel
         '
@@ -365,12 +367,26 @@ Partial Class MainForm
         Me.LostSignalFlicker.Enabled = True
         Me.LostSignalFlicker.Interval = 250
         '
+        'AppHaltedLbl
+        '
+        Me.AppHaltedLbl.BackColor = System.Drawing.Color.White
+        Me.AppHaltedLbl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.AppHaltedLbl.Font = New System.Drawing.Font("Segoe UI Mono", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AppHaltedLbl.ForeColor = System.Drawing.Color.Blue
+        Me.AppHaltedLbl.Location = New System.Drawing.Point(0, 0)
+        Me.AppHaltedLbl.Name = "AppHaltedLbl"
+        Me.AppHaltedLbl.Size = New System.Drawing.Size(1208, 690)
+        Me.AppHaltedLbl.TabIndex = 3
+        Me.AppHaltedLbl.Text = "Initializing debugging service ..."
+        Me.AppHaltedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1208, 690)
         Me.Controls.Add(Me.MainPanel)
+        Me.Controls.Add(Me.AppHaltedLbl)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "MainForm"
         Me.ShowIcon = False
@@ -425,4 +441,5 @@ Partial Class MainForm
     Friend WithEvents PingPanel As TransparentControl
     Friend WithEvents AnimationWorker As System.ComponentModel.BackgroundWorker
     Friend WithEvents LostSignalFlicker As Timer
+    Friend WithEvents AppHaltedLbl As Label
 End Class

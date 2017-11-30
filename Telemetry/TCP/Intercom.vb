@@ -1,15 +1,29 @@
 Imports System.ServiceModel
 Imports Telemetry
 
+
 <ServiceBehavior(IncludeExceptionDetailInFaults:=True)>
 Public Class Intercom : Implements IntercomInterface
     Public Sub SendMessage(Command As String, ParamArray Parameters() As String) Implements IntercomInterface.SendMessage
-
 
     End Sub
 
     Public Sub SetBatteryPercentage(Value As Integer) Implements IntercomInterface.SetBatteryPercentage
 
+    End Sub
+
+    Public Sub SetFullscreen(Value As Boolean) Implements IntercomInterface.SetFullscreen
+        If Value Then
+            If Not Globals.MainForm.FormBorderStyle = FormBorderStyle.Sizable Then
+                Globals.MainForm.FormBorderStyle = FormBorderStyle.Sizable
+                Globals.MainForm.WindowState = FormWindowState.Maximized
+            End If
+        Else
+            If Not Globals.MainForm.FormBorderStyle = FormBorderStyle.None Then
+                Globals.MainForm.FormBorderStyle = FormBorderStyle.None
+                Globals.MainForm.WindowState = FormWindowState.Maximized
+            End If
+        End If
     End Sub
 
     Public Sub SetMaxSpeed(Value As Double) Implements IntercomInterface.SetMaxSpeed
@@ -37,4 +51,8 @@ Public Class Intercom : Implements IntercomInterface
     Public Sub ShowSlowDown(Value As Boolean) Implements IntercomInterface.ShowSlowDown
         Globals.MainForm.SlowDownAlertBox.Visible = Value
     End Sub
+
+    Public Function GetMainForm() As MainForm Implements IntercomInterface.GetMainForm
+        Return Globals.MainForm
+    End Function
 End Class

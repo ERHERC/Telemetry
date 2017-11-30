@@ -41,10 +41,13 @@ Public Class MainForm
 
     Private Sub MainForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
         Running = True
+        IntercomApiManager.StartAPI()
+        Libraries.Tools.Wait(0.5D)
+        MainPanel.Visible = True
         'Dim BackgroundTask As Task = New Task(AddressOf ParalelSub)
         'BackgroundTask.Start()
         Call SlowDown()
-        IntercomApiManager.StartAPI()
+
     End Sub
 
     Private Sub SlowDown()
