@@ -83,7 +83,11 @@ Public Class MainForm
 
     Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Running = False
+        AppHaltedLbl.Text = "Shutting down internal service ..."
+        MainPanel.Visible = False
+
         IntercomApiManager.StopAPI()
+
     End Sub
 
     Private Sub LostSignalFlicker_Tick(sender As Object, e As EventArgs) Handles LostSignalFlicker.Tick

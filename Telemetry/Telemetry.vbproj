@@ -145,6 +145,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="TCP\IntercomApiManager.vb" />
+    <Compile Include="TCP\IntercomFunctions.vb" />
     <Compile Include="TCP\IntercomInterface.vb" />
     <Compile Include="TCP\Intercom.vb" />
     <Compile Include="Tools.vb" />

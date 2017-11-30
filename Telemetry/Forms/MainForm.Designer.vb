@@ -46,7 +46,7 @@ Partial Class MainForm
         Me.BatteryBarBackground = New System.Windows.Forms.Panel()
         Me.BatteryProgress = New System.Windows.Forms.Panel()
         Me.BatteryIconPanel = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.BatteryIcon = New System.Windows.Forms.PictureBox()
         Me.AnimationWorker = New System.ComponentModel.BackgroundWorker()
         Me.LostSignalFlicker = New System.Windows.Forms.Timer(Me.components)
         Me.AppHaltedLbl = New System.Windows.Forms.Label()
@@ -67,7 +67,7 @@ Partial Class MainForm
         Me.BatteryBarPanel.SuspendLayout()
         Me.BatteryBarBackground.SuspendLayout()
         Me.BatteryIconPanel.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SpeedIndicatorPanel
@@ -339,7 +339,7 @@ Partial Class MainForm
         '
         'BatteryIconPanel
         '
-        Me.BatteryIconPanel.Controls.Add(Me.PictureBox1)
+        Me.BatteryIconPanel.Controls.Add(Me.BatteryIcon)
         Me.BatteryIconPanel.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.BatteryIconPanel.Location = New System.Drawing.Point(0, 448)
         Me.BatteryIconPanel.Name = "BatteryIconPanel"
@@ -347,16 +347,16 @@ Partial Class MainForm
         Me.BatteryIconPanel.Size = New System.Drawing.Size(48, 64)
         Me.BatteryIconPanel.TabIndex = 3
         '
-        'PictureBox1
+        'BatteryIcon
         '
-        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox1.Image = Global.Telemetry.My.Resources.Resources.Energy
-        Me.PictureBox1.Location = New System.Drawing.Point(2, 2)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(44, 60)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.BatteryIcon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryIcon.Image = Global.Telemetry.My.Resources.Resources.Energy
+        Me.BatteryIcon.Location = New System.Drawing.Point(2, 2)
+        Me.BatteryIcon.Name = "BatteryIcon"
+        Me.BatteryIcon.Size = New System.Drawing.Size(44, 60)
+        Me.BatteryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BatteryIcon.TabIndex = 2
+        Me.BatteryIcon.TabStop = False
         '
         'AnimationWorker
         '
@@ -377,7 +377,7 @@ Partial Class MainForm
         Me.AppHaltedLbl.Name = "AppHaltedLbl"
         Me.AppHaltedLbl.Size = New System.Drawing.Size(1208, 690)
         Me.AppHaltedLbl.TabIndex = 3
-        Me.AppHaltedLbl.Text = "Initializing debugging service ..."
+        Me.AppHaltedLbl.Text = "Initializing internal service ..."
         Me.AppHaltedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'MainForm
@@ -410,7 +410,7 @@ Partial Class MainForm
         Me.BatteryBarPanel.ResumeLayout(False)
         Me.BatteryBarBackground.ResumeLayout(False)
         Me.BatteryIconPanel.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -423,7 +423,7 @@ Partial Class MainForm
     Friend WithEvents TimerLbl As Label
     Friend WithEvents BatteryBarPanel As Panel
     Friend WithEvents BatteryIconPanel As Panel
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents BatteryIcon As PictureBox
     Friend WithEvents PingLbl As Label
     Friend WithEvents BatteryBarBackground As Panel
     Friend WithEvents BatteryProgress As Panel

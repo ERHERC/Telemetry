@@ -3,10 +3,10 @@ Imports System.ComponentModel
 Imports System.ServiceModel
 
 Module IntercomApiManager
-    Private ServiceRunning As Boolean = False
-    Private ServiceInstance As ServiceHost = Nothing
-    Private ServiceAddress As Uri = New Uri("net.tcp://localhost:2202/TelemetryService")
-    Private Binding As NetTcpBinding
+    Public ServiceRunning As Boolean = False
+    Public ServiceInstance As ServiceHost = Nothing
+    Public ServiceAddress As Uri = New Uri("net.tcp://localhost:2202/TelemetryService")
+    Public Binding As NetTcpBinding
 
 
     Public Sub StartAPI()

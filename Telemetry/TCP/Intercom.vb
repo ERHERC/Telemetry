@@ -13,15 +13,19 @@ Public Class Intercom : Implements IntercomInterface
     End Sub
 
     Public Sub SetFullscreen(Value As Boolean) Implements IntercomInterface.SetFullscreen
-        If Value Then
+        If Not Value Then
             If Not Globals.MainForm.FormBorderStyle = FormBorderStyle.Sizable Then
+                IntercomFunctions.DisplayMessage("API::SetFullscreen[FALSE]", "Please wait ...")
                 Globals.MainForm.FormBorderStyle = FormBorderStyle.Sizable
                 Globals.MainForm.WindowState = FormWindowState.Maximized
+                IntercomFunctions.CloseMessage("API::SetFullscreen[FALSE]")
             End If
         Else
             If Not Globals.MainForm.FormBorderStyle = FormBorderStyle.None Then
+                IntercomFunctions.DisplayMessage("API::SetFullscreen[TRUE]", "Please wait ...")
                 Globals.MainForm.FormBorderStyle = FormBorderStyle.None
                 Globals.MainForm.WindowState = FormWindowState.Maximized
+                IntercomFunctions.CloseMessage("API::SetFullscreen[TRUE]")
             End If
         End If
     End Sub
