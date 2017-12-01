@@ -23,22 +23,10 @@ Partial Class MainForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.SpeedIndicatorPanel = New System.Windows.Forms.Panel()
-        Me.SpeedLbl = New System.Windows.Forms.Label()
-        Me.MainPanel = New System.Windows.Forms.Panel()
-        Me.TimerPanel = New System.Windows.Forms.Panel()
-        Me.TimerLbl = New System.Windows.Forms.Label()
-        Me.StopwatchIconPanel = New System.Windows.Forms.Panel()
-        Me.StopwatchIcon = New System.Windows.Forms.PictureBox()
-        Me.BatteryPanel = New System.Windows.Forms.Panel()
-        Me.BatteryBarPanel = New System.Windows.Forms.Panel()
-        Me.BatteryBarBackground = New System.Windows.Forms.Panel()
-        Me.BatteryProgress = New System.Windows.Forms.Panel()
-        Me.BatteryIconPanel = New System.Windows.Forms.Panel()
-        Me.BatteryIcon = New System.Windows.Forms.PictureBox()
         Me.AnimationWorker = New System.ComponentModel.BackgroundWorker()
         Me.LostSignalFlicker = New System.Windows.Forms.Timer(Me.components)
         Me.AppHaltedLbl = New System.Windows.Forms.Label()
+        Me.MainPanel = New System.Windows.Forms.Panel()
         Me.PingPanel = New Telemetry.TransparentControl()
         Me.PingLbl = New System.Windows.Forms.Label()
         Me.SignalIconPanel = New System.Windows.Forms.Panel()
@@ -50,16 +38,20 @@ Partial Class MainForm
         Me.AlertIconPanel = New Telemetry.TransparentControl()
         Me.AlertIcon = New System.Windows.Forms.Panel()
         Me.AlertBox = New System.Windows.Forms.PictureBox()
-        Me.SpeedIndicatorPanel.SuspendLayout()
+        Me.TimerPanel = New System.Windows.Forms.Panel()
+        Me.TimerLbl = New System.Windows.Forms.Label()
+        Me.StopwatchIconPanel = New System.Windows.Forms.Panel()
+        Me.StopwatchIcon = New System.Windows.Forms.PictureBox()
+        Me.BatteryPanel = New System.Windows.Forms.Panel()
+        Me.BatteryBarPanel = New System.Windows.Forms.Panel()
+        Me.BatteryBarBackground = New System.Windows.Forms.Panel()
+        Me.BatteryProgress = New System.Windows.Forms.Panel()
+        Me.BatteryIconPanel = New System.Windows.Forms.Panel()
+        Me.BatteryIcon = New System.Windows.Forms.PictureBox()
+        Me.SpeedIndicatorPanel = New System.Windows.Forms.Panel()
+        Me.SpeedLbl = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MainPanel.SuspendLayout()
-        Me.TimerPanel.SuspendLayout()
-        Me.StopwatchIconPanel.SuspendLayout()
-        CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.BatteryPanel.SuspendLayout()
-        Me.BatteryBarPanel.SuspendLayout()
-        Me.BatteryBarBackground.SuspendLayout()
-        Me.BatteryIconPanel.SuspendLayout()
-        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PingPanel.SuspendLayout()
         Me.SignalIconPanel.SuspendLayout()
         CType(Me.SignalIcon, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -68,157 +60,17 @@ Partial Class MainForm
         Me.AlertIconPanel.SuspendLayout()
         Me.AlertIcon.SuspendLayout()
         CType(Me.AlertBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TimerPanel.SuspendLayout()
+        Me.StopwatchIconPanel.SuspendLayout()
+        CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BatteryPanel.SuspendLayout()
+        Me.BatteryBarPanel.SuspendLayout()
+        Me.BatteryBarBackground.SuspendLayout()
+        Me.BatteryIconPanel.SuspendLayout()
+        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SpeedIndicatorPanel.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'SpeedIndicatorPanel
-        '
-        Me.SpeedIndicatorPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.SpeedIndicatorPanel.BackColor = System.Drawing.Color.DimGray
-        Me.SpeedIndicatorPanel.Controls.Add(Me.SpeedLbl)
-        Me.SpeedIndicatorPanel.Location = New System.Drawing.Point(842, 252)
-        Me.SpeedIndicatorPanel.Name = "SpeedIndicatorPanel"
-        Me.SpeedIndicatorPanel.Size = New System.Drawing.Size(256, 256)
-        Me.SpeedIndicatorPanel.TabIndex = 0
-        '
-        'SpeedLbl
-        '
-        Me.SpeedLbl.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SpeedLbl.Font = New System.Drawing.Font("Segoe UI Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SpeedLbl.ForeColor = System.Drawing.Color.White
-        Me.SpeedLbl.Location = New System.Drawing.Point(0, 0)
-        Me.SpeedLbl.Name = "SpeedLbl"
-        Me.SpeedLbl.Size = New System.Drawing.Size(256, 256)
-        Me.SpeedLbl.TabIndex = 0
-        Me.SpeedLbl.Text = "3,6 Km/H" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(1 M/S)"
-        Me.SpeedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'MainPanel
-        '
-        Me.MainPanel.BackColor = System.Drawing.Color.DarkGray
-        Me.MainPanel.BackgroundImage = Global.Telemetry.My.Resources.Resources.Thumbnail
-        Me.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MainPanel.Controls.Add(Me.PingPanel)
-        Me.MainPanel.Controls.Add(Me.LostSignalPanel)
-        Me.MainPanel.Controls.Add(Me.SlowDownAlertBox)
-        Me.MainPanel.Controls.Add(Me.TimerPanel)
-        Me.MainPanel.Controls.Add(Me.BatteryPanel)
-        Me.MainPanel.Controls.Add(Me.SpeedIndicatorPanel)
-        Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainPanel.Location = New System.Drawing.Point(0, 0)
-        Me.MainPanel.Margin = New System.Windows.Forms.Padding(16)
-        Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Padding = New System.Windows.Forms.Padding(16)
-        Me.MainPanel.Size = New System.Drawing.Size(1117, 527)
-        Me.MainPanel.TabIndex = 2
-        Me.MainPanel.Visible = False
-        '
-        'TimerPanel
-        '
-        Me.TimerPanel.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.TimerPanel.BackColor = System.Drawing.Color.DimGray
-        Me.TimerPanel.Controls.Add(Me.TimerLbl)
-        Me.TimerPanel.Controls.Add(Me.StopwatchIconPanel)
-        Me.TimerPanel.Location = New System.Drawing.Point(396, 444)
-        Me.TimerPanel.Name = "TimerPanel"
-        Me.TimerPanel.Size = New System.Drawing.Size(325, 64)
-        Me.TimerPanel.TabIndex = 1
-        '
-        'TimerLbl
-        '
-        Me.TimerLbl.BackColor = System.Drawing.Color.Transparent
-        Me.TimerLbl.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TimerLbl.Font = New System.Drawing.Font("Quartz MS", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TimerLbl.ForeColor = System.Drawing.Color.White
-        Me.TimerLbl.Location = New System.Drawing.Point(64, 0)
-        Me.TimerLbl.Name = "TimerLbl"
-        Me.TimerLbl.Size = New System.Drawing.Size(261, 64)
-        Me.TimerLbl.TabIndex = 0
-        Me.TimerLbl.Text = "00:01:24.87"
-        Me.TimerLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'StopwatchIconPanel
-        '
-        Me.StopwatchIconPanel.Controls.Add(Me.StopwatchIcon)
-        Me.StopwatchIconPanel.Dock = System.Windows.Forms.DockStyle.Left
-        Me.StopwatchIconPanel.Location = New System.Drawing.Point(0, 0)
-        Me.StopwatchIconPanel.Name = "StopwatchIconPanel"
-        Me.StopwatchIconPanel.Padding = New System.Windows.Forms.Padding(4)
-        Me.StopwatchIconPanel.Size = New System.Drawing.Size(64, 64)
-        Me.StopwatchIconPanel.TabIndex = 1
-        '
-        'StopwatchIcon
-        '
-        Me.StopwatchIcon.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.StopwatchIcon.Image = Global.Telemetry.My.Resources.Resources.Stopwatch
-        Me.StopwatchIcon.Location = New System.Drawing.Point(4, 4)
-        Me.StopwatchIcon.Name = "StopwatchIcon"
-        Me.StopwatchIcon.Size = New System.Drawing.Size(56, 56)
-        Me.StopwatchIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.StopwatchIcon.TabIndex = 3
-        Me.StopwatchIcon.TabStop = False
-        '
-        'BatteryPanel
-        '
-        Me.BatteryPanel.Anchor = System.Windows.Forms.AnchorStyles.Left
-        Me.BatteryPanel.BackColor = System.Drawing.Color.DimGray
-        Me.BatteryPanel.Controls.Add(Me.BatteryBarPanel)
-        Me.BatteryPanel.Controls.Add(Me.BatteryIconPanel)
-        Me.BatteryPanel.Location = New System.Drawing.Point(19, 7)
-        Me.BatteryPanel.Name = "BatteryPanel"
-        Me.BatteryPanel.Size = New System.Drawing.Size(48, 512)
-        Me.BatteryPanel.TabIndex = 1
-        '
-        'BatteryBarPanel
-        '
-        Me.BatteryBarPanel.BackColor = System.Drawing.Color.White
-        Me.BatteryBarPanel.Controls.Add(Me.BatteryBarBackground)
-        Me.BatteryBarPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BatteryBarPanel.Location = New System.Drawing.Point(0, 0)
-        Me.BatteryBarPanel.Name = "BatteryBarPanel"
-        Me.BatteryBarPanel.Padding = New System.Windows.Forms.Padding(4)
-        Me.BatteryBarPanel.Size = New System.Drawing.Size(48, 448)
-        Me.BatteryBarPanel.TabIndex = 3
-        '
-        'BatteryBarBackground
-        '
-        Me.BatteryBarBackground.BackColor = System.Drawing.Color.Black
-        Me.BatteryBarBackground.Controls.Add(Me.BatteryProgress)
-        Me.BatteryBarBackground.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BatteryBarBackground.Location = New System.Drawing.Point(4, 4)
-        Me.BatteryBarBackground.Name = "BatteryBarBackground"
-        Me.BatteryBarBackground.Padding = New System.Windows.Forms.Padding(4)
-        Me.BatteryBarBackground.Size = New System.Drawing.Size(40, 440)
-        Me.BatteryBarBackground.TabIndex = 0
-        '
-        'BatteryProgress
-        '
-        Me.BatteryProgress.BackColor = System.Drawing.Color.White
-        Me.BatteryProgress.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BatteryProgress.Location = New System.Drawing.Point(4, 290)
-        Me.BatteryProgress.Name = "BatteryProgress"
-        Me.BatteryProgress.Size = New System.Drawing.Size(32, 146)
-        Me.BatteryProgress.TabIndex = 0
-        '
-        'BatteryIconPanel
-        '
-        Me.BatteryIconPanel.Controls.Add(Me.BatteryIcon)
-        Me.BatteryIconPanel.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BatteryIconPanel.Location = New System.Drawing.Point(0, 448)
-        Me.BatteryIconPanel.Name = "BatteryIconPanel"
-        Me.BatteryIconPanel.Padding = New System.Windows.Forms.Padding(2)
-        Me.BatteryIconPanel.Size = New System.Drawing.Size(48, 64)
-        Me.BatteryIconPanel.TabIndex = 3
-        '
-        'BatteryIcon
-        '
-        Me.BatteryIcon.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BatteryIcon.Image = Global.Telemetry.My.Resources.Resources.Energy
-        Me.BatteryIcon.Location = New System.Drawing.Point(2, 2)
-        Me.BatteryIcon.Name = "BatteryIcon"
-        Me.BatteryIcon.Size = New System.Drawing.Size(44, 60)
-        Me.BatteryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BatteryIcon.TabIndex = 2
-        Me.BatteryIcon.TabStop = False
         '
         'AnimationWorker
         '
@@ -242,6 +94,26 @@ Partial Class MainForm
         Me.AppHaltedLbl.Text = "Initializing internal service ..."
         Me.AppHaltedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'MainPanel
+        '
+        Me.MainPanel.BackColor = System.Drawing.Color.DarkGray
+        Me.MainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.MainPanel.Controls.Add(Me.PingPanel)
+        Me.MainPanel.Controls.Add(Me.LostSignalPanel)
+        Me.MainPanel.Controls.Add(Me.SlowDownAlertBox)
+        Me.MainPanel.Controls.Add(Me.TimerPanel)
+        Me.MainPanel.Controls.Add(Me.SpeedIndicatorPanel)
+        Me.MainPanel.Controls.Add(Me.PictureBox1)
+        Me.MainPanel.Controls.Add(Me.BatteryPanel)
+        Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MainPanel.Location = New System.Drawing.Point(0, 0)
+        Me.MainPanel.Margin = New System.Windows.Forms.Padding(16)
+        Me.MainPanel.Name = "MainPanel"
+        Me.MainPanel.Padding = New System.Windows.Forms.Padding(16)
+        Me.MainPanel.Size = New System.Drawing.Size(1117, 527)
+        Me.MainPanel.TabIndex = 2
+        Me.MainPanel.Visible = False
+        '
         'PingPanel
         '
         Me.PingPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -253,8 +125,7 @@ Partial Class MainForm
         Me.PingPanel.Opacity = 0.5R
         Me.PingPanel.Size = New System.Drawing.Size(128, 32)
         Me.PingPanel.TabIndex = 5
-        Me.PingPanel.Transparent = True
-        Me.PingPanel.TransparentColor = System.Drawing.Color.Silver
+        Me.PingPanel.TransparentColor = System.Drawing.Color.Transparent
         '
         'PingLbl
         '
@@ -380,6 +251,148 @@ Partial Class MainForm
         Me.AlertBox.TabIndex = 0
         Me.AlertBox.TabStop = False
         '
+        'TimerPanel
+        '
+        Me.TimerPanel.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.TimerPanel.BackColor = System.Drawing.Color.DimGray
+        Me.TimerPanel.Controls.Add(Me.TimerLbl)
+        Me.TimerPanel.Controls.Add(Me.StopwatchIconPanel)
+        Me.TimerPanel.Location = New System.Drawing.Point(396, 444)
+        Me.TimerPanel.Name = "TimerPanel"
+        Me.TimerPanel.Size = New System.Drawing.Size(325, 64)
+        Me.TimerPanel.TabIndex = 1
+        '
+        'TimerLbl
+        '
+        Me.TimerLbl.BackColor = System.Drawing.Color.Transparent
+        Me.TimerLbl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TimerLbl.Font = New System.Drawing.Font("Quartz MS", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TimerLbl.ForeColor = System.Drawing.Color.White
+        Me.TimerLbl.Location = New System.Drawing.Point(64, 0)
+        Me.TimerLbl.Name = "TimerLbl"
+        Me.TimerLbl.Size = New System.Drawing.Size(261, 64)
+        Me.TimerLbl.TabIndex = 0
+        Me.TimerLbl.Text = "00:01:24.87"
+        Me.TimerLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'StopwatchIconPanel
+        '
+        Me.StopwatchIconPanel.Controls.Add(Me.StopwatchIcon)
+        Me.StopwatchIconPanel.Dock = System.Windows.Forms.DockStyle.Left
+        Me.StopwatchIconPanel.Location = New System.Drawing.Point(0, 0)
+        Me.StopwatchIconPanel.Name = "StopwatchIconPanel"
+        Me.StopwatchIconPanel.Padding = New System.Windows.Forms.Padding(4)
+        Me.StopwatchIconPanel.Size = New System.Drawing.Size(64, 64)
+        Me.StopwatchIconPanel.TabIndex = 1
+        '
+        'StopwatchIcon
+        '
+        Me.StopwatchIcon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.StopwatchIcon.Image = Global.Telemetry.My.Resources.Resources.Stopwatch
+        Me.StopwatchIcon.Location = New System.Drawing.Point(4, 4)
+        Me.StopwatchIcon.Name = "StopwatchIcon"
+        Me.StopwatchIcon.Size = New System.Drawing.Size(56, 56)
+        Me.StopwatchIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.StopwatchIcon.TabIndex = 3
+        Me.StopwatchIcon.TabStop = False
+        '
+        'BatteryPanel
+        '
+        Me.BatteryPanel.BackColor = System.Drawing.Color.DimGray
+        Me.BatteryPanel.Controls.Add(Me.BatteryBarPanel)
+        Me.BatteryPanel.Controls.Add(Me.BatteryIconPanel)
+        Me.BatteryPanel.Dock = System.Windows.Forms.DockStyle.Left
+        Me.BatteryPanel.Location = New System.Drawing.Point(16, 16)
+        Me.BatteryPanel.Name = "BatteryPanel"
+        Me.BatteryPanel.Size = New System.Drawing.Size(48, 495)
+        Me.BatteryPanel.TabIndex = 1
+        '
+        'BatteryBarPanel
+        '
+        Me.BatteryBarPanel.BackColor = System.Drawing.Color.White
+        Me.BatteryBarPanel.Controls.Add(Me.BatteryBarBackground)
+        Me.BatteryBarPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryBarPanel.Location = New System.Drawing.Point(0, 0)
+        Me.BatteryBarPanel.Name = "BatteryBarPanel"
+        Me.BatteryBarPanel.Padding = New System.Windows.Forms.Padding(4)
+        Me.BatteryBarPanel.Size = New System.Drawing.Size(48, 431)
+        Me.BatteryBarPanel.TabIndex = 3
+        '
+        'BatteryBarBackground
+        '
+        Me.BatteryBarBackground.BackColor = System.Drawing.Color.Black
+        Me.BatteryBarBackground.Controls.Add(Me.BatteryProgress)
+        Me.BatteryBarBackground.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryBarBackground.Location = New System.Drawing.Point(4, 4)
+        Me.BatteryBarBackground.Name = "BatteryBarBackground"
+        Me.BatteryBarBackground.Padding = New System.Windows.Forms.Padding(4)
+        Me.BatteryBarBackground.Size = New System.Drawing.Size(40, 423)
+        Me.BatteryBarBackground.TabIndex = 0
+        '
+        'BatteryProgress
+        '
+        Me.BatteryProgress.BackColor = System.Drawing.Color.White
+        Me.BatteryProgress.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BatteryProgress.Location = New System.Drawing.Point(4, 273)
+        Me.BatteryProgress.Name = "BatteryProgress"
+        Me.BatteryProgress.Size = New System.Drawing.Size(32, 146)
+        Me.BatteryProgress.TabIndex = 0
+        '
+        'BatteryIconPanel
+        '
+        Me.BatteryIconPanel.Controls.Add(Me.BatteryIcon)
+        Me.BatteryIconPanel.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BatteryIconPanel.Location = New System.Drawing.Point(0, 431)
+        Me.BatteryIconPanel.Name = "BatteryIconPanel"
+        Me.BatteryIconPanel.Padding = New System.Windows.Forms.Padding(2)
+        Me.BatteryIconPanel.Size = New System.Drawing.Size(48, 64)
+        Me.BatteryIconPanel.TabIndex = 3
+        '
+        'BatteryIcon
+        '
+        Me.BatteryIcon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryIcon.Image = Global.Telemetry.My.Resources.Resources.Energy
+        Me.BatteryIcon.Location = New System.Drawing.Point(2, 2)
+        Me.BatteryIcon.Name = "BatteryIcon"
+        Me.BatteryIcon.Size = New System.Drawing.Size(44, 60)
+        Me.BatteryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BatteryIcon.TabIndex = 2
+        Me.BatteryIcon.TabStop = False
+        '
+        'SpeedIndicatorPanel
+        '
+        Me.SpeedIndicatorPanel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.SpeedIndicatorPanel.BackColor = System.Drawing.Color.DimGray
+        Me.SpeedIndicatorPanel.Controls.Add(Me.SpeedLbl)
+        Me.SpeedIndicatorPanel.Location = New System.Drawing.Point(842, 252)
+        Me.SpeedIndicatorPanel.Name = "SpeedIndicatorPanel"
+        Me.SpeedIndicatorPanel.Size = New System.Drawing.Size(256, 256)
+        Me.SpeedIndicatorPanel.TabIndex = 0
+        '
+        'SpeedLbl
+        '
+        Me.SpeedLbl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SpeedLbl.Font = New System.Drawing.Font("Segoe UI Semibold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpeedLbl.ForeColor = System.Drawing.Color.White
+        Me.SpeedLbl.Location = New System.Drawing.Point(0, 0)
+        Me.SpeedLbl.Name = "SpeedLbl"
+        Me.SpeedLbl.Size = New System.Drawing.Size(256, 256)
+        Me.SpeedLbl.TabIndex = 0
+        Me.SpeedLbl.Text = "3,6 Km/H" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(1 M/S)"
+        Me.SpeedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PictureBox1.Image = Global.Telemetry.My.Resources.Resources.animated_loader
+        Me.PictureBox1.Location = New System.Drawing.Point(64, 16)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(1037, 495)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -392,16 +405,7 @@ Partial Class MainForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ROSALIE - Télémétrie"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.SpeedIndicatorPanel.ResumeLayout(False)
         Me.MainPanel.ResumeLayout(False)
-        Me.TimerPanel.ResumeLayout(False)
-        Me.StopwatchIconPanel.ResumeLayout(False)
-        CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.BatteryPanel.ResumeLayout(False)
-        Me.BatteryBarPanel.ResumeLayout(False)
-        Me.BatteryBarBackground.ResumeLayout(False)
-        Me.BatteryIconPanel.ResumeLayout(False)
-        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PingPanel.ResumeLayout(False)
         Me.SignalIconPanel.ResumeLayout(False)
         CType(Me.SignalIcon, System.ComponentModel.ISupportInitialize).EndInit()
@@ -410,6 +414,16 @@ Partial Class MainForm
         Me.AlertIconPanel.ResumeLayout(False)
         Me.AlertIcon.ResumeLayout(False)
         CType(Me.AlertBox, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TimerPanel.ResumeLayout(False)
+        Me.StopwatchIconPanel.ResumeLayout(False)
+        CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BatteryPanel.ResumeLayout(False)
+        Me.BatteryBarPanel.ResumeLayout(False)
+        Me.BatteryBarBackground.ResumeLayout(False)
+        Me.BatteryIconPanel.ResumeLayout(False)
+        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SpeedIndicatorPanel.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -441,4 +455,5 @@ Partial Class MainForm
     Friend WithEvents AnimationWorker As System.ComponentModel.BackgroundWorker
     Friend WithEvents LostSignalFlicker As Timer
     Friend WithEvents AppHaltedLbl As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
