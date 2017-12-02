@@ -122,7 +122,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\FormsManager.vb" />
+    <Compile Include="Enums\PanelToggleArguments.vb" />
+    <Compile Include="Forms\Panel Controllers\MessagesController.vb" />
+    <Compile Include="Memory Managers\FormsManager.vb" />
     <Compile Include="Forms\MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
@@ -135,14 +137,14 @@
     <Compile Include="Forms\MessagesPopup.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PanelManager.vb" />
+    <Compile Include="Memory Managers\PanelManager.vb" />
     <Compile Include="Forms\VisualizerForm.Designer.vb">
       <DependentUpon>VisualizerForm.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\VisualizerForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Globals.vb" />
+    <Compile Include="Memory Managers\Globals.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

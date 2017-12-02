@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Telemetry.LocalDebug.MainForm
+            Me.MainForm = Global.Telemetry.Sandbox.MainForm
         End Sub
     End Class
 End Namespace

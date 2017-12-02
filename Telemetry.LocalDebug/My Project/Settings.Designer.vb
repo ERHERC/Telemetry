@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Telemetry.LocalDebug.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Telemetry.Sandbox.My.MySettings
             Get
-                Return Global.Telemetry.LocalDebug.My.MySettings.Default
+                Return Global.Telemetry.Sandbox.My.MySettings.Default
             End Get
         End Property
     End Module

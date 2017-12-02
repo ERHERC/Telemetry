@@ -18,7 +18,11 @@ Public Class VisualizerForm
     End Sub
 
     Private Sub MessagesPopupBtn_Click(sender As Object, e As EventArgs) Handles MessagesPopupBtn.Click
+        Togglemessages(PanelToggleArguments.NoSet)
+        FormsManager.Messages.Visible = Not FormsManager.Messages.Visible
+    End Sub
 
+    Private Sub Togglemessages(Action As PanelToggleArguments)
         Select Case Not FormsManager.Messages.Visible
             Case True
                 FormsManager.Messages.MainPanel.Controls.Add(PanelManager.Messages)
@@ -29,6 +33,5 @@ Public Class VisualizerForm
                 PanelManager.Messages.BringToFront()
                 MessagesPanel.Visible = Not Me.Width < 700
         End Select
-        FormsManager.Messages.Visible = Not FormsManager.Messages.Visible
     End Sub
 End Class

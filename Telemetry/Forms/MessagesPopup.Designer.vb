@@ -32,7 +32,7 @@ Partial Class MessagesPopup
         Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanel.Location = New System.Drawing.Point(24, 61)
         Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(646, 377)
+        Me.MainPanel.Size = New System.Drawing.Size(256, 377)
         Me.MainPanel.TabIndex = 0
         '
         'MessagesHeader
@@ -43,7 +43,7 @@ Partial Class MessagesPopup
         Me.MessagesHeader.ForeColor = System.Drawing.Color.DimGray
         Me.MessagesHeader.Location = New System.Drawing.Point(24, 24)
         Me.MessagesHeader.Name = "MessagesHeader"
-        Me.MessagesHeader.Size = New System.Drawing.Size(646, 37)
+        Me.MessagesHeader.Size = New System.Drawing.Size(256, 37)
         Me.MessagesHeader.TabIndex = 2
         Me.MessagesHeader.Text = "MESSAGES"
         '
@@ -52,15 +52,14 @@ Partial Class MessagesPopup
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
-        Me.ClientSize = New System.Drawing.Size(694, 462)
+        Me.ClientSize = New System.Drawing.Size(304, 462)
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.MessagesHeader)
+        Me.MinimumSize = New System.Drawing.Size(320, 0)
         Me.Name = "MessagesPopup"
         Me.Padding = New System.Windows.Forms.Padding(24)
-        Me.ShowIcon = False
-        Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
-        Me.Text = "Messages"
+        Me.Text = "Télémétrie [Messages]"
         Me.ResumeLayout(False)
 
     End Sub
