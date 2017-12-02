@@ -1,6 +1,3 @@
-# Telemetry
-Projet de logiciel pour l'affichage des informations de télémétrie d'une voiture solaire via un arduino ou rasbery pi
-
 ## :page_facing_up: Le projet 
 
 ### Description:
