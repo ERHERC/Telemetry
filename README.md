@@ -38,3 +38,13 @@ Pour éditer le projet , veuillez [télécharger](https://www.visualstudio.com/f
  * [A Quick and Dirty WCF Service and Client (Using WCF and Winforms) - **CodeProject**](https://www.codeproject.com/Articles/18789/A-Quick-and-Dirty-WCF-Service-and-Client-Using-WCF) pour les exemples de code pour l'utilisation de WCF
  * [Disable Close Button[X] in the Vb.Net - **CodeProject**](https://www.codeproject.com/Questions/354393/Disable-Close-Button-X-in-the-Vb-Net) pour la désactivation du boutton fermer des fenêtres popup
  * [How to detect arrow keys in vb.net? - **MSDN**](https://social.msdn.microsoft.com/Forums/windows/en-US/ffeeea42-f6ba-420f-827e-74879fd29b26/how-to-detect-arrow-keys-in-vbnet?forum=winforms) pour la capture des touches de navigation dans la fenêtre 
+
+### Codes secrets:
+
+Voici des codes à entrer dans la fenêtre du logiciel (à taper quand elle est active)
+
+Code|Action
+----|------
+Haut Haut Bas Bas Gauche Droite Gauche Droite B A|Running in the 90's
+N A N I|Omae Wa Mou Shindeiru ... **NANI ?!**
+G H O S T|Le logiciel devient transparent pendant 2 secondes
