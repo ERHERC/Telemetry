@@ -41,7 +41,7 @@ Pour éditer le projet , veuillez [télécharger](https://www.visualstudio.com/f
 
 ### Codes secrets:
 
-Voici des codes à entrer dans la fenêtre du logiciel (à taper quand elle est active)
+Voici des codes à entrer dans la fenêtre du logiciel (à taper quand elle est active et assez rapidement)
 
 Code|Action
 ----|------
