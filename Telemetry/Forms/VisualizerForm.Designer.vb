@@ -30,11 +30,13 @@ Partial Class VisualizerForm
         Me.PingPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.PingLabel = New System.Windows.Forms.Label()
         Me.PingIcon = New System.Windows.Forms.PictureBox()
+        Me.BatteryPanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.BatteryIcon = New System.Windows.Forms.PictureBox()
+        Me.BatteryBarOutterBorder = New System.Windows.Forms.Panel()
+        Me.BatteryBarInnerBorder = New System.Windows.Forms.Panel()
+        Me.BatteryBarResizer = New System.Windows.Forms.TableLayoutPanel()
+        Me.BatteryBarProgress = New System.Windows.Forms.Panel()
         Me.MessagesPanel = New System.Windows.Forms.Panel()
-        Me.MessagesPopupTransmittedLbl = New System.Windows.Forms.Label()
-        Me.MessagesHeader = New System.Windows.Forms.Label()
-        Me.BottomPanel = New System.Windows.Forms.Panel()
-        Me.MessagesPopupBtn = New System.Windows.Forms.Button()
         Me.MessagesContent = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel5 = New System.Windows.Forms.Panel()
@@ -48,20 +50,23 @@ Partial Class VisualizerForm
         Me.AlertContent = New System.Windows.Forms.Panel()
         Me.AlertBoxClose = New System.Windows.Forms.Button()
         Me.AlertBoxContent = New System.Windows.Forms.Label()
-        Me.BatteryBarOutterBorder = New System.Windows.Forms.Panel()
-        Me.BatteryBarInnerBorder = New System.Windows.Forms.Panel()
-        Me.BatteryBarResizer = New System.Windows.Forms.TableLayoutPanel()
-        Me.BatteryBarProgress = New System.Windows.Forms.Panel()
-        Me.BatteryIcon = New System.Windows.Forms.PictureBox()
-        Me.BatteryPanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.MessagesPopupTransmittedLbl = New System.Windows.Forms.Label()
+        Me.MessagesHeader = New System.Windows.Forms.Label()
+        Me.BottomPanel = New System.Windows.Forms.Panel()
+        Me.BottomBarLayoutManager = New System.Windows.Forms.TableLayoutPanel()
+        Me.MessagesPopupBtn = New System.Windows.Forms.Button()
         CType(Me.VideoOutput, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainPanel.SuspendLayout()
         Me.VideoOutputPanel.SuspendLayout()
         Me.VideoOutputHeaderPanel.SuspendLayout()
         Me.PingPanel.SuspendLayout()
         CType(Me.PingIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BatteryPanel.SuspendLayout()
+        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.BatteryBarOutterBorder.SuspendLayout()
+        Me.BatteryBarInnerBorder.SuspendLayout()
+        Me.BatteryBarResizer.SuspendLayout()
         Me.MessagesPanel.SuspendLayout()
-        Me.BottomPanel.SuspendLayout()
         Me.MessagesContent.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -69,11 +74,8 @@ Partial Class VisualizerForm
         Me.Panel2.SuspendLayout()
         Me.AlertBox.SuspendLayout()
         Me.AlertContent.SuspendLayout()
-        Me.BatteryBarOutterBorder.SuspendLayout()
-        Me.BatteryBarInnerBorder.SuspendLayout()
-        Me.BatteryBarResizer.SuspendLayout()
-        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.BatteryPanel.SuspendLayout()
+        Me.BottomPanel.SuspendLayout()
+        Me.BottomBarLayoutManager.SuspendLayout()
         Me.SuspendLayout()
         '
         'VideoOutput
@@ -83,7 +85,7 @@ Partial Class VisualizerForm
         Me.VideoOutput.Image = Global.Telemetry.My.Resources.Resources.animated_loader
         Me.VideoOutput.Location = New System.Drawing.Point(0, 37)
         Me.VideoOutput.Name = "VideoOutput"
-        Me.VideoOutput.Size = New System.Drawing.Size(685, 380)
+        Me.VideoOutput.Size = New System.Drawing.Size(672, 380)
         Me.VideoOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.VideoOutput.TabIndex = 0
         Me.VideoOutput.TabStop = False
@@ -95,7 +97,7 @@ Partial Class VisualizerForm
         Me.VideoOutputHeader.ForeColor = System.Drawing.Color.LightGray
         Me.VideoOutputHeader.Location = New System.Drawing.Point(0, 0)
         Me.VideoOutputHeader.Name = "VideoOutputHeader"
-        Me.VideoOutputHeader.Size = New System.Drawing.Size(559, 37)
+        Me.VideoOutputHeader.Size = New System.Drawing.Size(546, 37)
         Me.VideoOutputHeader.TabIndex = 1
         Me.VideoOutputHeader.Text = "SIGNAL VIDEO"
         '
@@ -110,7 +112,7 @@ Partial Class VisualizerForm
         Me.MainPanel.Location = New System.Drawing.Point(0, 0)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.Padding = New System.Windows.Forms.Padding(24)
-        Me.MainPanel.Size = New System.Drawing.Size(1037, 513)
+        Me.MainPanel.Size = New System.Drawing.Size(1024, 513)
         Me.MainPanel.TabIndex = 2
         '
         'VideoOutputPanel
@@ -122,7 +124,7 @@ Partial Class VisualizerForm
         Me.VideoOutputPanel.Location = New System.Drawing.Point(280, 24)
         Me.VideoOutputPanel.Margin = New System.Windows.Forms.Padding(8)
         Me.VideoOutputPanel.Name = "VideoOutputPanel"
-        Me.VideoOutputPanel.Size = New System.Drawing.Size(685, 417)
+        Me.VideoOutputPanel.Size = New System.Drawing.Size(672, 417)
         Me.VideoOutputPanel.TabIndex = 1
         '
         'VideoOutputHeaderPanel
@@ -132,7 +134,7 @@ Partial Class VisualizerForm
         Me.VideoOutputHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.VideoOutputHeaderPanel.Location = New System.Drawing.Point(0, 0)
         Me.VideoOutputHeaderPanel.Name = "VideoOutputHeaderPanel"
-        Me.VideoOutputHeaderPanel.Size = New System.Drawing.Size(685, 37)
+        Me.VideoOutputHeaderPanel.Size = New System.Drawing.Size(672, 37)
         Me.VideoOutputHeaderPanel.TabIndex = 2
         '
         'PingPanel
@@ -144,7 +146,7 @@ Partial Class VisualizerForm
         Me.PingPanel.Controls.Add(Me.PingLabel, 1, 0)
         Me.PingPanel.Controls.Add(Me.PingIcon, 0, 0)
         Me.PingPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PingPanel.Location = New System.Drawing.Point(559, 0)
+        Me.PingPanel.Location = New System.Drawing.Point(546, 0)
         Me.PingPanel.Margin = New System.Windows.Forms.Padding(0)
         Me.PingPanel.Name = "PingPanel"
         Me.PingPanel.RowCount = 1
@@ -177,6 +179,83 @@ Partial Class VisualizerForm
         Me.PingIcon.TabIndex = 0
         Me.PingIcon.TabStop = False
         '
+        'BatteryPanel
+        '
+        Me.BatteryPanel.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BatteryPanel.ColumnCount = 1
+        Me.BatteryPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.BatteryPanel.Controls.Add(Me.BatteryIcon, 0, 2)
+        Me.BatteryPanel.Controls.Add(Me.BatteryBarOutterBorder, 0, 1)
+        Me.BatteryPanel.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BatteryPanel.Location = New System.Drawing.Point(952, 24)
+        Me.BatteryPanel.Name = "BatteryPanel"
+        Me.BatteryPanel.RowCount = 3
+        Me.BatteryPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
+        Me.BatteryPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.BatteryPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
+        Me.BatteryPanel.Size = New System.Drawing.Size(48, 417)
+        Me.BatteryPanel.TabIndex = 4
+        '
+        'BatteryIcon
+        '
+        Me.BatteryIcon.Image = Global.Telemetry.My.Resources.Resources.Energy
+        Me.BatteryIcon.Location = New System.Drawing.Point(8, 377)
+        Me.BatteryIcon.Margin = New System.Windows.Forms.Padding(8)
+        Me.BatteryIcon.Name = "BatteryIcon"
+        Me.BatteryIcon.Size = New System.Drawing.Size(32, 32)
+        Me.BatteryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BatteryIcon.TabIndex = 0
+        Me.BatteryIcon.TabStop = False
+        '
+        'BatteryBarOutterBorder
+        '
+        Me.BatteryBarOutterBorder.BackColor = System.Drawing.Color.White
+        Me.BatteryBarOutterBorder.Controls.Add(Me.BatteryBarInnerBorder)
+        Me.BatteryBarOutterBorder.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryBarOutterBorder.Location = New System.Drawing.Point(4, 41)
+        Me.BatteryBarOutterBorder.Margin = New System.Windows.Forms.Padding(4)
+        Me.BatteryBarOutterBorder.Name = "BatteryBarOutterBorder"
+        Me.BatteryBarOutterBorder.Padding = New System.Windows.Forms.Padding(4)
+        Me.BatteryBarOutterBorder.Size = New System.Drawing.Size(40, 324)
+        Me.BatteryBarOutterBorder.TabIndex = 1
+        '
+        'BatteryBarInnerBorder
+        '
+        Me.BatteryBarInnerBorder.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BatteryBarInnerBorder.Controls.Add(Me.BatteryBarResizer)
+        Me.BatteryBarInnerBorder.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryBarInnerBorder.Location = New System.Drawing.Point(4, 4)
+        Me.BatteryBarInnerBorder.Margin = New System.Windows.Forms.Padding(0)
+        Me.BatteryBarInnerBorder.Name = "BatteryBarInnerBorder"
+        Me.BatteryBarInnerBorder.Padding = New System.Windows.Forms.Padding(4)
+        Me.BatteryBarInnerBorder.Size = New System.Drawing.Size(32, 316)
+        Me.BatteryBarInnerBorder.TabIndex = 0
+        '
+        'BatteryBarResizer
+        '
+        Me.BatteryBarResizer.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BatteryBarResizer.ColumnCount = 1
+        Me.BatteryBarResizer.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.BatteryBarResizer.Controls.Add(Me.BatteryBarProgress, 0, 1)
+        Me.BatteryBarResizer.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryBarResizer.Location = New System.Drawing.Point(4, 4)
+        Me.BatteryBarResizer.Name = "BatteryBarResizer"
+        Me.BatteryBarResizer.RowCount = 2
+        Me.BatteryBarResizer.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.BatteryBarResizer.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.BatteryBarResizer.Size = New System.Drawing.Size(24, 308)
+        Me.BatteryBarResizer.TabIndex = 0
+        '
+        'BatteryBarProgress
+        '
+        Me.BatteryBarProgress.BackColor = System.Drawing.Color.White
+        Me.BatteryBarProgress.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryBarProgress.Location = New System.Drawing.Point(0, 154)
+        Me.BatteryBarProgress.Margin = New System.Windows.Forms.Padding(0)
+        Me.BatteryBarProgress.Name = "BatteryBarProgress"
+        Me.BatteryBarProgress.Size = New System.Drawing.Size(24, 154)
+        Me.BatteryBarProgress.TabIndex = 0
+        '
         'MessagesPanel
         '
         Me.MessagesPanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -190,67 +269,18 @@ Partial Class VisualizerForm
         Me.MessagesPanel.Size = New System.Drawing.Size(256, 417)
         Me.MessagesPanel.TabIndex = 2
         '
-        'MessagesPopupTransmittedLbl
-        '
-        Me.MessagesPopupTransmittedLbl.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MessagesPopupTransmittedLbl.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessagesPopupTransmittedLbl.Location = New System.Drawing.Point(0, 37)
-        Me.MessagesPopupTransmittedLbl.Name = "MessagesPopupTransmittedLbl"
-        Me.MessagesPopupTransmittedLbl.Size = New System.Drawing.Size(256, 380)
-        Me.MessagesPopupTransmittedLbl.TabIndex = 3
-        Me.MessagesPopupTransmittedLbl.Text = "Le contenu à été transmis dans la fenêtre popup." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Fermez la fenêtre popup pour " &
-    "revenir à un affichage classique" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.MessagesPopupTransmittedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'MessagesHeader
-        '
-        Me.MessagesHeader.Dock = System.Windows.Forms.DockStyle.Top
-        Me.MessagesHeader.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MessagesHeader.ForeColor = System.Drawing.Color.DimGray
-        Me.MessagesHeader.Location = New System.Drawing.Point(0, 0)
-        Me.MessagesHeader.Name = "MessagesHeader"
-        Me.MessagesHeader.Size = New System.Drawing.Size(256, 37)
-        Me.MessagesHeader.TabIndex = 1
-        Me.MessagesHeader.Text = "MESSAGES"
-        '
-        'BottomPanel
-        '
-        Me.BottomPanel.Controls.Add(Me.MessagesPopupBtn)
-        Me.BottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.BottomPanel.Location = New System.Drawing.Point(24, 441)
-        Me.BottomPanel.Margin = New System.Windows.Forms.Padding(8)
-        Me.BottomPanel.Name = "BottomPanel"
-        Me.BottomPanel.Padding = New System.Windows.Forms.Padding(0, 4, 0, 4)
-        Me.BottomPanel.Size = New System.Drawing.Size(989, 48)
-        Me.BottomPanel.TabIndex = 3
-        '
-        'MessagesPopupBtn
-        '
-        Me.MessagesPopupBtn.AutoSize = True
-        Me.MessagesPopupBtn.BackColor = System.Drawing.Color.DimGray
-        Me.MessagesPopupBtn.Dock = System.Windows.Forms.DockStyle.Left
-        Me.MessagesPopupBtn.FlatAppearance.BorderSize = 0
-        Me.MessagesPopupBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MessagesPopupBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
-        Me.MessagesPopupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MessagesPopupBtn.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.MessagesPopupBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.MessagesPopupBtn.Location = New System.Drawing.Point(0, 4)
-        Me.MessagesPopupBtn.Name = "MessagesPopupBtn"
-        Me.MessagesPopupBtn.Size = New System.Drawing.Size(131, 40)
-        Me.MessagesPopupBtn.TabIndex = 1
-        Me.MessagesPopupBtn.Text = "MESSAGES"
-        Me.MessagesPopupBtn.UseVisualStyleBackColor = False
-        '
         'MessagesContent
         '
+        Me.MessagesContent.AutoScroll = True
+        Me.MessagesContent.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MessagesContent.Controls.Add(Me.Panel4)
         Me.MessagesContent.Controls.Add(Me.Panel1)
         Me.MessagesContent.Controls.Add(Me.AlertBox)
         Me.MessagesContent.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MessagesContent.Location = New System.Drawing.Point(0, 37)
+        Me.MessagesContent.Margin = New System.Windows.Forms.Padding(0)
         Me.MessagesContent.Name = "MessagesContent"
-        Me.MessagesContent.Padding = New System.Windows.Forms.Padding(8, 16, 8, 16)
+        Me.MessagesContent.Padding = New System.Windows.Forms.Padding(0, 16, 0, 16)
         Me.MessagesContent.Size = New System.Drawing.Size(256, 380)
         Me.MessagesContent.TabIndex = 4
         '
@@ -258,8 +288,8 @@ Partial Class VisualizerForm
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Location = New System.Drawing.Point(16, 20)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(8, 4, 8, 4)
+        Me.Panel4.Location = New System.Drawing.Point(8, 20)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(8, 4, 0, 4)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(224, 100)
         Me.Panel4.TabIndex = 5
@@ -311,8 +341,8 @@ Partial Class VisualizerForm
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Location = New System.Drawing.Point(16, 128)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(8, 4, 8, 4)
+        Me.Panel1.Location = New System.Drawing.Point(8, 128)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(8, 4, 0, 4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(224, 100)
         Me.Panel1.TabIndex = 4
@@ -364,8 +394,8 @@ Partial Class VisualizerForm
         '
         Me.AlertBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.AlertBox.Controls.Add(Me.AlertContent)
-        Me.AlertBox.Location = New System.Drawing.Point(16, 236)
-        Me.AlertBox.Margin = New System.Windows.Forms.Padding(8, 4, 8, 4)
+        Me.AlertBox.Location = New System.Drawing.Point(8, 236)
+        Me.AlertBox.Margin = New System.Windows.Forms.Padding(8, 4, 0, 4)
         Me.AlertBox.Name = "AlertBox"
         Me.AlertBox.Size = New System.Drawing.Size(224, 100)
         Me.AlertBox.TabIndex = 3
@@ -412,90 +442,83 @@ Partial Class VisualizerForm
         Me.AlertBoxContent.Text = "SIGNAL PERDU"
         Me.AlertBoxContent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'BatteryBarOutterBorder
+        'MessagesPopupTransmittedLbl
         '
-        Me.BatteryBarOutterBorder.BackColor = System.Drawing.Color.White
-        Me.BatteryBarOutterBorder.Controls.Add(Me.BatteryBarInnerBorder)
-        Me.BatteryBarOutterBorder.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BatteryBarOutterBorder.Location = New System.Drawing.Point(4, 41)
-        Me.BatteryBarOutterBorder.Margin = New System.Windows.Forms.Padding(4)
-        Me.BatteryBarOutterBorder.Name = "BatteryBarOutterBorder"
-        Me.BatteryBarOutterBorder.Padding = New System.Windows.Forms.Padding(4)
-        Me.BatteryBarOutterBorder.Size = New System.Drawing.Size(40, 324)
-        Me.BatteryBarOutterBorder.TabIndex = 1
+        Me.MessagesPopupTransmittedLbl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MessagesPopupTransmittedLbl.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MessagesPopupTransmittedLbl.Location = New System.Drawing.Point(0, 37)
+        Me.MessagesPopupTransmittedLbl.Name = "MessagesPopupTransmittedLbl"
+        Me.MessagesPopupTransmittedLbl.Size = New System.Drawing.Size(256, 380)
+        Me.MessagesPopupTransmittedLbl.TabIndex = 3
+        Me.MessagesPopupTransmittedLbl.Text = "Le contenu à été transmis dans la fenêtre popup." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Fermez la fenêtre popup pour " &
+    "revenir à un affichage classique" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.MessagesPopupTransmittedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'BatteryBarInnerBorder
+        'MessagesHeader
         '
-        Me.BatteryBarInnerBorder.BackColor = System.Drawing.Color.RoyalBlue
-        Me.BatteryBarInnerBorder.Controls.Add(Me.BatteryBarResizer)
-        Me.BatteryBarInnerBorder.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BatteryBarInnerBorder.Location = New System.Drawing.Point(4, 4)
-        Me.BatteryBarInnerBorder.Margin = New System.Windows.Forms.Padding(0)
-        Me.BatteryBarInnerBorder.Name = "BatteryBarInnerBorder"
-        Me.BatteryBarInnerBorder.Padding = New System.Windows.Forms.Padding(4)
-        Me.BatteryBarInnerBorder.Size = New System.Drawing.Size(32, 316)
-        Me.BatteryBarInnerBorder.TabIndex = 0
+        Me.MessagesHeader.Dock = System.Windows.Forms.DockStyle.Top
+        Me.MessagesHeader.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MessagesHeader.ForeColor = System.Drawing.Color.DimGray
+        Me.MessagesHeader.Location = New System.Drawing.Point(0, 0)
+        Me.MessagesHeader.Name = "MessagesHeader"
+        Me.MessagesHeader.Size = New System.Drawing.Size(256, 37)
+        Me.MessagesHeader.TabIndex = 1
+        Me.MessagesHeader.Text = "MESSAGES"
         '
-        'BatteryBarResizer
+        'BottomPanel
         '
-        Me.BatteryBarResizer.BackColor = System.Drawing.Color.RoyalBlue
-        Me.BatteryBarResizer.ColumnCount = 1
-        Me.BatteryBarResizer.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.BatteryBarResizer.Controls.Add(Me.BatteryBarProgress, 0, 1)
-        Me.BatteryBarResizer.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BatteryBarResizer.Location = New System.Drawing.Point(4, 4)
-        Me.BatteryBarResizer.Name = "BatteryBarResizer"
-        Me.BatteryBarResizer.RowCount = 2
-        Me.BatteryBarResizer.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.BatteryBarResizer.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.BatteryBarResizer.Size = New System.Drawing.Size(24, 308)
-        Me.BatteryBarResizer.TabIndex = 0
+        Me.BottomPanel.Controls.Add(Me.BottomBarLayoutManager)
+        Me.BottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BottomPanel.Location = New System.Drawing.Point(24, 441)
+        Me.BottomPanel.Margin = New System.Windows.Forms.Padding(8)
+        Me.BottomPanel.Name = "BottomPanel"
+        Me.BottomPanel.Padding = New System.Windows.Forms.Padding(0, 4, 0, 4)
+        Me.BottomPanel.Size = New System.Drawing.Size(976, 48)
+        Me.BottomPanel.TabIndex = 3
         '
-        'BatteryBarProgress
+        'BottomBarLayoutManager
         '
-        Me.BatteryBarProgress.BackColor = System.Drawing.Color.White
-        Me.BatteryBarProgress.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BatteryBarProgress.Location = New System.Drawing.Point(0, 154)
-        Me.BatteryBarProgress.Margin = New System.Windows.Forms.Padding(0)
-        Me.BatteryBarProgress.Name = "BatteryBarProgress"
-        Me.BatteryBarProgress.Size = New System.Drawing.Size(24, 154)
-        Me.BatteryBarProgress.TabIndex = 0
+        Me.BottomBarLayoutManager.ColumnCount = 3
+        Me.BottomBarLayoutManager.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.5!))
+        Me.BottomBarLayoutManager.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.0!))
+        Me.BottomBarLayoutManager.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 37.5!))
+        Me.BottomBarLayoutManager.Controls.Add(Me.MessagesPopupBtn, 0, 0)
+        Me.BottomBarLayoutManager.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BottomBarLayoutManager.Location = New System.Drawing.Point(0, 4)
+        Me.BottomBarLayoutManager.Name = "BottomBarLayoutManager"
+        Me.BottomBarLayoutManager.RowCount = 1
+        Me.BottomBarLayoutManager.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.BottomBarLayoutManager.Size = New System.Drawing.Size(976, 40)
+        Me.BottomBarLayoutManager.TabIndex = 2
         '
-        'BatteryIcon
+        'MessagesPopupBtn
         '
-        Me.BatteryIcon.Image = Global.Telemetry.My.Resources.Resources.Energy
-        Me.BatteryIcon.Location = New System.Drawing.Point(8, 377)
-        Me.BatteryIcon.Margin = New System.Windows.Forms.Padding(8)
-        Me.BatteryIcon.Name = "BatteryIcon"
-        Me.BatteryIcon.Size = New System.Drawing.Size(32, 32)
-        Me.BatteryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BatteryIcon.TabIndex = 0
-        Me.BatteryIcon.TabStop = False
-        '
-        'BatteryPanel
-        '
-        Me.BatteryPanel.BackColor = System.Drawing.Color.RoyalBlue
-        Me.BatteryPanel.ColumnCount = 1
-        Me.BatteryPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.BatteryPanel.Controls.Add(Me.BatteryIcon, 0, 2)
-        Me.BatteryPanel.Controls.Add(Me.BatteryBarOutterBorder, 0, 1)
-        Me.BatteryPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BatteryPanel.Location = New System.Drawing.Point(965, 24)
-        Me.BatteryPanel.Name = "BatteryPanel"
-        Me.BatteryPanel.RowCount = 3
-        Me.BatteryPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
-        Me.BatteryPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.BatteryPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.BatteryPanel.Size = New System.Drawing.Size(48, 417)
-        Me.BatteryPanel.TabIndex = 4
+        Me.MessagesPopupBtn.AutoSize = True
+        Me.MessagesPopupBtn.BackColor = System.Drawing.Color.DimGray
+        Me.MessagesPopupBtn.Dock = System.Windows.Forms.DockStyle.Left
+        Me.MessagesPopupBtn.FlatAppearance.BorderSize = 0
+        Me.MessagesPopupBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.MessagesPopupBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
+        Me.MessagesPopupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MessagesPopupBtn.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.MessagesPopupBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.MessagesPopupBtn.Location = New System.Drawing.Point(0, 0)
+        Me.MessagesPopupBtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.MessagesPopupBtn.Name = "MessagesPopupBtn"
+        Me.MessagesPopupBtn.Size = New System.Drawing.Size(131, 40)
+        Me.MessagesPopupBtn.TabIndex = 1
+        Me.MessagesPopupBtn.Text = "MESSAGES"
+        Me.MessagesPopupBtn.UseVisualStyleBackColor = False
         '
         'VisualizerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1037, 513)
+        Me.ClientSize = New System.Drawing.Size(1024, 513)
         Me.Controls.Add(Me.MainPanel)
+        Me.KeyPreview = True
         Me.Name = "VisualizerForm"
+        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Télémétrie [Fenêtre principale]"
         CType(Me.VideoOutput, System.ComponentModel.ISupportInitialize).EndInit()
@@ -506,9 +529,12 @@ Partial Class VisualizerForm
         Me.PingPanel.ResumeLayout(False)
         Me.PingPanel.PerformLayout()
         CType(Me.PingIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BatteryPanel.ResumeLayout(False)
+        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BatteryBarOutterBorder.ResumeLayout(False)
+        Me.BatteryBarInnerBorder.ResumeLayout(False)
+        Me.BatteryBarResizer.ResumeLayout(False)
         Me.MessagesPanel.ResumeLayout(False)
-        Me.BottomPanel.ResumeLayout(False)
-        Me.BottomPanel.PerformLayout()
         Me.MessagesContent.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
@@ -519,11 +545,9 @@ Partial Class VisualizerForm
         Me.AlertBox.ResumeLayout(False)
         Me.AlertContent.ResumeLayout(False)
         Me.AlertContent.PerformLayout()
-        Me.BatteryBarOutterBorder.ResumeLayout(False)
-        Me.BatteryBarInnerBorder.ResumeLayout(False)
-        Me.BatteryBarResizer.ResumeLayout(False)
-        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.BatteryPanel.ResumeLayout(False)
+        Me.BottomPanel.ResumeLayout(False)
+        Me.BottomBarLayoutManager.ResumeLayout(False)
+        Me.BottomBarLayoutManager.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -560,4 +584,5 @@ Partial Class VisualizerForm
     Friend WithEvents BatteryBarInnerBorder As Panel
     Friend WithEvents BatteryBarResizer As TableLayoutPanel
     Friend WithEvents BatteryBarProgress As Panel
+    Friend WithEvents BottomBarLayoutManager As TableLayoutPanel
 End Class

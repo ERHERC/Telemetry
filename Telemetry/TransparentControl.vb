@@ -2,6 +2,7 @@ Imports System.ComponentModel
 Imports System.ComponentModel.Design
 Imports System.Windows.Forms.Design
 
+#Disable Warning
 <Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", GetType(IDesigner))> _
 <DesignerAttribute(GetType(TransparentControlDesigner))> _
 Public Class TransparentControl
@@ -299,3 +300,4 @@ Public Class TransparentControlActionList
 #End Region
 
 End Class
+#Enable Warning
