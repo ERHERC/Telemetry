@@ -38,7 +38,7 @@ Pour éditer le projet , veuillez [télécharger](https://www.visualstudio.com/f
  * [A Quick and Dirty WCF Service and Client (Using WCF and Winforms) - **CodeProject**](https://www.codeproject.com/Articles/18789/A-Quick-and-Dirty-WCF-Service-and-Client-Using-WCF) pour les exemples de code pour l'utilisation de WCF
  * [Disable Close Button[X] in the Vb.Net - **CodeProject**](https://www.codeproject.com/Questions/354393/Disable-Close-Button-X-in-the-Vb-Net) pour la désactivation du boutton fermer des fenêtres popup
  * [How to detect arrow keys in vb.net? - **MSDN Forums**](https://social.msdn.microsoft.com/Forums/windows/en-US/ffeeea42-f6ba-420f-827e-74879fd29b26/how-to-detect-arrow-keys-in-vbnet?forum=winforms) pour la capture des touches de navigation dans la fenêtre 
- * [TableLayoutPanel resize column width at runtime, ColumnStyles collection isn't updated - **MSDN Forums**](https://social.msdn.microsoft.com/Forums/en-US/fc62c7c9-2a3f-4944-ac0d-39b088cda63b/tablelayoutpanel-resize-column-width-at-runtime-columnstyles-collection-isnt-updated?forum=winforms)
+ * [TableLayoutPanel resize column width at runtime, ColumnStyles collection isn't updated - **MSDN Forums**](https://social.msdn.microsoft.com/Forums/en-US/fc62c7c9-2a3f-4944-ac0d-39b088cda63b/tablelayoutpanel-resize-column-width-at-runtime-columnstyles-collection-isnt-updated?forum=winforms) pour la modification des colones dans les table layout panels lors de l'exécution
 ### Codes secrets:
 
 Voici des codes à entrer dans la fenêtre du logiciel (à taper quand elle est active et assez rapidement)
