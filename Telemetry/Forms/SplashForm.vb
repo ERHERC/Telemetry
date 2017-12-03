@@ -32,6 +32,8 @@ Public NotInheritable Class SplashForm
         'Copyright info
 
         'Copyright.Text = My.Application.Info.Copyright
+
+        VersionLabel.Text = "Version " & My.Application.Info.Version.Major & "." & My.Application.Info.Version.Minor & "." & My.Application.Info.Version.Build
     End Sub
 
 End Class

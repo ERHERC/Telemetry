@@ -61,6 +61,24 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property _Exit() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("_Exit", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property AH() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("AH", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property animated_loader() As System.Drawing.Bitmap
@@ -96,6 +114,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("Signal", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property Startup() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("Startup", resourceCulture)
             End Get
         End Property
         

@@ -55,9 +55,11 @@ Partial Class MessagesPopup
         Me.ClientSize = New System.Drawing.Size(304, 462)
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.MessagesHeader)
-        Me.MinimumSize = New System.Drawing.Size(320, 0)
+        Me.MinimizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(320, 38)
         Me.Name = "MessagesPopup"
         Me.Padding = New System.Windows.Forms.Padding(24)
+        Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.Text = "Télémétrie [Messages]"
         Me.ResumeLayout(False)

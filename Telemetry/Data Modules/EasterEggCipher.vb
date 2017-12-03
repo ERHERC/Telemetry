@@ -17,6 +17,12 @@ Module EasterEggCipher
             Keys.Clear()
         End If
 
+        If Code.Contains("DENIS") OrElse Code.Contains("AH") Then
+            'Code DENIS ?!
+            My.Computer.Audio.Play(My.Resources.AH, AudioPlayMode.Background)
+            Keys.Clear()
+        End If
+
         If Code.Contains("GHOST") Then
             For I = 1 To 0.5D Step -0.025D
                 FormsManager.MainForm.Opacity = I

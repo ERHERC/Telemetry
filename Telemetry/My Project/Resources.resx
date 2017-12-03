@@ -145,4 +145,13 @@
   <data name="NANI" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NANI.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="AH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AH.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Startup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Startup.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

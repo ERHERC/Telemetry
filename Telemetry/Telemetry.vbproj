@@ -13,7 +13,8 @@
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -269,6 +270,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\NANI.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AH.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Startup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
