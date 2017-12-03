@@ -20,7 +20,7 @@ Public Class VisualizerForm
         PanelManager.VideoOutput = Me.VideoOutputPanel
         PanelManager.Messages = Me.MessagesContent
         PanelManager.Battery = Me.BatteryPanel
-
+        FormsManager.MainForm = Me
         FormsManager.Messages = New MessagesPopup()
 
         SecretCode = New Queue(Of Keys)
