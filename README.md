@@ -33,8 +33,8 @@ Pour éditer le projet , veuillez [télécharger](https://www.visualstudio.com/f
 
 ### Technologies tierces et remerciements:
 
- * [Wait .5 seconds before continuing code VB.net - StackOverflow](https://stackoverflow.com/a/36362504) pour la fonction attendre qui ne bloque pas le logiciel (A céssé de fonctionner)
- * [A Beginner's Tutorial for Understanding Windows Communication Foundation (WCF) - CodeProject](https://www.codeproject.com/Articles/406096/A-beginners-tutorial-for-understanding-Windows) pour le guide d'utilisation des services WCF
- * [A Quick and Dirty WCF Service and Client (Using WCF and Winforms) - CodeProject](https://www.codeproject.com/Articles/18789/A-Quick-and-Dirty-WCF-Service-and-Client-Using-WCF) pour les exemples de code pour l'utilisation de WCF
- * [Disable Close Button[X] in the Vb.Net - CodeProject](https://www.codeproject.com/Questions/354393/Disable-Close-Button-X-in-the-Vb-Net) pour la désactivation du boutton fermer des fenêtres popup
-
+ * [Wait .5 seconds before continuing code VB.net - **StackOverflow**](https://stackoverflow.com/a/36362504) pour la fonction attendre qui ne bloque pas le logiciel (A céssé de fonctionner)
+ * [A Beginner's Tutorial for Understanding Windows Communication Foundation (WCF) - **CodeProject**](https://www.codeproject.com/Articles/406096/A-beginners-tutorial-for-understanding-Windows) pour le guide d'utilisation des services WCF
+ * [A Quick and Dirty WCF Service and Client (Using WCF and Winforms) - **CodeProject**](https://www.codeproject.com/Articles/18789/A-Quick-and-Dirty-WCF-Service-and-Client-Using-WCF) pour les exemples de code pour l'utilisation de WCF
+ * [Disable Close Button[X] in the Vb.Net - **CodeProject**](https://www.codeproject.com/Questions/354393/Disable-Close-Button-X-in-the-Vb-Net) pour la désactivation du boutton fermer des fenêtres popup
+ * [How to detect arrow keys in vb.net? - **MSDN**](https://social.msdn.microsoft.com/Forums/windows/en-US/ffeeea42-f6ba-420f-827e-74879fd29b26/how-to-detect-arrow-keys-in-vbnet?forum=winforms) pour la capture des touches de navigation dans la fenêtre 
