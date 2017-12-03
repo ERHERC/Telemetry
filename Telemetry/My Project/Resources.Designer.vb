@@ -81,6 +81,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property NANI() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("NANI", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Signal() As System.Drawing.Bitmap

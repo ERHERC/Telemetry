@@ -10,5 +10,11 @@ Module EasterEggCipher
             My.Computer.Audio.Play(My.Resources.Wtf, AudioPlayMode.Background)
             Keys.Clear()
         End If
+
+        If Code.Contains("NANI") Then
+            'Code NANI ?!
+            My.Computer.Audio.Play(My.Resources.NANI, AudioPlayMode.Background)
+            Keys.Clear()
+        End If
     End Sub
 End Module

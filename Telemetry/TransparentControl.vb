@@ -9,7 +9,7 @@ Public Class TransparentControl
 
     Inherits Control
 
-#Region " Field "
+#Region "Field"
 
     Private m_transparent As Boolean
     Private m_transparentColor As Color
@@ -19,10 +19,9 @@ Public Class TransparentControl
 
 #End Region
 
-#Region " Constructor "
+#Region "Constructor"
 
     Public Sub New()
-
         SetStyle(ControlStyles.SupportsTransparentBackColor, True)
         SetStyle(ControlStyles.Opaque, False)
         SetStyle(ControlStyles.DoubleBuffer, True)
@@ -34,13 +33,11 @@ Public Class TransparentControl
         m_transparentColor = Color.OliveDrab
         m_opacity = 1.0R
         m_backcolor = Color.Transparent
-
-
     End Sub
 
 #End Region
 
-#Region " Property "
+#Region "Property"
 
     <System.ComponentModel.Browsable(False)> _
     <System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)> _
@@ -130,7 +127,7 @@ Public Class TransparentControl
 
 #End Region
 
-#Region " Event "
+#Region "Event"
 
     Protected Overrides Sub OnPaint(ByVal e As System.Windows.Forms.PaintEventArgs)
         MyBase.OnPaint(e)
@@ -146,7 +143,7 @@ Public Class TransparentControl
 
 #End Region
 
-#Region " Method "
+#Region "Method"
 
     Public Overridable Sub DrawTransparentBackground(ByVal g As Graphics, ByVal control As TransparentControl)
 
