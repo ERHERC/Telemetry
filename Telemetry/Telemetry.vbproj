@@ -194,6 +194,7 @@
     <Compile Include="TCP\IntercomFunctions.vb" />
     <Compile Include="TCP\IntercomInterface.vb" />
     <Compile Include="TCP\Intercom.vb" />
+    <Compile Include="TODO.vb" />
     <Compile Include="Tools.vb" />
     <Compile Include="TransparentControl.vb">
       <SubType>Component</SubType>
