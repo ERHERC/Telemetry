@@ -41,7 +41,7 @@ Pour éditer le projet , veuillez [télécharger](https://www.visualstudio.com/f
  * [TableLayoutPanel resize column width at runtime, ColumnStyles collection isn't updated - **MSDN Forums**](https://social.msdn.microsoft.com/Forums/en-US/fc62c7c9-2a3f-4944-ac0d-39b088cda63b/tablelayoutpanel-resize-column-width-at-runtime-columnstyles-collection-isnt-updated?forum=winforms) pour la modification des colones dans les table layout panels lors de l'exécution
  * [Live Video from Raspberry Pi to .NET - **CodeProject**](https://www.codeproject.com/Articles/810004/Live-Video-from-Raspberry-Pi-to-NET) pour le stream vidéo Voiture -> PC
  * [Control Raspberry Pi with another Program - **Raspberry Forums**](https://www.raspberrypi.org/forums/viewtopic.php?t=34019) pour la communication .NET <--> Hardware
- * [Package Manager Console - **MSDN Documentation**](https://docs.microsoft.com/en-us/nuget/tools/package-manager-console)
+ * [Package Manager Console - **MSDN Documentation**](https://docs.microsoft.com/en-us/nuget/tools/package-manager-console) pour l'utilisation du gestionnaire de packages
 ### Codes secrets:
 
 Voici des codes à entrer dans la fenêtre du logiciel (à taper quand elle est active et assez rapidement)
