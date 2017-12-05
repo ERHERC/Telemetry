@@ -16,7 +16,7 @@ Public Class VisualizerForm
     Public Sub New()
         ' This call is required by the designer.
         InitializeComponent()
-        ' Add any initialization after the InitializeComponent() call.
+        ' .Add any initialization after the InitializeComponent() call.
         SecretCode = New Queue(Of Keys)
     End Sub
     Private Sub VisualizerForm_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
