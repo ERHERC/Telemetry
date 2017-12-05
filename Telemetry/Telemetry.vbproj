@@ -194,10 +194,29 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Serializable\Data\AppConfig\AppConfig.vb" />
+    <Compile Include="Serializable\Data\Display\Display.vb" />
+    <Compile Include="Serializable\Data\Display\InterfaceColor.vb" />
+    <Compile Include="Serializable\Data\Display\News.vb" />
+    <Compile Include="Serializable\Data\Display\Product.vb" />
+    <Compile Include="Serializable\Data\DownloadManifest\ContentFile.vb" />
+    <Compile Include="Serializable\Data\DownloadManifest\DownloadManifest.vb" />
+    <Compile Include="Serializable\Data\DownloadManifest\FileRepleceMethod.vb" />
+    <Compile Include="Serializable\Data\LanguageFile\LanguageFile.vb" />
+    <Compile Include="Serializable\Data\Updater\Updater.vb" />
+    <Compile Include="Serializable\Data\Versions\Version.vb" />
+    <Compile Include="Serializable\Data\Versions\Versions.vb" />
+    <Compile Include="Serializable\Serializer\GenericSerializer.vb" />
     <Compile Include="TCP\IntercomApiManager.vb" />
     <Compile Include="TCP\IntercomFunctions.vb" />
     <Compile Include="TCP\IntercomInterface.vb" />
     <Compile Include="TCP\Intercom.vb" />
+    <Compile Include="Templates\StyledForm.Designer.vb">
+      <DependentUpon>StyledForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\StyledForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TODO.vb" />
     <Compile Include="Tools.vb" />
     <Compile Include="TransparentControl.vb">
@@ -222,6 +241,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\StyledForm.resx">
+      <DependentUpon>StyledForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +308,7 @@
   <ItemGroup>
     <None Include="Resources\Exit.wav" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
