@@ -14,7 +14,7 @@ Public Class MainForm
         ' This call is required by the designer.
         InitializeComponent()
 
-        ' Add any initialization after the InitializeComponent() call.
+        ' .Add any initialization after the InitializeComponent() call.
 
         SpeedBar_Circle_Pencil = New Pen(Color.FromArgb(128, 192, 192, 192), 16)
         SpeedBar_Background_Pencil = New Pen(Color.FromArgb(192, 192, 192, 192), 24)
