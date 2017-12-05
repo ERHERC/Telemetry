@@ -1,3 +1,5 @@
+Imports System.Windows.Forms
+
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class StyledForm
     Inherits System.Windows.Forms.Form

@@ -167,12 +167,6 @@
     <Compile Include="Data Modules\EasterEggCipher.vb" />
     <Compile Include="Enums\PanelToggleArguments.vb" />
     <Compile Include="Forms\Panel Controllers\MessagesController.vb" />
-    <Compile Include="Forms\Setup\SetupForm.Designer.vb">
-      <DependentUpon>SetupForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Setup\SetupForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\SplashForm.Designer.vb">
       <DependentUpon>SplashForm.vb</DependentUpon>
     </Compile>
@@ -216,19 +210,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Serializable\Data\AppConfig\AppConfig.vb" />
-    <Compile Include="Serializable\Data\Display\Display.vb" />
-    <Compile Include="Serializable\Data\Display\InterfaceColor.vb" />
-    <Compile Include="Serializable\Data\Display\News.vb" />
-    <Compile Include="Serializable\Data\Display\Product.vb" />
-    <Compile Include="Serializable\Data\DownloadManifest\ContentFile.vb" />
-    <Compile Include="Serializable\Data\DownloadManifest\DownloadManifest.vb" />
-    <Compile Include="Serializable\Data\DownloadManifest\FileRepleceMethod.vb" />
-    <Compile Include="Serializable\Data\LanguageFile\LanguageFile.vb" />
-    <Compile Include="Serializable\Data\Updater\Updater.vb" />
-    <Compile Include="Serializable\Data\Versions\Version.vb" />
-    <Compile Include="Serializable\Data\Versions\Versions.vb" />
-    <Compile Include="Serializable\Serializer\GenericSerializer.vb" />
     <Compile Include="TCP\IntercomApiManager.vb" />
     <Compile Include="TCP\IntercomFunctions.vb" />
     <Compile Include="TCP\IntercomInterface.vb" />
@@ -330,7 +311,23 @@
   <ItemGroup>
     <None Include="Resources\Exit.wav" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Forms\Setup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Telemetry.Reusable\Telemetry.Reusable.vbproj">
+      <Project>{0bd02e80-1c77-4ebd-b154-e008235493aa}</Project>
+      <Name>Telemetry.Reusable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telemetry.Xml.Data\Telemetry.Xml.Data.vbproj">
+      <Project>{8573381c-0f92-4ddf-930e-792ae6c72bd4}</Project>
+      <Name>Telemetry.Xml.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telemetry.Xml\Telemetry.Xml.vbproj">
+      <Project>{900de052-80cd-4291-b015-605d9bd6fb14}</Project>
+      <Name>Telemetry.Xml</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

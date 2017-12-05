@@ -1,6 +1,6 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class SetupForm
-    Inherits System.Windows.Forms.Form
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class StartupDialog
+    Inherits Telemetry.StyledForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -24,6 +24,6 @@ Partial Class SetupForm
     Private Sub InitializeComponent()
         components = New System.ComponentModel.Container
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "SetupForm"
+        Me.Text = "StartupDialog"
     End Sub
 End Class

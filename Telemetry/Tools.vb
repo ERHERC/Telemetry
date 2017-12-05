@@ -5,7 +5,7 @@ Namespace Libraries
     Partial Module Tools
         Public Sub Wait(ByVal Seconds As Single)
             Static Start As Single
-            Start = VB.Timer()
+            Start = CSng(VB.Timer())
             Do While VB.Timer() < Start + Seconds
                 System.Windows.Forms.Application.DoEvents()
             Loop
@@ -56,7 +56,7 @@ Namespace Libraries
                 .Image = SourceImage
                 For Count As Integer = 0 To ImageCount - 1
                     Dim OutputImage As Bitmap = New Bitmap(ImageSize.Width, ImageSize.Height)
-                    .DrawToBitmap(Result(Count), New Rectangle(0, Count * ImageSize.Height, ImageSize.Width, ImageSize.Height))
+                    .DrawToBitmap(CType(Result(Count), Bitmap), New Rectangle(0, Count * ImageSize.Height, ImageSize.Width, ImageSize.Height))
                     Result(Count) = CType(OutputImage, Image)
                 Next
             End With
@@ -79,7 +79,7 @@ Namespace Libraries
             Return Output
         End Function
 
-        Public Function ArrayHasLength(Array As Object(), Length As Integer)
+        Public Function ArrayHasLength(Array As Object(), Length As Integer) As Boolean
             If Array.Length >= Length Then Return True Else Return False
         End Function
     End Module
