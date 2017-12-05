@@ -166,7 +166,14 @@
   <ItemGroup>
     <Compile Include="Data Modules\EasterEggCipher.vb" />
     <Compile Include="Enums\PanelToggleArguments.vb" />
-    <Compile Include="Forms\Panel Controllers\MessagesController.vb" />
+    <Compile Include="Forms\Setup\StartupDialog.Designer.vb" />
+    <Compile Include="Panel Controllers\MessagesController.vb" />
+    <Compile Include="Forms\Setup\StartupForm.Designer.vb">
+      <DependentUpon>StartupForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setup\StartupForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\SplashForm.Designer.vb">
       <DependentUpon>SplashForm.vb</DependentUpon>
     </Compile>
@@ -214,12 +221,6 @@
     <Compile Include="TCP\IntercomFunctions.vb" />
     <Compile Include="TCP\IntercomInterface.vb" />
     <Compile Include="TCP\Intercom.vb" />
-    <Compile Include="Templates\StyledForm.Designer.vb">
-      <DependentUpon>StyledForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Templates\StyledForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="TODO.vb" />
     <Compile Include="Tools.vb" />
     <Compile Include="TransparentControl.vb">
@@ -233,6 +234,9 @@
     <EmbeddedResource Include="Forms\MessagesPopup.resx">
       <DependentUpon>MessagesPopup.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setup\StartupForm.resx">
+      <DependentUpon>StartupForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\SplashForm.resx">
       <DependentUpon>SplashForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -244,9 +248,6 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Templates\StyledForm.resx">
-      <DependentUpon>StyledForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -311,9 +312,7 @@
   <ItemGroup>
     <None Include="Resources\Exit.wav" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Forms\Setup\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Telemetry.Reusable\Telemetry.Reusable.vbproj">
       <Project>{0bd02e80-1c77-4ebd-b154-e008235493aa}</Project>

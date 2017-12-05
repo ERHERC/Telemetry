@@ -26,16 +26,21 @@ Partial Class VisualizerForm
         Me.MainPanel = New System.Windows.Forms.Panel()
         Me.VideoOutputPanel = New System.Windows.Forms.Panel()
         Me.VideoOutput = New System.Windows.Forms.PictureBox()
+        Me.VideoOutputStatus = New System.Windows.Forms.Panel()
+        Me.DistancePanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.DistanceLabel = New System.Windows.Forms.Label()
+        Me.SpeedPanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.SpeedLabel = New System.Windows.Forms.Label()
         Me.VideoOutputHeaderPanel = New System.Windows.Forms.Panel()
         Me.PingPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.PingLabel = New System.Windows.Forms.Label()
         Me.PingIcon = New System.Windows.Forms.PictureBox()
         Me.BatteryPanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.BatteryIcon = New System.Windows.Forms.PictureBox()
         Me.BatteryBarOutterBorder = New System.Windows.Forms.Panel()
         Me.BatteryBarInnerBorder = New System.Windows.Forms.Panel()
         Me.BatteryBarResizer = New System.Windows.Forms.TableLayoutPanel()
         Me.BatteryBarProgress = New System.Windows.Forms.Panel()
+        Me.BatteryIcon = New System.Windows.Forms.PictureBox()
         Me.MessagesPanel = New System.Windows.Forms.Panel()
         Me.MessagesContent = New System.Windows.Forms.FlowLayoutPanel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -54,28 +59,26 @@ Partial Class VisualizerForm
         Me.MessagesHeader = New System.Windows.Forms.Label()
         Me.BottomPanel = New System.Windows.Forms.Panel()
         Me.BottomBarLayoutManager = New System.Windows.Forms.TableLayoutPanel()
-        Me.MessagesPopupBtn = New System.Windows.Forms.Button()
         Me.StopwatchPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.StopwatchIcon = New System.Windows.Forms.PictureBox()
-        Me.LeftBottomColumn = New System.Windows.Forms.Panel()
         Me.StopwatchLabel = New System.Windows.Forms.Label()
+        Me.LeftBottomColumn = New System.Windows.Forms.Panel()
         Me.StopwatchPopupBtn = New System.Windows.Forms.Button()
-        Me.VideoOutputStatus = New System.Windows.Forms.Panel()
-        Me.SpeedPanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.SpeedLabel = New System.Windows.Forms.Label()
-        Me.DistancePanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.DistanceLabel = New System.Windows.Forms.Label()
+        Me.MessagesPopupBtn = New System.Windows.Forms.Button()
         Me.MainPanel.SuspendLayout()
         Me.VideoOutputPanel.SuspendLayout()
         CType(Me.VideoOutput, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.VideoOutputStatus.SuspendLayout()
+        Me.DistancePanel.SuspendLayout()
+        Me.SpeedPanel.SuspendLayout()
         Me.VideoOutputHeaderPanel.SuspendLayout()
         Me.PingPanel.SuspendLayout()
         CType(Me.PingIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BatteryPanel.SuspendLayout()
-        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BatteryBarOutterBorder.SuspendLayout()
         Me.BatteryBarInnerBorder.SuspendLayout()
         Me.BatteryBarResizer.SuspendLayout()
+        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagesPanel.SuspendLayout()
         Me.MessagesContent.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -89,9 +92,6 @@ Partial Class VisualizerForm
         Me.StopwatchPanel.SuspendLayout()
         CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LeftBottomColumn.SuspendLayout()
-        Me.VideoOutputStatus.SuspendLayout()
-        Me.SpeedPanel.SuspendLayout()
-        Me.DistancePanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'VideoOutputHeader
@@ -143,6 +143,75 @@ Partial Class VisualizerForm
         Me.VideoOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.VideoOutput.TabIndex = 0
         Me.VideoOutput.TabStop = False
+        '
+        'VideoOutputStatus
+        '
+        Me.VideoOutputStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.VideoOutputStatus.Controls.Add(Me.DistancePanel)
+        Me.VideoOutputStatus.Controls.Add(Me.SpeedPanel)
+        Me.VideoOutputStatus.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.VideoOutputStatus.Location = New System.Drawing.Point(0, 369)
+        Me.VideoOutputStatus.Name = "VideoOutputStatus"
+        Me.VideoOutputStatus.Size = New System.Drawing.Size(617, 37)
+        Me.VideoOutputStatus.TabIndex = 3
+        '
+        'DistancePanel
+        '
+        Me.DistancePanel.AutoSize = True
+        Me.DistancePanel.ColumnCount = 2
+        Me.DistancePanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.DistancePanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
+        Me.DistancePanel.Controls.Add(Me.DistanceLabel, 0, 0)
+        Me.DistancePanel.Dock = System.Windows.Forms.DockStyle.Left
+        Me.DistancePanel.Location = New System.Drawing.Point(0, 0)
+        Me.DistancePanel.Margin = New System.Windows.Forms.Padding(0)
+        Me.DistancePanel.Name = "DistancePanel"
+        Me.DistancePanel.RowCount = 1
+        Me.DistancePanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.DistancePanel.Size = New System.Drawing.Size(117, 37)
+        Me.DistancePanel.TabIndex = 4
+        '
+        'DistanceLabel
+        '
+        Me.DistanceLabel.AutoSize = True
+        Me.DistanceLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DistanceLabel.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DistanceLabel.ForeColor = System.Drawing.Color.White
+        Me.DistanceLabel.Location = New System.Drawing.Point(3, 0)
+        Me.DistanceLabel.Name = "DistanceLabel"
+        Me.DistanceLabel.Size = New System.Drawing.Size(74, 37)
+        Me.DistanceLabel.TabIndex = 4
+        Me.DistanceLabel.Text = "134 m"
+        Me.DistanceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'SpeedPanel
+        '
+        Me.SpeedPanel.AutoSize = True
+        Me.SpeedPanel.ColumnCount = 2
+        Me.SpeedPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
+        Me.SpeedPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.SpeedPanel.Controls.Add(Me.SpeedLabel, 1, 0)
+        Me.SpeedPanel.Dock = System.Windows.Forms.DockStyle.Right
+        Me.SpeedPanel.Location = New System.Drawing.Point(469, 0)
+        Me.SpeedPanel.Margin = New System.Windows.Forms.Padding(0)
+        Me.SpeedPanel.Name = "SpeedPanel"
+        Me.SpeedPanel.RowCount = 1
+        Me.SpeedPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.SpeedPanel.Size = New System.Drawing.Size(148, 37)
+        Me.SpeedPanel.TabIndex = 3
+        '
+        'SpeedLabel
+        '
+        Me.SpeedLabel.AutoSize = True
+        Me.SpeedLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SpeedLabel.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SpeedLabel.ForeColor = System.Drawing.Color.White
+        Me.SpeedLabel.Location = New System.Drawing.Point(40, 0)
+        Me.SpeedLabel.Name = "SpeedLabel"
+        Me.SpeedLabel.Size = New System.Drawing.Size(105, 37)
+        Me.SpeedLabel.TabIndex = 4
+        Me.SpeedLabel.Text = "3.6 KM/h"
+        Me.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'VideoOutputHeaderPanel
         '
@@ -213,17 +282,6 @@ Partial Class VisualizerForm
         Me.BatteryPanel.Size = New System.Drawing.Size(48, 406)
         Me.BatteryPanel.TabIndex = 4
         '
-        'BatteryIcon
-        '
-        Me.BatteryIcon.Image = Global.Telemetry.My.Resources.Resources.Energy
-        Me.BatteryIcon.Location = New System.Drawing.Point(8, 366)
-        Me.BatteryIcon.Margin = New System.Windows.Forms.Padding(8)
-        Me.BatteryIcon.Name = "BatteryIcon"
-        Me.BatteryIcon.Size = New System.Drawing.Size(32, 32)
-        Me.BatteryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.BatteryIcon.TabIndex = 0
-        Me.BatteryIcon.TabStop = False
-        '
         'BatteryBarOutterBorder
         '
         Me.BatteryBarOutterBorder.BackColor = System.Drawing.Color.White
@@ -272,6 +330,17 @@ Partial Class VisualizerForm
         Me.BatteryBarProgress.Name = "BatteryBarProgress"
         Me.BatteryBarProgress.Size = New System.Drawing.Size(24, 149)
         Me.BatteryBarProgress.TabIndex = 0
+        '
+        'BatteryIcon
+        '
+        Me.BatteryIcon.Image = Global.Telemetry.My.Resources.Resources.Energy
+        Me.BatteryIcon.Location = New System.Drawing.Point(8, 366)
+        Me.BatteryIcon.Margin = New System.Windows.Forms.Padding(8)
+        Me.BatteryIcon.Name = "BatteryIcon"
+        Me.BatteryIcon.Size = New System.Drawing.Size(32, 32)
+        Me.BatteryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BatteryIcon.TabIndex = 0
+        Me.BatteryIcon.TabStop = False
         '
         'MessagesPanel
         '
@@ -510,25 +579,6 @@ Partial Class VisualizerForm
         Me.BottomBarLayoutManager.Size = New System.Drawing.Size(921, 56)
         Me.BottomBarLayoutManager.TabIndex = 2
         '
-        'MessagesPopupBtn
-        '
-        Me.MessagesPopupBtn.AutoSize = True
-        Me.MessagesPopupBtn.BackColor = System.Drawing.Color.DimGray
-        Me.MessagesPopupBtn.Dock = System.Windows.Forms.DockStyle.Left
-        Me.MessagesPopupBtn.FlatAppearance.BorderSize = 0
-        Me.MessagesPopupBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.MessagesPopupBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
-        Me.MessagesPopupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MessagesPopupBtn.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.MessagesPopupBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.MessagesPopupBtn.Location = New System.Drawing.Point(6, 6)
-        Me.MessagesPopupBtn.Margin = New System.Windows.Forms.Padding(0)
-        Me.MessagesPopupBtn.Name = "MessagesPopupBtn"
-        Me.MessagesPopupBtn.Size = New System.Drawing.Size(131, 38)
-        Me.MessagesPopupBtn.TabIndex = 1
-        Me.MessagesPopupBtn.Text = "MESSAGES"
-        Me.MessagesPopupBtn.UseVisualStyleBackColor = False
-        '
         'StopwatchPanel
         '
         Me.StopwatchPanel.ColumnCount = 2
@@ -557,17 +607,6 @@ Partial Class VisualizerForm
         Me.StopwatchIcon.TabIndex = 0
         Me.StopwatchIcon.TabStop = False
         '
-        'LeftBottomColumn
-        '
-        Me.LeftBottomColumn.Controls.Add(Me.StopwatchPopupBtn)
-        Me.LeftBottomColumn.Controls.Add(Me.MessagesPopupBtn)
-        Me.LeftBottomColumn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.LeftBottomColumn.Location = New System.Drawing.Point(3, 3)
-        Me.LeftBottomColumn.Name = "LeftBottomColumn"
-        Me.LeftBottomColumn.Padding = New System.Windows.Forms.Padding(6)
-        Me.LeftBottomColumn.Size = New System.Drawing.Size(319, 50)
-        Me.LeftBottomColumn.TabIndex = 3
-        '
         'StopwatchLabel
         '
         Me.StopwatchLabel.Dock = System.Windows.Forms.DockStyle.Fill
@@ -580,6 +619,17 @@ Partial Class VisualizerForm
         Me.StopwatchLabel.TabIndex = 1
         Me.StopwatchLabel.Text = "00:01:27.87"
         Me.StopwatchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'LeftBottomColumn
+        '
+        Me.LeftBottomColumn.Controls.Add(Me.StopwatchPopupBtn)
+        Me.LeftBottomColumn.Controls.Add(Me.MessagesPopupBtn)
+        Me.LeftBottomColumn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.LeftBottomColumn.Location = New System.Drawing.Point(3, 3)
+        Me.LeftBottomColumn.Name = "LeftBottomColumn"
+        Me.LeftBottomColumn.Padding = New System.Windows.Forms.Padding(6)
+        Me.LeftBottomColumn.Size = New System.Drawing.Size(319, 50)
+        Me.LeftBottomColumn.TabIndex = 3
         '
         'StopwatchPopupBtn
         '
@@ -601,74 +651,24 @@ Partial Class VisualizerForm
         Me.StopwatchPopupBtn.Text = "CHRONOMETRE"
         Me.StopwatchPopupBtn.UseVisualStyleBackColor = False
         '
-        'VideoOutputStatus
+        'MessagesPopupBtn
         '
-        Me.VideoOutputStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.VideoOutputStatus.Controls.Add(Me.DistancePanel)
-        Me.VideoOutputStatus.Controls.Add(Me.SpeedPanel)
-        Me.VideoOutputStatus.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.VideoOutputStatus.Location = New System.Drawing.Point(0, 369)
-        Me.VideoOutputStatus.Name = "VideoOutputStatus"
-        Me.VideoOutputStatus.Size = New System.Drawing.Size(617, 37)
-        Me.VideoOutputStatus.TabIndex = 3
-        '
-        'SpeedPanel
-        '
-        Me.SpeedPanel.AutoSize = True
-        Me.SpeedPanel.ColumnCount = 2
-        Me.SpeedPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
-        Me.SpeedPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.SpeedPanel.Controls.Add(Me.SpeedLabel, 1, 0)
-        Me.SpeedPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.SpeedPanel.Location = New System.Drawing.Point(469, 0)
-        Me.SpeedPanel.Margin = New System.Windows.Forms.Padding(0)
-        Me.SpeedPanel.Name = "SpeedPanel"
-        Me.SpeedPanel.RowCount = 1
-        Me.SpeedPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.SpeedPanel.Size = New System.Drawing.Size(148, 37)
-        Me.SpeedPanel.TabIndex = 3
-        '
-        'SpeedLabel
-        '
-        Me.SpeedLabel.AutoSize = True
-        Me.SpeedLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SpeedLabel.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SpeedLabel.ForeColor = System.Drawing.Color.White
-        Me.SpeedLabel.Location = New System.Drawing.Point(40, 0)
-        Me.SpeedLabel.Name = "SpeedLabel"
-        Me.SpeedLabel.Size = New System.Drawing.Size(105, 37)
-        Me.SpeedLabel.TabIndex = 4
-        Me.SpeedLabel.Text = "3.6 KM/h"
-        Me.SpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'DistancePanel
-        '
-        Me.DistancePanel.AutoSize = True
-        Me.DistancePanel.ColumnCount = 2
-        Me.DistancePanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.DistancePanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
-        Me.DistancePanel.Controls.Add(Me.DistanceLabel, 0, 0)
-        Me.DistancePanel.Dock = System.Windows.Forms.DockStyle.Left
-        Me.DistancePanel.Location = New System.Drawing.Point(0, 0)
-        Me.DistancePanel.Margin = New System.Windows.Forms.Padding(0)
-        Me.DistancePanel.Name = "DistancePanel"
-        Me.DistancePanel.RowCount = 1
-        Me.DistancePanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.DistancePanel.Size = New System.Drawing.Size(117, 37)
-        Me.DistancePanel.TabIndex = 4
-        '
-        'DistanceLabel
-        '
-        Me.DistanceLabel.AutoSize = True
-        Me.DistanceLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DistanceLabel.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DistanceLabel.ForeColor = System.Drawing.Color.White
-        Me.DistanceLabel.Location = New System.Drawing.Point(3, 0)
-        Me.DistanceLabel.Name = "DistanceLabel"
-        Me.DistanceLabel.Size = New System.Drawing.Size(74, 37)
-        Me.DistanceLabel.TabIndex = 4
-        Me.DistanceLabel.Text = "134 m"
-        Me.DistanceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.MessagesPopupBtn.AutoSize = True
+        Me.MessagesPopupBtn.BackColor = System.Drawing.Color.DimGray
+        Me.MessagesPopupBtn.Dock = System.Windows.Forms.DockStyle.Left
+        Me.MessagesPopupBtn.FlatAppearance.BorderSize = 0
+        Me.MessagesPopupBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.MessagesPopupBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray
+        Me.MessagesPopupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MessagesPopupBtn.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold)
+        Me.MessagesPopupBtn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.MessagesPopupBtn.Location = New System.Drawing.Point(6, 6)
+        Me.MessagesPopupBtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.MessagesPopupBtn.Name = "MessagesPopupBtn"
+        Me.MessagesPopupBtn.Size = New System.Drawing.Size(131, 38)
+        Me.MessagesPopupBtn.TabIndex = 1
+        Me.MessagesPopupBtn.Text = "MESSAGES"
+        Me.MessagesPopupBtn.UseVisualStyleBackColor = False
         '
         'VisualizerForm
         '
@@ -679,22 +679,31 @@ Partial Class VisualizerForm
         Me.KeyPreview = True
         Me.MinimumSize = New System.Drawing.Size(664, 480)
         Me.Name = "VisualizerForm"
+        Me.Opacity = 0R
         Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Télémétrie [Fenêtre principale]"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
         Me.MainPanel.ResumeLayout(False)
         Me.VideoOutputPanel.ResumeLayout(False)
         CType(Me.VideoOutput, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.VideoOutputStatus.ResumeLayout(False)
+        Me.VideoOutputStatus.PerformLayout()
+        Me.DistancePanel.ResumeLayout(False)
+        Me.DistancePanel.PerformLayout()
+        Me.SpeedPanel.ResumeLayout(False)
+        Me.SpeedPanel.PerformLayout()
         Me.VideoOutputHeaderPanel.ResumeLayout(False)
         Me.VideoOutputHeaderPanel.PerformLayout()
         Me.PingPanel.ResumeLayout(False)
         Me.PingPanel.PerformLayout()
         CType(Me.PingIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BatteryPanel.ResumeLayout(False)
-        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BatteryBarOutterBorder.ResumeLayout(False)
         Me.BatteryBarInnerBorder.ResumeLayout(False)
         Me.BatteryBarResizer.ResumeLayout(False)
+        CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MessagesPanel.ResumeLayout(False)
         Me.MessagesContent.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
@@ -712,12 +721,6 @@ Partial Class VisualizerForm
         CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.LeftBottomColumn.ResumeLayout(False)
         Me.LeftBottomColumn.PerformLayout()
-        Me.VideoOutputStatus.ResumeLayout(False)
-        Me.VideoOutputStatus.PerformLayout()
-        Me.SpeedPanel.ResumeLayout(False)
-        Me.SpeedPanel.PerformLayout()
-        Me.DistancePanel.ResumeLayout(False)
-        Me.DistancePanel.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

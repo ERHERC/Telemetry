@@ -1,6 +1,8 @@
 Imports VB = Microsoft.VisualBasic
 
 Public Class VisualizerForm
+    Public DATA_VALIDATED As Boolean = False
+
     Public SecretCode As Queue(Of Keys)
     Private LastKeyStroke As Double = 0
 
@@ -48,6 +50,18 @@ Public Class VisualizerForm
         PanelManager.Battery = Me.BatteryPanel
         FormsManager.MainForm = Me
         FormsManager.Messages = New MessagesPopup()
+        FormsManager.Startup = New StartupForm()
+        FormsManager.Startup.ShowDialog()
+
+        If DATA_VALIDATED Then
+            Me.Opacity = 1
+            Me.WindowState = FormWindowState.Normal
+            Me.ShowInTaskbar = True
+        Else
+            Me.Close()
+        End If
+
+
     End Sub
 
     Private Sub MessagesPopupBtn_Click(sender As Object, e As EventArgs) Handles MessagesPopupBtn.Click
@@ -74,14 +88,16 @@ Public Class VisualizerForm
 
     Private Sub VisualizerForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
         'My.Computer.Audio.Play(My.Resources.Startup, AudioPlayMode.Background)
+
     End Sub
 
     Private Sub VisualizerForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         'My.Computer.Audio.Play(My.Resources._Exit, AudioPlayMode.Background)
-
-        If MsgBox("Voulez-vous vraiment quitter ?", MessageBoxButtons.YesNo, "Quitter ?").ToString = "Yes" Then
-        Else
-            e.Cancel = True
+        If DATA_VALIDATED Then
+            If MsgBox("Voulez-vous vraiment quitter ?", MessageBoxButtons.YesNo, "Quitter ?").ToString = "Yes" Then
+            Else
+                e.Cancel = True
+            End If
         End If
     End Sub
 End Class
