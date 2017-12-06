@@ -1,5 +1,5 @@
 Public Enum PanelToggleArguments
-    NoSet = 0
-    SetTrue = 1
-    SetFalse = 2
+    Toggle = 0
+    Popup = 1
+    Rehost = 2
 End Enum

@@ -3,7 +3,7 @@ Module FormsManager
     Public MainForm As VisualizerForm
 
     'Configuration forms of the app
-    Public Startup As StartupForm
+    Public Startup As SetupForm
 
     'Pop-ups forms (for example : messages when main form becomes too small)
     Public Messages As MessagesPopup

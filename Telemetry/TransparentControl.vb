@@ -178,13 +178,13 @@ End Class
 
     Inherits System.Windows.Forms.Design.ParentControlDesigner
 
-#Region " Field "
+#Region "Field"
 
     Private lists As DesignerActionListCollection
 
 #End Region
 
-#Region " Property "
+#Region "Property"
 
     Public Overrides ReadOnly Property ActionLists() As System.ComponentModel.Design.DesignerActionListCollection
         Get
@@ -224,12 +224,12 @@ Public Class TransparentControlActionList
 
     Inherits DesignerActionList
 
-#Region " Field "
+#Region "Field"
     Private designerActionUISvc As System.ComponentModel.Design.DesignerActionUIService = Nothing
     Private tc As TransparentControl
 #End Region
 
-#Region " Constructor "
+#Region "Constructor"
     Public Sub New(ByVal component As IComponent)
         MyBase.New(component)
         tc = component
@@ -237,7 +237,7 @@ Public Class TransparentControlActionList
     End Sub
 #End Region
 
-#Region " Property "
+#Region "Property"
 
     <System.ComponentModel.DefaultValue(1.0R)> _
     <System.ComponentModel.TypeConverter(GetType(OpacityConverter))> _
@@ -272,7 +272,7 @@ Public Class TransparentControlActionList
 
 #End Region
 
-#Region " Function "
+#Region "Function"
     Private Function GetPropertyByName(ByVal propName As String) As PropertyDescriptor
 
         Dim prop As PropertyDescriptor = TypeDescriptor.GetProperties(tc)(propName)

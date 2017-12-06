@@ -50,49 +50,29 @@ Public Class VisualizerForm
         PanelManager.Battery = Me.BatteryPanel
         FormsManager.MainForm = Me
         FormsManager.Messages = New MessagesPopup()
-        FormsManager.Startup = New StartupForm()
+
+    End Sub
+
+    Private Sub MessagesPopupBtn_Click(sender As Object, e As EventArgs) Handles MessagesPopupBtn.Click
+        MessagesController.SetState(PanelToggleArguments.Toggle)
+    End Sub
+
+    Private Sub VisualizerForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+        FormsManager.Startup = New SetupForm()
         FormsManager.Startup.ShowDialog()
 
         If DATA_VALIDATED Then
             Me.Opacity = 1
             Me.WindowState = FormWindowState.Normal
             Me.ShowInTaskbar = True
+            My.Computer.Audio.Play(My.Resources.Startup, AudioPlayMode.Background)
+
         Else
             Me.Close()
         End If
-
-
-    End Sub
-
-    Private Sub MessagesPopupBtn_Click(sender As Object, e As EventArgs) Handles MessagesPopupBtn.Click
-        Togglemessages(PanelToggleArguments.NoSet)
-        FormsManager.Messages.Visible = Not FormsManager.Messages.Visible
-    End Sub
-
-    Private Sub Togglemessages(Action As PanelToggleArguments)
-        Select Case Not FormsManager.Messages.Visible
-            Case True
-                FormsManager.Messages.MainPanel.Controls.Add(PanelManager.Messages)
-                If MessagesPanel.Visible Then Libraries.Tools.Wait(1)
-                MessagesPanel.Visible = False
-            Case False
-                Me.MessagesPanel.Controls.Add(PanelManager.Messages)
-                PanelManager.Messages.BringToFront()
-                MessagesPanel.Visible = Not Me.Width < 700
-        End Select
-    End Sub
-
-    Private Sub VisualizerForm_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
-        'MsgBox(e.KeyCode.ToString())
-    End Sub
-
-    Private Sub VisualizerForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
-        'My.Computer.Audio.Play(My.Resources.Startup, AudioPlayMode.Background)
-
     End Sub
 
     Private Sub VisualizerForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        'My.Computer.Audio.Play(My.Resources._Exit, AudioPlayMode.Background)
         If DATA_VALIDATED Then
             If MsgBox("Voulez-vous vraiment quitter ?", MessageBoxButtons.YesNo, "Quitter ?").ToString = "Yes" Then
             Else
