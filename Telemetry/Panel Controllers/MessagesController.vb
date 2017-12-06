@@ -28,7 +28,7 @@ Module MessagesController
     End Sub
 
     Private Sub PopPanel(Tries As Integer)
-        If Not FormsManager.Messages Is Nothing AndAlso FormsManager.Messages.IsDisposed Then
+        If Not FormsManager.Messages Is Nothing AndAlso Not FormsManager.Messages.IsDisposed Then
             FormsManager.Messages.MainPanel.Controls.Add(PanelManager.Messages)
             If FormsManager.MainForm.MessagesPanel.Visible Then Libraries.Tools.Wait(1)
             FormsManager.MainForm.MessagesPanel.Visible = False
