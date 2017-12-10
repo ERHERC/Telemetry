@@ -83,4 +83,13 @@ Public Class VisualizerForm
             End If
         End If
     End Sub
+
+    Private Sub MenuPopupBtn_Click(sender As Object, e As EventArgs) Handles MenuPopupBtn.Click
+        Select Case Me.MenuCommandsPanel.Visible
+            Case True
+                MenuCommandsPanel.Visible = False
+            Case False
+                MenuCommandsPanel.Visible = True
+        End Select
+    End Sub
 End Class
