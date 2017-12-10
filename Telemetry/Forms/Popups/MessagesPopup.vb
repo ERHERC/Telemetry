@@ -11,10 +11,18 @@ Public Class MessagesPopup
 #End Region
 
     Private Sub MessagesPopup_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'ainPanel.Controls.Add(PanelManager.Messages.Controls.Find("MessagesContent", False)(0))
+        'MainPanel.Controls.Add(PanelManager.Messages.Controls.Find("MessagesContent", False)(0))
     End Sub
 
     Private Sub MessagesPopup_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
         If Not Me.Visible Then MessagesController.SetState(PanelToggleArguments.Toggle)
+    End Sub
+
+    Private Sub MessagesPopup_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        'MessagesController.SetState(PanelToggleArguments.Rehost)
+
+        FormsManager.MainForm.MessagesPanel.Controls.Add(PanelManager.Messages)
+        PanelManager.Messages.BringToFront()
+        FormsManager.MainForm.MessagesPanel.Visible = Not FormsManager.MainForm.Width < 700
     End Sub
 End Class

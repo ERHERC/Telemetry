@@ -58,15 +58,17 @@ Public Class VisualizerForm
     End Sub
 
     Private Sub VisualizerForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
-        FormsManager.Startup = New SetupForm()
-        FormsManager.Startup.ShowDialog()
-
+        If Not DATA_VALIDATED Then
+            FormsManager.Startup = New SetupForm()
+            FormsManager.Startup.ShowDialog()
+        End If
+        'DATA_VALIDATED = True
         If DATA_VALIDATED Then
+            IntercomApiManager.StartAPI()
             Me.Opacity = 1
             Me.WindowState = FormWindowState.Normal
             Me.ShowInTaskbar = True
             My.Computer.Audio.Play(My.Resources.Startup, AudioPlayMode.Background)
-
         Else
             Me.Close()
         End If
@@ -75,6 +77,7 @@ Public Class VisualizerForm
     Private Sub VisualizerForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If DATA_VALIDATED Then
             If MsgBox("Voulez-vous vraiment quitter ?", MessageBoxButtons.YesNo, "Quitter ?").ToString = "Yes" Then
+                IntercomApiManager.StopAPI()
             Else
                 e.Cancel = True
             End If
