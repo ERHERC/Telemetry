@@ -104,7 +104,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.MainPanel)
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Telemetry - Debugging"
+        Me.Text = "Telemetry [Bac à sable]"
         Me.MainPanel.ResumeLayout(False)
         Me.DisplayGroup.ResumeLayout(False)
         Me.DisplayLayout.ResumeLayout(False)

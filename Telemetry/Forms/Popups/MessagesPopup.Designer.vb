@@ -59,6 +59,7 @@ Partial Class MessagesPopup
         Me.Name = "MessagesPopup"
         Me.Padding = New System.Windows.Forms.Padding(24)
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Télémétrie [Messages]"
         Me.ResumeLayout(False)
 

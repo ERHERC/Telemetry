@@ -1,4 +1,6 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Imports System.Windows.Forms
+
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class SplashForm
     Inherits System.Windows.Forms.Form
 
@@ -33,7 +35,7 @@ Partial Class SplashForm
         '
         'LeftPanel
         '
-        Me.LeftPanel.BackColor = System.Drawing.Color.RoyalBlue
+        Me.LeftPanel.BackColor = System.Drawing.Color.Gray
         Me.LeftPanel.Controls.Add(Me.VersionLabel)
         Me.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.LeftPanel.Location = New System.Drawing.Point(0, 0)
@@ -70,7 +72,7 @@ Partial Class SplashForm
         Me.AppNameLabel.AutoSize = True
         Me.AppNameLabel.Dock = System.Windows.Forms.DockStyle.Top
         Me.AppNameLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AppNameLabel.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.AppNameLabel.ForeColor = System.Drawing.Color.Gray
         Me.AppNameLabel.Location = New System.Drawing.Point(16, 16)
         Me.AppNameLabel.Name = "AppNameLabel"
         Me.AppNameLabel.Size = New System.Drawing.Size(225, 37)
@@ -109,9 +111,9 @@ Partial Class SplashForm
 
     End Sub
 
-    Friend WithEvents LeftPanel As Panel
-    Friend WithEvents RightPanel As Panel
-    Friend WithEvents ScanBar As ProgressBar
-    Friend WithEvents AppNameLabel As Label
-    Friend WithEvents VersionLabel As Label
+    Public WithEvents LeftPanel As Panel
+    Public WithEvents RightPanel As Panel
+    Public WithEvents ScanBar As ProgressBar
+    Public WithEvents AppNameLabel As Label
+    Public WithEvents VersionLabel As Label
 End Class

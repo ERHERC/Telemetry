@@ -8,17 +8,17 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Telemetry.LocalDebug")>
+<Assembly: AssemblyTitle("Telemetry.Hardware.Data.Exchange")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Telemetry.LocalDebug")>
+<Assembly: AssemblyProduct("Telemetry.Hardware.Data.Exchange")>
 <Assembly: AssemblyCopyright("Copyright ©  2017")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("2c096c17-ad05-44b4-a8aa-f7ab4dad4b72")>
+<Assembly: Guid("a41dac5f-02b7-4860-a1db-987d95c10bdb")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("0.0.1.0")>
+<Assembly: AssemblyVersion("0.0.2.0")>
 <Assembly: AssemblyFileVersion("1.0.0.0")>

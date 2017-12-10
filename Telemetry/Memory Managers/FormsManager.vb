@@ -7,4 +7,5 @@ Module FormsManager
 
     'Pop-ups forms (for example : messages when main form becomes too small)
     Public Messages As MessagesPopup
+    Public Stopwatch As StopwatchPopup
 End Module

@@ -21,6 +21,7 @@ Public Class VisualizerForm
         ' .Add any initialization after the InitializeComponent() call.
         SecretCode = New Queue(Of Keys)
     End Sub
+
     Private Sub VisualizerForm_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
         If Not FormsManager.Messages Is Nothing AndAlso Not FormsManager.Messages.Visible Then MessagesPanel.Visible = Not Me.Width < 700
         If Not PanelManager.Battery Is Nothing Then PanelManager.Battery.Visible = Not Me.Width < 440
@@ -50,11 +51,7 @@ Public Class VisualizerForm
         PanelManager.Battery = Me.BatteryPanel
         FormsManager.MainForm = Me
         FormsManager.Messages = New MessagesPopup()
-
-    End Sub
-
-    Private Sub MessagesPopupBtn_Click(sender As Object, e As EventArgs) Handles MessagesPopupBtn.Click
-        MessagesController.SetState(PanelToggleArguments.Toggle)
+        FormsManager.Stopwatch = New StopwatchPopup()
     End Sub
 
     Private Sub VisualizerForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
@@ -88,8 +85,20 @@ Public Class VisualizerForm
         Select Case Me.MenuCommandsPanel.Visible
             Case True
                 MenuCommandsPanel.Visible = False
+                StopwatchPanel.Visible = True
+                BottomBarLayoutManager.SetRowSpan(LeftBottomColumn, 1)
             Case False
                 MenuCommandsPanel.Visible = True
+                StopwatchPanel.Visible = False
+                BottomBarLayoutManager.SetRowSpan(LeftBottomColumn, 3)
         End Select
+    End Sub
+
+    Private Sub MessagesPopupBtn_Click(sender As Object, e As EventArgs) Handles MessagesPopupBtn.Click
+        MessagesController.SetState(PanelToggleArguments.Toggle)
+    End Sub
+
+    Private Sub StopwatchPopupBtn_Click(sender As Object, e As EventArgs) Handles StopwatchPopupBtn.Click
+        StopwatchController.SetState(PanelToggleArguments.Toggle)
     End Sub
 End Class

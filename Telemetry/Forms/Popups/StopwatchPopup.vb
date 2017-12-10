@@ -1,3 +1,3 @@
-﻿Public Class StopwatchPopup
+Public Class StopwatchPopup
 
 End Class

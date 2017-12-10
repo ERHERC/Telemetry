@@ -19,15 +19,15 @@ Partial Class SetupForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.OkBtn = New System.Windows.Forms.Button()
         Me.QuitBtn = New System.Windows.Forms.Button()
+        Me.OkBtn = New System.Windows.Forms.Button()
         Me.HeaderPanel.SuspendLayout()
         Me.BottomPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'HeaderPanel
         '
-        Me.HeaderPanel.BackColor = System.Drawing.Color.RoyalBlue
+        Me.HeaderPanel.BackColor = System.Drawing.Color.Crimson
         '
         'FormDescription
         '
@@ -45,23 +45,6 @@ Partial Class SetupForm
         Me.BottomPanel.Controls.Add(Me.QuitBtn)
         Me.BottomPanel.Controls.Add(Me.OkBtn)
         '
-        'OkBtn
-        '
-        Me.OkBtn.AutoSize = True
-        Me.OkBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.OkBtn.Dock = System.Windows.Forms.DockStyle.Right
-        Me.OkBtn.FlatAppearance.BorderSize = 0
-        Me.OkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OkBtn.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OkBtn.ForeColor = System.Drawing.Color.White
-        Me.OkBtn.Location = New System.Drawing.Point(978, 12)
-        Me.OkBtn.Margin = New System.Windows.Forms.Padding(0)
-        Me.OkBtn.Name = "OkBtn"
-        Me.OkBtn.Size = New System.Drawing.Size(65, 24)
-        Me.OkBtn.TabIndex = 0
-        Me.OkBtn.Text = "VALIDER"
-        Me.OkBtn.UseVisualStyleBackColor = True
-        '
         'QuitBtn
         '
         Me.QuitBtn.AutoSize = True
@@ -75,9 +58,26 @@ Partial Class SetupForm
         Me.QuitBtn.Margin = New System.Windows.Forms.Padding(0)
         Me.QuitBtn.Name = "QuitBtn"
         Me.QuitBtn.Size = New System.Drawing.Size(66, 24)
-        Me.QuitBtn.TabIndex = 1
+        Me.QuitBtn.TabIndex = 3
         Me.QuitBtn.Text = "QUITTER"
         Me.QuitBtn.UseVisualStyleBackColor = True
+        '
+        'OkBtn
+        '
+        Me.OkBtn.AutoSize = True
+        Me.OkBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.OkBtn.Dock = System.Windows.Forms.DockStyle.Right
+        Me.OkBtn.FlatAppearance.BorderSize = 0
+        Me.OkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.OkBtn.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OkBtn.ForeColor = System.Drawing.Color.White
+        Me.OkBtn.Location = New System.Drawing.Point(978, 12)
+        Me.OkBtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.OkBtn.Name = "OkBtn"
+        Me.OkBtn.Size = New System.Drawing.Size(65, 24)
+        Me.OkBtn.TabIndex = 2
+        Me.OkBtn.Text = "VALIDER"
+        Me.OkBtn.UseVisualStyleBackColor = True
         '
         'SetupForm
         '
@@ -91,6 +91,7 @@ Partial Class SetupForm
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents OkBtn As Button
+
     Friend WithEvents QuitBtn As Button
+    Friend WithEvents OkBtn As Button
 End Class

@@ -29,8 +29,9 @@
     <SupportUrl>https://github.com/NawakCreations/Telemetry/issues</SupportUrl>
     <ProductName>Telemetry</ProductName>
     <PublisherName>NawakCreations</PublisherName>
+    <MinimumRequiredVersion>1.0.0.1</MinimumRequiredVersion>
     <AutorunEnabled>true</AutorunEnabled>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>2</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -212,18 +213,18 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Panel Controllers\MessagesController.vb" />
-    <Compile Include="Forms\SplashForm.Designer.vb">
-      <DependentUpon>SplashForm.vb</DependentUpon>
+    <Compile Include="Forms\Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\SplashForm.vb">
+    <Compile Include="Forms\Splash.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GlobalSuppressions.vb" />
     <Compile Include="Memory Managers\FormsManager.vb" />
-    <Compile Include="Forms\MainForm.Designer.vb">
+    <Compile Include="Forms\Old\MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MainForm.vb">
+    <Compile Include="Forms\Old\MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Popups\MessagesPopup.Designer.vb">
@@ -255,6 +256,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Panel Controllers\StopwatchController.vb" />
     <Compile Include="TCP\IntercomApiManager.vb" />
     <Compile Include="TCP\IntercomFunctions.vb" />
     <Compile Include="TCP\IntercomInterface.vb" />
@@ -266,17 +268,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\MainForm.resx">
+    <EmbeddedResource Include="Forms\Old\MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Popups\MessagesPopup.resx">
       <DependentUpon>MessagesPopup.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Popups\StopwatchPopup.resx">
+      <DependentUpon>StopwatchPopup.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Setup\SetupForm.resx">
       <DependentUpon>SetupForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SplashForm.resx">
-      <DependentUpon>SplashForm.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\VisualizerForm.resx">
       <DependentUpon>VisualizerForm.vb</DependentUpon>

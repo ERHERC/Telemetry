@@ -59,14 +59,14 @@ Partial Class VisualizerForm
         Me.MessagesHeader = New System.Windows.Forms.Label()
         Me.BottomPanel = New System.Windows.Forms.Panel()
         Me.BottomBarLayoutManager = New System.Windows.Forms.TableLayoutPanel()
-        Me.StopwatchPanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.StopwatchIcon = New System.Windows.Forms.PictureBox()
-        Me.StopwatchLabel = New System.Windows.Forms.Label()
         Me.LeftBottomColumn = New System.Windows.Forms.Panel()
         Me.MenuCommandsPanel = New System.Windows.Forms.Panel()
         Me.StopwatchPopupBtn = New System.Windows.Forms.Button()
         Me.MessagesPopupBtn = New System.Windows.Forms.Button()
         Me.MenuPopupBtn = New System.Windows.Forms.Button()
+        Me.StopwatchPanel = New System.Windows.Forms.TableLayoutPanel()
+        Me.StopwatchIcon = New System.Windows.Forms.PictureBox()
+        Me.StopwatchLabel = New System.Windows.Forms.Label()
         Me.MainPanel.SuspendLayout()
         Me.VideoOutputPanel.SuspendLayout()
         CType(Me.VideoOutput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -91,10 +91,10 @@ Partial Class VisualizerForm
         Me.AlertContent.SuspendLayout()
         Me.BottomPanel.SuspendLayout()
         Me.BottomBarLayoutManager.SuspendLayout()
-        Me.StopwatchPanel.SuspendLayout()
-        CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.LeftBottomColumn.SuspendLayout()
         Me.MenuCommandsPanel.SuspendLayout()
+        Me.StopwatchPanel.SuspendLayout()
+        CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'VideoOutputHeader
@@ -104,7 +104,7 @@ Partial Class VisualizerForm
         Me.VideoOutputHeader.ForeColor = System.Drawing.Color.LightGray
         Me.VideoOutputHeader.Location = New System.Drawing.Point(0, 0)
         Me.VideoOutputHeader.Name = "VideoOutputHeader"
-        Me.VideoOutputHeader.Size = New System.Drawing.Size(741, 37)
+        Me.VideoOutputHeader.Size = New System.Drawing.Size(727, 37)
         Me.VideoOutputHeader.TabIndex = 1
         Me.VideoOutputHeader.Text = "SIGNAL VIDEO"
         '
@@ -119,7 +119,7 @@ Partial Class VisualizerForm
         Me.MainPanel.Location = New System.Drawing.Point(0, 0)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.Padding = New System.Windows.Forms.Padding(24)
-        Me.MainPanel.Size = New System.Drawing.Size(1219, 518)
+        Me.MainPanel.Size = New System.Drawing.Size(1205, 518)
         Me.MainPanel.TabIndex = 2
         '
         'VideoOutputPanel
@@ -132,7 +132,7 @@ Partial Class VisualizerForm
         Me.VideoOutputPanel.Location = New System.Drawing.Point(280, 24)
         Me.VideoOutputPanel.Margin = New System.Windows.Forms.Padding(8)
         Me.VideoOutputPanel.Name = "VideoOutputPanel"
-        Me.VideoOutputPanel.Size = New System.Drawing.Size(867, 406)
+        Me.VideoOutputPanel.Size = New System.Drawing.Size(853, 406)
         Me.VideoOutputPanel.TabIndex = 1
         '
         'VideoOutput
@@ -142,7 +142,7 @@ Partial Class VisualizerForm
         Me.VideoOutput.Image = Global.Telemetry.My.Resources.Resources.animated_loader
         Me.VideoOutput.Location = New System.Drawing.Point(0, 37)
         Me.VideoOutput.Name = "VideoOutput"
-        Me.VideoOutput.Size = New System.Drawing.Size(867, 332)
+        Me.VideoOutput.Size = New System.Drawing.Size(853, 332)
         Me.VideoOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.VideoOutput.TabIndex = 0
         Me.VideoOutput.TabStop = False
@@ -155,7 +155,7 @@ Partial Class VisualizerForm
         Me.VideoOutputStatus.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.VideoOutputStatus.Location = New System.Drawing.Point(0, 369)
         Me.VideoOutputStatus.Name = "VideoOutputStatus"
-        Me.VideoOutputStatus.Size = New System.Drawing.Size(867, 37)
+        Me.VideoOutputStatus.Size = New System.Drawing.Size(853, 37)
         Me.VideoOutputStatus.TabIndex = 3
         '
         'DistancePanel
@@ -195,7 +195,7 @@ Partial Class VisualizerForm
         Me.SpeedPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.SpeedPanel.Controls.Add(Me.SpeedLabel, 1, 0)
         Me.SpeedPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.SpeedPanel.Location = New System.Drawing.Point(719, 0)
+        Me.SpeedPanel.Location = New System.Drawing.Point(705, 0)
         Me.SpeedPanel.Margin = New System.Windows.Forms.Padding(0)
         Me.SpeedPanel.Name = "SpeedPanel"
         Me.SpeedPanel.RowCount = 1
@@ -223,7 +223,7 @@ Partial Class VisualizerForm
         Me.VideoOutputHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.VideoOutputHeaderPanel.Location = New System.Drawing.Point(0, 0)
         Me.VideoOutputHeaderPanel.Name = "VideoOutputHeaderPanel"
-        Me.VideoOutputHeaderPanel.Size = New System.Drawing.Size(867, 37)
+        Me.VideoOutputHeaderPanel.Size = New System.Drawing.Size(853, 37)
         Me.VideoOutputHeaderPanel.TabIndex = 2
         '
         'PingPanel
@@ -235,7 +235,7 @@ Partial Class VisualizerForm
         Me.PingPanel.Controls.Add(Me.PingLabel, 1, 0)
         Me.PingPanel.Controls.Add(Me.PingIcon, 0, 0)
         Me.PingPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PingPanel.Location = New System.Drawing.Point(741, 0)
+        Me.PingPanel.Location = New System.Drawing.Point(727, 0)
         Me.PingPanel.Margin = New System.Windows.Forms.Padding(0)
         Me.PingPanel.Name = "PingPanel"
         Me.PingPanel.RowCount = 1
@@ -276,7 +276,7 @@ Partial Class VisualizerForm
         Me.BatteryPanel.Controls.Add(Me.BatteryBarOutterBorder, 0, 1)
         Me.BatteryPanel.Controls.Add(Me.BatteryIcon, 0, 2)
         Me.BatteryPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BatteryPanel.Location = New System.Drawing.Point(1147, 24)
+        Me.BatteryPanel.Location = New System.Drawing.Point(1133, 24)
         Me.BatteryPanel.Name = "BatteryPanel"
         Me.BatteryPanel.RowCount = 3
         Me.BatteryPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
@@ -562,7 +562,7 @@ Partial Class VisualizerForm
         Me.BottomPanel.Margin = New System.Windows.Forms.Padding(8)
         Me.BottomPanel.Name = "BottomPanel"
         Me.BottomPanel.Padding = New System.Windows.Forms.Padding(0, 4, 0, 4)
-        Me.BottomPanel.Size = New System.Drawing.Size(1171, 64)
+        Me.BottomPanel.Size = New System.Drawing.Size(1157, 64)
         Me.BottomPanel.TabIndex = 3
         '
         'BottomBarLayoutManager
@@ -572,72 +572,31 @@ Partial Class VisualizerForm
         Me.BottomBarLayoutManager.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.BottomBarLayoutManager.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 271.0!))
         Me.BottomBarLayoutManager.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.BottomBarLayoutManager.Controls.Add(Me.StopwatchPanel, 1, 0)
         Me.BottomBarLayoutManager.Controls.Add(Me.LeftBottomColumn, 0, 0)
+        Me.BottomBarLayoutManager.Controls.Add(Me.StopwatchPanel, 1, 0)
         Me.BottomBarLayoutManager.Dock = System.Windows.Forms.DockStyle.Fill
         Me.BottomBarLayoutManager.Location = New System.Drawing.Point(0, 4)
         Me.BottomBarLayoutManager.Name = "BottomBarLayoutManager"
         Me.BottomBarLayoutManager.RowCount = 1
         Me.BottomBarLayoutManager.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.BottomBarLayoutManager.Size = New System.Drawing.Size(1171, 56)
+        Me.BottomBarLayoutManager.Size = New System.Drawing.Size(1157, 56)
         Me.BottomBarLayoutManager.TabIndex = 2
-        '
-        'StopwatchPanel
-        '
-        Me.StopwatchPanel.ColumnCount = 2
-        Me.StopwatchPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
-        Me.StopwatchPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.StopwatchPanel.Controls.Add(Me.StopwatchIcon, 0, 0)
-        Me.StopwatchPanel.Controls.Add(Me.StopwatchLabel, 1, 0)
-        Me.StopwatchPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.StopwatchPanel.Location = New System.Drawing.Point(450, 0)
-        Me.StopwatchPanel.Margin = New System.Windows.Forms.Padding(0)
-        Me.StopwatchPanel.Name = "StopwatchPanel"
-        Me.StopwatchPanel.RowCount = 1
-        Me.StopwatchPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.StopwatchPanel.Size = New System.Drawing.Size(271, 56)
-        Me.StopwatchPanel.TabIndex = 2
-        '
-        'StopwatchIcon
-        '
-        Me.StopwatchIcon.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.StopwatchIcon.Image = Global.Telemetry.My.Resources.Resources.Stopwatch
-        Me.StopwatchIcon.Location = New System.Drawing.Point(2, 2)
-        Me.StopwatchIcon.Margin = New System.Windows.Forms.Padding(2)
-        Me.StopwatchIcon.Name = "StopwatchIcon"
-        Me.StopwatchIcon.Size = New System.Drawing.Size(52, 52)
-        Me.StopwatchIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.StopwatchIcon.TabIndex = 0
-        Me.StopwatchIcon.TabStop = False
-        '
-        'StopwatchLabel
-        '
-        Me.StopwatchLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.StopwatchLabel.Font = New System.Drawing.Font("Quartz MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StopwatchLabel.ForeColor = System.Drawing.Color.White
-        Me.StopwatchLabel.Location = New System.Drawing.Point(56, 0)
-        Me.StopwatchLabel.Margin = New System.Windows.Forms.Padding(0, 0, 0, 4)
-        Me.StopwatchLabel.Name = "StopwatchLabel"
-        Me.StopwatchLabel.Size = New System.Drawing.Size(215, 52)
-        Me.StopwatchLabel.TabIndex = 1
-        Me.StopwatchLabel.Text = "00:01:27.87"
-        Me.StopwatchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'LeftBottomColumn
         '
+        Me.LeftBottomColumn.AutoSize = True
         Me.LeftBottomColumn.Controls.Add(Me.MenuCommandsPanel)
         Me.LeftBottomColumn.Controls.Add(Me.MenuPopupBtn)
         Me.LeftBottomColumn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.LeftBottomColumn.Location = New System.Drawing.Point(3, 3)
         Me.LeftBottomColumn.Name = "LeftBottomColumn"
         Me.LeftBottomColumn.Padding = New System.Windows.Forms.Padding(6)
-        Me.LeftBottomColumn.Size = New System.Drawing.Size(444, 50)
+        Me.LeftBottomColumn.Size = New System.Drawing.Size(437, 50)
         Me.LeftBottomColumn.TabIndex = 3
         '
         'MenuCommandsPanel
         '
         Me.MenuCommandsPanel.AutoSize = True
-        Me.MenuCommandsPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MenuCommandsPanel.Controls.Add(Me.StopwatchPopupBtn)
         Me.MenuCommandsPanel.Controls.Add(Me.MessagesPopupBtn)
         Me.MenuCommandsPanel.Dock = System.Windows.Forms.DockStyle.Left
@@ -688,6 +647,7 @@ Partial Class VisualizerForm
         'MenuPopupBtn
         '
         Me.MenuPopupBtn.AutoSize = True
+        Me.MenuPopupBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MenuPopupBtn.BackColor = System.Drawing.Color.DimGray
         Me.MenuPopupBtn.Dock = System.Windows.Forms.DockStyle.Left
         Me.MenuPopupBtn.FlatAppearance.BorderSize = 0
@@ -704,11 +664,52 @@ Partial Class VisualizerForm
         Me.MenuPopupBtn.Text = "MENU"
         Me.MenuPopupBtn.UseVisualStyleBackColor = False
         '
+        'StopwatchPanel
+        '
+        Me.StopwatchPanel.ColumnCount = 2
+        Me.StopwatchPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
+        Me.StopwatchPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.StopwatchPanel.Controls.Add(Me.StopwatchIcon, 0, 0)
+        Me.StopwatchPanel.Controls.Add(Me.StopwatchLabel, 1, 0)
+        Me.StopwatchPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.StopwatchPanel.Location = New System.Drawing.Point(443, 0)
+        Me.StopwatchPanel.Margin = New System.Windows.Forms.Padding(0)
+        Me.StopwatchPanel.Name = "StopwatchPanel"
+        Me.StopwatchPanel.RowCount = 1
+        Me.StopwatchPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.StopwatchPanel.Size = New System.Drawing.Size(271, 56)
+        Me.StopwatchPanel.TabIndex = 2
+        '
+        'StopwatchIcon
+        '
+        Me.StopwatchIcon.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.StopwatchIcon.Image = Global.Telemetry.My.Resources.Resources.Stopwatch
+        Me.StopwatchIcon.Location = New System.Drawing.Point(2, 2)
+        Me.StopwatchIcon.Margin = New System.Windows.Forms.Padding(2)
+        Me.StopwatchIcon.Name = "StopwatchIcon"
+        Me.StopwatchIcon.Size = New System.Drawing.Size(52, 52)
+        Me.StopwatchIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.StopwatchIcon.TabIndex = 0
+        Me.StopwatchIcon.TabStop = False
+        '
+        'StopwatchLabel
+        '
+        Me.StopwatchLabel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.StopwatchLabel.Font = New System.Drawing.Font("Quartz MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StopwatchLabel.ForeColor = System.Drawing.Color.White
+        Me.StopwatchLabel.Location = New System.Drawing.Point(56, 0)
+        Me.StopwatchLabel.Margin = New System.Windows.Forms.Padding(0, 0, 0, 4)
+        Me.StopwatchLabel.Name = "StopwatchLabel"
+        Me.StopwatchLabel.Size = New System.Drawing.Size(215, 52)
+        Me.StopwatchLabel.TabIndex = 1
+        Me.StopwatchLabel.Text = "00:01:27.87"
+        Me.StopwatchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'VisualizerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1219, 518)
+        Me.ClientSize = New System.Drawing.Size(1205, 518)
         Me.Controls.Add(Me.MainPanel)
         Me.KeyPreview = True
         Me.MinimumSize = New System.Drawing.Size(664, 480)
@@ -751,12 +752,13 @@ Partial Class VisualizerForm
         Me.AlertContent.PerformLayout()
         Me.BottomPanel.ResumeLayout(False)
         Me.BottomBarLayoutManager.ResumeLayout(False)
-        Me.StopwatchPanel.ResumeLayout(False)
-        CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.BottomBarLayoutManager.PerformLayout()
         Me.LeftBottomColumn.ResumeLayout(False)
         Me.LeftBottomColumn.PerformLayout()
         Me.MenuCommandsPanel.ResumeLayout(False)
         Me.MenuCommandsPanel.PerformLayout()
+        Me.StopwatchPanel.ResumeLayout(False)
+        CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
