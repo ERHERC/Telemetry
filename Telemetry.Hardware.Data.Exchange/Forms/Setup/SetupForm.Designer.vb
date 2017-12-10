@@ -27,16 +27,17 @@ Partial Class SetupForm
         '
         'HeaderPanel
         '
-        Me.HeaderPanel.BackColor = System.Drawing.Color.Crimson
+        Me.HeaderPanel.BackColor = System.Drawing.Color.Gold
         '
         'FormDescription
         '
+        Me.FormDescription.ForeColor = System.Drawing.Color.DimGray
         Me.FormDescription.Size = New System.Drawing.Size(325, 18)
         Me.FormDescription.Text = "Veuillez configurer le logiciel avant son utilisation"
         '
         'FormTitle
         '
-        Me.FormTitle.ForeColor = System.Drawing.Color.White
+        Me.FormTitle.ForeColor = System.Drawing.Color.Black
         Me.FormTitle.Size = New System.Drawing.Size(230, 24)
         Me.FormTitle.Text = "Assistant de mise en route"
         '
@@ -49,7 +50,6 @@ Partial Class SetupForm
         '
         Me.QuitBtn.AutoSize = True
         Me.QuitBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.QuitBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.QuitBtn.Dock = System.Windows.Forms.DockStyle.Left
         Me.QuitBtn.FlatAppearance.BorderSize = 0
         Me.QuitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat

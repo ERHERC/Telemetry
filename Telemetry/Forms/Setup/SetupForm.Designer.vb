@@ -49,6 +49,7 @@ Partial Class SetupForm
         '
         Me.OkBtn.AutoSize = True
         Me.OkBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.OkBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.OkBtn.Dock = System.Windows.Forms.DockStyle.Right
         Me.OkBtn.FlatAppearance.BorderSize = 0
         Me.OkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -66,6 +67,7 @@ Partial Class SetupForm
         '
         Me.QuitBtn.AutoSize = True
         Me.QuitBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.QuitBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.QuitBtn.Dock = System.Windows.Forms.DockStyle.Left
         Me.QuitBtn.FlatAppearance.BorderSize = 0
         Me.QuitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -81,7 +83,9 @@ Partial Class SetupForm
         '
         'SetupForm
         '
+        Me.AcceptButton = Me.OkBtn
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.CancelButton = Me.QuitBtn
         Me.ClientSize = New System.Drawing.Size(1055, 554)
         Me.Name = "SetupForm"
         Me.HeaderPanel.ResumeLayout(False)
