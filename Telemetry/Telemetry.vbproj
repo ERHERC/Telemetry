@@ -218,13 +218,13 @@
     <Compile Include="Forms\Setup\SetupForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Panel Controllers\MessagesController.vb" />
     <Compile Include="Forms\SplashForm.Designer.vb">
       <DependentUpon>SplashForm.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\SplashForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Panel Controllers\MessagesController.vb" />
     <Compile Include="GlobalSuppressions.vb" />
     <Compile Include="Memory Managers\FormsManager.vb" />
     <Compile Include="Forms\Old\MainForm.Designer.vb">
@@ -269,9 +269,6 @@
     <Compile Include="TCP\Intercom.vb" />
     <Compile Include="TODO.vb" />
     <Compile Include="Tools.vb" />
-    <Compile Include="TransparentControl.vb">
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\Old\MainForm.resx">

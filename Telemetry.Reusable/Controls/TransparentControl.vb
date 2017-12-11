@@ -1,6 +1,8 @@
 Imports System.ComponentModel
 Imports System.ComponentModel.Design
+Imports System.Windows.Forms
 Imports System.Windows.Forms.Design
+Imports System.Drawing
 
 #Disable Warning
 <Designer("System.Windows.Forms.Design.ParentControlDesigner, System.Design", GetType(IDesigner))> _

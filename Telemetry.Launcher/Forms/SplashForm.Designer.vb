@@ -25,17 +25,8 @@ Partial Class SplashForm
         '
         'AppNameLabel
         '
-        Me.AppNameLabel.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.AppNameLabel.Size = New System.Drawing.Size(166, 37)
-        Me.AppNameLabel.Text = "T�L�M�TRIE"
-        '
-        'LeftPanel
-        '
-        Me.LeftPanel.BackColor = System.Drawing.Color.RoyalBlue
-        '
-        'LoadLabel
-        '
-        Me.LoadLabel.ForeColor = System.Drawing.Color.RoyalBlue
+        Me.AppNameLabel.Size = New System.Drawing.Size(276, 37)
+        Me.AppNameLabel.Text = "VEUILLEZ PATIENTER"
         '
         'SplashForm
         '

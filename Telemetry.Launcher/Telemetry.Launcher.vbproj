@@ -93,6 +93,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Setup\SetupForm.Designer.vb">
+      <DependentUpon>SetupForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setup\SetupForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashForm.Designer.vb">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -110,6 +122,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Setup\SetupForm.resx">
+      <DependentUpon>SetupForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashForm.resx">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -130,7 +148,18 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\" />
+    <ProjectReference Include="..\Telemetry.Reusable\Telemetry.Reusable.vbproj">
+      <Project>{0bd02e80-1c77-4ebd-b154-e008235493aa}</Project>
+      <Name>Telemetry.Reusable</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telemetry.Xml.Data\Telemetry.Xml.Data.vbproj">
+      <Project>{8573381c-0f92-4ddf-930e-792ae6c72bd4}</Project>
+      <Name>Telemetry.Xml.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telemetry.Xml\Telemetry.Xml.vbproj">
+      <Project>{900de052-80cd-4291-b015-605d9bd6fb14}</Project>
+      <Name>Telemetry.Xml</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

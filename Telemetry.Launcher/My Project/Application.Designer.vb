@@ -32,7 +32,12 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Telemetry.Launcher.Form1
+            Me.MainForm = Global.Telemetry.Launcher.SetupForm
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
+        Protected Overrides Sub OnCreateSplashScreen()
+            Me.SplashScreen = Global.Telemetry.Launcher.SplashForm
         End Sub
     End Class
 End Namespace

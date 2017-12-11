@@ -1,3 +1,5 @@
+Imports Telemetry.Reusable
+
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
     Inherits System.Windows.Forms.Form
@@ -27,15 +29,15 @@ Partial Class MainForm
         Me.LostSignalFlicker = New System.Windows.Forms.Timer(Me.components)
         Me.AppHaltedLbl = New System.Windows.Forms.Label()
         Me.MainPanel = New System.Windows.Forms.Panel()
-        Me.PingPanel = New Telemetry.TransparentControl()
+        Me.PingPanel = New TransparentControl()
         Me.PingLbl = New System.Windows.Forms.Label()
         Me.SignalIconPanel = New System.Windows.Forms.Panel()
         Me.SignalIcon = New System.Windows.Forms.PictureBox()
-        Me.LostSignalPanel = New Telemetry.TransparentControl()
+        Me.LostSignalPanel = New TransparentControl()
         Me.LostSignalLabel = New System.Windows.Forms.Label()
-        Me.SlowDownAlertBox = New Telemetry.TransparentControl()
+        Me.SlowDownAlertBox = New TransparentControl()
         Me.AlertLabel = New System.Windows.Forms.Label()
-        Me.AlertIconPanel = New Telemetry.TransparentControl()
+        Me.AlertIconPanel = New TransparentControl()
         Me.AlertIcon = New System.Windows.Forms.Panel()
         Me.AlertBox = New System.Windows.Forms.PictureBox()
         Me.TimerPanel = New System.Windows.Forms.Panel()
