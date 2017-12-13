@@ -22,11 +22,13 @@ Partial Class VisualizerForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.VideoOutputHeader = New System.Windows.Forms.Label()
         Me.MainPanel = New System.Windows.Forms.Panel()
         Me.VideoOutputPanel = New System.Windows.Forms.Panel()
         Me.VideoOutput = New System.Windows.Forms.PictureBox()
         Me.VideoOutputStatus = New System.Windows.Forms.Panel()
+        Me.RunTask = New System.Windows.Forms.Button()
         Me.DistancePanel = New System.Windows.Forms.TableLayoutPanel()
         Me.DistanceLabel = New System.Windows.Forms.Label()
         Me.SpeedPanel = New System.Windows.Forms.TableLayoutPanel()
@@ -67,6 +69,8 @@ Partial Class VisualizerForm
         Me.StopwatchPanel = New System.Windows.Forms.TableLayoutPanel()
         Me.StopwatchIcon = New System.Windows.Forms.PictureBox()
         Me.StopwatchLabel = New System.Windows.Forms.Label()
+        Me.StartService = New System.ComponentModel.BackgroundWorker()
+        Me.TaskDialog = New ProgressDialogs.ProgressDialog(Me.components)
         Me.MainPanel.SuspendLayout()
         Me.VideoOutputPanel.SuspendLayout()
         CType(Me.VideoOutput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -150,6 +154,7 @@ Partial Class VisualizerForm
         'VideoOutputStatus
         '
         Me.VideoOutputStatus.BackColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
+        Me.VideoOutputStatus.Controls.Add(Me.RunTask)
         Me.VideoOutputStatus.Controls.Add(Me.DistancePanel)
         Me.VideoOutputStatus.Controls.Add(Me.SpeedPanel)
         Me.VideoOutputStatus.Dock = System.Windows.Forms.DockStyle.Bottom
@@ -157,6 +162,16 @@ Partial Class VisualizerForm
         Me.VideoOutputStatus.Name = "VideoOutputStatus"
         Me.VideoOutputStatus.Size = New System.Drawing.Size(853, 37)
         Me.VideoOutputStatus.TabIndex = 3
+        '
+        'RunTask
+        '
+        Me.RunTask.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RunTask.Location = New System.Drawing.Point(117, 0)
+        Me.RunTask.Name = "RunTask"
+        Me.RunTask.Size = New System.Drawing.Size(75, 37)
+        Me.RunTask.TabIndex = 5
+        Me.RunTask.Text = "Run task"
+        Me.RunTask.UseVisualStyleBackColor = True
         '
         'DistancePanel
         '
@@ -705,6 +720,20 @@ Partial Class VisualizerForm
         Me.StopwatchLabel.Text = "00:01:27.87"
         Me.StopwatchLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'StartService
+        '
+        '
+        'TaskDialog
+        '
+        Me.TaskDialog.AutoClose = False
+        Me.TaskDialog.CancelButton = False
+        Me.TaskDialog.CancelMessage = ""
+        Me.TaskDialog.CompactPaths = True
+        Me.TaskDialog.Marquee = True
+        Me.TaskDialog.Modal = True
+        Me.TaskDialog.ShowTimeRemaining = False
+        Me.TaskDialog.Title = "Démarrage du serveur interne ..."
+        '
         'VisualizerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -808,4 +837,7 @@ Partial Class VisualizerForm
     Friend WithEvents MenuCommandsPanel As Panel
     Friend WithEvents StopwatchPopupBtn As Button
     Friend WithEvents MessagesPopupBtn As Button
+    Friend WithEvents TaskDialog As ProgressDialogs.ProgressDialog
+    Friend WithEvents RunTask As Button
+    Friend WithEvents StartService As System.ComponentModel.BackgroundWorker
 End Class

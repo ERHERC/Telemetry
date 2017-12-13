@@ -27,11 +27,15 @@ Partial Class SplashForm
         '
         Me.AppNameLabel.ForeColor = System.Drawing.Color.RoyalBlue
         Me.AppNameLabel.Size = New System.Drawing.Size(166, 37)
-        Me.AppNameLabel.Text = "T�L�M�TRIE"
+        Me.AppNameLabel.Text = "TÉLÉMÉTRIE"
         '
         'LeftPanel
         '
         Me.LeftPanel.BackColor = System.Drawing.Color.RoyalBlue
+        '
+        'VersionLabel
+        '
+        Me.VersionLabel.Text = "Version 1.0.0"
         '
         'LoadLabel
         '

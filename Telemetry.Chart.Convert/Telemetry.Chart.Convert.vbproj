@@ -153,6 +153,10 @@
       <Project>{c45f9294-7fb6-40a4-9b99-28fda11a3aac}</Project>
       <Name>Telemetry.Chart</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Telemetry.Interop\Telemetry.Interop.csproj">
+      <Project>{fa146cb5-2ed0-4019-a124-75fbdf9ed530}</Project>
+      <Name>Telemetry.Interop</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Telemetry.Reusable\Telemetry.Reusable.vbproj">
       <Project>{0bd02e80-1c77-4ebd-b154-e008235493aa}</Project>
       <Name>Telemetry.Reusable</Name>

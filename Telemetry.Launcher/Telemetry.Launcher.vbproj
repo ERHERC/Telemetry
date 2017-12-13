@@ -148,6 +148,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Telemetry.Chart.Convert\Telemetry.Chart.Convert.vbproj">
+      <Project>{dd9dc9a5-3bee-4957-bbf8-009735155fc1}</Project>
+      <Name>Telemetry.Chart.Convert</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telemetry.Hardware.Data.Exchange\Telemetry.Hardware.Data.Exchange.vbproj">
+      <Project>{425d462c-6bce-47ea-b66c-f86bbc7465a9}</Project>
+      <Name>Telemetry.Hardware.Data.Exchange</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telemetry.Interop\Telemetry.Interop.csproj">
+      <Project>{fa146cb5-2ed0-4019-a124-75fbdf9ed530}</Project>
+      <Name>Telemetry.Interop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telemetry.LocalDebug\Telemetry.Sandbox.vbproj">
+      <Project>{406e287b-acfc-4257-b8fe-30f06c79de6b}</Project>
+      <Name>Telemetry.Sandbox</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Telemetry.Reusable\Telemetry.Reusable.vbproj">
       <Project>{0bd02e80-1c77-4ebd-b154-e008235493aa}</Project>
       <Name>Telemetry.Reusable</Name>
@@ -159,6 +175,10 @@
     <ProjectReference Include="..\Telemetry.Xml\Telemetry.Xml.vbproj">
       <Project>{900de052-80cd-4291-b015-605d9bd6fb14}</Project>
       <Name>Telemetry.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telemetry\Telemetry.vbproj">
+      <Project>{ba539c98-d000-4acf-8b0f-002458588119}</Project>
+      <Name>Telemetry</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

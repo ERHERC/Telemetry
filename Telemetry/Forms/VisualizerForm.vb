@@ -16,6 +16,7 @@ Public Class VisualizerForm
     End Function
 
     Public Sub New()
+        Control.CheckForIllegalCrossThreadCalls = True
         ' This call is required by the designer.
         InitializeComponent()
         ' .Add any initialization after the InitializeComponent() call.
@@ -59,9 +60,18 @@ Public Class VisualizerForm
             FormsManager.Startup = New SetupForm()
             FormsManager.Startup.ShowDialog()
         End If
+        TaskDialog.InitializeLifetimeService()
         'DATA_VALIDATED = True
         If DATA_VALIDATED Then
+            TaskDialog.Show()
+            With TaskDialog
+                .Line1 = "Instantiation d'un serveur TCP"
+                .Line2 = "Veuillez patienter ..."
+            End With
             IntercomApiManager.StartAPI()
+            Libraries.Tools.Wait(3)
+            TaskDialog.Close()
+            Libraries.Tools.Wait(0.25)
             Me.Opacity = 1
             Me.WindowState = FormWindowState.Normal
             Me.ShowInTaskbar = True
@@ -100,5 +110,13 @@ Public Class VisualizerForm
 
     Private Sub StopwatchPopupBtn_Click(sender As Object, e As EventArgs) Handles StopwatchPopupBtn.Click
         StopwatchController.SetState(PanelToggleArguments.Toggle)
+    End Sub
+
+    Private Sub RunTask_Click(sender As Object, e As EventArgs) Handles RunTask.Click
+
+    End Sub
+
+    Private Sub StartService_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles StartService.DoWork
+
     End Sub
 End Class

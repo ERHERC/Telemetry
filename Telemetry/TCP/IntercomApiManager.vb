@@ -12,25 +12,40 @@ Module IntercomApiManager
     Public Sub StartAPI()
         If Not ServiceRunning Then
             Try
-                Binding = New NetTcpBinding()
-                ServiceInstance = New ServiceHost(GetType(Intercom), ServiceAddress)
-                ServiceInstance.AddServiceEndpoint(GetType(IntercomInterface), Binding, ServiceAddress)
-
-                ServiceInstance.Open()
-
-                ServiceRunning = True
+                With FormsManager.MainForm.TaskDialog
+                    '.Show()
+                    Binding = New NetTcpBinding()
+                    ServiceInstance = New ServiceHost(GetType(Intercom), ServiceAddress)
+                    ServiceInstance.AddServiceEndpoint(GetType(IntercomInterface), Binding, ServiceAddress)
+                    ServiceInstance.Open()
+                    ServiceRunning = True
+                End With
             Catch ErrorCode As Exception
                 MsgBox(ErrorCode.Message & vbCrLf & vbCrLf & ErrorCode.StackTrace, , ErrorCode.HResult)
+            Finally
+                'FormsManager.MainForm.TaskDialog.Close()
             End Try
         End If
     End Sub
 
     Public Sub StopAPI()
         If ServiceRunning Then
-            ServiceRunning = False
-            ServiceInstance.Close()
+            Try
+                With FormsManager.MainForm.TaskDialog
+                    '.Show()
+                    ServiceRunning = False
+                    ServiceInstance.Close()
+                    '.Close()
+                End With
+            Catch ErrorCode As Exception
+
+            Finally
+                'FormsManager.MainForm.TaskDialog.Close()
+            End Try
         End If
     End Sub
+
+
 
     Public Function APIState() As Boolean
         Return ServiceRunning
