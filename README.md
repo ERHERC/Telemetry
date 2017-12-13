@@ -42,6 +42,7 @@ Pour éditer le projet , veuillez [télécharger](https://www.visualstudio.com/f
  * [Live Video from Raspberry Pi to .NET - **CodeProject**](https://www.codeproject.com/Articles/810004/Live-Video-from-Raspberry-Pi-to-NET) pour le stream vidéo Voiture -> PC
  * [Control Raspberry Pi with another Program - **Raspberry Forums**](https://www.raspberrypi.org/forums/viewtopic.php?t=34019) pour la communication .NET <--> Hardware
  * [Package Manager Console - **MSDN Documentation**](https://docs.microsoft.com/en-us/nuget/tools/package-manager-console) pour l'utilisation du gestionnaire de packages
+ * [Storing referenced Dlls in visual studio solution folder - **StackOverflow**](https://stackoverflow.com/questions/4971807/storing-referenced-dlls-in-visual-studio-solution-folder) pour l'utilisation du dossier 'Solution Items' et l'ajout de références (.dll) en tant que fichier de la solution
 ### Codes secrets:
 
 Voici des codes à entrer dans la fenêtre du logiciel (à taper quand elle est active et assez rapidement)

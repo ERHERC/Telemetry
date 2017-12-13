@@ -111,12 +111,4 @@ Public Class VisualizerForm
     Private Sub StopwatchPopupBtn_Click(sender As Object, e As EventArgs) Handles StopwatchPopupBtn.Click
         StopwatchController.SetState(PanelToggleArguments.Toggle)
     End Sub
-
-    Private Sub RunTask_Click(sender As Object, e As EventArgs) Handles RunTask.Click
-
-    End Sub
-
-    Private Sub StartService_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles StartService.DoWork
-
-    End Sub
 End Class
