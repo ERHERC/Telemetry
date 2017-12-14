@@ -1,6 +1,7 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class MessagesPopup
-    Inherits System.Windows.Forms.Form
+    'Inherits System.Windows.Forms.Form
+    Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -58,6 +59,7 @@ Partial Class MessagesPopup
         Me.MinimumSize = New System.Drawing.Size(320, 38)
         Me.Name = "MessagesPopup"
         Me.Padding = New System.Windows.Forms.Padding(24)
+        Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Télémétrie [Messages]"

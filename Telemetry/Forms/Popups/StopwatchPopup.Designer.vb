@@ -1,6 +1,7 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class StopwatchPopup
-    Inherits System.Windows.Forms.Form
+    'Inherits System.Windows.Forms.Form
+    Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
