@@ -47,6 +47,19 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Telemetry.Themes", "Telemet
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Telemetry.Shared", "Telemetry.Shared\Telemetry.Shared.shproj", "{2ACF44F4-D005-45B3-81DA-D84B0ED07BC6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Font Files", "Font Files", "{1BE4DC85-7F40-4C3C-A72B-206223CB50F3}"
+	ProjectSection(SolutionItems) = preProject
+		Font Files\QuartzMS.TTF = Font Files\QuartzMS.TTF
+		Font Files\segoeui.ttf = Font Files\segoeui.ttf
+		Font Files\segoeuib.ttf = Font Files\segoeuib.ttf
+		Font Files\segoeuii.ttf = Font Files\segoeuii.ttf
+		Font Files\segoeuil.ttf = Font Files\segoeuil.ttf
+		Font Files\segoeuiz.ttf = Font Files\segoeuiz.ttf
+		Font Files\seguisb.ttf = Font Files\seguisb.ttf
+		Font Files\tahoma.ttf = Font Files\tahoma.ttf
+		Font Files\tahomabd.ttf = Font Files\tahomabd.ttf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Telemetry.Shared\Telemetry.Shared.projitems*{0bd02e80-1c77-4ebd-b154-e008235493aa}*SharedItemsImports = 4
@@ -234,5 +247,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C8B842F6-1F57-4325-9382-236448569E21} = {C4E243BA-E324-4FFE-85D4-6187488A7544}
+		{1BE4DC85-7F40-4C3C-A72B-206223CB50F3} = {C4E243BA-E324-4FFE-85D4-6187488A7544}
 	EndGlobalSection
 EndGlobal
