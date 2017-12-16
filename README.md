@@ -43,6 +43,8 @@ Pour éditer le projet , veuillez [télécharger](https://www.visualstudio.com/f
  * [Control Raspberry Pi with another Program - **Raspberry Forums**](https://www.raspberrypi.org/forums/viewtopic.php?t=34019) pour la communication .NET <--> Hardware
  * [Package Manager Console - **MSDN Documentation**](https://docs.microsoft.com/en-us/nuget/tools/package-manager-console) pour l'utilisation du gestionnaire de packages
  * [Storing referenced Dlls in visual studio solution folder - **StackOverflow**](https://stackoverflow.com/questions/4971807/storing-referenced-dlls-in-visual-studio-solution-folder) pour l'utilisation du dossier 'Solution Items' et l'ajout de références (.dll) en tant que fichier de la solution
+ * [Equivalent of static classes is VB.Net - **AndyFrench.Info**](http://www.andyfrench.info/2010/08/equivalent-of-static-classes-is-vbnet.html) pour l'utilisation des classes partagées
+ * [Visual Studio 2015: How to manage resources in a shared project? - **MSDN Forums**](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f5600bb4-b334-4893-a2ed-b21a2b1b5fc9/visual-studio-2015-how-to-manage-resources-in-a-shared-project?forum=wpdevelop) pour l'utilisation des 'Shared projects' (projets partagés) en VisualBasic
 ### Codes secrets:
 
 Voici des codes à entrer dans la fenêtre du logiciel (à taper quand elle est active et assez rapidement)
