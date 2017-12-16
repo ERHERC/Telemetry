@@ -28,6 +28,8 @@ Partial Class MainForm
         Me.DisplayLayout = New System.Windows.Forms.TableLayoutPanel()
         Me.WindowedBtn = New System.Windows.Forms.Button()
         Me.FullscreenBtn = New System.Windows.Forms.Button()
+        Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager()
+        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette()
         Me.MainPanel.SuspendLayout()
         Me.DisplayGroup.SuspendLayout()
         Me.DisplayLayout.SuspendLayout()
@@ -97,6 +99,11 @@ Partial Class MainForm
         Me.FullscreenBtn.Text = "Mode plein écran"
         Me.FullscreenBtn.UseVisualStyleBackColor = True
         '
+        'StyleManager
+        '
+        Me.StyleManager.GlobalPalette = Me.StylePalette
+        Me.StyleManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Custom
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -118,4 +125,6 @@ Partial Class MainForm
     Friend WithEvents DisplayLayout As TableLayoutPanel
     Friend WithEvents WindowedBtn As Button
     Friend WithEvents FullscreenBtn As Button
+    Friend WithEvents StyleManager As KryptonManager
+    Friend WithEvents StylePalette As KryptonPalette
 End Class

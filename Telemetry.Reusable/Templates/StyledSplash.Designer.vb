@@ -1,7 +1,7 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class StyledSplash
-    'Inherits System.Windows.Forms.Form
-    Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
+    Inherits System.Windows.Forms.Form
+    'Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _

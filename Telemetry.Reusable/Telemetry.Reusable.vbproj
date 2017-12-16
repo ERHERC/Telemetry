@@ -47,26 +47,32 @@
     <Reference Include="ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Design.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Docking, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Docking.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Navigator.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Workspace.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System">
       <Private>True</Private>
@@ -151,6 +157,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Classes\SillyClass.vb" />
     <Compile Include="Templates\StyledDialog.Designer.vb">
       <DependentUpon>StyledDialog.vb</DependentUpon>
     </Compile>
@@ -169,6 +176,7 @@
     <Compile Include="Templates\StyledSplash.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Tools.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Color Swatches\Generic\Colors.resx">
@@ -206,6 +214,13 @@
   <ItemGroup>
     <Folder Include="Color Swatches\Separated\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Telemetry.Themes\Telemetry.Themes.vbproj">
+      <Project>{66e061c6-4390-4637-b7e3-840e2e7c78bd}</Project>
+      <Name>Telemetry.Themes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\Telemetry.Shared\Telemetry.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

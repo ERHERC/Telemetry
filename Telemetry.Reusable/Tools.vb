@@ -1,9 +1,9 @@
 Imports System.Drawing
 Imports System.Windows.Forms
 Imports VB = Microsoft.VisualBasic
-Namespace Libraries
-    Partial Module Tools
-        Public Sub Wait(ByVal Seconds As Single)
+'Namespace Libraries
+Partial Public NotInheritable Class Tools
+        Public Shared Sub Wait(ByVal Seconds As Single)
             Static Start As Single
             Start = CSng(VB.Timer())
             Do While VB.Timer() < Start + Seconds
@@ -11,7 +11,7 @@ Namespace Libraries
             Loop
         End Sub
 
-        Public Function FileName(ByVal FilePath As String) As String
+        Public Shared Function FileName(ByVal FilePath As String) As String
             Dim FolderCut As String() = FilePath.Split("\"c)
             Dim FileCut As String() = FolderCut(FolderCut.Length - 1).Split("."c)
             Dim Result As System.Text.StringBuilder = New System.Text.StringBuilder()
@@ -31,7 +31,7 @@ Namespace Libraries
             Return Result.ToString()
         End Function
 
-        Public Function GetPath(ByVal FilePath As String) As String
+        Public Shared Function GetPath(ByVal FilePath As String) As String
             Dim FolderCut As String() = FilePath.Split("\"c)
             Dim Result As System.Text.StringBuilder = New System.Text.StringBuilder()
             If (FolderCut.Length > 1) Then
@@ -48,7 +48,7 @@ Namespace Libraries
             Return Result.ToString()
         End Function
 
-        Public Function SplitSourceImage(ByVal SourceImage As Image, ByVal ImageCount As Integer, ByVal ImageSize As Size) As Image()
+        Public Shared Function SplitSourceImage(ByVal SourceImage As Image, ByVal ImageCount As Integer, ByVal ImageSize As Size) As Image()
             Dim Result(ImageCount) As Image
             Dim PictureBoxContainer = New PictureBox
             With PictureBoxContainer
@@ -63,7 +63,7 @@ Namespace Libraries
             Return Result
         End Function
 
-        Public Function TrimStart(ByVal Input As String, ByVal Text As String) As String
+        Public Shared Function TrimStart(ByVal Input As String, ByVal Text As String) As String
             Dim Output As String = Input
             For Each Letter As Char In Text
                 Output.TrimStart(Letter)
@@ -71,7 +71,7 @@ Namespace Libraries
             Return Output
         End Function
 
-        Public Function TrimEnd(ByVal Input As String, ByVal Text As String) As String
+        Public Shared Function TrimEnd(ByVal Input As String, ByVal Text As String) As String
             Dim Output As String = Input
             For Each Letter As Char In Text.Reverse
                 Output.TrimEnd(Letter)
@@ -79,8 +79,8 @@ Namespace Libraries
             Return Output
         End Function
 
-        Public Function ArrayHasLength(Array As Object(), Length As Integer) As Boolean
+        Public Shared Function ArrayHasLength(Array As Object(), Length As Integer) As Boolean
             If Array.Length >= Length Then Return True Else Return False
         End Function
-    End Module
-End Namespace
+    End Class
+'End Namespace

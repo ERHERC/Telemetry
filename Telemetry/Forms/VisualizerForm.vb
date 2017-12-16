@@ -21,6 +21,8 @@ Public Class VisualizerForm
         InitializeComponent()
         ' .Add any initialization after the InitializeComponent() call.
         SecretCode = New Queue(Of Keys)
+
+        StylePalette.Import(Themes.SharedThemes.ResourceManager.GetObject("RoyalBlue"))
     End Sub
 
     Private Sub VisualizerForm_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize

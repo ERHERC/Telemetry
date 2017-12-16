@@ -70,6 +70,9 @@ Partial Class VisualizerForm
         Me.StopwatchIcon = New System.Windows.Forms.PictureBox()
         Me.StopwatchLabel = New System.Windows.Forms.Label()
         Me.TaskDialog = New ProgressDialogs.ProgressDialog(Me.components)
+        Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager(Me.components)
+        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette()
+        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
         Me.MainPanel.SuspendLayout()
         Me.VideoOutputPanel.SuspendLayout()
         CType(Me.VideoOutput, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -719,6 +722,11 @@ Partial Class VisualizerForm
         Me.TaskDialog.ShowTimeRemaining = False
         Me.TaskDialog.Title = "Démarrage du serveur interne ..."
         '
+        'StyleManager
+        '
+        Me.StyleManager.GlobalPalette = Me.StylePalette
+        Me.StyleManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Custom
+        '
         'VisualizerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -823,4 +831,6 @@ Partial Class VisualizerForm
     Friend WithEvents StopwatchPopupBtn As Button
     Friend WithEvents MessagesPopupBtn As Button
     Friend WithEvents TaskDialog As ProgressDialogs.ProgressDialog
+    Friend WithEvents StyleManager As KryptonManager
+    Friend WithEvents StylePalette As KryptonPalette
 End Class

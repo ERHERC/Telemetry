@@ -26,12 +26,13 @@ Module EasterEggCipher
         If Code.Contains("GHOST") Then
             For I = 1 To 0.5D Step -0.025D
                 FormsManager.MainForm.Opacity = I
-                Libraries.Tools.Wait(0.0125)
+                Tools.Wait(0.0125)
             Next
-            Libraries.Tools.Wait(2)
+            Tools.Wait(2)
             For I = 0.5D To 1 Step +0.025D
                 FormsManager.MainForm.Opacity = I
-                Libraries.Tools.Wait(0.0125)
+                Tools.Wait(0.0125)
+
             Next
             Keys.Clear()
         End If

@@ -23,7 +23,15 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager()
+        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette()
+        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette()
         Me.SuspendLayout()
+        '
+        'StyleManager
+        '
+        Me.StyleManager.GlobalPalette = Me.StylePalette
+        Me.StyleManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Custom
         '
         'MainForm
         '
@@ -37,4 +45,7 @@ Partial Class MainForm
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents StyleManager As KryptonManager
+    Friend WithEvents StylePalette As KryptonPalette
 End Class
