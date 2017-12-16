@@ -42,7 +42,7 @@ Public Class MainForm
     Private Sub MainForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
         Running = True
         IntercomApiManager.StartAPI()
-        Libraries.Tools.Wait(0.5D)
+        Tools.Wait(0.5D)
         MainPanel.Visible = True
         'Dim BackgroundTask As Task = New Task(AddressOf ParalelSub)
         'BackgroundTask.Start()
@@ -57,9 +57,9 @@ Public Class MainForm
 
             Select Case AlertLabel.Visible
                 Case True
-                    Libraries.Tools.Wait(0.75)
+                    Tools.Wait(0.75)
                 Case False
-                    Libraries.Tools.Wait(0.25)
+                    Tools.Wait(0.25)
             End Select
 
         End While
@@ -77,7 +77,7 @@ Public Class MainForm
                         .Tag = 0
                 End Select
             End With
-            Libraries.Tools.Wait(0.5)
+            Tools.Wait(0.5)
         End While
     End Sub
 

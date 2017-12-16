@@ -21,7 +21,7 @@ Module MessagesController
             If Not FormsManager.Messages Is Nothing AndAlso Not FormsManager.Messages.IsDisposed Then
                 FormsManager.Messages.Visible = True
                 FormsManager.Messages.MainPanel.Controls.Add(PanelManager.Messages)
-                'If FormsManager.MainForm.MessagesPanel.Visible Then Libraries.Tools.Wait(1)
+                'If FormsManager.MainForm.MessagesPanel.Visible Then Tools.Wait(1)
                 FormsManager.MainForm.MessagesPanel.Visible = False
             Else
                 If Tries - 1 > 0 Then

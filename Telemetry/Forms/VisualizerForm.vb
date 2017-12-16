@@ -71,9 +71,9 @@ Public Class VisualizerForm
                 .Line2 = "Veuillez patienter ..."
             End With
             IntercomApiManager.StartAPI()
-            Libraries.Tools.Wait(3)
+            Tools.Wait(3)
             TaskDialog.Close()
-            Libraries.Tools.Wait(0.25)
+            Tools.Wait(0.25)
             Me.Opacity = 1
             Me.WindowState = FormWindowState.Normal
             Me.ShowInTaskbar = True
