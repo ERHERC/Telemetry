@@ -108,7 +108,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Themes\Themes.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <CustomToolNamespace>Themes</CustomToolNamespace>
+      <CustomToolNamespace>VisualThemes</CustomToolNamespace>
       <LastGenOutput>Themes.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>

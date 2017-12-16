@@ -127,6 +127,7 @@
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
     <Import Include="Telemetry.Reusable" />
+    <Import Include="Telemetry.Themes" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\MainForm.Designer.vb">
