@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Telemetry.Chart.Convert.SetupForm
+            Me.MainForm = Global.Telemetry.Chart.Convert.MainForm
         End Sub
     End Class
 End Namespace

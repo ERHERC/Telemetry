@@ -25,6 +25,9 @@
     <DocumentationFile>Telemetry.Hardware.Data.Exchange.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>..\Certificates\Telemetry_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
@@ -46,6 +49,12 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D90535897B6B648E88777D4A0FCF39EA80800036</ManifestCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
@@ -138,6 +147,7 @@
     <Import Include="System.Threading.Tasks" />
     <Import Include="Telemetry.Reusable" />
     <Import Include="Telemetry.Themes" />
+    <Import Include="Telemetry.Themes.Themes" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Forms\MainForm.Designer.vb">

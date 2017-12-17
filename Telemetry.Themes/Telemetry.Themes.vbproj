@@ -22,6 +22,9 @@
     <DocumentationFile>Telemetry.Themes.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>..\Certificates\Telemetry_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <DefineDebug>false</DefineDebug>
@@ -93,6 +96,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Themes\UserInterface.vb" />
     <Compile Include="Themes\Themes.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -107,8 +111,8 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Themes\Themes.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <CustomToolNamespace>VisualThemes</CustomToolNamespace>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>UIThemes</CustomToolNamespace>
       <LastGenOutput>Themes.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
@@ -124,6 +128,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Themes\XML\Black.xml" />
     <Content Include="Themes\XML\Crimson.xml" />
     <Content Include="Themes\XML\Gold.xml" />
     <Content Include="Themes\XML\OliveDrab.xml" />

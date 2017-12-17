@@ -104,13 +104,14 @@
     <ManifestCertificateThumbprint>D90535897B6B648E88777D4A0FCF39EA80800036</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Telemetry_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>..\Certificates\Telemetry_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Telemetry_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -238,6 +239,7 @@
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
     <Import Include="Telemetry.Reusable" />
+    <Import Include="Telemetry.Themes.Themes" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data Modules\EasterEggCipher.vb" />
@@ -299,11 +301,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Panel Controllers\StopwatchController.vb" />
-    <Compile Include="Shared Namespaces\Resources\SharedThemes.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SharedThemes.resx</DependentUpon>
-    </Compile>
     <Compile Include="TCP\IntercomApiManager.vb" />
     <Compile Include="TCP\IntercomFunctions.vb" />
     <Compile Include="TCP\IntercomInterface.vb" />
@@ -335,11 +332,6 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shared Namespaces\Resources\SharedThemes.resx">
-      <CustomToolNamespace>Themes</CustomToolNamespace>
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>SharedThemes.Designer.vb</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\app.manifest" />
@@ -353,7 +345,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="Telemetry_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

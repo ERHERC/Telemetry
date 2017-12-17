@@ -22,7 +22,7 @@ Public Class VisualizerForm
         ' .Add any initialization after the InitializeComponent() call.
         SecretCode = New Queue(Of Keys)
 
-        StylePalette.Import(Themes.SharedThemes.ResourceManager.GetObject("RoyalBlue"))
+        StylePalette.Import(Themes.UserInterface.RoyalBlue)
     End Sub
 
     Private Sub VisualizerForm_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
@@ -71,7 +71,6 @@ Public Class VisualizerForm
                 .Line2 = "Veuillez patienter ..."
             End With
             IntercomApiManager.StartAPI()
-            Tools.Wait(3)
             TaskDialog.Close()
             Tools.Wait(0.25)
             Me.Opacity = 1
