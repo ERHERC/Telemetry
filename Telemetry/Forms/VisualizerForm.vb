@@ -71,6 +71,7 @@ Public Class VisualizerForm
                 .Line2 = "Veuillez patienter ..."
             End With
             IntercomApiManager.StartAPI()
+            Tools.Wait(1.25)
             TaskDialog.Close()
             Tools.Wait(0.25)
             Me.Opacity = 1
