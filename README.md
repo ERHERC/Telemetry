@@ -47,6 +47,11 @@ Pour éditer le projet , veuillez [télécharger](https://www.visualstudio.com/f
  * [Visual Studio 2015: How to manage resources in a shared project? - **MSDN Forums**](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f5600bb4-b334-4893-a2ed-b21a2b1b5fc9/visual-studio-2015-how-to-manage-resources-in-a-shared-project?forum=wpdevelop) pour l'utilisation des 'Shared projects' (projets partagés) en VisualBasic
  * [Convert String to System.IO.Stream [duplicate] - **StackOverflow**](https://stackoverflow.com/questions/8047064/convert-string-to-system-io-stream) pour la conversion du type String vers MemoryStream (notamment utilisé dans le système de thèmes)
  * [Is it possible to access resources from a different project using the designer in WinForms? - **StackOverflow**](https://stackoverflow.com/questions/14904170/is-it-possible-to-access-resources-from-a-different-project-using-the-designer-i) pour le stockage de resources dans un autre projet (notamment utilisé dans le système de thèmes)
+ * [Krypton WinForms components for .NET (ComponentFactory/Krypton/2013) - **GitHub**](https://github.com/ComponentFactory/Krypton/tree/2013) pour les controles d'interface graphique Krypton Toolkit
+ * [Using Shell Progress Dialogs in Windows Forms Applications - **brad-smith.info**](https://www.brad-smith.info/blog/archives/523) pour l'utilisation de la fenêtre de progression par défaut
+ * [How can I loop through all sub folder of FolderA and execute o.bat in each when I execute a.bat? - **SuperUser**](https://superuser.com/questions/323775/how-can-i-loop-through-all-sub-folder-of-foldera-and-execute-o-bat-in-each-when) pour l'utilisation de la commande FOR (notamment utilisé dans CleanBuild.cmd)
+ * [How to delete a folder with all contents using a bat file in windows? - **StackOverflow**](https://stackoverflow.com/questions/7331056/how-to-delete-a-folder-with-all-contents-using-a-bat-file-in-windows) pour l'utilisation de la commande RMDIR (notamment utilisé dans CleanBuild.cmd)
+
 ### Codes secrets:
 
 Voici des codes à entrer dans la fenêtre du logiciel (à taper quand elle est active et assez rapidement)

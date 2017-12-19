@@ -9,6 +9,7 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Telemetry.Sandbox", "Teleme
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4E243BA-E324-4FFE-85D4-6187488A7544}"
 	ProjectSection(SolutionItems) = preProject
+		CleanBuild.cmd = CleanBuild.cmd
 		README.md = README.md
 		Telemetry\TODO.vb = Telemetry\TODO.vb
 	EndProjectSection

@@ -96,6 +96,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Themes\T4 Templates\RuntimeTheme.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RuntimeTheme.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Themes\T4 Templates\Theme.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Theme.tt</DependentUpon>
+    </Compile>
     <Compile Include="Themes\UserInterface.vb" />
     <Compile Include="Themes\Themes.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -128,11 +138,23 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Themes\T4 Templates\RuntimeTheme.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <CustomToolNamespace>My.Templates</CustomToolNamespace>
+      <LastGenOutput>RuntimeTheme.vb</LastGenOutput>
+    </Content>
+    <Content Include="Themes\T4 Templates\Theme.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Theme.vb</LastGenOutput>
+    </Content>
     <Content Include="Themes\XML\Black.xml" />
     <Content Include="Themes\XML\Crimson.xml" />
     <Content Include="Themes\XML\Gold.xml" />
     <Content Include="Themes\XML\OliveDrab.xml" />
     <Content Include="Themes\XML\RoyalBlue.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="..\Telemetry.Shared\Telemetry.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
