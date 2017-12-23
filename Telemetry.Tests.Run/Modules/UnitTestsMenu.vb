@@ -29,7 +29,12 @@ Partial Public NotInheritable Class UnitTestsMenu : Inherits ConsoleMenu
         Console.BackgroundColor = ConsoleColor.Black
         Console.ForegroundColor = ConsoleColor.White
         Console.Clear()
+        Console.BackgroundColor = ConsoleColor.DarkGray
+        Console.ForegroundColor = ConsoleColor.White
         Console.WriteLine("Veuillez sélectionner une commande avec [ " & Chr(30) & " et " & Chr(31) & " ] et appuyez sur [ ENTER ] pour valider .")
+        Console.WriteLine("Appuyez sur S pour effectuer une recherche dans la liste des tests disponibles .          ")
+        Console.BackgroundColor = ConsoleColor.Black
+        Console.ForegroundColor = ConsoleColor.White
 
         'Skip 3 Lines
         For I = 0 To 3

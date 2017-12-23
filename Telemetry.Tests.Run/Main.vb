@@ -5,7 +5,6 @@ Module Application
             Console.WindowWidth = 90
             MainMenu = New UnitTestsMenu()
             MainMenu.Run()
-            'Call New UnitTests.ThemesExtractImages().Run(System.Windows.Forms.Application.StartupPath)
             Call New UnitTestsMenu().Run()
         Catch ErrorCode As Exception
             With ErrorCode
@@ -15,9 +14,10 @@ Module Application
                 Console.WriteLine(.HResult)
                 Console.WriteLine(.Message)
                 Console.WriteLine(.TargetSite)
+                Console.ReadKey()
             End With
         Finally
-            Console.ReadKey()
+
         End Try
     End Sub
 End Module
