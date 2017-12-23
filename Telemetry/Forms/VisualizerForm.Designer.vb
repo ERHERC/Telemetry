@@ -71,7 +71,6 @@ Partial Class VisualizerForm
         Me.StopwatchLabel = New System.Windows.Forms.Label()
         Me.TaskDialog = New ProgressDialogs.ProgressDialog(Me.components)
         Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager(Me.components)
-        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette()
         Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
         Me.MainPanel.SuspendLayout()
         Me.VideoOutputPanel.SuspendLayout()

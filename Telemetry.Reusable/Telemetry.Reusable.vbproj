@@ -142,6 +142,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Colors.resx</DependentUpon>
     </Compile>
+    <Compile Include="Console Menu\ConsoleMenu.vb" />
     <Compile Include="Controls\TransparentControl.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -181,6 +182,8 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tools.vb" />
+    <Compile Include="Unit Tests\IUnitTest.vb" />
+    <Compile Include="Unit Tests\UnitTest.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Color Swatches\Generic\Colors.resx">

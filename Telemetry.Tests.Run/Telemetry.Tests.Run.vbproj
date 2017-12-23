@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -51,6 +51,36 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Docking.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Navigator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Workspace.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System">
       <Private>True</Private>
     </Reference>
@@ -60,6 +90,10 @@
     <Reference Include="System.Deployment">
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Reflection.Context" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
     <Reference Include="System.Xml">
       <Private>True</Private>
     </Reference>
@@ -75,8 +109,14 @@
     <Reference Include="System.Net.Http">
       <Private>True</Private>
     </Reference>
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Import Include="ComponentFactory.Krypton.Docking" />
+    <Import Include="ComponentFactory.Krypton.Navigator" />
+    <Import Include="ComponentFactory.Krypton.Ribbon" />
+    <Import Include="ComponentFactory.Krypton.Toolkit" />
+    <Import Include="ComponentFactory.Krypton.Workspace" />
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
     <Import Include="System.Collections" />
@@ -84,12 +124,26 @@
     <Import Include="System.Data" />
     <Import Include="System.Diagnostics" />
     <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
     <Import Include="System.Xml.Linq" />
     <Import Include="System.Threading.Tasks" />
+    <Import Include="Telemetry" />
+    <Import Include="Telemetry.Hardware.Data.Exchange" />
+    <Import Include="Telemetry.Launcher" />
     <Import Include="Telemetry.Reusable" />
+    <Import Include="Telemetry.Reusable.UnitTests" />
+    <Import Include="Telemetry.Sandbox" />
+    <Import Include="Telemetry.Tests" />
+    <Import Include="Telemetry.Tests.Run" />
+    <Import Include="Telemetry.Themes" />
+    <Import Include="Telemetry.Themes.UIThemes" />
+    <Import Include="Telemetry.Xml.Data" />
+    <Import Include="Telemetry.Xml.Data.Data" />
+    <Import Include="Telemetry.Xml.Serializer" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.vb" />
+    <Compile Include="Modules\UnitTestsMenu.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -158,6 +212,10 @@
     <ProjectReference Include="..\Telemetry.Tests\Telemetry.Tests.vbproj">
       <Project>{fd276c0f-0dab-4d2b-8ce9-31745c35fcd5}</Project>
       <Name>Telemetry.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Telemetry.Themes\Telemetry.Themes.vbproj">
+      <Project>{66e061c6-4390-4637-b7e3-840e2e7c78bd}</Project>
+      <Name>Telemetry.Themes</Name>
     </ProjectReference>
     <ProjectReference Include="..\Telemetry.Xml.Data\Telemetry.Xml.Data.vbproj">
       <Project>{8573381c-0f92-4ddf-930e-792ae6c72bd4}</Project>
