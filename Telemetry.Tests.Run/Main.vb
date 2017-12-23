@@ -1,9 +1,12 @@
 Module Application
-
+    Private MainMenu As ConsoleMenu
     Sub Main()
         Try
-            LoadTests()
+            Console.WindowWidth = 90
+            MainMenu = New UnitTestsMenu()
+            MainMenu.Run()
             'Call New UnitTests.ThemesExtractImages().Run(System.Windows.Forms.Application.StartupPath)
+            Call New UnitTestsMenu().Run()
         Catch ErrorCode As Exception
             With ErrorCode
                 Console.WriteLine("===== Error caught =====")
@@ -16,9 +19,5 @@ Module Application
         Finally
             Console.ReadKey()
         End Try
-    End Sub
-
-    Sub LoadTests()
-
     End Sub
 End Module

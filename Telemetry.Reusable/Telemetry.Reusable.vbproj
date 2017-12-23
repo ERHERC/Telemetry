@@ -143,6 +143,7 @@
       <DependentUpon>Colors.resx</DependentUpon>
     </Compile>
     <Compile Include="Console Menu\ConsoleMenu.vb" />
+    <Compile Include="ConsoleTools.vb" />
     <Compile Include="Controls\TransparentControl.vb">
       <SubType>Component</SubType>
     </Compile>
