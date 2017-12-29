@@ -136,6 +136,7 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="Themes\XML\CompileThemes.cmd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Themes\T4 Templates\RuntimeTheme.tt">
@@ -147,8 +148,10 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Theme.vb</LastGenOutput>
     </Content>
+    <Content Include="Themes\XML\BaseTheme.xml" />
     <Content Include="Themes\XML\Black.xml" />
     <Content Include="Themes\XML\Crimson.xml" />
+    <Content Include="Themes\XML\FindReplace.vbs" />
     <Content Include="Themes\XML\Gold.xml" />
     <Content Include="Themes\XML\OliveDrab.xml" />
     <Content Include="Themes\XML\RoyalBlue.xml" />

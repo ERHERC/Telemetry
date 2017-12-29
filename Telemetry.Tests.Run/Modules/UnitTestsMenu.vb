@@ -14,7 +14,7 @@ Partial Public NotInheritable Class UnitTestsMenu : Inherits ConsoleMenu
                 MenuEntries.Add(.FullName, "UnitTest")
             End With
         Next
-        MenuEntries.Add("[Quitter]", "MenuCommand")
+        MenuEntries.Add("[ Quitter ]", "MenuCommand")
     End Sub
 
     Public Overrides Sub Run()
@@ -70,7 +70,9 @@ Partial Public NotInheritable Class UnitTestsMenu : Inherits ConsoleMenu
     Public Overrides Sub Input()
         Select Case Console.ReadKey().Key
             Case ConsoleKey.Escape
-                'MenuEntry = Integer.MinValue
+                MenuEntry = Integer.MinValue
+            Case ConsoleKey.Enter
+
             Case ConsoleKey.UpArrow
                 MenuEntry -= 1
                 If MenuEntry < 0 Then MenuEntry = MenuEntries.Count - 1

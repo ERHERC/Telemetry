@@ -2,7 +2,7 @@
 <!--Created by exporting the settings of a KryptonPalette instance.-->
 <!--For more information about Krypton visit www.ComponentFactory.com-->
 <!--WARNING: Modifying this file may render it invalid for importing.-->
-<KryptonPalette Version="18" Generated="Tuesday, 20 October 2015, 16:34">
+<KryptonPalette Version="18" Generated="Thursday, 28 December 2017, 23:55">
   <Properties>
     <ButtonSpecs>
       <FormClose>
@@ -1003,6 +1003,12 @@
           <ColorStyle Type="PaletteColorStyle" Value="Dashed" />
         </StateCommon>
       </PanelClient>
+      <PanelAlternate>
+        <StateCommon>
+          <Color1 Type="Color" Value="Crimson" />
+          <Color2 Type="Color" Value="Crimson" />
+        </StateCommon>
+      </PanelAlternate>
     </PanelStyles>
     <TrackBar>
       <StateCommon>

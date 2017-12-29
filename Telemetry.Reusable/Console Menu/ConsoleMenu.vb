@@ -1,4 +1,6 @@
 Public MustInherit Class ConsoleMenu
+    Public MustOverride Property MenuEntries As Dictionary(Of String, String)
+    Public MustOverride Property MenuEntry As Integer
 
     Public Sub New()
         Create()
@@ -7,9 +9,8 @@ Public MustInherit Class ConsoleMenu
     Public MustOverride Sub Run()
     Public MustOverride Sub Draw()
     Public MustOverride Sub Input()
+    Public Overridable Sub ParseCommand(ByVal Item As KeyValuePair(Of String, String)) : End Sub
 
-    Public MustOverride Property MenuEntries As Dictionary(Of String, String)
-    Public MustOverride Property MenuEntry As Integer
     Public Overridable Property EntriesRangeStart As Integer
     Public Overridable Property EntriesRangeEnd As Integer
 End Class

@@ -25,6 +25,7 @@ Partial Class MainForm
         Me.components = New System.ComponentModel.Container()
         Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager(Me.components)
         Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
+        Me.KryptonButton1 = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.SuspendLayout()
         '
         'StyleManager
@@ -32,11 +33,20 @@ Partial Class MainForm
         Me.StyleManager.GlobalPalette = Me.StylePalette
         Me.StyleManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Custom
         '
+        'KryptonButton1
+        '
+        Me.KryptonButton1.Location = New System.Drawing.Point(12, 12)
+        Me.KryptonButton1.Name = "KryptonButton1"
+        Me.KryptonButton1.Size = New System.Drawing.Size(146, 25)
+        Me.KryptonButton1.TabIndex = 0
+        Me.KryptonButton1.Values.Text = "Krypton MsgBox"
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(624, 442)
+        Me.Controls.Add(Me.KryptonButton1)
         Me.Name = "MainForm"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -47,4 +57,5 @@ Partial Class MainForm
 
     Friend WithEvents StyleManager As KryptonManager
     Friend WithEvents StylePalette As KryptonPalette
+    Friend WithEvents KryptonButton1 As KryptonButton
 End Class
