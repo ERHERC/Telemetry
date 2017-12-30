@@ -102,6 +102,10 @@ Partial Class VisualizerForm
         CType(Me.StopwatchIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'FormPinBtn
+        '
+        Me.FormPinBtn.Visible = True
+        '
         'VideoOutputHeader
         '
         Me.VideoOutputHeader.Dock = System.Windows.Forms.DockStyle.Fill

@@ -39,22 +39,28 @@ Partial Class DesktopWindow
         'FormBackBtn
         '
         Me.FormBackBtn.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Near
+        Me.FormBackBtn.Enabled = ComponentFactory.Krypton.Toolkit.ButtonEnabled.[False]
         Me.FormBackBtn.Style = ComponentFactory.Krypton.Toolkit.PaletteButtonStyle.Form
         Me.FormBackBtn.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.Previous
         Me.FormBackBtn.UniqueName = "9F3B0CCC55C54F9BBE96DC35521EF61A"
+        Me.FormBackBtn.Visible = False
         '
         'FormNextBtn
         '
         Me.FormNextBtn.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Near
+        Me.FormNextBtn.Enabled = ComponentFactory.Krypton.Toolkit.ButtonEnabled.[False]
         Me.FormNextBtn.Style = ComponentFactory.Krypton.Toolkit.PaletteButtonStyle.Form
         Me.FormNextBtn.Type = ComponentFactory.Krypton.Toolkit.PaletteButtonSpecStyle.[Next]
         Me.FormNextBtn.UniqueName = "491CF5ACFA7443C39AAAD7B95C85BECA"
+        Me.FormNextBtn.Visible = False
         '
         'FormHomeBtn
         '
         Me.FormHomeBtn.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Near
+        Me.FormHomeBtn.Enabled = ComponentFactory.Krypton.Toolkit.ButtonEnabled.[False]
         Me.FormHomeBtn.Style = ComponentFactory.Krypton.Toolkit.PaletteButtonStyle.Form
         Me.FormHomeBtn.UniqueName = "A0224482580744858CA07639B30A3812"
+        Me.FormHomeBtn.Visible = False
         '
         'DesktopWindow
         '
@@ -63,7 +69,6 @@ Partial Class DesktopWindow
         Me.ButtonSpecs.AddRange(New ComponentFactory.Krypton.Toolkit.ButtonSpecAny() {Me.FormPinBtn, Me.FormNextBtn, Me.FormBackBtn, Me.FormHomeBtn})
         Me.ClientSize = New System.Drawing.Size(284, 262)
         Me.Name = "DesktopWindow"
-        Me.Text = "DesktopWindow"
         Me.ResumeLayout(False)
 
     End Sub

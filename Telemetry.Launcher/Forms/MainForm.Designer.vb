@@ -37,6 +37,23 @@ Partial Class MainForm
         CType(Me.DisplayMode, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'FormPinBtn
+        '
+        Me.FormPinBtn.Visible = True
+        '
+        'FormBackBtn
+        '
+        Me.FormBackBtn.Visible = True
+        '
+        'FormNextBtn
+        '
+        Me.FormNextBtn.Visible = True
+        '
+        'FormHomeBtn
+        '
+        Me.FormHomeBtn.Enabled = ComponentFactory.Krypton.Toolkit.ButtonEnabled.[True]
+        Me.FormHomeBtn.Visible = True
+        '
         'StyleManager
         '
         Me.StyleManager.GlobalPalette = Me.StylePalette
@@ -105,6 +122,10 @@ Partial Class MainForm
         Me.Controls.Add(Me.MainPanel)
         Me.Controls.Add(Me.TopEdge)
         Me.Controls.Add(Me.TopBar)
+        Me.FormBack = True
+        Me.FormHome = True
+        Me.FormHomeEnabled = True
+        Me.FormNext = True
         Me.FormPin = True
         Me.Name = "MainForm"
         Me.ShowIcon = False
