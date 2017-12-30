@@ -1,6 +1,6 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
-    Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
+    Inherits DesktopWindow
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -22,9 +22,8 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager(Me.components)
-        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
+        Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager()
+        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette()
         Me.SuspendLayout()
         '
         'StyleManager
@@ -37,6 +36,7 @@ Partial Class MainForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(624, 442)
+        Me.FormPin = True
         Me.Name = "MainForm"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

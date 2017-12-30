@@ -2,20 +2,35 @@
 <!--Created by exporting the settings of a KryptonPalette instance.-->
 <!--For more information about Krypton visit www.ComponentFactory.com-->
 <!--WARNING: Modifying this file may render it invalid for importing.-->
-<KryptonPalette Version="18" Generated="Thursday, 28 December 2017, 23:55">
+<KryptonPalette Version="18" Generated="Saturday, 30 December 2017, 15:08">
   <Properties>
     <ButtonSpecs>
-      <FormClose>
+      <Generic>
         <Image Type="Image" Value="ImageCache1" />
+      </Generic>
+      <Next>
+        <Image Type="Image" Value="ImageCache2" />
+      </Next>
+      <Previous>
+        <Image Type="Image" Value="ImageCache3" />
+      </Previous>
+      <PinVertical>
+        <Image Type="Image" Value="ImageCache4" />
+      </PinVertical>
+      <PinHorizontal>
+        <Image Type="Image" Value="ImageCache5" />
+      </PinHorizontal>
+      <FormClose>
+        <Image Type="Image" Value="ImageCache6" />
       </FormClose>
       <FormMin>
-        <Image Type="Image" Value="ImageCache2" />
+        <Image Type="Image" Value="ImageCache7" />
       </FormMin>
       <FormMax>
-        <Image Type="Image" Value="ImageCache3" />
+        <Image Type="Image" Value="ImageCache8" />
       </FormMax>
       <FormRestore>
-        <Image Type="Image" Value="ImageCache4" />
+        <Image Type="Image" Value="ImageCache9" />
       </FormRestore>
     </ButtonSpecs>
     <ButtonStyles>
@@ -643,6 +658,16 @@
             <Color1 Type="Color" Value="239, 239, 242" />
             <Color2 Type="Color" Value="239, 239, 242" />
           </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="OliveDrab" />
+              <Color2 Type="Color" Value="OliveDrab" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="OliveDrab" />
+              <Color2 Type="Color" Value="OliveDrab" />
+            </LongText>
+          </Content>
         </StateNormal>
         <StateTracking>
           <Back>
@@ -654,6 +679,16 @@
             <Color1 Type="Color" Value="OliveDrab" />
             <Color2 Type="Color" Value="OliveDrab" />
           </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="OliveDrab" />
+              <Color2 Type="Color" Value="OliveDrab" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="OliveDrab" />
+              <Color2 Type="Color" Value="OliveDrab" />
+            </LongText>
+          </Content>
         </StateTracking>
         <StatePressed>
           <Back>
@@ -751,6 +786,18 @@
             <Rounding Type="Int" Value="-10" />
           </Border>
         </StateCommon>
+        <StateNormal>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="OliveDrab" />
+              <Color2 Type="Color" Value="OliveDrab" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="OliveDrab" />
+              <Color2 Type="Color" Value="OliveDrab" />
+            </LongText>
+          </Content>
+        </StateNormal>
         <StateTracking>
           <Back>
             <Color1 Type="Color" Value="White" />
@@ -761,6 +808,16 @@
             <Color1 Type="Color" Value="OliveDrab" />
             <Color2 Type="Color" Value="OliveDrab" />
           </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="OliveDrab" />
+              <Color2 Type="Color" Value="OliveDrab" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="OliveDrab" />
+              <Color2 Type="Color" Value="OliveDrab" />
+            </LongText>
+          </Content>
         </StateTracking>
         <StatePressed>
           <Back>
@@ -1135,9 +1192,14 @@
     <BaseRenderMode Type="RendererMode" Value="Professional" />
   </Properties>
   <Images>
-    <Image Name="ImageCache1"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAFwEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAACNSURBVEhLzc7RCcAgDABR99+g09pYUIIc8c+r8Ao9kaT13n8BowGjAaMBowGjAaMBowGjAaMBYyXO+Hye+GRx1t3+7gRjZR9IS4x/elvBWKHB2byntxWMlTmIlsl39LaCsZKHxfEXGbPI1UXGnIkWu7LIPjCLs+72dycYDRgNGA0YDRgNGA0YDRjv6+0F8fqkdOUAJyEAAAAASUVORK5CYIIL]]></Image>
-    <Image Name="ImageCache2"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA7gAAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAABkSURBVEhLzc0xCgMxEARB/f/T8jlditvMbUEpaBj23Hv/AmOBscBYYCwwFhgLjAXGAmOBscBYYCwwFhgLjJvnfb9Xc7Nh3MyjMjcbxs08KnOzYSwwFhgLjAXGAmOBscD4e/d8APptHHE6IKyKAAAAAElFTkSuQmCCCw==]]></Image>
-    <Image Name="ImageCache3"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA8gAAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAABoSURBVEhL7c4xCsAwDARB///TStIei6/zprBhXCwIac3ML2A0YDRgNGA0YDRgNGA0YDRgbN73fVs502BscinJmQZjk0tJzjQYm7boHpLuIenoIU3ONBgNGA0YDRgNGA0YDRgNGM+b9QAWrfaIOnnSFwAAAABJRU5ErkJgggs=]]></Image>
-    <Image Name="ImageCache4"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAFgEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAACMSURBVEhLzc5BCsQwDARB///TSnwwCNGSlRw8XqgldASTYWZXwKiAUQGjAkYFjAoYFTAqYFTA2PX+5h+KtzsYu+K4F293MHZlg0c+ZI5k/M167sJYWaPE36znLoyVbMT37KaCsZKNzO7F9zsYK9nIn3EPY+WqD8nE2y8wKmBUwKiAUQGjAkYFjOfZeAAx+uySFOdd0wAAAABJRU5ErkJgggs=]]></Image>
+    <Image Name="ImageCache1"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAANAEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACqSURBVEhLzc4BCoMwEERRz5X73yvNFgbW+LvaCI4Lr5hPNbv13l8BowNGB4wOGB0wOmB0wOiA0QFjZUz8jEc+r8JYyRfrObdVGCvz5a21L53n/1+FsaILQyygubsMxgotobmzDMZfqiU0q8tgJPp4uLpIGHP4FsFYoUXinP2zgGCszIvo4tmYw7sVjJW4hBbRPL5IZluEaNJ5994ZjA4YHTA6YHTA+Ly+fQDzzt1TBUbwcQAAAABJRU5ErkJgggs=]]></Image>
+    <Image Name="ImageCache2"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA/wAAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsIAAA7CARUoSoAAAAB1SURBVEhLzc4xCsAwDMXQ3P/Sbjx0KRrsYKoEHgF5+SsiroDRgNGA0YDRgNGA0YDRgNGAsWq//fGtC2NFjnh9bycwVk2OwdgxNQZj18QYjF1XDJkYkTBWTY1IGCsmRySMVVMjEkYDRgNGA0YDRgNGA8b/xXoASuAeby5cbxoAAAAASUVORK5CYIIL]]></Image>
+    <Image Name="ImageCache3"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAAAEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsIAAA7CARUoSoAAAAB2SURBVEhLzc4xCsAwDMXQ3v/Sbjx0KRrs1FQJPALy8q+IOAJGA0YDRgNGA0YDRgNGA0YDxh3rrY9vFRi7csTjfavC2DExImGsmhqRMFZMjkgYK44ZkibHYOyYGoOxa2IMxh1fRiSMBowGjAaMBowGjAaM/4vrBnqwHm8rRcK9AAAAAElFTkSuQmCCCw==]]></Image>
+    <Image Name="ImageCache4"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA9wAAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsEAAA7BAbiRa+0AAABtSURBVEhL7c5BDoAgDERR7n/pKkY2kx8tahwWJXksfiBti4glYHTA6IDRAaMDRgeMDhgdMDpgvLOffiF9m4Ux4xx6nLdLdBgzahFViwxj6BX9k4FxxtPBCuOMWkQts8hXMDpgdMDogNEB4/+ibaymFne7DvwKAAAAAElFTkSuQmCCCw==]]></Image>
+    <Image Name="ImageCache5"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAADQEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsIAAA7CARUoSoAAAACDSURBVEhLzc7RCoAgDEZh3/+ll4IXts7YEupX+AiOxtbM7AgYFTAqYFTAqIBRAaMCRgWMVf30D9+9hbEqWmRnQYxVY2DEv81grJoDH+fzRcYAj87st38zGKvWhTz/NoOxyg9f+bcZjFXRwGMW2YFRAaMCRgWMChgVMCpgVMCogPF/1i6TmBZ3+YODlwAAAABJRU5ErkJgggs=]]></Image>
+    <Image Name="ImageCache6"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAFwEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAACNSURBVEhLzc7RCcAgDABR99+g09pYUIIc8c+r8Ao9kaT13n8BowGjAaMBowGjAaMBowGjAaMBYyXO+Hye+GRx1t3+7gRjZR9IS4x/elvBWKHB2byntxWMlTmIlsl39LaCsZKHxfEXGbPI1UXGnIkWu7LIPjCLs+72dycYDRgNGA0YDRgNGA0YDRjv6+0F8fqkdOUAJyEAAAAASUVORK5CYIIL]]></Image>
+    <Image Name="ImageCache7"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA7gAAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAABkSURBVEhLzc0xCgMxEARB/f/T8jlditvMbUEpaBj23Hv/AmOBscBYYCwwFhgLjAXGAmOBscBYYCwwFhgLjJvnfb9Xc7Nh3MyjMjcbxs08KnOzYSwwFhgLjAXGAmOBscD4e/d8APptHHE6IKyKAAAAAElFTkSuQmCCCw==]]></Image>
+    <Image Name="ImageCache8"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA8gAAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAABoSURBVEhL7c4xCsAwDARB///TStIei6/zprBhXCwIac3ML2A0YDRgNGA0YDRgNGA0YDRgbN73fVs502BscinJmQZjk0tJzjQYm7boHpLuIenoIU3ONBgNGA0YDRgNGA0YDRgNGM+b9QAWrfaIOnnSFwAAAABJRU5ErkJgggs=]]></Image>
+    <Image Name="ImageCache9"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAFgEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAACMSURBVEhLzc5BCsQwDARB///TSnwwCNGSlRw8XqgldASTYWZXwKiAUQGjAkYFjAoYFTAqYFTA2PX+5h+KtzsYu+K4F293MHZlg0c+ZI5k/M167sJYWaPE36znLoyVbMT37KaCsZKNzO7F9zsYK9nIn3EPY+WqD8nE2y8wKmBUwKiAUQGjAkYFjOfZeAAx+uySFOdd0wAAAABJRU5ErkJgggs=]]></Image>
   </Images>
 </KryptonPalette>

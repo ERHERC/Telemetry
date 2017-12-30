@@ -28,6 +28,10 @@ Partial Class SplashForm
         Me.AppNameLabel.Size = New System.Drawing.Size(276, 37)
         Me.AppNameLabel.Text = "VEUILLEZ PATIENTER"
         '
+        'VersionLabel
+        '
+        Me.VersionLabel.Text = "Version 1.0.0"
+        '
         'SplashForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)

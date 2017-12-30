@@ -2,6 +2,7 @@ Module Application
     Private MainMenu As ConsoleMenu
     Sub Main()
         Try
+            'Call New UnitTests.ThemesExtractImages().Run(System.Windows.Forms.Application.StartupPath)
             Console.WindowWidth = 91
             MainMenu = New UnitTestsMenu()
             MainMenu.Run()

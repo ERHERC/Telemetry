@@ -1,7 +1,6 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class StopwatchPopup
-    'Inherits System.Windows.Forms.Form
-    Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
+    Inherits DesktopWindow
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -31,6 +30,7 @@ Partial Class StopwatchPopup
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(456, 466)
+        Me.FormPin = True
         Me.Name = "StopwatchPopup"
         Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show

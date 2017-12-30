@@ -96,16 +96,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Themes\T4 Templates\RuntimeTheme.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RuntimeTheme.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Themes\T4 Templates\Theme.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Theme.tt</DependentUpon>
-    </Compile>
     <Compile Include="Themes\UserInterface.vb" />
     <Compile Include="Themes\Themes.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -139,18 +129,18 @@
     <None Include="Themes\XML\CompileThemes.cmd" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Themes\T4 Templates\RuntimeTheme.tt">
-      <Generator>TextTemplatingFilePreprocessor</Generator>
-      <CustomToolNamespace>My.Templates</CustomToolNamespace>
-      <LastGenOutput>RuntimeTheme.vb</LastGenOutput>
-    </Content>
-    <Content Include="Themes\T4 Templates\Theme.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Theme.vb</LastGenOutput>
-    </Content>
     <Content Include="Themes\XML\BaseTheme.xml" />
     <Content Include="Themes\XML\Black.xml" />
     <Content Include="Themes\XML\Crimson.xml" />
+    <Content Include="Themes\XML\Data\FormBack.png" />
+    <Content Include="Themes\XML\Data\FormClose.png" />
+    <Content Include="Themes\XML\Data\FormHome.png" />
+    <Content Include="Themes\XML\Data\FormMax.png" />
+    <Content Include="Themes\XML\Data\FormMin.png" />
+    <Content Include="Themes\XML\Data\FormNext.png" />
+    <Content Include="Themes\XML\Data\FormPin.png" />
+    <Content Include="Themes\XML\Data\FormPinned.png" />
+    <Content Include="Themes\XML\Data\FormRestore.png" />
     <Content Include="Themes\XML\FindReplace.vbs" />
     <Content Include="Themes\XML\Gold.xml" />
     <Content Include="Themes\XML\OliveDrab.xml" />

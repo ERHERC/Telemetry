@@ -2,8 +2,7 @@ Imports System.Windows.Forms
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class StyledForm
-    'Inherits System.Windows.Forms.Form
-    Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
+    Inherits DesktopWindow
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -75,6 +74,7 @@ Partial Class StyledForm
         Me.Controls.Add(Me.SplitPanel_01)
         Me.Controls.Add(Me.HeaderPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormPin = True
         Me.MaximizeBox = False
         Me.Name = "StyledForm"
         Me.ShowIcon = False

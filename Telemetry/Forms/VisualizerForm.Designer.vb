@@ -1,7 +1,7 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class VisualizerForm
     'Inherits System.Windows.Forms.Form
-    Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
+    Inherits DesktopWindow
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -700,7 +700,7 @@ Partial Class VisualizerForm
         'StopwatchLabel
         '
         Me.StopwatchLabel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.StopwatchLabel.Font = New System.Drawing.Font("Quartz MS", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StopwatchLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StopwatchLabel.ForeColor = System.Drawing.Color.White
         Me.StopwatchLabel.Location = New System.Drawing.Point(56, 0)
         Me.StopwatchLabel.Margin = New System.Windows.Forms.Padding(0, 0, 0, 4)
@@ -732,6 +732,7 @@ Partial Class VisualizerForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1205, 518)
         Me.Controls.Add(Me.MainPanel)
+        Me.FormPin = True
         Me.KeyPreview = True
         Me.MinimumSize = New System.Drawing.Size(664, 480)
         Me.Name = "VisualizerForm"

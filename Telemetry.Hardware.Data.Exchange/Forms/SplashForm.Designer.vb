@@ -33,6 +33,10 @@ Partial Class SplashForm
         '
         Me.LeftPanel.BackColor = System.Drawing.Color.Gold
         '
+        'VersionLabel
+        '
+        Me.VersionLabel.Text = "Version 1.0.0"
+        '
         'LoadLabel
         '
         Me.LoadLabel.ForeColor = System.Drawing.Color.Gold

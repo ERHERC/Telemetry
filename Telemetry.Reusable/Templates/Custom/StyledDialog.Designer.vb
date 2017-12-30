@@ -1,10 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class StyledDialog
-    'Inherits System.Windows.Forms.Form
-    Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
+    Inherits DesktopWindow
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -21,7 +20,7 @@ Partial Class StyledDialog
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.SplitPanel_02 = New System.Windows.Forms.Panel()
         Me.BottomPanel = New System.Windows.Forms.Panel()
@@ -121,6 +120,7 @@ Partial Class StyledDialog
         Me.Controls.Add(Me.SplitPanel_02)
         Me.Controls.Add(Me.BottomPanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormPin = True
         Me.MaximizeBox = False
         Me.Name = "StyledDialog"
         Me.ShowIcon = False

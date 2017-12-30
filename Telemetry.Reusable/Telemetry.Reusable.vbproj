@@ -164,22 +164,28 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Classes\SillyClass.vb" />
-    <Compile Include="Templates\StyledDialog.Designer.vb">
+    <Compile Include="Templates\Base\DesktopWindow.Designer.vb">
+      <DependentUpon>DesktopWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Templates\Base\DesktopWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\Custom\StyledDialog.Designer.vb">
       <DependentUpon>StyledDialog.vb</DependentUpon>
     </Compile>
-    <Compile Include="Templates\StyledDialog.vb">
+    <Compile Include="Templates\Custom\StyledDialog.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Templates\StyledForm.Designer.vb">
+    <Compile Include="Templates\Custom\StyledForm.Designer.vb">
       <DependentUpon>StyledForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="Templates\StyledForm.vb">
+    <Compile Include="Templates\Custom\StyledForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Templates\StyledSplash.Designer.vb">
+    <Compile Include="Templates\Custom\StyledSplash.Designer.vb">
       <DependentUpon>StyledSplash.vb</DependentUpon>
     </Compile>
-    <Compile Include="Templates\StyledSplash.vb">
+    <Compile Include="Templates\Custom\StyledSplash.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tools.vb" />
@@ -198,13 +204,16 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Templates\StyledDialog.resx">
+    <EmbeddedResource Include="Templates\Base\DesktopWindow.resx">
+      <DependentUpon>DesktopWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates\Custom\StyledDialog.resx">
       <DependentUpon>StyledDialog.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Templates\StyledForm.resx">
+    <EmbeddedResource Include="Templates\Custom\StyledForm.resx">
       <DependentUpon>StyledForm.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Templates\StyledSplash.resx">
+    <EmbeddedResource Include="Templates\Custom\StyledSplash.resx">
       <DependentUpon>StyledSplash.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
