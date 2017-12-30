@@ -24,6 +24,7 @@ Module EasterEggCipher
         End If
 
         If Code.Contains("GHOST") Then
+            'Code GNOST
             For I = 1 To 0.5D Step -0.025D
                 FormsManager.MainForm.Opacity = I
                 Tools.Wait(0.0125)
@@ -35,6 +36,12 @@ Module EasterEggCipher
 
             Next
             Keys.Clear()
+        End If
+
+
+        If Code.Contains("ROSESSpaceARESpaceRED") Then
+            'Code ROSES ARE RED
+            KryptonMessageBox.Show("Roses are red" & vbCrLf & "Violets are blue" & vbCrLf & "Omae wa" & vbCrLf & "Mou shindeiru !", "Important message", MessageBoxButtons.OK)
         End If
     End Sub
 End Module

@@ -113,7 +113,7 @@ Partial Class VisualizerForm
         Me.VideoOutputHeader.ForeColor = System.Drawing.Color.LightGray
         Me.VideoOutputHeader.Location = New System.Drawing.Point(0, 0)
         Me.VideoOutputHeader.Name = "VideoOutputHeader"
-        Me.VideoOutputHeader.Size = New System.Drawing.Size(727, 37)
+        Me.VideoOutputHeader.Size = New System.Drawing.Size(575, 37)
         Me.VideoOutputHeader.TabIndex = 1
         Me.VideoOutputHeader.Text = "SIGNAL VIDEO"
         '
@@ -128,7 +128,7 @@ Partial Class VisualizerForm
         Me.MainPanel.Location = New System.Drawing.Point(0, 0)
         Me.MainPanel.Name = "MainPanel"
         Me.MainPanel.Padding = New System.Windows.Forms.Padding(24)
-        Me.MainPanel.Size = New System.Drawing.Size(1205, 518)
+        Me.MainPanel.Size = New System.Drawing.Size(1053, 518)
         Me.MainPanel.TabIndex = 2
         '
         'VideoOutputPanel
@@ -141,7 +141,7 @@ Partial Class VisualizerForm
         Me.VideoOutputPanel.Location = New System.Drawing.Point(280, 24)
         Me.VideoOutputPanel.Margin = New System.Windows.Forms.Padding(8)
         Me.VideoOutputPanel.Name = "VideoOutputPanel"
-        Me.VideoOutputPanel.Size = New System.Drawing.Size(853, 406)
+        Me.VideoOutputPanel.Size = New System.Drawing.Size(701, 406)
         Me.VideoOutputPanel.TabIndex = 1
         '
         'VideoOutput
@@ -151,7 +151,7 @@ Partial Class VisualizerForm
         Me.VideoOutput.Image = Global.Telemetry.My.Resources.Resources.animated_loader
         Me.VideoOutput.Location = New System.Drawing.Point(0, 37)
         Me.VideoOutput.Name = "VideoOutput"
-        Me.VideoOutput.Size = New System.Drawing.Size(853, 332)
+        Me.VideoOutput.Size = New System.Drawing.Size(701, 332)
         Me.VideoOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.VideoOutput.TabIndex = 0
         Me.VideoOutput.TabStop = False
@@ -164,7 +164,7 @@ Partial Class VisualizerForm
         Me.VideoOutputStatus.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.VideoOutputStatus.Location = New System.Drawing.Point(0, 369)
         Me.VideoOutputStatus.Name = "VideoOutputStatus"
-        Me.VideoOutputStatus.Size = New System.Drawing.Size(853, 37)
+        Me.VideoOutputStatus.Size = New System.Drawing.Size(701, 37)
         Me.VideoOutputStatus.TabIndex = 3
         '
         'DistancePanel
@@ -204,7 +204,7 @@ Partial Class VisualizerForm
         Me.SpeedPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
         Me.SpeedPanel.Controls.Add(Me.SpeedLabel, 1, 0)
         Me.SpeedPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.SpeedPanel.Location = New System.Drawing.Point(705, 0)
+        Me.SpeedPanel.Location = New System.Drawing.Point(553, 0)
         Me.SpeedPanel.Margin = New System.Windows.Forms.Padding(0)
         Me.SpeedPanel.Name = "SpeedPanel"
         Me.SpeedPanel.RowCount = 1
@@ -232,7 +232,7 @@ Partial Class VisualizerForm
         Me.VideoOutputHeaderPanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.VideoOutputHeaderPanel.Location = New System.Drawing.Point(0, 0)
         Me.VideoOutputHeaderPanel.Name = "VideoOutputHeaderPanel"
-        Me.VideoOutputHeaderPanel.Size = New System.Drawing.Size(853, 37)
+        Me.VideoOutputHeaderPanel.Size = New System.Drawing.Size(701, 37)
         Me.VideoOutputHeaderPanel.TabIndex = 2
         '
         'PingPanel
@@ -244,7 +244,7 @@ Partial Class VisualizerForm
         Me.PingPanel.Controls.Add(Me.PingLabel, 1, 0)
         Me.PingPanel.Controls.Add(Me.PingIcon, 0, 0)
         Me.PingPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PingPanel.Location = New System.Drawing.Point(727, 0)
+        Me.PingPanel.Location = New System.Drawing.Point(575, 0)
         Me.PingPanel.Margin = New System.Windows.Forms.Padding(0)
         Me.PingPanel.Name = "PingPanel"
         Me.PingPanel.RowCount = 1
@@ -285,7 +285,7 @@ Partial Class VisualizerForm
         Me.BatteryPanel.Controls.Add(Me.BatteryBarOutterBorder, 0, 1)
         Me.BatteryPanel.Controls.Add(Me.BatteryIcon, 0, 2)
         Me.BatteryPanel.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BatteryPanel.Location = New System.Drawing.Point(1133, 24)
+        Me.BatteryPanel.Location = New System.Drawing.Point(981, 24)
         Me.BatteryPanel.Name = "BatteryPanel"
         Me.BatteryPanel.RowCount = 3
         Me.BatteryPanel.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 37.0!))
@@ -571,7 +571,7 @@ Partial Class VisualizerForm
         Me.BottomPanel.Margin = New System.Windows.Forms.Padding(8)
         Me.BottomPanel.Name = "BottomPanel"
         Me.BottomPanel.Padding = New System.Windows.Forms.Padding(0, 4, 0, 4)
-        Me.BottomPanel.Size = New System.Drawing.Size(1157, 64)
+        Me.BottomPanel.Size = New System.Drawing.Size(1005, 64)
         Me.BottomPanel.TabIndex = 3
         '
         'BottomBarLayoutManager
@@ -588,7 +588,7 @@ Partial Class VisualizerForm
         Me.BottomBarLayoutManager.Name = "BottomBarLayoutManager"
         Me.BottomBarLayoutManager.RowCount = 1
         Me.BottomBarLayoutManager.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.BottomBarLayoutManager.Size = New System.Drawing.Size(1157, 56)
+        Me.BottomBarLayoutManager.Size = New System.Drawing.Size(1005, 56)
         Me.BottomBarLayoutManager.TabIndex = 2
         '
         'LeftBottomColumn
@@ -600,7 +600,7 @@ Partial Class VisualizerForm
         Me.LeftBottomColumn.Location = New System.Drawing.Point(3, 3)
         Me.LeftBottomColumn.Name = "LeftBottomColumn"
         Me.LeftBottomColumn.Padding = New System.Windows.Forms.Padding(6)
-        Me.LeftBottomColumn.Size = New System.Drawing.Size(437, 50)
+        Me.LeftBottomColumn.Size = New System.Drawing.Size(361, 50)
         Me.LeftBottomColumn.TabIndex = 3
         '
         'MenuCommandsPanel
@@ -681,7 +681,7 @@ Partial Class VisualizerForm
         Me.StopwatchPanel.Controls.Add(Me.StopwatchIcon, 0, 0)
         Me.StopwatchPanel.Controls.Add(Me.StopwatchLabel, 1, 0)
         Me.StopwatchPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.StopwatchPanel.Location = New System.Drawing.Point(443, 0)
+        Me.StopwatchPanel.Location = New System.Drawing.Point(367, 0)
         Me.StopwatchPanel.Margin = New System.Windows.Forms.Padding(0)
         Me.StopwatchPanel.Name = "StopwatchPanel"
         Me.StopwatchPanel.RowCount = 1
@@ -734,7 +734,7 @@ Partial Class VisualizerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1205, 518)
+        Me.ClientSize = New System.Drawing.Size(1053, 518)
         Me.Controls.Add(Me.MainPanel)
         Me.FormPin = True
         Me.KeyPreview = True
@@ -745,7 +745,6 @@ Partial Class VisualizerForm
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Télémétrie [Fenêtre principale]"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
         Me.MainPanel.ResumeLayout(False)
         Me.VideoOutputPanel.ResumeLayout(False)
         CType(Me.VideoOutput, System.ComponentModel.ISupportInitialize).EndInit()

@@ -67,3 +67,4 @@ Code|Action
 *N A N I* |Omae Wa Mou Shindeiru ... **NANI ?!**
 *G H O S T* |Le logiciel devient transparent pendant 2 secondes
 *A H* ou *D E N I S* |Le "AH !" de denis Brogniart
+*R O S E S   A R E   R E D* | Juste un petit poème ...
