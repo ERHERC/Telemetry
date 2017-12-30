@@ -217,7 +217,7 @@
       <Project>{fa146cb5-2ed0-4019-a124-75fbdf9ed530}</Project>
       <Name>Telemetry.Interop</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Telemetry.LocalDebug\Telemetry.Sandbox.vbproj">
+    <ProjectReference Include="..\Telemetry.Sandbox\Telemetry.Sandbox.vbproj">
       <Project>{406e287b-acfc-4257-b8fe-30f06c79de6b}</Project>
       <Name>Telemetry.Sandbox</Name>
     </ProjectReference>
