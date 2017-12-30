@@ -2,7 +2,7 @@ Module Application
     Private MainMenu As ConsoleMenu
     Sub Main()
         Try
-            Console.WindowWidth = 90
+            Console.WindowWidth = 91
             MainMenu = New UnitTestsMenu()
             MainMenu.Run()
             Call New UnitTestsMenu().Run()

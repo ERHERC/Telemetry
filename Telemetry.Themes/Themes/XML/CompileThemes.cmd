@@ -1,13 +1,17 @@
 @ECHO OFF
 PUSHD %~dp0
-COLOR F0
-TITLE Themes compiler
-CLS
 ECHO:
-ECHO Compiling scripts ...
-WSCRIPT FindReplace.vbs /I:"%CD%\BaseTheme.xml" /O:"%CD%\RoyalBlue.xml" /F:"RoyalBlue" /R:"RoyalBlue"
-WSCRIPT FindReplace.vbs /I:"%CD%\BaseTheme.xml" /O:"%CD%\Crimson.xml" /F:"RoyalBlue" /R:"Crimson"
-WSCRIPT FindReplace.vbs /I:"%CD%\BaseTheme.xml" /O:"%CD%\Gold.xml" /F:"RoyalBlue" /R:"Gold"
-WSCRIPT FindReplace.vbs /I:"%CD%\BaseTheme.xml" /O:"%CD%\OliveDrab.xml" /F:"RoyalBlue" /R:"OliveDrab"
-WSCRIPT FindReplace.vbs /I:"%CD%\BaseTheme.xml" /O:"%CD%\Black.xml" /F:"RoyalBlue" /R:"96, 96, 96"
-ECHO Done !
+ECHO Compiling themes ...
+CALL :CompileTheme "RoyalBlue" "RoyalBlue"
+CALL :CompileTheme "OliveDrab" "OliveDrab"
+CALL :CompileTheme "Gold" "Gold"
+CALL :CompileTheme "Crimson" "Crimson"
+CALL :CompileTheme "Black" "96, 96, 96"
+GOTO :EOF
+:CompileTheme
+ECHO ------------------------------------------------------------
+ECHO Compiling theme "%~1.xml" ...
+CSCRIPT /NOLOGO FindReplace.vbs /I:"%CD%\BaseTheme.xml" /O:"%CD%\%~1.xml" /F:"RoyalBlue" /R:"%~2"
+ECHO Theme "%~1.xml" compiled successfully !
+EXIT /B
+:EOF

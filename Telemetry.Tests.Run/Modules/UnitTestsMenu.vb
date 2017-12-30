@@ -54,14 +54,13 @@ Partial Public NotInheritable Class UnitTestsMenu : Inherits ConsoleMenu
                         Console.BackgroundColor = ConsoleColor.DarkRed
                         Console.ForegroundColor = ConsoleColor.White
                 End Select
-
             Else
                 Console.BackgroundColor = ConsoleColor.Black
                 Console.ForegroundColor = ConsoleColor.White
             End If
             Console.Write(Prefix & Entry.Key)
             Dim Spaces As StringBuilder = New StringBuilder
-            Spaces.Append(" "c, CInt(Clamp(Console.WindowWidth - (Entry.Key.Length + Prefix.Length), 0, Console.WindowWidth)))
+            Spaces.Append(" "c, CInt(Clamp(Console.WindowWidth - (Entry.Key.Length + Prefix.Length), 0, Console.WindowWidth) - 1))
             Console.WriteLine(Spaces.ToString())
             Index += 1
         Next

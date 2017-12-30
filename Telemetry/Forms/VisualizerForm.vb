@@ -85,7 +85,7 @@ Public Class VisualizerForm
 
     Private Sub VisualizerForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If DATA_VALIDATED Then
-            If MsgBox("Voulez-vous vraiment quitter ?", MessageBoxButtons.YesNo, "Quitter ?").ToString = "Yes" Then
+            If KryptonMessageBox.Show("Voulez-vous vraiment quitter ?", "Quitter ?", MessageBoxButtons.YesNo).ToString = "Yes" Then
                 IntercomApiManager.StopAPI()
             Else
                 e.Cancel = True
