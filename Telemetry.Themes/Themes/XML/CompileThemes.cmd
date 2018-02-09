@@ -7,6 +7,7 @@ CALL :CompileTheme "OliveDrab" "OliveDrab"
 CALL :CompileTheme "Gold" "Gold"
 CALL :CompileTheme "Crimson" "Crimson"
 CALL :CompileTheme "Black" "96, 96, 96"
+CALL :CompileTheme "Chocolate" "Chocolate"
 GOTO :EOF
 :CompileTheme
 ECHO ------------------------------------------------------------

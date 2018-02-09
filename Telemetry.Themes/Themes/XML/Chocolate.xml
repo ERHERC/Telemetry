@@ -1,0 +1,1205 @@
+<?xml version="1.0"?>
+<!--Created by exporting the settings of a KryptonPalette instance.-->
+<!--For more information about Krypton visit www.ComponentFactory.com-->
+<!--WARNING: Modifying this file may render it invalid for importing.-->
+<KryptonPalette Version="18" Generated="Saturday, 30 December 2017, 20:26">
+  <Properties>
+    <ButtonSpecs>
+      <Generic>
+        <Image Type="Image" Value="ImageCache1" />
+      </Generic>
+      <Next>
+        <Image Type="Image" Value="ImageCache2" />
+      </Next>
+      <Previous>
+        <Image Type="Image" Value="ImageCache3" />
+      </Previous>
+      <PinVertical>
+        <Image Type="Image" Value="ImageCache4" />
+      </PinVertical>
+      <PinHorizontal>
+        <Image Type="Image" Value="ImageCache5" />
+      </PinHorizontal>
+      <FormClose>
+        <Image Type="Image" Value="ImageCache6" />
+      </FormClose>
+      <FormMin>
+        <Image Type="Image" Value="ImageCache7" />
+      </FormMin>
+      <FormMax>
+        <Image Type="Image" Value="ImageCache8" />
+      </FormMax>
+      <FormRestore>
+        <Image Type="Image" Value="ImageCache9" />
+      </FormRestore>
+    </ButtonSpecs>
+    <ButtonStyles>
+      <ButtonStandalone>
+        <StateCommon>
+          <Back>
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+            <Width Type="Int" Value="1" />
+            <Rounding Type="Int" Value="-10" />
+          </Border>
+        </StateCommon>
+        <StateNormal>
+          <Back>
+            <Color1 Type="Color" Value="239, 239, 242" />
+            <Color2 Type="Color" Value="239, 239, 242" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+          </Border>
+        </StateNormal>
+        <StateTracking>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+        </StateTracking>
+        <StatePressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StatePressed>
+        <StateCheckedNormal>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedNormal>
+        <StateCheckedTracking>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedTracking>
+        <StateCheckedPressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedPressed>
+        <OverrideDefault>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+        </OverrideDefault>
+        <OverrideFocus>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+        </OverrideFocus>
+      </ButtonStandalone>
+      <ButtonAlternate>
+        <StateCommon>
+          <Back>
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Rounding Type="Int" Value="-10" />
+          </Border>
+        </StateCommon>
+        <StateNormal>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateNormal>
+        <StateTracking>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateTracking>
+        <StatePressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StatePressed>
+        <StateCheckedNormal>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateCheckedNormal>
+        <StateCheckedTracking>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateCheckedTracking>
+        <StateCheckedPressed>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateCheckedPressed>
+        <OverrideDefault>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+        </OverrideDefault>
+      </ButtonAlternate>
+      <ButtonButtonSpec>
+        <StateCommon>
+          <Back>
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Rounding Type="Int" Value="-10" />
+          </Border>
+        </StateCommon>
+      </ButtonButtonSpec>
+      <ButtonCalendarDay>
+        <StateCommon>
+          <Back>
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+        </StateCommon>
+        <StateNormal>
+          <Back>
+            <Color1 Type="Color" Value="239, 239, 242" />
+            <Color2 Type="Color" Value="239, 239, 242" />
+          </Back>
+        </StateNormal>
+        <StatePressed>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="WhiteSmoke" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StatePressed>
+        <StateCheckedNormal>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedNormal>
+        <StateCheckedTracking>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedTracking>
+        <StateCheckedPressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedPressed>
+        <OverrideDefault>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+        </OverrideDefault>
+        <OverrideFocus>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+        </OverrideFocus>
+      </ButtonCalendarDay>
+      <ButtonInputControl>
+        <StateCommon>
+          <Back>
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+        </StateCommon>
+        <StateDisabled>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="64, 64, 64" />
+            <Color2 Type="Color" Value="64, 64, 64" />
+            <Width Type="Int" Value="1" />
+          </Border>
+        </StateDisabled>
+        <StateNormal>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+        </StateNormal>
+        <StateTracking>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateTracking>
+        <StatePressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StatePressed>
+        <StateCheckedNormal>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedNormal>
+        <StateCheckedTracking>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedTracking>
+        <StateCheckedPressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedPressed>
+        <OverrideDefault>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+        </OverrideDefault>
+      </ButtonInputControl>
+      <ButtonListItem>
+        <StateCommon>
+          <Back>
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Rounding Type="Int" Value="-10" />
+          </Border>
+        </StateCommon>
+        <StateNormal>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateNormal>
+        <StateTracking>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateTracking>
+        <StatePressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StatePressed>
+        <StateCheckedNormal>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedNormal>
+        <StateCheckedTracking>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedTracking>
+        <StateCheckedPressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedPressed>
+      </ButtonListItem>
+      <ButtonForm>
+        <StateCommon>
+          <Back>
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Back>
+          <Border>
+            <Draw Type="InheritBool" Value="False" />
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Rounding Type="Int" Value="-10" />
+          </Border>
+        </StateCommon>
+        <StateNormal>
+          <Back>
+            <Color1 Type="Color" Value="239, 239, 242" />
+            <Color2 Type="Color" Value="239, 239, 242" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="239, 239, 242" />
+            <Color2 Type="Color" Value="239, 239, 242" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateNormal>
+        <StateTracking>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateTracking>
+        <StatePressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StatePressed>
+        <StateCheckedNormal>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedNormal>
+        <StateCheckedTracking>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedTracking>
+        <StateCheckedPressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedPressed>
+      </ButtonForm>
+      <ButtonFormClose>
+        <StateCommon>
+          <Back>
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Back>
+          <Border>
+            <Draw Type="InheritBool" Value="False" />
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Rounding Type="Int" Value="-10" />
+          </Border>
+        </StateCommon>
+        <StateNormal>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateNormal>
+        <StateTracking>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateTracking>
+        <StatePressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StatePressed>
+        <StateCheckedNormal>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedNormal>
+        <StateCheckedTracking>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedTracking>
+        <StateCheckedPressed>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCheckedPressed>
+      </ButtonFormClose>
+    </ButtonStyles>
+    <FormStyles>
+      <FormCommon>
+        <StateCommon>
+          <Back>
+            <Color1 Type="Color" Value="239, 239, 242" />
+            <Color2 Type="Color" Value="239, 239, 242" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+            <Width Type="Int" Value="1" />
+            <Rounding Type="Int" Value="-10" />
+          </Border>
+        </StateCommon>
+      </FormCommon>
+    </FormStyles>
+    <HeaderStyles>
+      <HeaderCommon>
+        <StateCommon>
+          <Back>
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Back>
+        </StateCommon>
+      </HeaderCommon>
+      <HeaderPrimary>
+        <StateCommon>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="None" />
+            <Width Type="Int" Value="-10" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="White" />
+              <Color2 Type="Color" Value="White" />
+            </LongText>
+          </Content>
+        </StateCommon>
+      </HeaderPrimary>
+      <HeaderForm>
+        <StateCommon>
+          <Back>
+            <Color1 Type="Color" Value="239, 239, 242" />
+            <Color2 Type="Color" Value="239, 239, 242" />
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="239, 239, 242" />
+            <Color2 Type="Color" Value="239, 239, 242" />
+            <ColorStyle Type="PaletteColorStyle" Value="Solid" />
+          </Border>
+        </StateCommon>
+        <StateDisabled>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="100, 100, 100" />
+              <Color2 Type="Color" Value="100, 100, 100" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="100, 100, 100" />
+              <Color2 Type="Color" Value="100, 100, 100" />
+            </LongText>
+          </Content>
+        </StateDisabled>
+        <StateNormal>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="Chocolate" />
+              <Color2 Type="Color" Value="Chocolate" />
+            </LongText>
+          </Content>
+        </StateNormal>
+      </HeaderForm>
+    </HeaderStyles>
+    <InputControlStyles>
+      <InputControlCommon>
+        <StateDisabled>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="100, 100, 100" />
+            <Color2 Type="Color" Value="100, 100, 100" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="160, 160, 160" />
+              <Color2 Type="Color" Value="160, 160, 160" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="160, 160, 160" />
+              <Color2 Type="Color" Value="160, 160, 160" />
+            </LongText>
+          </Content>
+        </StateDisabled>
+        <StateNormal>
+          <Back>
+            <Color1 Type="Color" Value="White" />
+            <Color2 Type="Color" Value="White" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="64, 64, 64" />
+              <Color2 Type="Color" Value="64, 64, 64" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="64, 64, 64" />
+              <Color2 Type="Color" Value="64, 64, 64" />
+            </LongText>
+          </Content>
+        </StateNormal>
+        <StateActive>
+          <Back>
+            <Color1 Type="Color" Value="250, 250, 250" />
+            <Color2 Type="Color" Value="250, 250, 250" />
+          </Back>
+          <Border>
+            <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
+            <Color1 Type="Color" Value="Chocolate" />
+            <Color2 Type="Color" Value="Chocolate" />
+          </Border>
+          <Content>
+            <ShortText>
+              <Color1 Type="Color" Value="64, 64, 64" />
+              <Color2 Type="Color" Value="64, 64, 64" />
+            </ShortText>
+            <LongText>
+              <Color1 Type="Color" Value="64, 64, 64" />
+              <Color2 Type="Color" Value="64, 64, 64" />
+            </LongText>
+          </Content>
+        </StateActive>
+      </InputControlCommon>
+    </InputControlStyles>
+    <PanelStyles>
+      <PanelClient>
+        <StateCommon>
+          <Color1 Type="Color" Value="White" />
+          <Color2 Type="Color" Value="White" />
+          <ColorStyle Type="PaletteColorStyle" Value="Dashed" />
+        </StateCommon>
+      </PanelClient>
+      <PanelAlternate>
+        <StateCommon>
+          <Color1 Type="Color" Value="Chocolate" />
+          <Color2 Type="Color" Value="Chocolate" />
+        </StateCommon>
+      </PanelAlternate>
+    </PanelStyles>
+    <TrackBar>
+      <StateCommon>
+        <Tick>
+          <Color1 Type="Color" Value="Chocolate" />
+          <Color2 Type="Color" Value="Chocolate" />
+          <Color3 Type="Color" Value="Chocolate" />
+          <Color4 Type="Color" Value="Chocolate" />
+          <Color5 Type="Color" Value="Chocolate" />
+        </Tick>
+        <Track>
+          <Color1 Type="Color" Value="Chocolate" />
+          <Color2 Type="Color" Value="Chocolate" />
+          <Color3 Type="Color" Value="White" />
+          <Color4 Type="Color" Value="White" />
+          <Color5 Type="Color" Value="White" />
+        </Track>
+        <Position>
+          <Color1 Type="Color" Value="Chocolate" />
+        </Position>
+      </StateCommon>
+      <StateNormal>
+        <Position>
+          <Color1 Type="Color" Value="Chocolate" />
+          <Color2 Type="Color" Value="240, 240, 240" />
+          <Color3 Type="Color" Value="240, 240, 240" />
+          <Color4 Type="Color" Value="240, 240, 240" />
+          <Color5 Type="Color" Value="240, 240, 240" />
+        </Position>
+      </StateNormal>
+      <StateTracking>
+        <Position>
+          <Color1 Type="Color" Value="Chocolate" />
+          <Color2 Type="Color" Value="Chocolate" />
+          <Color3 Type="Color" Value="White" />
+          <Color4 Type="Color" Value="White" />
+          <Color5 Type="Color" Value="White" />
+        </Position>
+      </StateTracking>
+      <StatePressed>
+        <Position>
+          <Color1 Type="Color" Value="Chocolate" />
+          <Color2 Type="Color" Value="Chocolate" />
+          <Color3 Type="Color" Value="Chocolate" />
+          <Color4 Type="Color" Value="Chocolate" />
+          <Color5 Type="Color" Value="Chocolate" />
+        </Position>
+      </StatePressed>
+      <OverrideFocus>
+        <Position>
+          <Color1 Type="Color" Value="Chocolate" />
+          <Color2 Type="Color" Value="Chocolate" />
+          <Color3 Type="Color" Value="Chocolate" />
+          <Color4 Type="Color" Value="Chocolate" />
+          <Color5 Type="Color" Value="Chocolate" />
+        </Position>
+      </OverrideFocus>
+    </TrackBar>
+    <ToolMenuStatus>
+      <Button>
+        <ButtonPressedBorder Type="Color" Value="White" />
+        <ButtonPressedGradientBegin Type="Color" Value="White" />
+        <ButtonPressedGradientEnd Type="Color" Value="White" />
+        <ButtonPressedGradientMiddle Type="Color" Value="White" />
+        <ButtonPressedHighlight Type="Color" Value="White" />
+        <ButtonPressedHighlightBorder Type="Color" Value="White" />
+        <ButtonSelectedBorder Type="Color" Value="White" />
+        <ButtonSelectedGradientBegin Type="Color" Value="White" />
+        <ButtonSelectedGradientEnd Type="Color" Value="White" />
+        <ButtonSelectedGradientMiddle Type="Color" Value="White" />
+      </Button>
+      <Grip>
+        <GripDark Type="Color" Value="Chocolate" />
+        <GripLight Type="Color" Value="Chocolate" />
+      </Grip>
+      <Menu>
+        <ImageMarginGradientBegin Type="Color" Value="239, 239, 242" />
+        <ImageMarginGradientEnd Type="Color" Value="239, 239, 242" />
+        <ImageMarginGradientMiddle Type="Color" Value="239, 239, 242" />
+        <ImageMarginRevealedGradientBegin Type="Color" Value="239, 239, 242" />
+        <ImageMarginRevealedGradientEnd Type="Color" Value="239, 239, 242" />
+        <ImageMarginRevealedGradientMiddle Type="Color" Value="239, 239, 242" />
+        <MenuBorder Type="Color" Value="Chocolate" />
+        <MenuItemText Type="Color" Value="White" />
+        <MenuItemBorder Type="Color" Value="Chocolate" />
+        <MenuItemPressedGradientBegin Type="Color" Value="239, 239, 242" />
+        <MenuItemPressedGradientEnd Type="Color" Value="239, 239, 242" />
+        <MenuItemPressedGradientMiddle Type="Color" Value="239, 239, 242" />
+        <MenuItemSelected Type="Color" Value="Chocolate" />
+        <MenuItemSelectedGradientBegin Type="Color" Value="239, 239, 242" />
+        <MenuItemSelectedGradientEnd Type="Color" Value="239, 239, 242" />
+      </Menu>
+      <Rafting>
+        <RaftingContainerGradientBegin Type="Color" Value="White" />
+        <RaftingContainerGradientEnd Type="Color" Value="White" />
+      </Rafting>
+      <MenuStrip>
+        <MenuStripText Type="Color" Value="White" />
+        <MenuStripGradientBegin Type="Color" Value="Chocolate" />
+        <MenuStripGradientEnd Type="Color" Value="Chocolate" />
+      </MenuStrip>
+      <Separator>
+        <SeparatorDark Type="Color" Value="White" />
+        <SeparatorLight Type="Color" Value="White" />
+      </Separator>
+      <StatusStrip>
+        <StatusStripText Type="Color" Value="White" />
+        <StatusStripGradientBegin Type="Color" Value="Chocolate" />
+        <StatusStripGradientEnd Type="Color" Value="Chocolate" />
+      </StatusStrip>
+      <ToolStrip>
+        <ToolStripText Type="Color" Value="White" />
+        <ToolStripBorder Type="Color" Value="Chocolate" />
+        <ToolStripContentPanelGradientBegin Type="Color" Value="White" />
+        <ToolStripContentPanelGradientEnd Type="Color" Value="White" />
+        <ToolStripDropDownBackground Type="Color" Value="Chocolate" />
+        <ToolStripGradientBegin Type="Color" Value="239, 239, 242" />
+        <ToolStripGradientEnd Type="Color" Value="239, 239, 242" />
+        <ToolStripGradientMiddle Type="Color" Value="239, 239, 242" />
+        <ToolStripPanelGradientBegin Type="Color" Value="239, 239, 242" />
+        <ToolStripPanelGradientEnd Type="Color" Value="239, 239, 242" />
+      </ToolStrip>
+    </ToolMenuStatus>
+    <BaseRenderMode Type="RendererMode" Value="Professional" />
+  </Properties>
+  <Images>
+    <Image Name="ImageCache1"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAGAEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACOSURBVEhL7c4xDoAgEERRzsP977fGgoRsPrNg4VhYvES/mKFFxCdgdMDogNEBowNGB4wOGB0wOmBUeu9xW70/hVGZh8fz3J7CqOTxLJ/fhVFZDVM7gVFRg+pbBePKztDOGYKRzANqZPdchlGpBk4vMGBU/otkY6iS/6tgVGiU5P8qGB0wOmB0wOiA8X3RLun73qwfuu2fAAAAAElFTkSuQmCCCw==]]></Image>
+    <Image Name="ImageCache2"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAAQEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB3SURBVEhLzc6xDcAwCAVRz+P99yOhSBNdARHKuXhCOpq/IuIIGA0YDRgNGA0YDRgNGA0YDRir9t734V8Xxooc8Xj/vsBYNTkGY8fUGIxdE2Mwdh0xZGJEwlg1NSJhrJgckTBWTY1IGA0YDRgNGA0YDRgNGP8X6wKKDCs7PK+/UgAAAABJRU5ErkJgggs=]]></Image>
+    <Image Name="ImageCache3"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAAgEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB4SURBVEhLzdAxCsAwDARBv0f//58SFWnMFpI5ci4Gw6o5vDLzChgdMDpgdMDogNEBowNGB4wOGE9ExPvwrQPjVI347LcujBOKEQVjl2pEwdihHFEwdlwzpCjHYJxQjcE4pRiD8cQVP6KA0QGjA0YHjA4YHTD+L9cDrgwrO0nCvkAAAAAASUVORK5CYIIL]]></Image>
+    <Image Name="ImageCache4"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA+AAAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABuSURBVEhL7c5BDoAgDERRztP736/GBYlpPljUOCy6eJsfSKe5+xYwKmBUwKiAUQGjAkYFjAoYFTDeMTMfiW+zMGZcj74dccKYUUOiGtL1ozPxTwbGFU8PRxhX1JBomyFfwaiAUQGjAkYFjP/zdgDVWR27mg03pQAAAABJRU5ErkJgggs=]]></Image>
+    <Image Name="ImageCache5"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAADgEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACESURBVEhLzc9BCoAwDAXRnif3v1+0i0IJExsL+rt4CGMgaXP3I2BUwKiAUQGjAkYFjAoYFTBWmdn94X9vYazKDtk5EGNVX5iJsysYq7KFnx8yv3iIM13Wn2CsikfN4uwKxio6YIizKxirsoXHHLIDowJGBYwKGBUwKmBUwKiAUQHj/7xdO9odu4N1ieQAAAAASUVORK5CYIIL]]></Image>
+    <Image Name="ImageCache6"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAABQEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAAB7SURBVEhLzc5BCsAgDABB3+P//5fSgyCyxAil62Eum0DSIuIKGA0YDRgNGA0YDRgNGA0YDRgNGDO99xhOZjsYd+ggtRMYK+bDs3WvCmPVV0+8MFZd8cj6xLDuVWHcocPUTmDMZAez2Q5GA0YDRgNGA0YDRgNGA8b/RXsA/H4QO5i+i2EAAAAASUVORK5CYIIL]]></Image>
+    <Image Name="ImageCache7"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA7AAAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAABiSURBVEhLzc2xCcBAEANB1/P99/fOj4HLvA4mWRB67r2/wFhgLDAWGAuMBcYCY4GxwFhgLDAWGAuMBcYC4+acczdzs2Hc6Hiamw3jRsfT3GwYC4wFxgJjgbHAWGAsMH7vPi96MSm7muwkGgAAAABJRU5ErkJgggs=]]></Image>
+    <Image Name="ImageCache8"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA8AAAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAABmSURBVEhL7c6xDQAxDMPAzOP99/P3AgF14RcpriEg2Gd3fwGjAaMBowGjAaMBowGjAaMBYzMz2+SmwdjQ4ZSbBmNDh1NuGoxNO/QeSe+RdPWRJjcNRgNGA0YDRgNGA0YDRgPG+/Z8qjMNOyy6sj0AAAAASUVORK5CYIIL]]></Image>
+    <Image Name="ImageCache9"><![CDATA[AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAADgEAAAKJUE5HDQoaCgAAAA1JSERSAAAAIgAAABoIBgAAANJujgIAAAAEZ0FNQQAAsY58+1GTAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAADrwAAA68AZW8ckkAAACESURBVEhLzc9BCkAhCEXR1tP+92ejQORqNuk1OBD3C/qHmX0BowJGBYwKGBUwKmBUwKiAUQFj15zTMnH2BGMXHbDF2ROMXdnCJ4f4v478zH53YazE5Z6f2e8ujJVsyVeHePH7CcZKdUhsNzBWvjokE2dvYFTAqIBRAaMCRgWMChjfs7EA5nMFuz5Au2AAAAAASUVORK5CYIIL]]></Image>
+  </Images>
+</KryptonPalette>

@@ -144,6 +144,12 @@
     </Compile>
     <Compile Include="Console Menu\ConsoleMenu.vb" />
     <Compile Include="ConsoleTools.vb" />
+    <Compile Include="Controls\LauncherPage.Designer.vb">
+      <DependentUpon>LauncherPage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LauncherPage.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\TransparentControl.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -198,6 +204,9 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Colors.Designer.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controls\LauncherPage.resx">
+      <DependentUpon>LauncherPage.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -236,6 +245,9 @@
       <Project>{66e061c6-4390-4637-b7e3-840e2e7c78bd}</Project>
       <Name>Telemetry.Themes</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <Import Project="..\Telemetry.Shared\Telemetry.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

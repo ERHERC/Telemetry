@@ -114,6 +114,7 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <CustomToolNamespace>UIThemes</CustomToolNamespace>
       <LastGenOutput>Themes.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +132,7 @@
   <ItemGroup>
     <Content Include="Themes\XML\BaseTheme.xml" />
     <Content Include="Themes\XML\Black.xml" />
+    <Content Include="Themes\XML\Chocolate.xml" />
     <Content Include="Themes\XML\Crimson.xml" />
     <Content Include="Themes\XML\Data\FormBack.png" />
     <Content Include="Themes\XML\Data\FormClose.png" />
