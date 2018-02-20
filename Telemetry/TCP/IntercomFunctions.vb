@@ -21,9 +21,9 @@ Module IntercomFunctions
     End Sub
 
     Public Sub UpdateMessages()
-        Globals.MainForm.AppHaltedLbl.Text = vbCrLf
+       'Globals.MainForm.AppHaltedLbl.Text = vbCrLf
         For Each Element As KeyValuePair(Of String, String) In Messages
-            Globals.MainForm.AppHaltedLbl.Text = Globals.MainForm.AppHaltedLbl.Text & Element.Value & vbCrLf
+            'Globals.MainForm.AppHaltedLbl.Text = Globals.MainForm.AppHaltedLbl.Text & Element.Value & vbCrLf
         Next
     End Sub
 

@@ -26,7 +26,7 @@ Public Class MainForm
             End If
         Next
 
-        Globals.Mainform = Me
+        'Globals.Mainform = Me
     End Sub
 
 

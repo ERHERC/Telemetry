@@ -1,3 +1,3 @@
 Module Globals
-    Public MainForm As MainForm
+    Public MainForm As VisualizerForm
 End Module

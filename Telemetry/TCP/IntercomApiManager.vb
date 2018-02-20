@@ -5,7 +5,7 @@ Imports System.ServiceModel
 Module IntercomApiManager
     Public ServiceRunning As Boolean = False
     Public ServiceInstance As ServiceHost = Nothing
-    Public ServiceAddress As Uri = New Uri("net.tcp://localhost:2202/TelemetryService")
+    Public ServiceAddress As Uri = New Uri("net.tcp://localhost:2202/TelemetrySvc")
     Public Binding As NetTcpBinding
 
 
@@ -34,7 +34,9 @@ Module IntercomApiManager
                 With FormsManager.MainForm.TaskDialog
                     '.Show()
                     ServiceRunning = False
+                    ServiceInstance.Abort()
                     ServiceInstance.Close()
+                    KryptonMessageBox.Show("Arret du service TCP terminé", "Service TCP", MessageBoxButtons.OK)
                     '.Close()
                 End With
             Catch ErrorCode As Exception

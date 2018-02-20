@@ -10,7 +10,7 @@ Module API
 
     Public Function Init(ShowError As Boolean) As Boolean
         Try
-            Endpoint = New EndpointAddress(New Uri("net.tcp://localhost:2202/TelemetryService"))
+            Endpoint = New EndpointAddress(New Uri("net.tcp://localhost:2202/TelemetrySvc"))
             ServiceAddress = New NetTcpBinding()
             Factory = New ChannelFactory(Of IntercomInterface)(ServiceAddress, Endpoint)
             ServiceInstance = Factory.CreateChannel()
@@ -24,6 +24,6 @@ Module API
     End Function
 
     Public Function Instance() As IntercomInterface
-        If Initiated Then Return ServiceInstance Else Return Nothing
+        If Initiated Then Return ServiceInstance Else Throw New Exception("Aucune instance de l'API n'est actuellement démarrée ...") : Return Nothing
     End Function
 End Module

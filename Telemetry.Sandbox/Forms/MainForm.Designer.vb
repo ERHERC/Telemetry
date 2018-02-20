@@ -1,10 +1,10 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MainForm
     'Inherits System.Windows.Forms.Form
     Inherits ComponentFactory.Krypton.Toolkit.KryptonForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -21,18 +21,19 @@ Partial Class MainForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.MainPanel = New System.Windows.Forms.TableLayoutPanel()
-        Me.DisplayGroup = New System.Windows.Forms.GroupBox()
-        Me.DisplayLayout = New System.Windows.Forms.TableLayoutPanel()
-        Me.WindowedBtn = New System.Windows.Forms.Button()
-        Me.FullscreenBtn = New System.Windows.Forms.Button()
-        Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager()
-        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette()
+        Me.BatteryGroup = New System.Windows.Forms.GroupBox()
+        Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager(Me.components)
+        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
+        Me.BatteryLayout = New System.Windows.Forms.TableLayoutPanel()
+        Me.BatteryUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
+        Me.BatteryBtn = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.MainPanel.SuspendLayout()
-        Me.DisplayGroup.SuspendLayout()
-        Me.DisplayLayout.SuspendLayout()
+        Me.BatteryGroup.SuspendLayout()
+        Me.BatteryLayout.SuspendLayout()
         Me.SuspendLayout()
         '
         'MainPanel
@@ -41,7 +42,7 @@ Partial Class MainForm
         Me.MainPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.MainPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
         Me.MainPanel.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
-        Me.MainPanel.Controls.Add(Me.DisplayGroup, 0, 0)
+        Me.MainPanel.Controls.Add(Me.BatteryGroup, 0, 0)
         Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanel.Location = New System.Drawing.Point(0, 0)
         Me.MainPanel.Name = "MainPanel"
@@ -53,56 +54,58 @@ Partial Class MainForm
         Me.MainPanel.Size = New System.Drawing.Size(1094, 443)
         Me.MainPanel.TabIndex = 0
         '
-        'DisplayGroup
+        'BatteryGroup
         '
-        Me.DisplayGroup.Controls.Add(Me.DisplayLayout)
-        Me.DisplayGroup.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DisplayGroup.Location = New System.Drawing.Point(3, 3)
-        Me.DisplayGroup.Name = "DisplayGroup"
-        Me.DisplayGroup.Size = New System.Drawing.Size(358, 141)
-        Me.DisplayGroup.TabIndex = 0
-        Me.DisplayGroup.TabStop = False
-        Me.DisplayGroup.Text = "Affichage"
-        '
-        'DisplayLayout
-        '
-        Me.DisplayLayout.ColumnCount = 1
-        Me.DisplayLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.DisplayLayout.Controls.Add(Me.WindowedBtn, 0, 1)
-        Me.DisplayLayout.Controls.Add(Me.FullscreenBtn, 0, 0)
-        Me.DisplayLayout.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DisplayLayout.Location = New System.Drawing.Point(3, 16)
-        Me.DisplayLayout.Name = "DisplayLayout"
-        Me.DisplayLayout.RowCount = 2
-        Me.DisplayLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.DisplayLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.DisplayLayout.Size = New System.Drawing.Size(352, 122)
-        Me.DisplayLayout.TabIndex = 0
-        '
-        'WindowedBtn
-        '
-        Me.WindowedBtn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WindowedBtn.Location = New System.Drawing.Point(3, 64)
-        Me.WindowedBtn.Name = "WindowedBtn"
-        Me.WindowedBtn.Size = New System.Drawing.Size(346, 55)
-        Me.WindowedBtn.TabIndex = 1
-        Me.WindowedBtn.Text = "Mode fenêtré"
-        Me.WindowedBtn.UseVisualStyleBackColor = True
-        '
-        'FullscreenBtn
-        '
-        Me.FullscreenBtn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.FullscreenBtn.Location = New System.Drawing.Point(3, 3)
-        Me.FullscreenBtn.Name = "FullscreenBtn"
-        Me.FullscreenBtn.Size = New System.Drawing.Size(346, 55)
-        Me.FullscreenBtn.TabIndex = 0
-        Me.FullscreenBtn.Text = "Mode plein écran"
-        Me.FullscreenBtn.UseVisualStyleBackColor = True
+        Me.BatteryGroup.Controls.Add(Me.BatteryLayout)
+        Me.BatteryGroup.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryGroup.Location = New System.Drawing.Point(3, 3)
+        Me.BatteryGroup.Name = "BatteryGroup"
+        Me.BatteryGroup.Size = New System.Drawing.Size(358, 141)
+        Me.BatteryGroup.TabIndex = 0
+        Me.BatteryGroup.TabStop = False
+        Me.BatteryGroup.Text = "Batterie"
         '
         'StyleManager
         '
         Me.StyleManager.GlobalPalette = Me.StylePalette
         Me.StyleManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Custom
+        '
+        'BatteryLayout
+        '
+        Me.BatteryLayout.ColumnCount = 1
+        Me.BatteryLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.BatteryLayout.Controls.Add(Me.BatteryUD, 0, 0)
+        Me.BatteryLayout.Controls.Add(Me.BatteryBtn, 0, 1)
+        Me.BatteryLayout.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryLayout.Location = New System.Drawing.Point(3, 16)
+        Me.BatteryLayout.Margin = New System.Windows.Forms.Padding(0)
+        Me.BatteryLayout.Name = "BatteryLayout"
+        Me.BatteryLayout.RowCount = 2
+        Me.BatteryLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22.0!))
+        Me.BatteryLayout.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.BatteryLayout.Size = New System.Drawing.Size(352, 122)
+        Me.BatteryLayout.TabIndex = 0
+        '
+        'BatteryUD
+        '
+        Me.BatteryUD.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryUD.Location = New System.Drawing.Point(0, 0)
+        Me.BatteryUD.Margin = New System.Windows.Forms.Padding(0)
+        Me.BatteryUD.Name = "BatteryUD"
+        Me.BatteryUD.Size = New System.Drawing.Size(352, 22)
+        Me.BatteryUD.TabIndex = 0
+        Me.BatteryUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.BatteryUD.Value = New Decimal(New Integer() {50, 0, 0, 0})
+        '
+        'BatteryBtn
+        '
+        Me.BatteryBtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryBtn.Location = New System.Drawing.Point(0, 22)
+        Me.BatteryBtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.BatteryBtn.Name = "BatteryBtn"
+        Me.BatteryBtn.Size = New System.Drawing.Size(352, 100)
+        Me.BatteryBtn.TabIndex = 1
+        Me.BatteryBtn.Values.Text = "Appliquer"
         '
         'MainForm
         '
@@ -114,17 +117,17 @@ Partial Class MainForm
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Telemetry [Bac à sable]"
         Me.MainPanel.ResumeLayout(False)
-        Me.DisplayGroup.ResumeLayout(False)
-        Me.DisplayLayout.ResumeLayout(False)
+        Me.BatteryGroup.ResumeLayout(False)
+        Me.BatteryLayout.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents MainPanel As TableLayoutPanel
-    Friend WithEvents DisplayGroup As GroupBox
-    Friend WithEvents DisplayLayout As TableLayoutPanel
-    Friend WithEvents WindowedBtn As Button
-    Friend WithEvents FullscreenBtn As Button
+    Friend WithEvents BatteryGroup As GroupBox
     Friend WithEvents StyleManager As KryptonManager
     Friend WithEvents StylePalette As KryptonPalette
+    Friend WithEvents BatteryLayout As TableLayoutPanel
+    Friend WithEvents BatteryUD As KryptonNumericUpDown
+    Friend WithEvents BatteryBtn As KryptonButton
 End Class

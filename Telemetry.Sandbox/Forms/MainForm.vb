@@ -4,11 +4,7 @@ Public Class MainForm
         API.Init(True)
     End Sub
 
-    Private Sub FullscreenBtn_Click(sender As Object, e As EventArgs) Handles FullscreenBtn.Click
-        If API.Initiated Then API.Instance.SetFullscreen(True)
-    End Sub
-
-    Private Sub WindowedBtn_Click(sender As Object, e As EventArgs) Handles WindowedBtn.Click
-        If API.Initiated Then API.Instance.SetFullscreen(False)
+    Private Sub BatteryBtn_Click(sender As Object, e As EventArgs) Handles BatteryBtn.Click
+        API.Instance.SetBatteryPercentage(CInt(BatteryUD.Value))
     End Sub
 End Class
