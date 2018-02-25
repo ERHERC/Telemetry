@@ -1,7 +1,15 @@
 Public Class MainForm
+    Public DATA_VALIDATED As Boolean = False
+
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         StylePalette.Import(Themes.UserInterface.Crimson)
-        API.Init(True)
+        Globals.MainForm = Me
+        Call New SetupForm().Show()
+        If DATA_VALIDATED Then
+            API.Init(True)
+        Else
+            Me.Close()
+        End If
     End Sub
 
     Private Sub BatteryBtn_Click(sender As Object, e As EventArgs) Handles BatteryBtn.Click

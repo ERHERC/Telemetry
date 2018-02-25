@@ -21,8 +21,15 @@ Partial Class SetupForm
     Private Sub InitializeComponent()
         Me.OkBtn = New System.Windows.Forms.Button()
         Me.QuitBtn = New System.Windows.Forms.Button()
+        Me.ParametersLayout = New System.Windows.Forms.TableLayoutPanel()
+        Me.ServiceAddressPanel = New System.Windows.Forms.Panel()
+        Me.ServiceAddressLbl = New System.Windows.Forms.Label()
+        Me.ServiceAddressBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.HeaderPanel.SuspendLayout()
+        Me.MainPanel.SuspendLayout()
         Me.BottomPanel.SuspendLayout()
+        Me.ParametersLayout.SuspendLayout()
+        Me.ServiceAddressPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'HeaderPanel
@@ -39,6 +46,10 @@ Partial Class SetupForm
         Me.FormTitle.ForeColor = System.Drawing.Color.White
         Me.FormTitle.Size = New System.Drawing.Size(230, 24)
         Me.FormTitle.Text = "Assistant de mise en route"
+        '
+        'MainPanel
+        '
+        Me.MainPanel.Controls.Add(Me.ParametersLayout)
         '
         'BottomPanel
         '
@@ -81,6 +92,54 @@ Partial Class SetupForm
         Me.QuitBtn.Text = "QUITTER"
         Me.QuitBtn.UseVisualStyleBackColor = True
         '
+        'ParametersLayout
+        '
+        Me.ParametersLayout.ColumnCount = 2
+        Me.ParametersLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle())
+        Me.ParametersLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.ParametersLayout.Controls.Add(Me.ServiceAddressPanel, 0, 0)
+        Me.ParametersLayout.Controls.Add(Me.ServiceAddressBox, 1, 0)
+        Me.ParametersLayout.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ParametersLayout.Location = New System.Drawing.Point(16, 16)
+        Me.ParametersLayout.Margin = New System.Windows.Forms.Padding(0)
+        Me.ParametersLayout.Name = "ParametersLayout"
+        Me.ParametersLayout.RowCount = 2
+        Me.ParametersLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 22.0!))
+        Me.ParametersLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.ParametersLayout.Size = New System.Drawing.Size(1023, 408)
+        Me.ParametersLayout.TabIndex = 0
+        '
+        'ServiceAddressPanel
+        '
+        Me.ServiceAddressPanel.Controls.Add(Me.ServiceAddressLbl)
+        Me.ServiceAddressPanel.Location = New System.Drawing.Point(0, 0)
+        Me.ServiceAddressPanel.Margin = New System.Windows.Forms.Padding(0)
+        Me.ServiceAddressPanel.Name = "ServiceAddressPanel"
+        Me.ServiceAddressPanel.Size = New System.Drawing.Size(200, 22)
+        Me.ServiceAddressPanel.TabIndex = 2
+        '
+        'ServiceAddressLbl
+        '
+        Me.ServiceAddressLbl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ServiceAddressLbl.ForeColor = System.Drawing.Color.White
+        Me.ServiceAddressLbl.Location = New System.Drawing.Point(0, 0)
+        Me.ServiceAddressLbl.Margin = New System.Windows.Forms.Padding(0)
+        Me.ServiceAddressLbl.Name = "ServiceAddressLbl"
+        Me.ServiceAddressLbl.Size = New System.Drawing.Size(200, 22)
+        Me.ServiceAddressLbl.TabIndex = 1
+        Me.ServiceAddressLbl.Text = "Adresse du service :"
+        Me.ServiceAddressLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'ServiceAddressBox
+        '
+        Me.ServiceAddressBox.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ServiceAddressBox.Location = New System.Drawing.Point(200, 0)
+        Me.ServiceAddressBox.Margin = New System.Windows.Forms.Padding(0)
+        Me.ServiceAddressBox.Name = "ServiceAddressBox"
+        Me.ServiceAddressBox.Size = New System.Drawing.Size(823, 20)
+        Me.ServiceAddressBox.TabIndex = 3
+        Me.ServiceAddressBox.Text = "net.tcp://localhost:2202/API"
+        '
         'SetupForm
         '
         Me.AcceptButton = Me.OkBtn
@@ -91,11 +150,19 @@ Partial Class SetupForm
         Me.ShowIcon = True
         Me.HeaderPanel.ResumeLayout(False)
         Me.HeaderPanel.PerformLayout()
+        Me.MainPanel.ResumeLayout(False)
         Me.BottomPanel.ResumeLayout(False)
         Me.BottomPanel.PerformLayout()
+        Me.ParametersLayout.ResumeLayout(False)
+        Me.ParametersLayout.PerformLayout()
+        Me.ServiceAddressPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents OkBtn As Button
     Friend WithEvents QuitBtn As Button
+    Friend WithEvents ParametersLayout As TableLayoutPanel
+    Friend WithEvents ServiceAddressPanel As Panel
+    Friend WithEvents ServiceAddressLbl As Label
+    Friend WithEvents ServiceAddressBox As KryptonTextBox
 End Class

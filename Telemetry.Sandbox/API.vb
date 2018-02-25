@@ -2,6 +2,7 @@ Imports System.ServiceModel
 Imports Telemetry
 
 Module API
+    Public HostAddress As Uri = New Uri("net.tcp://localhost:2202/TelemetrySvc")
     Public Endpoint As EndpointAddress
     Public ServiceAddress As NetTcpBinding
     Public Factory As ChannelFactory(Of IntercomInterface)
@@ -10,7 +11,7 @@ Module API
 
     Public Function Init(ShowError As Boolean) As Boolean
         Try
-            Endpoint = New EndpointAddress(New Uri("net.tcp://localhost:2202/TelemetrySvc"))
+            Endpoint = New EndpointAddress(HostAddress)
             ServiceAddress = New NetTcpBinding()
             Factory = New ChannelFactory(Of IntercomInterface)(ServiceAddress, Endpoint)
             ServiceInstance = Factory.CreateChannel()
