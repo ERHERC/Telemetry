@@ -3,17 +3,9 @@ Imports System.ServiceModel
 <ServiceContract()>
 Public Interface IntercomInterface
     <OperationContract()>
-    Sub SendMessage(Command As String, ParamArray Parameters() As String)
-
+    Sub SetBattery(ByVal Value As Double)
     <OperationContract()>
-    Sub SetBatteryPercentage(Value As Integer)
-
+    Sub SetPing(ByVal Value As Integer)
     <OperationContract()>
-    Sub SetSpeed(Value As Double)
-
-    <OperationContract()>
-    Sub SetPing(Value As Integer)
-
-    <OperationContract()>
-    Function GetMainForm() As VisualizerForm
+    Sub SetSpeed(ByVal Value As Double)
 End Interface

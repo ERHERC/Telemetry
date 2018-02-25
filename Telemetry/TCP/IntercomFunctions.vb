@@ -6,7 +6,7 @@ Module IntercomFunctions
         MessageCount += 1
         Messages.Add(Id, Message)
         UpdateMessages()
-        Globals.MainForm.MainPanel.Visible = False
+        FormsManager.MainForm.MainPanel.Visible = False
 
     End Sub
 
@@ -14,7 +14,7 @@ Module IntercomFunctions
         Try
             Messages.Remove(Messages.Item(Id))
             MessageCount -= 1
-            If MessageCount <= 0 Then Globals.MainForm.MainPanel.Visible = True : UpdateMessages()
+            If MessageCount <= 0 Then FormsManager.MainForm.MainPanel.Visible = True : UpdateMessages()
         Catch ErrorCode As Exception
 
         End Try
@@ -30,6 +30,6 @@ Module IntercomFunctions
     Public Sub CloseAllMessages()
         Messages.Clear()
         MessageCount = 0
-        Globals.MainForm.MainPanel.Visible = True
+        FormsManager.MainForm.MainPanel.Visible = True
     End Sub
 End Module

@@ -5,6 +5,20 @@ Public Class MainForm
     End Sub
 
     Private Sub BatteryBtn_Click(sender As Object, e As EventArgs) Handles BatteryBtn.Click
-        API.Instance.SetBatteryPercentage(CInt(BatteryUD.Value))
+        If API.Init(True) Then
+            API.Instance.SetBattery(CDbl(BatteryUD.Value))
+        End If
+    End Sub
+
+    Private Sub PingBtn_Click(sender As Object, e As EventArgs) Handles PingBtn.Click
+        If API.Init(True) Then
+            API.Instance.SetPing(CInt(PingUD.Value))
+        End If
+    End Sub
+
+    Private Sub SpeedBtn_Click(sender As Object, e As EventArgs) Handles SpeedBtn.Click
+        If API.Init(True) Then
+            API.Instance.SetSpeed(CDbl(SpeedUD.Value))
+        End If
     End Sub
 End Class

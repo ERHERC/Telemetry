@@ -58,22 +58,13 @@ Public Class VisualizerForm
     End Sub
 
     Private Sub VisualizerForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
-        If Not DATA_VALIDATED Then
-            FormsManager.Startup = New SetupForm()
-            FormsManager.Startup.ShowDialog()
-        End If
-        TaskDialog.InitializeLifetimeService()
         'DATA_VALIDATED = True
+
+        FormsManager.Startup = New SetupForm()
+        FormsManager.Startup.ShowDialog()
+        IntercomApiManager.StartAPI()
+
         If DATA_VALIDATED Then
-            TaskDialog.Show()
-            With TaskDialog
-                .Line1 = "Instantiation d'un serveur TCP"
-                .Line2 = "Veuillez patienter ..."
-            End With
-            IntercomApiManager.StartAPI()
-            Tools.Wait(1.25)
-            TaskDialog.Close()
-            Tools.Wait(0.25)
             Me.Opacity = 1
             Me.WindowState = FormWindowState.Normal
             Me.ShowInTaskbar = True
@@ -85,8 +76,14 @@ Public Class VisualizerForm
 
     Private Sub VisualizerForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If DATA_VALIDATED Then
+            My.Computer.Audio.Play(My.Resources._Exit, AudioPlayMode.Background)
             If KryptonMessageBox.Show("Voulez-vous vraiment quitter ?", "Quitter ?", MessageBoxButtons.YesNo).ToString = "Yes" Then
-                IntercomApiManager.StopAPI()
+                e.Cancel = True
+                While IntercomApiManager.APIState()
+                    IntercomApiManager.StopAPI()
+                    Tools.Wait(0.25)
+                End While
+                e.Cancel = False
             Else
                 e.Cancel = True
             End If

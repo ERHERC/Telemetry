@@ -88,6 +88,7 @@ Partial Class SetupForm
         Me.CancelButton = Me.QuitBtn
         Me.ClientSize = New System.Drawing.Size(1055, 554)
         Me.Name = "SetupForm"
+        Me.ShowIcon = True
         Me.HeaderPanel.ResumeLayout(False)
         Me.HeaderPanel.PerformLayout()
         Me.BottomPanel.ResumeLayout(False)
