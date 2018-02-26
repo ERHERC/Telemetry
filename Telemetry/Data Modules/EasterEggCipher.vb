@@ -38,10 +38,14 @@ Module EasterEggCipher
             Keys.Clear()
         End If
 
-
         If Code.Contains("ROSESSpaceARESpaceRED") Then
             'Code ROSES ARE RED
             KryptonMessageBox.Show("Roses are red" & vbCrLf & "Violets are blue" & vbCrLf & "Omae wa" & vbCrLf & "Mou shindeiru !", "Important message", MessageBoxButtons.OK)
+        End If
+
+        If Code.Contains("WINTER") Then
+            'Code WINTER
+            KryptonMessageBox.Show("Winter is coming !", "Important message", MessageBoxButtons.OK)
         End If
     End Sub
 End Module

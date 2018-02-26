@@ -1,4 +1,13 @@
 Public Class SetupForm
+    Private Sub SetupForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.BringToFront()
+        Me.Select()
+        Me.Visible = True
+        FormsManager.MainForm.Hide()
+        FormsManager.MainForm.ShowInTaskbar = False
+    End Sub
+
+
     Private Sub OkBtn_Click(sender As Object, e As EventArgs) Handles OkBtn.Click
         FormsManager.MainForm.DATA_VALIDATED = True
         Dim LastTask As String = ""

@@ -189,7 +189,6 @@
     <Import Include="Telemetry.Themes.Themes" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="API.vb" />
     <Compile Include="Forms\MainForm.Designer.vb">
       <DependentUpon>MainForm.vb</DependentUpon>
     </Compile>
@@ -304,6 +303,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <Import Project="..\Telemetry.Shared\Telemetry.Shared.projitems" Label="Shared" />
+  <Import Project="..\Telemetry.API\Telemetry.API.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

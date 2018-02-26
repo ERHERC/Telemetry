@@ -31,6 +31,7 @@ Partial Class MainForm
         Me.BatteryUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
         Me.BatteryLbl = New System.Windows.Forms.Label()
         Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager(Me.components)
+        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette()
         Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
         Me.MainPanel = New System.Windows.Forms.FlowLayoutPanel()
         Me.PingGroup = New System.Windows.Forms.GroupBox()
@@ -45,6 +46,13 @@ Partial Class MainForm
         Me.SpeedPanel = New System.Windows.Forms.Panel()
         Me.SpeedUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
         Me.SpeedLbl = New System.Windows.Forms.Label()
+        Me.DistanceGroup = New System.Windows.Forms.GroupBox()
+        Me.DistanceLayout = New System.Windows.Forms.TableLayoutPanel()
+        Me.DistanceBtn = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.DistancePanel = New System.Windows.Forms.Panel()
+        Me.DistanceUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
+        Me.DistanceLbl = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PingWorker = New System.ComponentModel.BackgroundWorker()
         Me.BatteryGroup.SuspendLayout()
         Me.BatteryLayout.SuspendLayout()
@@ -56,6 +64,9 @@ Partial Class MainForm
         Me.SpeedGroup.SuspendLayout()
         Me.SpeedLayout.SuspendLayout()
         Me.SpeedPanel.SuspendLayout()
+        Me.DistanceGroup.SuspendLayout()
+        Me.DistanceLayout.SuspendLayout()
+        Me.DistancePanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'BatteryGroup
@@ -146,6 +157,8 @@ Partial Class MainForm
         Me.MainPanel.Controls.Add(Me.BatteryGroup)
         Me.MainPanel.Controls.Add(Me.PingGroup)
         Me.MainPanel.Controls.Add(Me.SpeedGroup)
+        Me.MainPanel.Controls.Add(Me.DistanceGroup)
+        Me.MainPanel.Controls.Add(Me.GroupBox1)
         Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanel.Location = New System.Drawing.Point(0, 0)
         Me.MainPanel.Name = "MainPanel"
@@ -313,6 +326,98 @@ Partial Class MainForm
         Me.SpeedLbl.Text = "KM/h"
         Me.SpeedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'DistanceGroup
+        '
+        Me.DistanceGroup.Controls.Add(Me.DistanceLayout)
+        Me.DistanceGroup.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DistanceGroup.ForeColor = System.Drawing.Color.DimGray
+        Me.DistanceGroup.Location = New System.Drawing.Point(24, 190)
+        Me.DistanceGroup.Margin = New System.Windows.Forms.Padding(8)
+        Me.DistanceGroup.Name = "DistanceGroup"
+        Me.DistanceGroup.Padding = New System.Windows.Forms.Padding(0)
+        Me.DistanceGroup.Size = New System.Drawing.Size(350, 150)
+        Me.DistanceGroup.TabIndex = 2
+        Me.DistanceGroup.TabStop = False
+        Me.DistanceGroup.Text = "Distance"
+        '
+        'DistanceLayout
+        '
+        Me.DistanceLayout.ColumnCount = 1
+        Me.DistanceLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
+        Me.DistanceLayout.Controls.Add(Me.DistanceBtn, 0, 1)
+        Me.DistanceLayout.Controls.Add(Me.DistancePanel, 0, 0)
+        Me.DistanceLayout.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DistanceLayout.Location = New System.Drawing.Point(0, 22)
+        Me.DistanceLayout.Margin = New System.Windows.Forms.Padding(0)
+        Me.DistanceLayout.Name = "DistanceLayout"
+        Me.DistanceLayout.RowCount = 2
+        Me.DistanceLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32.0!))
+        Me.DistanceLayout.RowStyles.Add(New System.Windows.Forms.RowStyle())
+        Me.DistanceLayout.Size = New System.Drawing.Size(350, 128)
+        Me.DistanceLayout.TabIndex = 0
+        '
+        'DistanceBtn
+        '
+        Me.DistanceBtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DistanceBtn.Location = New System.Drawing.Point(0, 32)
+        Me.DistanceBtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.DistanceBtn.Name = "DistanceBtn"
+        Me.DistanceBtn.Size = New System.Drawing.Size(350, 96)
+        Me.DistanceBtn.TabIndex = 1
+        Me.DistanceBtn.Values.Text = "Appliquer"
+        '
+        'DistancePanel
+        '
+        Me.DistancePanel.Controls.Add(Me.DistanceUD)
+        Me.DistancePanel.Controls.Add(Me.DistanceLbl)
+        Me.DistancePanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DistancePanel.Location = New System.Drawing.Point(0, 0)
+        Me.DistancePanel.Margin = New System.Windows.Forms.Padding(0)
+        Me.DistancePanel.Name = "DistancePanel"
+        Me.DistancePanel.Size = New System.Drawing.Size(350, 32)
+        Me.DistancePanel.TabIndex = 2
+        '
+        'DistanceUD
+        '
+        Me.DistanceUD.DecimalPlaces = 1
+        Me.DistanceUD.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DistanceUD.Location = New System.Drawing.Point(0, 0)
+        Me.DistanceUD.Margin = New System.Windows.Forms.Padding(0)
+        Me.DistanceUD.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
+        Me.DistanceUD.Name = "DistanceUD"
+        Me.DistanceUD.Size = New System.Drawing.Size(286, 32)
+        Me.DistanceUD.StateCommon.Content.Font = New System.Drawing.Font("Verdana", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DistanceUD.TabIndex = 0
+        Me.DistanceUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.DistanceUD.ThousandsSeparator = True
+        Me.DistanceUD.Value = New Decimal(New Integer() {134, 0, 0, 0})
+        '
+        'DistanceLbl
+        '
+        Me.DistanceLbl.BackColor = System.Drawing.Color.Crimson
+        Me.DistanceLbl.Dock = System.Windows.Forms.DockStyle.Right
+        Me.DistanceLbl.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DistanceLbl.ForeColor = System.Drawing.Color.White
+        Me.DistanceLbl.Location = New System.Drawing.Point(286, 0)
+        Me.DistanceLbl.Name = "DistanceLbl"
+        Me.DistanceLbl.Size = New System.Drawing.Size(64, 32)
+        Me.DistanceLbl.TabIndex = 5
+        Me.DistanceLbl.Text = "m"
+        Me.DistanceLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.DimGray
+        Me.GroupBox1.Location = New System.Drawing.Point(390, 190)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(8)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox1.Size = New System.Drawing.Size(716, 150)
+        Me.GroupBox1.TabIndex = 3
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Distance"
+        '
         'PingWorker
         '
         '
@@ -324,6 +429,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.MainPanel)
         Me.Name = "MainForm"
         Me.Opacity = 0R
+        Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Telemetry [Bac à sable]"
         Me.BatteryGroup.ResumeLayout(False)
@@ -336,6 +442,9 @@ Partial Class MainForm
         Me.SpeedGroup.ResumeLayout(False)
         Me.SpeedLayout.ResumeLayout(False)
         Me.SpeedPanel.ResumeLayout(False)
+        Me.DistanceGroup.ResumeLayout(False)
+        Me.DistanceLayout.ResumeLayout(False)
+        Me.DistancePanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -361,4 +470,11 @@ Partial Class MainForm
     Friend WithEvents BatteryPanel As Panel
     Friend WithEvents BatteryLbl As Label
     Friend WithEvents PingWorker As System.ComponentModel.BackgroundWorker
+    Friend WithEvents DistanceGroup As GroupBox
+    Friend WithEvents DistanceLayout As TableLayoutPanel
+    Friend WithEvents DistanceBtn As KryptonButton
+    Friend WithEvents DistancePanel As Panel
+    Friend WithEvents DistanceUD As KryptonNumericUpDown
+    Friend WithEvents DistanceLbl As Label
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

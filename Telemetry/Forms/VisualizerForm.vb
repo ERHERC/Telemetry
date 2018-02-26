@@ -61,13 +61,16 @@ Public Class VisualizerForm
         'DATA_VALIDATED = True
 
         FormsManager.Startup = New SetupForm()
+        FormsManager.Startup.BringToFront()
+        FormsManager.Startup.Select()
         FormsManager.Startup.ShowDialog()
         IntercomApiManager.StartAPI()
 
         If DATA_VALIDATED Then
+            Me.Visible = True
             Me.Opacity = 1
-            Me.WindowState = FormWindowState.Normal
             Me.ShowInTaskbar = True
+            Me.WindowState = FormWindowState.Normal
             My.Computer.Audio.Play(My.Resources.Startup, AudioPlayMode.Background)
         Else
             Me.Close()

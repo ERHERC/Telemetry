@@ -10,4 +10,6 @@ Public Interface IntercomInterface
     Sub SetPing(ByVal Value As Integer)
     <OperationContract()>
     Sub SetSpeed(ByVal Value As Double)
+    <OperationContract()>
+    Sub SetDistance(ByVal Value As Double)
 End Interface

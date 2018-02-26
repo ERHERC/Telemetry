@@ -68,12 +68,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Certificates", "Certificate
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Telemetry.UnitTestProject", "Telemetry.UnitTestProject\Telemetry.UnitTestProject.vbproj", "{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Telemetry.API", "Telemetry.API\Telemetry.API.shproj", "{1C2BC1B0-ACEF-4B4A-B424-49A746FDA8AA}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Telemetry.Shared\Telemetry.Shared.projitems*{0bd02e80-1c77-4ebd-b154-e008235493aa}*SharedItemsImports = 4
+		Telemetry.API\Telemetry.API.projitems*{1c2bc1b0-acef-4b4a-b424-49a746fda8aa}*SharedItemsImports = 13
 		Telemetry.Shared\Telemetry.Shared.projitems*{22f6cd3e-75af-43fa-9b3d-2e3c13fd6284}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{2acf44f4-d005-45b3-81da-d84b0ed07bc6}*SharedItemsImports = 13
+		Telemetry.API\Telemetry.API.projitems*{406e287b-acfc-4257-b8fe-30f06c79de6b}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{406e287b-acfc-4257-b8fe-30f06c79de6b}*SharedItemsImports = 4
+		Telemetry.API\Telemetry.API.projitems*{425d462c-6bce-47ea-b66c-f86bbc7465a9}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{425d462c-6bce-47ea-b66c-f86bbc7465a9}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{66e061c6-4390-4637-b7e3-840e2e7c78bd}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{8573381c-0f92-4ddf-930e-792ae6c72bd4}*SharedItemsImports = 4

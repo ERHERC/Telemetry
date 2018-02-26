@@ -45,18 +45,9 @@ Partial Class VisualizerForm
         Me.BatteryIcon = New System.Windows.Forms.PictureBox()
         Me.MessagesPanel = New System.Windows.Forms.Panel()
         Me.MessagesContent = New System.Windows.Forms.FlowLayoutPanel()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.AlertBox = New System.Windows.Forms.Panel()
-        Me.AlertContent = New System.Windows.Forms.Panel()
-        Me.AlertBoxClose = New System.Windows.Forms.Button()
-        Me.AlertBoxContent = New System.Windows.Forms.Label()
+        Me.BatterieFaible = New Telemetry.Reusable.Notification()
+        Me.Ralentir = New Telemetry.Reusable.Notification()
+        Me.SignalFaible = New Telemetry.Reusable.Notification()
         Me.MessagesPopupTransmittedLbl = New System.Windows.Forms.Label()
         Me.MessagesHeader = New System.Windows.Forms.Label()
         Me.BottomPanel = New System.Windows.Forms.Panel()
@@ -88,12 +79,6 @@ Partial Class VisualizerForm
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MessagesPanel.SuspendLayout()
         Me.MessagesContent.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.AlertBox.SuspendLayout()
-        Me.AlertContent.SuspendLayout()
         Me.BottomPanel.SuspendLayout()
         Me.BottomBarLayoutManager.SuspendLayout()
         Me.LeftBottomColumn.SuspendLayout()
@@ -371,174 +356,61 @@ Partial Class VisualizerForm
         '
         Me.MessagesContent.AutoScroll = True
         Me.MessagesContent.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MessagesContent.Controls.Add(Me.Panel4)
-        Me.MessagesContent.Controls.Add(Me.Panel1)
-        Me.MessagesContent.Controls.Add(Me.AlertBox)
+        Me.MessagesContent.Controls.Add(Me.BatterieFaible)
+        Me.MessagesContent.Controls.Add(Me.Ralentir)
+        Me.MessagesContent.Controls.Add(Me.SignalFaible)
         Me.MessagesContent.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MessagesContent.Location = New System.Drawing.Point(0, 37)
         Me.MessagesContent.Margin = New System.Windows.Forms.Padding(0)
         Me.MessagesContent.Name = "MessagesContent"
-        Me.MessagesContent.Padding = New System.Windows.Forms.Padding(0, 16, 0, 16)
+        Me.MessagesContent.Padding = New System.Windows.Forms.Padding(0, 16, 0, 32)
         Me.MessagesContent.Size = New System.Drawing.Size(256, 369)
         Me.MessagesContent.TabIndex = 4
         '
-        'Panel4
+        'BatterieFaible
         '
-        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.Panel5)
-        Me.Panel4.Location = New System.Drawing.Point(8, 20)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(8, 4, 0, 4)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(224, 100)
-        Me.Panel4.TabIndex = 5
+        Me.BatterieFaible.AutoSize = True
+        Me.BatterieFaible.BackColor = System.Drawing.Color.RoyalBlue
+        Me.BatterieFaible.Location = New System.Drawing.Point(8, 20)
+        Me.BatterieFaible.Margin = New System.Windows.Forms.Padding(8, 4, 0, 4)
+        Me.BatterieFaible.MaximumSize = New System.Drawing.Size(224, 0)
+        Me.BatterieFaible.Message = "Certaines fonctions peuvent" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "être interrompues à cause " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "du manque d'énergie." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "El" &
+    "les reprendront quand" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "la charge sera suffisante."
+        Me.BatterieFaible.MinimumSize = New System.Drawing.Size(224, 100)
+        Me.BatterieFaible.Name = "BatterieFaible"
+        Me.BatterieFaible.Size = New System.Drawing.Size(224, 141)
+        Me.BatterieFaible.TabIndex = 8
+        Me.BatterieFaible.Title = "BATTERIE FAIBLE"
         '
-        'Panel5
+        'Ralentir
         '
-        Me.Panel5.Controls.Add(Me.Button2)
-        Me.Panel5.Controls.Add(Me.Label2)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel5.Location = New System.Drawing.Point(0, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Panel5.Size = New System.Drawing.Size(224, 100)
-        Me.Panel5.TabIndex = 1
+        Me.Ralentir.AutoSize = True
+        Me.Ralentir.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Ralentir.Location = New System.Drawing.Point(8, 169)
+        Me.Ralentir.Margin = New System.Windows.Forms.Padding(8, 4, 0, 4)
+        Me.Ralentir.MaximumSize = New System.Drawing.Size(224, 0)
+        Me.Ralentir.Message = "Les capteurs de la voiture " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ont détecté un obstacle qui" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "approche rapidement, il" &
+    "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "serait préférable de ralentir" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "pour l'éviter."
+        Me.Ralentir.MinimumSize = New System.Drawing.Size(224, 100)
+        Me.Ralentir.Name = "Ralentir"
+        Me.Ralentir.Size = New System.Drawing.Size(224, 141)
+        Me.Ralentir.TabIndex = 7
+        Me.Ralentir.Title = "RALENTIR"
         '
-        'Button2
+        'SignalFaible
         '
-        Me.Button2.AutoSize = True
-        Me.Button2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(150, 0)
-        Me.Button2.MaximumSize = New System.Drawing.Size(74, 29)
-        Me.Button2.MinimumSize = New System.Drawing.Size(74, 29)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(74, 29)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "FERMER"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.DimGray
-        Me.Label2.Location = New System.Drawing.Point(0, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label2.Size = New System.Drawing.Size(224, 100)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "BATTERIE FAIBLE"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Location = New System.Drawing.Point(8, 128)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(8, 4, 0, 4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(224, 100)
-        Me.Panel1.TabIndex = 4
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Button1)
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Panel2.Size = New System.Drawing.Size(224, 100)
-        Me.Panel2.TabIndex = 1
-        '
-        'Button1
-        '
-        Me.Button1.AutoSize = True
-        Me.Button1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(150, 0)
-        Me.Button1.MaximumSize = New System.Drawing.Size(74, 29)
-        Me.Button1.MinimumSize = New System.Drawing.Size(74, 29)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(74, 29)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "FERMER"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label1
-        '
-        Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.DimGray
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Label1.Size = New System.Drawing.Size(224, 100)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "RALENTIR"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AlertBox
-        '
-        Me.AlertBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.AlertBox.Controls.Add(Me.AlertContent)
-        Me.AlertBox.Location = New System.Drawing.Point(8, 236)
-        Me.AlertBox.Margin = New System.Windows.Forms.Padding(8, 4, 0, 4)
-        Me.AlertBox.Name = "AlertBox"
-        Me.AlertBox.Size = New System.Drawing.Size(224, 100)
-        Me.AlertBox.TabIndex = 3
-        '
-        'AlertContent
-        '
-        Me.AlertContent.Controls.Add(Me.AlertBoxClose)
-        Me.AlertContent.Controls.Add(Me.AlertBoxContent)
-        Me.AlertContent.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AlertContent.Location = New System.Drawing.Point(0, 0)
-        Me.AlertContent.Name = "AlertContent"
-        Me.AlertContent.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.AlertContent.Size = New System.Drawing.Size(224, 100)
-        Me.AlertContent.TabIndex = 1
-        '
-        'AlertBoxClose
-        '
-        Me.AlertBoxClose.AutoSize = True
-        Me.AlertBoxClose.Dock = System.Windows.Forms.DockStyle.Right
-        Me.AlertBoxClose.FlatAppearance.BorderSize = 0
-        Me.AlertBoxClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed
-        Me.AlertBoxClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Firebrick
-        Me.AlertBoxClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.AlertBoxClose.Font = New System.Drawing.Font("Segoe UI Light", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AlertBoxClose.ForeColor = System.Drawing.Color.White
-        Me.AlertBoxClose.Location = New System.Drawing.Point(150, 0)
-        Me.AlertBoxClose.MaximumSize = New System.Drawing.Size(74, 29)
-        Me.AlertBoxClose.MinimumSize = New System.Drawing.Size(74, 29)
-        Me.AlertBoxClose.Name = "AlertBoxClose"
-        Me.AlertBoxClose.Size = New System.Drawing.Size(74, 29)
-        Me.AlertBoxClose.TabIndex = 3
-        Me.AlertBoxClose.Text = "FERMER"
-        Me.AlertBoxClose.UseVisualStyleBackColor = True
-        '
-        'AlertBoxContent
-        '
-        Me.AlertBoxContent.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.AlertBoxContent.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AlertBoxContent.ForeColor = System.Drawing.Color.DimGray
-        Me.AlertBoxContent.Location = New System.Drawing.Point(0, 0)
-        Me.AlertBoxContent.Name = "AlertBoxContent"
-        Me.AlertBoxContent.Size = New System.Drawing.Size(224, 100)
-        Me.AlertBoxContent.TabIndex = 2
-        Me.AlertBoxContent.Text = "SIGNAL PERDU"
-        Me.AlertBoxContent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.SignalFaible.AutoSize = True
+        Me.SignalFaible.BackColor = System.Drawing.Color.RoyalBlue
+        Me.SignalFaible.Location = New System.Drawing.Point(8, 318)
+        Me.SignalFaible.Margin = New System.Windows.Forms.Padding(8, 4, 0, 4)
+        Me.SignalFaible.MaximumSize = New System.Drawing.Size(224, 0)
+        Me.SignalFaible.Message = "Certaines fonctions peuvent" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "être interrompues à cause " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "du manque de signal." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "El" &
+    "les reprendront quand" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "ce dernier sera rétabli."
+        Me.SignalFaible.MinimumSize = New System.Drawing.Size(224, 100)
+        Me.SignalFaible.Name = "SignalFaible"
+        Me.SignalFaible.Size = New System.Drawing.Size(224, 141)
+        Me.SignalFaible.TabIndex = 6
+        Me.SignalFaible.Title = "SIGNAL FAIBLE"
         '
         'MessagesPopupTransmittedLbl
         '
@@ -742,7 +614,6 @@ Partial Class VisualizerForm
         Me.Name = "VisualizerForm"
         Me.Opacity = 0R
         Me.ShowIcon = False
-        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Télémétrie [Fenêtre principale]"
         Me.MainPanel.ResumeLayout(False)
@@ -766,15 +637,7 @@ Partial Class VisualizerForm
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MessagesPanel.ResumeLayout(False)
         Me.MessagesContent.ResumeLayout(False)
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.AlertBox.ResumeLayout(False)
-        Me.AlertContent.ResumeLayout(False)
-        Me.AlertContent.PerformLayout()
+        Me.MessagesContent.PerformLayout()
         Me.BottomPanel.ResumeLayout(False)
         Me.BottomBarLayoutManager.ResumeLayout(False)
         Me.BottomBarLayoutManager.PerformLayout()
@@ -801,18 +664,6 @@ Partial Class VisualizerForm
     Friend WithEvents BottomPanel As Panel
     Friend WithEvents MessagesPopupTransmittedLbl As Label
     Friend WithEvents MessagesContent As FlowLayoutPanel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents AlertBox As Panel
-    Friend WithEvents AlertContent As Panel
-    Friend WithEvents AlertBoxClose As Button
-    Friend WithEvents AlertBoxContent As Label
     Friend WithEvents BatteryPanel As TableLayoutPanel
     Friend WithEvents BatteryIcon As PictureBox
     Friend WithEvents BatteryBarOutterBorder As Panel
@@ -836,4 +687,7 @@ Partial Class VisualizerForm
     Friend WithEvents TaskDialog As ProgressDialogs.ProgressDialog
     Friend WithEvents StyleManager As KryptonManager
     Friend WithEvents StylePalette As KryptonPalette
+    Friend WithEvents SignalFaible As Notification
+    Friend WithEvents Ralentir As Notification
+    Friend WithEvents BatterieFaible As Notification
 End Class

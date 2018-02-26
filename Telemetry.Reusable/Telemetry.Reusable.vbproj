@@ -150,6 +150,12 @@
     <Compile Include="Controls\LauncherPage.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Controls\Notification.Designer.vb">
+      <DependentUpon>Notification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Notification.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\TransparentControl.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\LauncherPage.resx">
       <DependentUpon>LauncherPage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Notification.resx">
+      <DependentUpon>Notification.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

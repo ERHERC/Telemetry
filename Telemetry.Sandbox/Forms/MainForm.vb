@@ -1,6 +1,18 @@
 Public Class MainForm
     Public DATA_VALIDATED As Boolean = False
 
+    Private Sub PingWorker_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles PingWorker.DoWork
+        While Me.Visible
+            Try
+                API.Instance.DoNothing()
+            Catch ErrorCode As Exception
+                KryptonMessageBox.Show("Info : le service sur l'adresse """ & API.HostAddress.ToString() & """ à cessé d'emmettre , fermeture ...", "Service", MessageBoxButtons.OK)
+                Application.Restart()
+            End Try
+            Tools.Wait(0.25)
+        End While
+    End Sub
+
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Control.CheckForIllegalCrossThreadCalls = False
         StylePalette.Import(Themes.UserInterface.Crimson)
@@ -41,15 +53,9 @@ Public Class MainForm
         End If
     End Sub
 
-    Private Sub PingWorker_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles PingWorker.DoWork
-        While Me.Visible
-            Try
-                API.Instance.DoNothing()
-            Catch ErrorCode As Exception
-                KryptonMessageBox.Show("Info : le service sur l'adresse """ & API.HostAddress.ToString() & """ à cessé d'emmettre , fermeture ...", "Service", MessageBoxButtons.OK)
-                Application.Restart()
-            End Try
-            Tools.Wait(0.25)
-        End While
+    Private Sub DistanceBtn_Click(sender As Object, e As EventArgs) Handles DistanceBtn.Click
+        If API.Init(True) Then
+            API.Instance.SetDistance(CDbl(DistanceUD.Value))
+        End If
     End Sub
 End Class
