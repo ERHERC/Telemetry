@@ -26,36 +26,36 @@ Partial Class MainForm
         Me.components = New System.ComponentModel.Container()
         Me.BatteryGroup = New System.Windows.Forms.GroupBox()
         Me.BatteryLayout = New System.Windows.Forms.TableLayoutPanel()
-        Me.BatteryUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
         Me.BatteryBtn = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.BatteryPanel = New System.Windows.Forms.Panel()
+        Me.BatteryUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
+        Me.BatteryLbl = New System.Windows.Forms.Label()
         Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager(Me.components)
-        Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette()
         Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
         Me.MainPanel = New System.Windows.Forms.FlowLayoutPanel()
         Me.PingGroup = New System.Windows.Forms.GroupBox()
         Me.PingLayout = New System.Windows.Forms.TableLayoutPanel()
-        Me.PingUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
         Me.PingBtn = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.PingPanel = New System.Windows.Forms.Panel()
+        Me.PingUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
+        Me.PingLbl = New System.Windows.Forms.Label()
         Me.SpeedGroup = New System.Windows.Forms.GroupBox()
         Me.SpeedLayout = New System.Windows.Forms.TableLayoutPanel()
-        Me.SpeedUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
         Me.SpeedBtn = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.SpeedLbl = New System.Windows.Forms.Label()
         Me.SpeedPanel = New System.Windows.Forms.Panel()
-        Me.PingPanel = New System.Windows.Forms.Panel()
-        Me.PingLbl = New System.Windows.Forms.Label()
-        Me.BatteryPanel = New System.Windows.Forms.Panel()
-        Me.BatteryLbl = New System.Windows.Forms.Label()
+        Me.SpeedUD = New ComponentFactory.Krypton.Toolkit.KryptonNumericUpDown()
+        Me.SpeedLbl = New System.Windows.Forms.Label()
+        Me.PingWorker = New System.ComponentModel.BackgroundWorker()
         Me.BatteryGroup.SuspendLayout()
         Me.BatteryLayout.SuspendLayout()
+        Me.BatteryPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
         Me.PingGroup.SuspendLayout()
         Me.PingLayout.SuspendLayout()
+        Me.PingPanel.SuspendLayout()
         Me.SpeedGroup.SuspendLayout()
         Me.SpeedLayout.SuspendLayout()
         Me.SpeedPanel.SuspendLayout()
-        Me.PingPanel.SuspendLayout()
-        Me.BatteryPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'BatteryGroup
@@ -88,6 +88,27 @@ Partial Class MainForm
         Me.BatteryLayout.Size = New System.Drawing.Size(350, 128)
         Me.BatteryLayout.TabIndex = 0
         '
+        'BatteryBtn
+        '
+        Me.BatteryBtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryBtn.Location = New System.Drawing.Point(0, 32)
+        Me.BatteryBtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.BatteryBtn.Name = "BatteryBtn"
+        Me.BatteryBtn.Size = New System.Drawing.Size(350, 96)
+        Me.BatteryBtn.TabIndex = 1
+        Me.BatteryBtn.Values.Text = "Appliquer"
+        '
+        'BatteryPanel
+        '
+        Me.BatteryPanel.Controls.Add(Me.BatteryUD)
+        Me.BatteryPanel.Controls.Add(Me.BatteryLbl)
+        Me.BatteryPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.BatteryPanel.Location = New System.Drawing.Point(0, 0)
+        Me.BatteryPanel.Margin = New System.Windows.Forms.Padding(0)
+        Me.BatteryPanel.Name = "BatteryPanel"
+        Me.BatteryPanel.Size = New System.Drawing.Size(350, 32)
+        Me.BatteryPanel.TabIndex = 2
+        '
         'BatteryUD
         '
         Me.BatteryUD.Dock = System.Windows.Forms.DockStyle.Fill
@@ -101,15 +122,18 @@ Partial Class MainForm
         Me.BatteryUD.ThousandsSeparator = True
         Me.BatteryUD.Value = New Decimal(New Integer() {50, 0, 0, 0})
         '
-        'BatteryBtn
+        'BatteryLbl
         '
-        Me.BatteryBtn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BatteryBtn.Location = New System.Drawing.Point(0, 32)
-        Me.BatteryBtn.Margin = New System.Windows.Forms.Padding(0)
-        Me.BatteryBtn.Name = "BatteryBtn"
-        Me.BatteryBtn.Size = New System.Drawing.Size(350, 96)
-        Me.BatteryBtn.TabIndex = 1
-        Me.BatteryBtn.Values.Text = "Appliquer"
+        Me.BatteryLbl.BackColor = System.Drawing.Color.Crimson
+        Me.BatteryLbl.Dock = System.Windows.Forms.DockStyle.Right
+        Me.BatteryLbl.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BatteryLbl.ForeColor = System.Drawing.Color.White
+        Me.BatteryLbl.Location = New System.Drawing.Point(286, 0)
+        Me.BatteryLbl.Name = "BatteryLbl"
+        Me.BatteryLbl.Size = New System.Drawing.Size(64, 32)
+        Me.BatteryLbl.TabIndex = 5
+        Me.BatteryLbl.Text = "%"
+        Me.BatteryLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'StyleManager
         '
@@ -160,6 +184,27 @@ Partial Class MainForm
         Me.PingLayout.Size = New System.Drawing.Size(350, 128)
         Me.PingLayout.TabIndex = 0
         '
+        'PingBtn
+        '
+        Me.PingBtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PingBtn.Location = New System.Drawing.Point(0, 32)
+        Me.PingBtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.PingBtn.Name = "PingBtn"
+        Me.PingBtn.Size = New System.Drawing.Size(350, 96)
+        Me.PingBtn.TabIndex = 1
+        Me.PingBtn.Values.Text = "Appliquer"
+        '
+        'PingPanel
+        '
+        Me.PingPanel.Controls.Add(Me.PingUD)
+        Me.PingPanel.Controls.Add(Me.PingLbl)
+        Me.PingPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PingPanel.Location = New System.Drawing.Point(0, 0)
+        Me.PingPanel.Margin = New System.Windows.Forms.Padding(0)
+        Me.PingPanel.Name = "PingPanel"
+        Me.PingPanel.Size = New System.Drawing.Size(350, 32)
+        Me.PingPanel.TabIndex = 2
+        '
         'PingUD
         '
         Me.PingUD.Dock = System.Windows.Forms.DockStyle.Fill
@@ -174,15 +219,18 @@ Partial Class MainForm
         Me.PingUD.ThousandsSeparator = True
         Me.PingUD.Value = New Decimal(New Integer() {145, 0, 0, 0})
         '
-        'PingBtn
+        'PingLbl
         '
-        Me.PingBtn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PingBtn.Location = New System.Drawing.Point(0, 32)
-        Me.PingBtn.Margin = New System.Windows.Forms.Padding(0)
-        Me.PingBtn.Name = "PingBtn"
-        Me.PingBtn.Size = New System.Drawing.Size(350, 96)
-        Me.PingBtn.TabIndex = 1
-        Me.PingBtn.Values.Text = "Appliquer"
+        Me.PingLbl.BackColor = System.Drawing.Color.Crimson
+        Me.PingLbl.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PingLbl.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PingLbl.ForeColor = System.Drawing.Color.White
+        Me.PingLbl.Location = New System.Drawing.Point(286, 0)
+        Me.PingLbl.Name = "PingLbl"
+        Me.PingLbl.Size = New System.Drawing.Size(64, 32)
+        Me.PingLbl.TabIndex = 4
+        Me.PingLbl.Text = "ms"
+        Me.PingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'SpeedGroup
         '
@@ -215,6 +263,27 @@ Partial Class MainForm
         Me.SpeedLayout.Size = New System.Drawing.Size(350, 128)
         Me.SpeedLayout.TabIndex = 0
         '
+        'SpeedBtn
+        '
+        Me.SpeedBtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SpeedBtn.Location = New System.Drawing.Point(0, 32)
+        Me.SpeedBtn.Margin = New System.Windows.Forms.Padding(0)
+        Me.SpeedBtn.Name = "SpeedBtn"
+        Me.SpeedBtn.Size = New System.Drawing.Size(350, 96)
+        Me.SpeedBtn.TabIndex = 1
+        Me.SpeedBtn.Values.Text = "Appliquer"
+        '
+        'SpeedPanel
+        '
+        Me.SpeedPanel.Controls.Add(Me.SpeedUD)
+        Me.SpeedPanel.Controls.Add(Me.SpeedLbl)
+        Me.SpeedPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SpeedPanel.Location = New System.Drawing.Point(0, 0)
+        Me.SpeedPanel.Margin = New System.Windows.Forms.Padding(0)
+        Me.SpeedPanel.Name = "SpeedPanel"
+        Me.SpeedPanel.Size = New System.Drawing.Size(350, 32)
+        Me.SpeedPanel.TabIndex = 4
+        '
         'SpeedUD
         '
         Me.SpeedUD.DecimalPlaces = 2
@@ -231,16 +300,6 @@ Partial Class MainForm
         Me.SpeedUD.ThousandsSeparator = True
         Me.SpeedUD.Value = New Decimal(New Integer() {36, 0, 0, 65536})
         '
-        'SpeedBtn
-        '
-        Me.SpeedBtn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SpeedBtn.Location = New System.Drawing.Point(0, 32)
-        Me.SpeedBtn.Margin = New System.Windows.Forms.Padding(0)
-        Me.SpeedBtn.Name = "SpeedBtn"
-        Me.SpeedBtn.Size = New System.Drawing.Size(350, 96)
-        Me.SpeedBtn.TabIndex = 1
-        Me.SpeedBtn.Values.Text = "Appliquer"
-        '
         'SpeedLbl
         '
         Me.SpeedLbl.BackColor = System.Drawing.Color.Crimson
@@ -254,64 +313,8 @@ Partial Class MainForm
         Me.SpeedLbl.Text = "KM/h"
         Me.SpeedLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'SpeedPanel
+        'PingWorker
         '
-        Me.SpeedPanel.Controls.Add(Me.SpeedUD)
-        Me.SpeedPanel.Controls.Add(Me.SpeedLbl)
-        Me.SpeedPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SpeedPanel.Location = New System.Drawing.Point(0, 0)
-        Me.SpeedPanel.Margin = New System.Windows.Forms.Padding(0)
-        Me.SpeedPanel.Name = "SpeedPanel"
-        Me.SpeedPanel.Size = New System.Drawing.Size(350, 32)
-        Me.SpeedPanel.TabIndex = 4
-        '
-        'PingPanel
-        '
-        Me.PingPanel.Controls.Add(Me.PingUD)
-        Me.PingPanel.Controls.Add(Me.PingLbl)
-        Me.PingPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PingPanel.Location = New System.Drawing.Point(0, 0)
-        Me.PingPanel.Margin = New System.Windows.Forms.Padding(0)
-        Me.PingPanel.Name = "PingPanel"
-        Me.PingPanel.Size = New System.Drawing.Size(350, 32)
-        Me.PingPanel.TabIndex = 2
-        '
-        'PingLbl
-        '
-        Me.PingLbl.BackColor = System.Drawing.Color.Crimson
-        Me.PingLbl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.PingLbl.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PingLbl.ForeColor = System.Drawing.Color.White
-        Me.PingLbl.Location = New System.Drawing.Point(286, 0)
-        Me.PingLbl.Name = "PingLbl"
-        Me.PingLbl.Size = New System.Drawing.Size(64, 32)
-        Me.PingLbl.TabIndex = 4
-        Me.PingLbl.Text = "ms"
-        Me.PingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'BatteryPanel
-        '
-        Me.BatteryPanel.Controls.Add(Me.BatteryUD)
-        Me.BatteryPanel.Controls.Add(Me.BatteryLbl)
-        Me.BatteryPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.BatteryPanel.Location = New System.Drawing.Point(0, 0)
-        Me.BatteryPanel.Margin = New System.Windows.Forms.Padding(0)
-        Me.BatteryPanel.Name = "BatteryPanel"
-        Me.BatteryPanel.Size = New System.Drawing.Size(350, 32)
-        Me.BatteryPanel.TabIndex = 2
-        '
-        'BatteryLbl
-        '
-        Me.BatteryLbl.BackColor = System.Drawing.Color.Crimson
-        Me.BatteryLbl.Dock = System.Windows.Forms.DockStyle.Right
-        Me.BatteryLbl.Font = New System.Drawing.Font("Impact", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BatteryLbl.ForeColor = System.Drawing.Color.White
-        Me.BatteryLbl.Location = New System.Drawing.Point(286, 0)
-        Me.BatteryLbl.Name = "BatteryLbl"
-        Me.BatteryLbl.Size = New System.Drawing.Size(64, 32)
-        Me.BatteryLbl.TabIndex = 5
-        Me.BatteryLbl.Text = "%"
-        Me.BatteryLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'MainForm
         '
@@ -320,18 +323,19 @@ Partial Class MainForm
         Me.ClientSize = New System.Drawing.Size(1133, 443)
         Me.Controls.Add(Me.MainPanel)
         Me.Name = "MainForm"
+        Me.Opacity = 0R
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Telemetry [Bac à sable]"
         Me.BatteryGroup.ResumeLayout(False)
         Me.BatteryLayout.ResumeLayout(False)
+        Me.BatteryPanel.ResumeLayout(False)
         Me.MainPanel.ResumeLayout(False)
         Me.PingGroup.ResumeLayout(False)
         Me.PingLayout.ResumeLayout(False)
+        Me.PingPanel.ResumeLayout(False)
         Me.SpeedGroup.ResumeLayout(False)
         Me.SpeedLayout.ResumeLayout(False)
         Me.SpeedPanel.ResumeLayout(False)
-        Me.PingPanel.ResumeLayout(False)
-        Me.BatteryPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -356,4 +360,5 @@ Partial Class MainForm
     Friend WithEvents PingLbl As Label
     Friend WithEvents BatteryPanel As Panel
     Friend WithEvents BatteryLbl As Label
+    Friend WithEvents PingWorker As System.ComponentModel.BackgroundWorker
 End Class

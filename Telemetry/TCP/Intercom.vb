@@ -18,4 +18,8 @@ Public Class Intercom : Implements IntercomInterface
     Public Sub SetSpeed(ByVal Value As Double) Implements IntercomInterface.SetSpeed
         FormsManager.MainForm.SpeedLabel.Text = CStr(Value) & " KM/h"
     End Sub
+
+    Public Sub DoNothing() Implements IntercomInterface.DoNothing
+
+    End Sub
 End Class
