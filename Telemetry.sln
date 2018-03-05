@@ -66,8 +66,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Certificates", "Certificate
 		Certificates\Telemetry_TemporaryKey.pfx = Certificates\Telemetry_TemporaryKey.pfx
 	EndProjectSection
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Telemetry.UnitTestProject", "Telemetry.UnitTestProject\Telemetry.UnitTestProject.vbproj", "{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}"
-EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Telemetry.API", "Telemetry.API\Telemetry.API.shproj", "{1C2BC1B0-ACEF-4B4A-B424-49A746FDA8AA}"
 EndProject
 Global
@@ -254,18 +252,6 @@ Global
 		{66E061C6-4390-4637-B7E3-840E2E7C78BD}.Release|x64.Build.0 = Release|Any CPU
 		{66E061C6-4390-4637-B7E3-840E2E7C78BD}.Release|x86.ActiveCfg = Release|Any CPU
 		{66E061C6-4390-4637-B7E3-840E2E7C78BD}.Release|x86.Build.0 = Release|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Debug|x64.Build.0 = Debug|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Debug|x86.Build.0 = Debug|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Release|x64.ActiveCfg = Release|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Release|x64.Build.0 = Release|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Release|x86.ActiveCfg = Release|Any CPU
-		{D6A8BBED-59D5-4BC1-8C07-AD21A2AC9621}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
