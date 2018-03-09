@@ -72,6 +72,10 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Telemetry.Hardware.Data.Cmd
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Telemetry.IO", "Telemetry.IO\Telemetry.IO.vbproj", "{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Telemetry.Arduino.Distant", "Telemetry.Arduino.Distant\Telemetry.Arduino.Distant.vcxproj", "{32C665D4-B60A-4935-B045-44A6FB91B980}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Telemetry.Arduino.Receiver", "Telemetry.Arduino.Receiver\Telemetry.Arduino.Receiver.vcxproj", "{C5F80730-F44F-4478-BDAE-6634EFC2CA88}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Telemetry.Shared\Telemetry.Shared.projitems*{0bd02e80-1c77-4ebd-b154-e008235493aa}*SharedItemsImports = 4
@@ -282,6 +286,22 @@ Global
 		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Release|x64.Build.0 = Release|Any CPU
 		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Release|x86.ActiveCfg = Release|Any CPU
 		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Release|x86.Build.0 = Release|Any CPU
+		{32C665D4-B60A-4935-B045-44A6FB91B980}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{32C665D4-B60A-4935-B045-44A6FB91B980}.Debug|x64.ActiveCfg = Debug|Win32
+		{32C665D4-B60A-4935-B045-44A6FB91B980}.Debug|x86.ActiveCfg = Debug|Win32
+		{32C665D4-B60A-4935-B045-44A6FB91B980}.Debug|x86.Build.0 = Debug|Win32
+		{32C665D4-B60A-4935-B045-44A6FB91B980}.Release|Any CPU.ActiveCfg = Release|Win32
+		{32C665D4-B60A-4935-B045-44A6FB91B980}.Release|x64.ActiveCfg = Release|Win32
+		{32C665D4-B60A-4935-B045-44A6FB91B980}.Release|x86.ActiveCfg = Release|Win32
+		{32C665D4-B60A-4935-B045-44A6FB91B980}.Release|x86.Build.0 = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x64.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Debug|x86.Build.0 = Debug|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x64.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.ActiveCfg = Release|Win32
+		{C5F80730-F44F-4478-BDAE-6634EFC2CA88}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
