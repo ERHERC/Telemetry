@@ -4,7 +4,7 @@ ECHO:
 ECHO Compiling themes ...
 CALL :CompileTheme "RoyalBlue" "RoyalBlue"
 CALL :CompileTheme "OliveDrab" "OliveDrab"
-CALL :CompileTheme "Gold" "Gold"
+CALL :CompileTheme "Gold" "Goldenrod"
 CALL :CompileTheme "Crimson" "Crimson"
 CALL :CompileTheme "Black" "96, 96, 96"
 CALL :CompileTheme "Chocolate" "Chocolate"

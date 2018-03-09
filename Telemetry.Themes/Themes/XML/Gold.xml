@@ -41,8 +41,8 @@
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
             <ColorStyle Type="PaletteColorStyle" Value="Solid" />
             <Width Type="Int" Value="1" />
             <Rounding Type="Int" Value="-10" />
@@ -65,8 +65,8 @@
         </StateTracking>
         <StatePressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -81,8 +81,8 @@
         </StatePressed>
         <StateCheckedNormal>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -97,8 +97,8 @@
         </StateCheckedNormal>
         <StateCheckedTracking>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -113,8 +113,8 @@
         </StateCheckedTracking>
         <StateCheckedPressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -130,15 +130,15 @@
         <OverrideDefault>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
         </OverrideDefault>
         <OverrideFocus>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
         </OverrideFocus>
       </ButtonStandalone>
@@ -154,13 +154,13 @@
         </StateCommon>
         <StateNormal>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -175,13 +175,13 @@
         </StateNormal>
         <StateTracking>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -196,13 +196,13 @@
         </StateTracking>
         <StatePressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -227,12 +227,12 @@
           </Border>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateCheckedNormal>
@@ -248,12 +248,12 @@
           </Border>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateCheckedTracking>
@@ -269,24 +269,24 @@
           </Border>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateCheckedPressed>
         <OverrideDefault>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
         </OverrideDefault>
       </ButtonAlternate>
@@ -308,8 +308,8 @@
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
         </StateCommon>
         <StateNormal>
@@ -332,8 +332,8 @@
         </StatePressed>
         <StateCheckedNormal>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -348,8 +348,8 @@
         </StateCheckedNormal>
         <StateCheckedTracking>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -364,8 +364,8 @@
         </StateCheckedTracking>
         <StateCheckedPressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -381,15 +381,15 @@
         <OverrideDefault>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
         </OverrideDefault>
         <OverrideFocus>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
         </OverrideFocus>
       </ButtonCalendarDay>
@@ -400,8 +400,8 @@
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
         </StateCommon>
         <StateDisabled>
@@ -420,8 +420,8 @@
         </StateNormal>
         <StateTracking>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -436,8 +436,8 @@
         </StateTracking>
         <StatePressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -452,8 +452,8 @@
         </StatePressed>
         <StateCheckedNormal>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -468,8 +468,8 @@
         </StateCheckedNormal>
         <StateCheckedTracking>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -484,8 +484,8 @@
         </StateCheckedTracking>
         <StateCheckedPressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Content>
             <ShortText>
@@ -522,12 +522,12 @@
           </Back>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateNormal>
@@ -538,29 +538,29 @@
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateTracking>
         <StatePressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -575,13 +575,13 @@
         </StatePressed>
         <StateCheckedNormal>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -596,13 +596,13 @@
         </StateCheckedNormal>
         <StateCheckedTracking>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -617,13 +617,13 @@
         </StateCheckedTracking>
         <StateCheckedPressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -660,12 +660,12 @@
           </Border>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateNormal>
@@ -676,29 +676,29 @@
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateTracking>
         <StatePressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -713,13 +713,13 @@
         </StatePressed>
         <StateCheckedNormal>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -734,13 +734,13 @@
         </StateCheckedNormal>
         <StateCheckedTracking>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -755,13 +755,13 @@
         </StateCheckedTracking>
         <StateCheckedPressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -789,12 +789,12 @@
         <StateNormal>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateNormal>
@@ -805,29 +805,29 @@
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateTracking>
         <StatePressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -842,13 +842,13 @@
         </StatePressed>
         <StateCheckedNormal>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -863,12 +863,12 @@
         </StateCheckedNormal>
         <StateCheckedTracking>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -883,13 +883,13 @@
         </StateCheckedTracking>
         <StateCheckedPressed>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -913,8 +913,8 @@
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
             <ColorStyle Type="PaletteColorStyle" Value="Solid" />
             <Width Type="Int" Value="1" />
             <Rounding Type="Int" Value="-10" />
@@ -926,8 +926,8 @@
       <HeaderCommon>
         <StateCommon>
           <Back>
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Back>
         </StateCommon>
       </HeaderCommon>
@@ -978,12 +978,12 @@
         <StateNormal>
           <Content>
             <ShortText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </ShortText>
             <LongText>
-              <Color1 Type="Color" Value="Gold" />
-              <Color2 Type="Color" Value="Gold" />
+              <Color1 Type="Color" Value="Goldenrod" />
+              <Color2 Type="Color" Value="Goldenrod" />
             </LongText>
           </Content>
         </StateNormal>
@@ -1015,8 +1015,8 @@
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -1036,8 +1036,8 @@
           </Back>
           <Border>
             <DrawBorders Type="PaletteDrawBorders" Value="Top,Bottom,Left,Right" />
-            <Color1 Type="Color" Value="Gold" />
-            <Color2 Type="Color" Value="Gold" />
+            <Color1 Type="Color" Value="Goldenrod" />
+            <Color2 Type="Color" Value="Goldenrod" />
           </Border>
           <Content>
             <ShortText>
@@ -1062,34 +1062,34 @@
       </PanelClient>
       <PanelAlternate>
         <StateCommon>
-          <Color1 Type="Color" Value="Gold" />
-          <Color2 Type="Color" Value="Gold" />
+          <Color1 Type="Color" Value="Goldenrod" />
+          <Color2 Type="Color" Value="Goldenrod" />
         </StateCommon>
       </PanelAlternate>
     </PanelStyles>
     <TrackBar>
       <StateCommon>
         <Tick>
-          <Color1 Type="Color" Value="Gold" />
-          <Color2 Type="Color" Value="Gold" />
-          <Color3 Type="Color" Value="Gold" />
-          <Color4 Type="Color" Value="Gold" />
-          <Color5 Type="Color" Value="Gold" />
+          <Color1 Type="Color" Value="Goldenrod" />
+          <Color2 Type="Color" Value="Goldenrod" />
+          <Color3 Type="Color" Value="Goldenrod" />
+          <Color4 Type="Color" Value="Goldenrod" />
+          <Color5 Type="Color" Value="Goldenrod" />
         </Tick>
         <Track>
-          <Color1 Type="Color" Value="Gold" />
-          <Color2 Type="Color" Value="Gold" />
+          <Color1 Type="Color" Value="Goldenrod" />
+          <Color2 Type="Color" Value="Goldenrod" />
           <Color3 Type="Color" Value="White" />
           <Color4 Type="Color" Value="White" />
           <Color5 Type="Color" Value="White" />
         </Track>
         <Position>
-          <Color1 Type="Color" Value="Gold" />
+          <Color1 Type="Color" Value="Goldenrod" />
         </Position>
       </StateCommon>
       <StateNormal>
         <Position>
-          <Color1 Type="Color" Value="Gold" />
+          <Color1 Type="Color" Value="Goldenrod" />
           <Color2 Type="Color" Value="240, 240, 240" />
           <Color3 Type="Color" Value="240, 240, 240" />
           <Color4 Type="Color" Value="240, 240, 240" />
@@ -1098,8 +1098,8 @@
       </StateNormal>
       <StateTracking>
         <Position>
-          <Color1 Type="Color" Value="Gold" />
-          <Color2 Type="Color" Value="Gold" />
+          <Color1 Type="Color" Value="Goldenrod" />
+          <Color2 Type="Color" Value="Goldenrod" />
           <Color3 Type="Color" Value="White" />
           <Color4 Type="Color" Value="White" />
           <Color5 Type="Color" Value="White" />
@@ -1107,20 +1107,20 @@
       </StateTracking>
       <StatePressed>
         <Position>
-          <Color1 Type="Color" Value="Gold" />
-          <Color2 Type="Color" Value="Gold" />
-          <Color3 Type="Color" Value="Gold" />
-          <Color4 Type="Color" Value="Gold" />
-          <Color5 Type="Color" Value="Gold" />
+          <Color1 Type="Color" Value="Goldenrod" />
+          <Color2 Type="Color" Value="Goldenrod" />
+          <Color3 Type="Color" Value="Goldenrod" />
+          <Color4 Type="Color" Value="Goldenrod" />
+          <Color5 Type="Color" Value="Goldenrod" />
         </Position>
       </StatePressed>
       <OverrideFocus>
         <Position>
-          <Color1 Type="Color" Value="Gold" />
-          <Color2 Type="Color" Value="Gold" />
-          <Color3 Type="Color" Value="Gold" />
-          <Color4 Type="Color" Value="Gold" />
-          <Color5 Type="Color" Value="Gold" />
+          <Color1 Type="Color" Value="Goldenrod" />
+          <Color2 Type="Color" Value="Goldenrod" />
+          <Color3 Type="Color" Value="Goldenrod" />
+          <Color4 Type="Color" Value="Goldenrod" />
+          <Color5 Type="Color" Value="Goldenrod" />
         </Position>
       </OverrideFocus>
     </TrackBar>
@@ -1138,8 +1138,8 @@
         <ButtonSelectedGradientMiddle Type="Color" Value="White" />
       </Button>
       <Grip>
-        <GripDark Type="Color" Value="Gold" />
-        <GripLight Type="Color" Value="Gold" />
+        <GripDark Type="Color" Value="Goldenrod" />
+        <GripLight Type="Color" Value="Goldenrod" />
       </Grip>
       <Menu>
         <ImageMarginGradientBegin Type="Color" Value="239, 239, 242" />
@@ -1148,13 +1148,13 @@
         <ImageMarginRevealedGradientBegin Type="Color" Value="239, 239, 242" />
         <ImageMarginRevealedGradientEnd Type="Color" Value="239, 239, 242" />
         <ImageMarginRevealedGradientMiddle Type="Color" Value="239, 239, 242" />
-        <MenuBorder Type="Color" Value="Gold" />
+        <MenuBorder Type="Color" Value="Goldenrod" />
         <MenuItemText Type="Color" Value="White" />
-        <MenuItemBorder Type="Color" Value="Gold" />
+        <MenuItemBorder Type="Color" Value="Goldenrod" />
         <MenuItemPressedGradientBegin Type="Color" Value="239, 239, 242" />
         <MenuItemPressedGradientEnd Type="Color" Value="239, 239, 242" />
         <MenuItemPressedGradientMiddle Type="Color" Value="239, 239, 242" />
-        <MenuItemSelected Type="Color" Value="Gold" />
+        <MenuItemSelected Type="Color" Value="Goldenrod" />
         <MenuItemSelectedGradientBegin Type="Color" Value="239, 239, 242" />
         <MenuItemSelectedGradientEnd Type="Color" Value="239, 239, 242" />
       </Menu>
@@ -1164,8 +1164,8 @@
       </Rafting>
       <MenuStrip>
         <MenuStripText Type="Color" Value="White" />
-        <MenuStripGradientBegin Type="Color" Value="Gold" />
-        <MenuStripGradientEnd Type="Color" Value="Gold" />
+        <MenuStripGradientBegin Type="Color" Value="Goldenrod" />
+        <MenuStripGradientEnd Type="Color" Value="Goldenrod" />
       </MenuStrip>
       <Separator>
         <SeparatorDark Type="Color" Value="White" />
@@ -1173,15 +1173,15 @@
       </Separator>
       <StatusStrip>
         <StatusStripText Type="Color" Value="White" />
-        <StatusStripGradientBegin Type="Color" Value="Gold" />
-        <StatusStripGradientEnd Type="Color" Value="Gold" />
+        <StatusStripGradientBegin Type="Color" Value="Goldenrod" />
+        <StatusStripGradientEnd Type="Color" Value="Goldenrod" />
       </StatusStrip>
       <ToolStrip>
         <ToolStripText Type="Color" Value="White" />
-        <ToolStripBorder Type="Color" Value="Gold" />
+        <ToolStripBorder Type="Color" Value="Goldenrod" />
         <ToolStripContentPanelGradientBegin Type="Color" Value="White" />
         <ToolStripContentPanelGradientEnd Type="Color" Value="White" />
-        <ToolStripDropDownBackground Type="Color" Value="Gold" />
+        <ToolStripDropDownBackground Type="Color" Value="Goldenrod" />
         <ToolStripGradientBegin Type="Color" Value="239, 239, 242" />
         <ToolStripGradientEnd Type="Color" Value="239, 239, 242" />
         <ToolStripGradientMiddle Type="Color" Value="239, 239, 242" />

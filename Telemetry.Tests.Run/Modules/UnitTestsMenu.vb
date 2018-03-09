@@ -36,7 +36,7 @@ Partial Public NotInheritable Class UnitTestsMenu : Inherits ConsoleMenu
         Console.BackgroundColor = ConsoleColor.Black
         Console.ForegroundColor = ConsoleColor.White
 
-        'Skip 3 Lines
+        'Skip 3 Lines'
         For I = 0 To 3
             Console.WriteLine()
         Next

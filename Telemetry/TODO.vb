@@ -10,3 +10,4 @@
 ' TODO : [10] - Ajouter un message d'avertissement au launcher a propos de Windows Defender (API TCP) ou voir pour l'ajouter dans la classe de stockage (afficher le message au lancement de l'appli)
 ' TODO : [11] - Faire que le message de la tâche 10 apparaisse dans un panneau qui prends toute la fenêtre et qui à pour fond le contenu de la form mais flouté (je pense que ça peut être joli)
 ' TODO : [12] - Ajouter un système de viewport pour Telemetry.Tests.Run
+' TODO : [13] - Créer une extension pour la classe Control pour gérer le flou en interne

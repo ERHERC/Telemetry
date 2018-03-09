@@ -25,13 +25,13 @@ Partial Class SplashForm
         '
         'AppNameLabel
         '
-        Me.AppNameLabel.ForeColor = System.Drawing.Color.Gold
+        Me.AppNameLabel.ForeColor = System.Drawing.Color.Goldenrod
         Me.AppNameLabel.Size = New System.Drawing.Size(166, 37)
         Me.AppNameLabel.Text = "HARDWARE"
         '
         'LeftPanel
         '
-        Me.LeftPanel.BackColor = System.Drawing.Color.Gold
+        Me.LeftPanel.BackColor = System.Drawing.Color.Goldenrod
         '
         'VersionLabel
         '
@@ -39,7 +39,7 @@ Partial Class SplashForm
         '
         'LoadLabel
         '
-        Me.LoadLabel.ForeColor = System.Drawing.Color.Gold
+        Me.LoadLabel.ForeColor = System.Drawing.Color.Goldenrod
         '
         'SplashForm
         '

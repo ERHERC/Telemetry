@@ -68,6 +68,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Certificates", "Certificate
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Telemetry.API", "Telemetry.API\Telemetry.API.shproj", "{1C2BC1B0-ACEF-4B4A-B424-49A746FDA8AA}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Telemetry.Hardware.Data.Cmd", "Telemetry.Hardware.Data.Cmd\Telemetry.Hardware.Data.Cmd.vbproj", "{B07267DB-1428-482E-AFFE-8ECA5E8A5948}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Telemetry.IO", "Telemetry.IO\Telemetry.IO.vbproj", "{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Telemetry.Shared\Telemetry.Shared.projitems*{0bd02e80-1c77-4ebd-b154-e008235493aa}*SharedItemsImports = 4
@@ -81,6 +85,8 @@ Global
 		Telemetry.Shared\Telemetry.Shared.projitems*{66e061c6-4390-4637-b7e3-840e2e7c78bd}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{8573381c-0f92-4ddf-930e-792ae6c72bd4}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{900de052-80cd-4291-b015-605d9bd6fb14}*SharedItemsImports = 4
+		Telemetry.API\Telemetry.API.projitems*{b07267db-1428-482e-affe-8eca5e8a5948}*SharedItemsImports = 4
+		Telemetry.Shared\Telemetry.Shared.projitems*{b07267db-1428-482e-affe-8eca5e8a5948}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{b69a21ab-da1b-445f-9831-c1cf5052b13d}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{ba539c98-d000-4acf-8b0f-002458588119}*SharedItemsImports = 4
 		Telemetry.Shared\Telemetry.Shared.projitems*{c45f9294-7fb6-40a4-9b99-28fda11a3aac}*SharedItemsImports = 4
@@ -252,6 +258,30 @@ Global
 		{66E061C6-4390-4637-B7E3-840E2E7C78BD}.Release|x64.Build.0 = Release|Any CPU
 		{66E061C6-4390-4637-B7E3-840E2E7C78BD}.Release|x86.ActiveCfg = Release|Any CPU
 		{66E061C6-4390-4637-B7E3-840E2E7C78BD}.Release|x86.Build.0 = Release|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Debug|x64.Build.0 = Debug|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Debug|x86.Build.0 = Debug|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Release|x64.ActiveCfg = Release|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Release|x64.Build.0 = Release|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Release|x86.ActiveCfg = Release|Any CPU
+		{B07267DB-1428-482E-AFFE-8ECA5E8A5948}.Release|x86.Build.0 = Release|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Debug|x64.Build.0 = Debug|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Debug|x86.Build.0 = Debug|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Release|x64.ActiveCfg = Release|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Release|x64.Build.0 = Release|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Release|x86.ActiveCfg = Release|Any CPU
+		{B011CD43-77F3-4A03-9635-3B4BDF88A6F7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

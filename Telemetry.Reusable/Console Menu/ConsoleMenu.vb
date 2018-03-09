@@ -1,6 +1,7 @@
 Public MustInherit Class ConsoleMenu
     Public MustOverride Property MenuEntries As Dictionary(Of String, String)
     Public MustOverride Property MenuEntry As Integer
+    Public Property ViewPort As ConsoleViewport
 
     Public Sub New()
         Create()
