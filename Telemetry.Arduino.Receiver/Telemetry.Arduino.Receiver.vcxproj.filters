@@ -17,4 +17,9 @@
   <ItemGroup>
     <None Include="Telemetry.Arduino.Receiver.ino" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.Telemetry.Arduino.Receiver.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

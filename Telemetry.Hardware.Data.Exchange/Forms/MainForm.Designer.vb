@@ -25,9 +25,7 @@ Partial Class MainForm
         Me.components = New System.ComponentModel.Container()
         Me.StyleManager = New ComponentFactory.Krypton.Toolkit.KryptonManager(Me.components)
         Me.StylePalette = New ComponentFactory.Krypton.Toolkit.KryptonPalette(Me.components)
-        Me.OutputBox = New ComponentFactory.Krypton.Toolkit.KryptonRichTextBox()
-        Me.MainLayout = New System.Windows.Forms.TableLayoutPanel()
-        Me.MainLayout.SuspendLayout()
+        Me.MainMenu = New System.Windows.Forms.MenuStrip()
         Me.SuspendLayout()
         '
         'FormPinBtn
@@ -39,49 +37,34 @@ Partial Class MainForm
         Me.StyleManager.GlobalPalette = Me.StylePalette
         Me.StyleManager.GlobalPaletteMode = ComponentFactory.Krypton.Toolkit.PaletteModeManager.Custom
         '
-        'OutputBox
+        'MainMenu
         '
-        Me.OutputBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.OutputBox.Location = New System.Drawing.Point(0, 0)
-        Me.OutputBox.Margin = New System.Windows.Forms.Padding(0)
-        Me.OutputBox.Name = "OutputBox"
-        Me.OutputBox.ReadOnly = True
-        Me.OutputBox.Size = New System.Drawing.Size(624, 221)
-        Me.OutputBox.TabIndex = 0
-        Me.OutputBox.Text = ""
-        '
-        'MainLayout
-        '
-        Me.MainLayout.ColumnCount = 1
-        Me.MainLayout.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.MainLayout.Controls.Add(Me.OutputBox, 0, 0)
-        Me.MainLayout.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainLayout.Location = New System.Drawing.Point(0, 0)
-        Me.MainLayout.Name = "MainLayout"
-        Me.MainLayout.RowCount = 2
-        Me.MainLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.MainLayout.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.MainLayout.Size = New System.Drawing.Size(624, 442)
-        Me.MainLayout.TabIndex = 1
+        Me.MainMenu.Dock = System.Windows.Forms.DockStyle.Left
+        Me.MainMenu.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.MainMenu.Location = New System.Drawing.Point(0, 0)
+        Me.MainMenu.Name = "MainMenu"
+        Me.MainMenu.Size = New System.Drawing.Size(30, 463)
+        Me.MainMenu.TabIndex = 1
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(624, 442)
-        Me.Controls.Add(Me.MainLayout)
+        Me.ClientSize = New System.Drawing.Size(985, 463)
+        Me.Controls.Add(Me.MainMenu)
         Me.FormPin = True
+        Me.IsMdiContainer = True
+        Me.MainMenuStrip = Me.MainMenu
         Me.Name = "MainForm"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "MainForm"
-        Me.MainLayout.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents StyleManager As KryptonManager
     Friend WithEvents StylePalette As KryptonPalette
-    Friend WithEvents OutputBox As KryptonRichTextBox
-    Friend WithEvents MainLayout As TableLayoutPanel
+    Friend WithEvents MainMenu As MenuStrip
 End Class

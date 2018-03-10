@@ -59,32 +59,32 @@
   <ItemGroup>
     <Reference Include="ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Design.dll</HintPath>
+      <HintPath>..\Referenced Assemblies\ComponentFactory.Krypton.Design.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Docking, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Docking.dll</HintPath>
+      <HintPath>..\Referenced Assemblies\ComponentFactory.Krypton.Docking.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Navigator.dll</HintPath>
+      <HintPath>..\Referenced Assemblies\ComponentFactory.Krypton.Navigator.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+      <HintPath>..\Referenced Assemblies\ComponentFactory.Krypton.Ribbon.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+      <HintPath>..\Referenced Assemblies\ComponentFactory.Krypton.Toolkit.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Referenced Assemblied\ComponentFactory.Krypton.Workspace.dll</HintPath>
+      <HintPath>..\Referenced Assemblies\ComponentFactory.Krypton.Workspace.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System">
@@ -225,6 +225,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Telemetry.Hardware.Data.Cmd\Telemetry.Hardware.Data.Cmd.vbproj">
+      <Project>{b07267db-1428-482e-affe-8eca5e8a5948}</Project>
+      <Name>Telemetry.Hardware.Data.Cmd</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Telemetry.Interop\Telemetry.Interop.csproj">
       <Project>{fa146cb5-2ed0-4019-a124-75fbdf9ed530}</Project>
       <Name>Telemetry.Interop</Name>
