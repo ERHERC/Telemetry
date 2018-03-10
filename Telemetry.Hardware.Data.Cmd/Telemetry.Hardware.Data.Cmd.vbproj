@@ -84,11 +84,13 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Channels" />
     <Reference Include="System.ServiceModel.Discovery" />
     <Reference Include="System.ServiceModel.Routing" />
     <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -107,6 +109,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\ConsoleWindow.Designer.vb">
+      <DependentUpon>ConsoleWindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConsoleWindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Run.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -125,6 +133,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\ConsoleWindow.resx">
+      <DependentUpon>ConsoleWindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -149,6 +161,10 @@
       <Project>{b011cd43-77f3-4a03-9635-3b4bdf88a6f7}</Project>
       <Name>Telemetry.IO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Telemetry.Reusable\Telemetry.Reusable.vbproj">
+      <Project>{0bd02e80-1c77-4ebd-b154-e008235493aa}</Project>
+      <Name>Telemetry.Reusable</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Telemetry.Xml.Data\Telemetry.Xml.Data.vbproj">
       <Project>{8573381c-0f92-4ddf-930e-792ae6c72bd4}</Project>
       <Name>Telemetry.Xml.Data</Name>
@@ -164,6 +180,7 @@
   </ItemGroup>
   <Import Project="..\Telemetry.API\Telemetry.API.projitems" Label="Shared" />
   <Import Project="..\Telemetry.Shared\Telemetry.Shared.projitems" Label="Shared" />
+  <Import Project="..\Telemetry.CommonExtensions\Telemetry.CommonExtensions.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

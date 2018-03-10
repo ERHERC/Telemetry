@@ -39,11 +39,10 @@ Partial Class MainForm
         '
         'MainMenu
         '
-        Me.MainMenu.Dock = System.Windows.Forms.DockStyle.Left
         Me.MainMenu.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.MainMenu.Location = New System.Drawing.Point(0, 0)
         Me.MainMenu.Name = "MainMenu"
-        Me.MainMenu.Size = New System.Drawing.Size(30, 463)
+        Me.MainMenu.Size = New System.Drawing.Size(985, 24)
         Me.MainMenu.TabIndex = 1
         '
         'MainForm
@@ -58,7 +57,7 @@ Partial Class MainForm
         Me.Name = "MainForm"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MainForm"
+        Me.Text = "Console"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
