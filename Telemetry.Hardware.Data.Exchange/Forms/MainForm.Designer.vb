@@ -57,7 +57,7 @@ Partial Class MainForm
         Me.Name = "MainForm"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Console"
+        Me.Text = "Télémétrie"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

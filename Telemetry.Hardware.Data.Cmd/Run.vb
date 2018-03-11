@@ -1,10 +1,10 @@
 ﻿Module Run
 
     Sub Main()
-        For I = 1 To 10
-            Console.WriteLine("Ligne numéro " & I)
-        Next
-        Console.ReadLine()
+        Console.ForegroundColor = ConsoleColor.Red
+        Console.WriteLine("Ce logiciel n'est pas conçu pour être lancé en mode invite de commande ...")
+        Console.ForegroundColor = ConsoleColor.White
+        Console.WriteLine("Appuyez sur une touche pour continuer ...")
+        Console.Read()
     End Sub
-
 End Module

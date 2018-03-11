@@ -109,12 +109,15 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\CommandParser.vb" />
+    <Compile Include="ConsoleCallbacks.vb" />
     <Compile Include="Forms\ConsoleWindow.Designer.vb">
       <DependentUpon>ConsoleWindow.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\ConsoleWindow.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Globals.vb" />
     <Compile Include="Run.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">

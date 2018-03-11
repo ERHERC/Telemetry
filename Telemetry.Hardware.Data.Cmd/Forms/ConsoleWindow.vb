@@ -1,6 +1,9 @@
-﻿Imports System.Windows.Forms
-Imports System.Drawing
+﻿Imports System.Drawing
+Imports System.IO
 Imports System.Runtime.InteropServices
+Imports System.Text
+Imports System.Windows.Forms
+Imports Telemetry.Reusable
 
 Public Class ConsoleWindow
     Private Const SB_VERT As Integer = &H1
@@ -28,6 +31,8 @@ Public Class ConsoleWindow
         e.SuppressKeyPress = True
     End Sub
 
+    Public Delegate Sub OutputCallback(ByVal Parameters As String())
+
     Private Sub CommandBox_KeyDown(sender As Object, e As Windows.Forms.KeyEventArgs) Handles CommandBox.KeyDown
         If e.KeyCode = Keys.Enter Then
             e.Handled = True
@@ -52,11 +57,39 @@ Public Class ConsoleWindow
     Private Sub Command()
         Dim Command = Cleanup()
 
-        Dim ScrollToBottom As Boolean = False
-        ScrollToBottom = CBool(Output.)
+        Append(AddressOf ConsoleCallbacks.LogCommand, {Command})
 
-        Output.Write("User issued command : ", Color.Teal, FontStyle.Bold)
-        Output.Write(Command, Color.White, FontStyle.Regular)
-        Output.Write(vbCrLf, Color.Transparent, FontStyle.Regular)
+        CommandParser.Parse(Command)
+    End Sub
+
+    Public Sub Append(ByVal WriteCallback As OutputCallback, ParamArray Parameters() As String)
+        Dim Scroll As SCROLLINFO
+        Scroll.cbSize = Marshal.SizeOf(GetType(SCROLLINFO))
+        Scroll.fMask = SIF_RANGE Or SIF_PAGE Or SIF_POS
+        GetScrollInfo(Output.RichTextBox.Handle, SB_VERT, Scroll)
+
+        WriteCallback(Parameters)
+
+        If Scroll.nPos >= Scroll.nMax - Scroll.nPage Then
+            Output.SelectionStart = Output.TextLength
+            Output.ScrollToCaret()
+        End If
+    End Sub
+
+    Private Sub ConsoleWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Globals.CommandPrompt = Me
+    End Sub
+
+    Private Sub EffacerToutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EffacerToutToolStripMenuItem.Click
+        CommandParser.Parse("clear")
+    End Sub
+
+    Private Sub RevenirÀLaDernièreLigneToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RevenirÀLaDernièreLigneToolStripMenuItem.Click
+        Output.SelectionStart = Output.TextLength
+        Output.ScrollToCaret()
+    End Sub
+
+    Private Sub OuvrirLesLogsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OuvrirLesLogsToolStripMenuItem.Click
+        CommandParser.Parse("log")
     End Sub
 End Class
