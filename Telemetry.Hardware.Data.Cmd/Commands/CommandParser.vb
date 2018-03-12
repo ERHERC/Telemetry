@@ -12,6 +12,8 @@ Module CommandParser
                     Execute.Clear()
                 Case "log", "logs"
                     Execute.Log()
+                Case "setup"
+                    Call New SetupForm().ShowDialog()
             End Select
         End If
     End Sub

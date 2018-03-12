@@ -22,6 +22,7 @@ Partial Class ConsoleWindow
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.ConsoleMenu = New System.Windows.Forms.MenuStrip()
         Me.OuvrirLesLogsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EffacerToutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -32,6 +33,7 @@ Partial Class ConsoleWindow
         Me.CommandPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
         Me.CommandBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.ExecuteBtn = New ComponentFactory.Krypton.Toolkit.KryptonButton()
+        Me.Serial = New System.IO.Ports.SerialPort(Me.components)
         Me.ConsoleMenu.SuspendLayout()
         CType(Me.MainPanel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainPanel.SuspendLayout()
@@ -74,9 +76,9 @@ Partial Class ConsoleWindow
         '
         Me.MainPanel.Controls.Add(Me.Output)
         Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainPanel.Location = New System.Drawing.Point(0, 24)
+        Me.MainPanel.Location = New System.Drawing.Point(0, 0)
         Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(976, 400)
+        Me.MainPanel.Size = New System.Drawing.Size(976, 424)
         Me.MainPanel.TabIndex = 1
         '
         'Output
@@ -86,7 +88,7 @@ Partial Class ConsoleWindow
         Me.Output.Margin = New System.Windows.Forms.Padding(0)
         Me.Output.Name = "Output"
         Me.Output.ReadOnly = True
-        Me.Output.Size = New System.Drawing.Size(976, 400)
+        Me.Output.Size = New System.Drawing.Size(976, 424)
         Me.Output.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Output.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Output.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -173,4 +175,5 @@ Partial Class ConsoleWindow
     Friend WithEvents OuvrirLesLogsToolStripMenuItem As Windows.Forms.ToolStripMenuItem
     Friend WithEvents EffacerToutToolStripMenuItem As Windows.Forms.ToolStripMenuItem
     Friend WithEvents RevenirÀLaDernièreLigneToolStripMenuItem As Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Serial As System.IO.Ports.SerialPort
 End Class
