@@ -1,3 +1,5 @@
+Imports ComponentFactory.Krypton.Toolkit
+
 Namespace UnitTests
     Public Class ThemesExtractImages : Inherits UnitTest : Implements IUnitTest
         Public Overrides Property Name As String = "" Implements IUnitTest.Name
