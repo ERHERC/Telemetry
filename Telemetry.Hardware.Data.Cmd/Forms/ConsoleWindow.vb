@@ -6,6 +6,8 @@ Imports System.Windows.Forms
 Imports Telemetry.Reusable
 
 Public Class ConsoleWindow
+    Public AllowClose As Boolean = False
+
     Private Const SB_VERT As Integer = &H1
     Private Const SIF_RANGE As Integer = &H1
     Private Const SIF_PAGE As Integer = &H2
@@ -55,11 +57,15 @@ Public Class ConsoleWindow
     End Function
 
     Private Sub Command()
-        Dim Command = Cleanup()
+        With CommandBox
+            If Not (.Text = "" OrElse .Text = vbNullString OrElse .Text = String.Empty) Then
+                Dim Command = Cleanup()
 
-        Append(AddressOf ConsoleCallbacks.LogCommand, {Command})
+                Append(AddressOf ConsoleCallbacks.LogCommand, {Command})
 
-        CommandParser.Parse(Command)
+                CommandParser.Parse(Command)
+            End If
+        End With
     End Sub
 
     Public Sub Append(ByVal WriteCallback As OutputCallback, ParamArray Parameters() As String)
@@ -80,6 +86,11 @@ Public Class ConsoleWindow
         Globals.CommandPrompt = Me
     End Sub
 
+    Private Sub ConsoleWindow_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+        Append(AddressOf ConsoleCallbacks.Init, {""})
+        CommandParser.Parse("setup")
+    End Sub
+
     Private Sub EffacerToutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EffacerToutToolStripMenuItem.Click
         CommandParser.Parse("clear")
     End Sub
@@ -91,5 +102,17 @@ Public Class ConsoleWindow
 
     Private Sub OuvrirLesLogsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OuvrirLesLogsToolStripMenuItem.Click
         CommandParser.Parse("log")
+    End Sub
+
+    Private Sub ParamètresToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ParamètresToolStripMenuItem.Click
+        CommandParser.Parse("setup")
+    End Sub
+
+    Private Sub AideToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AideToolStripMenuItem.Click
+        CommandParser.Parse("help")
+    End Sub
+
+    Public Sub Parse(ByVal Command As String)
+        CommandParser.Parse(Command)
     End Sub
 End Class

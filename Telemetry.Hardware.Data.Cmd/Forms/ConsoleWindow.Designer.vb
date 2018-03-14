@@ -26,7 +26,9 @@ Partial Class ConsoleWindow
         Me.ConsoleMenu = New System.Windows.Forms.MenuStrip()
         Me.OuvrirLesLogsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EffacerToutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AideToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RevenirÀLaDernièreLigneToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ParamètresToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MainPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
         Me.Output = New ComponentFactory.Krypton.Toolkit.KryptonRichTextBox()
         Me.BottomPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
@@ -46,7 +48,7 @@ Partial Class ConsoleWindow
         'ConsoleMenu
         '
         Me.ConsoleMenu.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ConsoleMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OuvrirLesLogsToolStripMenuItem, Me.EffacerToutToolStripMenuItem, Me.RevenirÀLaDernièreLigneToolStripMenuItem})
+        Me.ConsoleMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OuvrirLesLogsToolStripMenuItem, Me.EffacerToutToolStripMenuItem, Me.AideToolStripMenuItem, Me.RevenirÀLaDernièreLigneToolStripMenuItem, Me.ParamètresToolStripMenuItem})
         Me.ConsoleMenu.Location = New System.Drawing.Point(0, 0)
         Me.ConsoleMenu.Name = "ConsoleMenu"
         Me.ConsoleMenu.Size = New System.Drawing.Size(976, 24)
@@ -65,6 +67,13 @@ Partial Class ConsoleWindow
         Me.EffacerToutToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
         Me.EffacerToutToolStripMenuItem.Text = "Effacer tout"
         '
+        'AideToolStripMenuItem
+        '
+        Me.AideToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.AideToolStripMenuItem.Name = "AideToolStripMenuItem"
+        Me.AideToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.AideToolStripMenuItem.Text = "Aide"
+        '
         'RevenirÀLaDernièreLigneToolStripMenuItem
         '
         Me.RevenirÀLaDernièreLigneToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
@@ -72,13 +81,19 @@ Partial Class ConsoleWindow
         Me.RevenirÀLaDernièreLigneToolStripMenuItem.Size = New System.Drawing.Size(154, 20)
         Me.RevenirÀLaDernièreLigneToolStripMenuItem.Text = "Revenir à la dernière ligne"
         '
+        'ParamètresToolStripMenuItem
+        '
+        Me.ParamètresToolStripMenuItem.Name = "ParamètresToolStripMenuItem"
+        Me.ParamètresToolStripMenuItem.Size = New System.Drawing.Size(78, 20)
+        Me.ParamètresToolStripMenuItem.Text = "Paramètres"
+        '
         'MainPanel
         '
         Me.MainPanel.Controls.Add(Me.Output)
         Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.MainPanel.Location = New System.Drawing.Point(0, 0)
+        Me.MainPanel.Location = New System.Drawing.Point(0, 24)
         Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(976, 424)
+        Me.MainPanel.Size = New System.Drawing.Size(976, 400)
         Me.MainPanel.TabIndex = 1
         '
         'Output
@@ -88,7 +103,7 @@ Partial Class ConsoleWindow
         Me.Output.Margin = New System.Windows.Forms.Padding(0)
         Me.Output.Name = "Output"
         Me.Output.ReadOnly = True
-        Me.Output.Size = New System.Drawing.Size(976, 424)
+        Me.Output.Size = New System.Drawing.Size(976, 400)
         Me.Output.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Output.StateCommon.Border.Color1 = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Output.StateCommon.Border.Color2 = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
@@ -176,4 +191,6 @@ Partial Class ConsoleWindow
     Friend WithEvents EffacerToutToolStripMenuItem As Windows.Forms.ToolStripMenuItem
     Friend WithEvents RevenirÀLaDernièreLigneToolStripMenuItem As Windows.Forms.ToolStripMenuItem
     Friend WithEvents Serial As System.IO.Ports.SerialPort
+    Friend WithEvents ParamètresToolStripMenuItem As Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AideToolStripMenuItem As Windows.Forms.ToolStripMenuItem
 End Class
