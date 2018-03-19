@@ -29,8 +29,8 @@ Partial Class SetupForm
         Me.ServiceAddressPanel = New System.Windows.Forms.Panel()
         Me.ServiceAddressLbl = New System.Windows.Forms.Label()
         Me.ServiceAddressBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
-        Me.ComPortCBox = New System.Windows.Forms.ComboBox()
         Me.ComPortPanel = New System.Windows.Forms.Panel()
+        Me.ComPortCBox = New System.Windows.Forms.ComboBox()
         Me.ComPortRefresh = New System.Windows.Forms.Button()
         Me.HeaderPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
@@ -162,16 +162,6 @@ Partial Class SetupForm
         Me.ServiceAddressBox.TabIndex = 3
         Me.ServiceAddressBox.Text = "net.tcp://localhost:2202/API"
         '
-        'ComPortCBox
-        '
-        Me.ComPortCBox.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ComPortCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComPortCBox.FormattingEnabled = True
-        Me.ComPortCBox.Location = New System.Drawing.Point(0, 0)
-        Me.ComPortCBox.Name = "ComPortCBox"
-        Me.ComPortCBox.Size = New System.Drawing.Size(748, 21)
-        Me.ComPortCBox.TabIndex = 5
-        '
         'ComPortPanel
         '
         Me.ComPortPanel.Controls.Add(Me.ComPortCBox)
@@ -182,6 +172,16 @@ Partial Class SetupForm
         Me.ComPortPanel.Name = "ComPortPanel"
         Me.ComPortPanel.Size = New System.Drawing.Size(823, 22)
         Me.ComPortPanel.TabIndex = 6
+        '
+        'ComPortCBox
+        '
+        Me.ComPortCBox.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComPortCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComPortCBox.FormattingEnabled = True
+        Me.ComPortCBox.Location = New System.Drawing.Point(0, 0)
+        Me.ComPortCBox.Name = "ComPortCBox"
+        Me.ComPortCBox.Size = New System.Drawing.Size(748, 21)
+        Me.ComPortCBox.TabIndex = 5
         '
         'ComPortRefresh
         '
