@@ -6,6 +6,8 @@ Imports System.Windows.Forms
 Imports Telemetry.Reusable
 
 Public Class ConsoleWindow
+    Public AllowClose As Boolean = False
+
     Private Const SB_VERT As Integer = &H1
     Private Const SIF_RANGE As Integer = &H1
     Private Const SIF_PAGE As Integer = &H2
@@ -113,5 +115,7 @@ Public Class ConsoleWindow
         Buffer.Add(Arduino.ReadLine)
     End Sub
 
+    Private Sub ConsoleWindow_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
+    End Sub
 End Class

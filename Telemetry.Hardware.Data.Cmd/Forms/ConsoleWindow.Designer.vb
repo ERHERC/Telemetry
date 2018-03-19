@@ -96,6 +96,7 @@ Partial Class ConsoleWindow
         Me.Output.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
+        Me.Output.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit
         Me.Output.StateCommon.Content.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Output.TabIndex = 0
         Me.Output.Text = ""
@@ -138,6 +139,9 @@ Partial Class ConsoleWindow
         Me.ExecuteBtn.Size = New System.Drawing.Size(90, 24)
         Me.ExecuteBtn.TabIndex = 1
         Me.ExecuteBtn.Values.Text = "Exécuter"
+        '
+        'Arduino
+        '
         '
         'SerialWorker
         '
