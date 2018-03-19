@@ -33,7 +33,8 @@ Partial Class ConsoleWindow
         Me.CommandPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
         Me.CommandBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.ExecuteBtn = New ComponentFactory.Krypton.Toolkit.KryptonButton()
-        Me.Serial = New System.IO.Ports.SerialPort(Me.components)
+        Me.Arduino = New System.IO.Ports.SerialPort(Me.components)
+        Me.SerialWorker = New System.ComponentModel.BackgroundWorker()
         Me.ConsoleMenu.SuspendLayout()
         CType(Me.MainPanel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainPanel.SuspendLayout()
@@ -138,6 +139,9 @@ Partial Class ConsoleWindow
         Me.ExecuteBtn.TabIndex = 1
         Me.ExecuteBtn.Values.Text = "Exécuter"
         '
+        'SerialWorker
+        '
+        '
         'ConsoleWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -175,5 +179,6 @@ Partial Class ConsoleWindow
     Friend WithEvents OuvrirLesLogsToolStripMenuItem As Windows.Forms.ToolStripMenuItem
     Friend WithEvents EffacerToutToolStripMenuItem As Windows.Forms.ToolStripMenuItem
     Friend WithEvents RevenirÀLaDernièreLigneToolStripMenuItem As Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Serial As System.IO.Ports.SerialPort
+    Friend WithEvents Arduino As System.IO.Ports.SerialPort
+    Friend WithEvents SerialWorker As ComponentModel.BackgroundWorker
 End Class

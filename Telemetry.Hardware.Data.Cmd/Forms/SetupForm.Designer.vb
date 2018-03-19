@@ -30,11 +30,14 @@ Partial Class SetupForm
         Me.ServiceAddressLbl = New System.Windows.Forms.Label()
         Me.ServiceAddressBox = New ComponentFactory.Krypton.Toolkit.KryptonTextBox()
         Me.ComPortCBox = New System.Windows.Forms.ComboBox()
+        Me.ComPortPanel = New System.Windows.Forms.Panel()
+        Me.ComPortRefresh = New System.Windows.Forms.Button()
         Me.HeaderPanel.SuspendLayout()
         Me.MainPanel.SuspendLayout()
         Me.BottomPanel.SuspendLayout()
         Me.ParametersLayout.SuspendLayout()
         Me.ServiceAddressPanel.SuspendLayout()
+        Me.ComPortPanel.SuspendLayout()
         Me.SuspendLayout()
         '
         'HeaderPanel
@@ -104,7 +107,7 @@ Partial Class SetupForm
         Me.ParametersLayout.Controls.Add(Me.ComPortLbl, 0, 1)
         Me.ParametersLayout.Controls.Add(Me.ServiceAddressPanel, 0, 0)
         Me.ParametersLayout.Controls.Add(Me.ServiceAddressBox, 1, 0)
-        Me.ParametersLayout.Controls.Add(Me.ComPortCBox, 1, 1)
+        Me.ParametersLayout.Controls.Add(Me.ComPortPanel, 1, 1)
         Me.ParametersLayout.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ParametersLayout.Location = New System.Drawing.Point(16, 16)
         Me.ParametersLayout.Margin = New System.Windows.Forms.Padding(0)
@@ -164,10 +167,31 @@ Partial Class SetupForm
         Me.ComPortCBox.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ComPortCBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComPortCBox.FormattingEnabled = True
-        Me.ComPortCBox.Location = New System.Drawing.Point(203, 25)
+        Me.ComPortCBox.Location = New System.Drawing.Point(0, 0)
         Me.ComPortCBox.Name = "ComPortCBox"
-        Me.ComPortCBox.Size = New System.Drawing.Size(817, 21)
+        Me.ComPortCBox.Size = New System.Drawing.Size(748, 21)
         Me.ComPortCBox.TabIndex = 5
+        '
+        'ComPortPanel
+        '
+        Me.ComPortPanel.Controls.Add(Me.ComPortCBox)
+        Me.ComPortPanel.Controls.Add(Me.ComPortRefresh)
+        Me.ComPortPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ComPortPanel.Location = New System.Drawing.Point(200, 22)
+        Me.ComPortPanel.Margin = New System.Windows.Forms.Padding(0)
+        Me.ComPortPanel.Name = "ComPortPanel"
+        Me.ComPortPanel.Size = New System.Drawing.Size(823, 22)
+        Me.ComPortPanel.TabIndex = 6
+        '
+        'ComPortRefresh
+        '
+        Me.ComPortRefresh.Dock = System.Windows.Forms.DockStyle.Right
+        Me.ComPortRefresh.Location = New System.Drawing.Point(748, 0)
+        Me.ComPortRefresh.Name = "ComPortRefresh"
+        Me.ComPortRefresh.Size = New System.Drawing.Size(75, 22)
+        Me.ComPortRefresh.TabIndex = 0
+        Me.ComPortRefresh.Text = "Actualiser"
+        Me.ComPortRefresh.UseVisualStyleBackColor = True
         '
         'SetupForm
         '
@@ -184,6 +208,7 @@ Partial Class SetupForm
         Me.ParametersLayout.ResumeLayout(False)
         Me.ParametersLayout.PerformLayout()
         Me.ServiceAddressPanel.ResumeLayout(False)
+        Me.ComPortPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -196,4 +221,6 @@ Partial Class SetupForm
     Friend WithEvents ServiceAddressBox As ComponentFactory.Krypton.Toolkit.KryptonTextBox
     Friend WithEvents ComPortLbl As Windows.Forms.Label
     Friend WithEvents ComPortCBox As Windows.Forms.ComboBox
+    Friend WithEvents ComPortPanel As Windows.Forms.Panel
+    Friend WithEvents ComPortRefresh As Windows.Forms.Button
 End Class

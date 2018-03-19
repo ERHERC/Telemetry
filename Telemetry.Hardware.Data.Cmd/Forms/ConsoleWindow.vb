@@ -77,6 +77,8 @@ Public Class ConsoleWindow
     End Sub
 
     Private Sub ConsoleWindow_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Control.CheckForIllegalCrossThreadCalls = False
+        Buffer = New List(Of String) : Buffer.Clear()
         Globals.CommandPrompt = Me
     End Sub
 
@@ -92,4 +94,24 @@ Public Class ConsoleWindow
     Private Sub OuvrirLesLogsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OuvrirLesLogsToolStripMenuItem.Click
         CommandParser.Parse("log")
     End Sub
+
+    Public Buffer As List(Of String)
+
+    Private Sub SerialWorker_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles SerialWorker.DoWork
+        Arduino.Open()
+        While Me.Visible
+            For Each Element As String In New List(Of String)(Buffer)
+                Buffer.Remove(Element)
+                'Parse input
+            Next
+            Tools.Wait(0.1)
+        End While
+        Arduino.Close()
+    End Sub
+
+    Private Sub Arduino_DataReceived(sender As Object, e As System.IO.Ports.SerialDataReceivedEventArgs) Handles Arduino.DataReceived
+        Buffer.Add(Arduino.ReadLine)
+    End Sub
+
+
 End Class

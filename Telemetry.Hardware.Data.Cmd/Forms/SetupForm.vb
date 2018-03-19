@@ -4,6 +4,19 @@
     End Sub
 
     Private Sub SetupForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        RefreshComPorts()
+    End Sub
+
+    Private Sub OkBtn_Click(sender As Object, e As EventArgs) Handles OkBtn.Click
+        Globals.CommandPrompt.Arduino.PortName = ComPortCBox.SelectedItem
+        Globals.CommandPrompt.SerialWorker.RunWorkerAsync()
+    End Sub
+
+    Private Sub ComPortRefresh_Click(sender As Object, e As EventArgs) Handles ComPortRefresh.Click
+        RefreshComPorts()
+    End Sub
+
+    Private Sub RefreshComPorts()
         With ComPortCBox
             .Items.Clear()
             For Each Port As String In My.Computer.Ports.SerialPortNames
