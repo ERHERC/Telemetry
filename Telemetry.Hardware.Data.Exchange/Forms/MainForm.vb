@@ -15,4 +15,8 @@ Public Class MainForm
             .WindowState = FormWindowState.Maximized
         End With
     End Sub
+
+    Private Sub MainForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+
+    End Sub
 End Class
