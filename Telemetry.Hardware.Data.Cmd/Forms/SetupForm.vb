@@ -8,8 +8,14 @@
     End Sub
 
     Private Sub OkBtn_Click(sender As Object, e As EventArgs) Handles OkBtn.Click
+        Try
+            Globals.CommandPrompt.Arduino.Close()
+        Catch ErrorCode As Exception
+            MsgBox("Erreur")
+        End Try
         Globals.CommandPrompt.Arduino.PortName = ComPortCBox.SelectedItem
         Globals.CommandPrompt.SerialWorker.RunWorkerAsync()
+        Me.Close()
     End Sub
 
     Private Sub ComPortRefresh_Click(sender As Object, e As EventArgs) Handles ComPortRefresh.Click

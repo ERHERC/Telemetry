@@ -82,6 +82,7 @@ Public Class ConsoleWindow
         Control.CheckForIllegalCrossThreadCalls = False
         Buffer = New List(Of String) : Buffer.Clear()
         Globals.CommandPrompt = Me
+        Append(AddressOf ConsoleCallbacks.Init, {""})
     End Sub
 
     Private Sub EffacerToutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EffacerToutToolStripMenuItem.Click
@@ -104,7 +105,7 @@ Public Class ConsoleWindow
         While Me.Visible
             For Each Element As String In New List(Of String)(Buffer)
                 Buffer.Remove(Element)
-                'Parse input
+                Append(AddressOf ConsoleCallbacks.LogMessage, Element)
             Next
             Tools.Wait(0.1)
         End While
@@ -117,5 +118,17 @@ Public Class ConsoleWindow
 
     Private Sub ConsoleWindow_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
+    End Sub
+
+    Private Sub ConsoleWindow_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+
+    End Sub
+
+    Private Sub MiseEnRouteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MiseEnRouteToolStripMenuItem.Click
+        Parse("setup")
+    End Sub
+
+    Private Sub AideToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AideToolStripMenuItem.Click
+        Parse("help")
     End Sub
 End Class

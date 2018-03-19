@@ -8,14 +8,20 @@ Partial Module ConsoleCallbacks
     Public Sub LogCommand(ByVal Parameters As String())
         TimeStamp()
         Write("User sent command : ", Color.Teal, FontStyle.Bold)
-        Write(Parameters(0), Color.White, FontStyle.Regular)
+        Write(Assemble(Parameters, " "), Color.White, FontStyle.Regular)
         Write(vbCrLf, Color.Transparent, FontStyle.Regular)
+    End Sub
+
+    Public Sub LogMessage(ByVal Parameters As String())
+        TimeStamp()
+        Write("Arduino sent command : ", Color.Teal, FontStyle.Bold)
+        Write(Assemble(Parameters, " "), Color.White, FontStyle.Regular)
     End Sub
 
     Public Sub CommandError(ByVal Parameters As String())
         TimeStamp()
         Write("<ERROR> : ", Color.Red, FontStyle.Bold)
-        Write("""" & Parameters(0) & """", Color.White, FontStyle.Bold)
+        Write("""" & Assemble(Parameters, " ") & """", Color.White, FontStyle.Bold)
         Write(" is not an internal command !" & vbCrLf, Color.White, FontStyle.Regular)
         TimeStamp()
         Write("Use the ""help"" command to get a list of all available commands" & vbCrLf, Color.YellowGreen, FontStyle.Bold)
@@ -41,12 +47,14 @@ Partial Module ConsoleCallbacks
         TimeStamp()
         Write("<WARNING> : ", Color.Orange, FontStyle.Bold)
         Write("User attempting to restart telemetry session with command """ & Assemble(Parameters, " ") & """ !", Color.White, FontStyle.Regular)
+        Write(vbCrLf, Color.White, FontStyle.Regular)
     End Sub
 
     Public Sub Shutdown(ByVal Parameters As String())
         TimeStamp()
         Write("<WARNING> : ", Color.Orange, FontStyle.Bold)
         Write("User attempting to shutdown telemetry session with command """ & Assemble(Parameters, " ") & """ !", Color.White, FontStyle.Regular)
+        Write(vbCrLf, Color.White, FontStyle.Regular)
     End Sub
 
     Public Sub TimeStamp()
@@ -61,7 +69,7 @@ Partial Module ConsoleCallbacks
         Globals.CommandPrompt.Output.Write(Text, Color, Style)
     End Sub
 
-    Private Function Assemble(parameters() As String, Separator As String) As Object
+    Public Function Assemble(parameters() As String, Separator As String) As Object
         Dim Command As String = ""
         With Parameters
             If .Count > 0 Then

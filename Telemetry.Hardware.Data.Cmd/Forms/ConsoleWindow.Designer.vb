@@ -27,6 +27,7 @@ Partial Class ConsoleWindow
         Me.OuvrirLesLogsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EffacerToutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RevenirÀLaDernièreLigneToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MiseEnRouteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MainPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
         Me.Output = New ComponentFactory.Krypton.Toolkit.KryptonRichTextBox()
         Me.BottomPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
@@ -35,6 +36,7 @@ Partial Class ConsoleWindow
         Me.ExecuteBtn = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.Arduino = New System.IO.Ports.SerialPort(Me.components)
         Me.SerialWorker = New System.ComponentModel.BackgroundWorker()
+        Me.AideToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsoleMenu.SuspendLayout()
         CType(Me.MainPanel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainPanel.SuspendLayout()
@@ -47,7 +49,7 @@ Partial Class ConsoleWindow
         'ConsoleMenu
         '
         Me.ConsoleMenu.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.ConsoleMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OuvrirLesLogsToolStripMenuItem, Me.EffacerToutToolStripMenuItem, Me.RevenirÀLaDernièreLigneToolStripMenuItem})
+        Me.ConsoleMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OuvrirLesLogsToolStripMenuItem, Me.EffacerToutToolStripMenuItem, Me.RevenirÀLaDernièreLigneToolStripMenuItem, Me.MiseEnRouteToolStripMenuItem, Me.AideToolStripMenuItem})
         Me.ConsoleMenu.Location = New System.Drawing.Point(0, 0)
         Me.ConsoleMenu.Name = "ConsoleMenu"
         Me.ConsoleMenu.Size = New System.Drawing.Size(976, 24)
@@ -73,6 +75,12 @@ Partial Class ConsoleWindow
         Me.RevenirÀLaDernièreLigneToolStripMenuItem.Size = New System.Drawing.Size(154, 20)
         Me.RevenirÀLaDernièreLigneToolStripMenuItem.Text = "Revenir à la dernière ligne"
         '
+        'MiseEnRouteToolStripMenuItem
+        '
+        Me.MiseEnRouteToolStripMenuItem.Name = "MiseEnRouteToolStripMenuItem"
+        Me.MiseEnRouteToolStripMenuItem.Size = New System.Drawing.Size(91, 20)
+        Me.MiseEnRouteToolStripMenuItem.Text = "Mise en route"
+        '
         'MainPanel
         '
         Me.MainPanel.Controls.Add(Me.Output)
@@ -96,7 +104,6 @@ Partial Class ConsoleWindow
         Me.Output.StateCommon.Border.DrawBorders = CType((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) _
             Or ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right), ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)
-        Me.Output.StateCommon.Border.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit
         Me.Output.StateCommon.Content.Font = New System.Drawing.Font("Consolas", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Output.TabIndex = 0
         Me.Output.Text = ""
@@ -146,6 +153,13 @@ Partial Class ConsoleWindow
         'SerialWorker
         '
         '
+        'AideToolStripMenuItem
+        '
+        Me.AideToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.AideToolStripMenuItem.Name = "AideToolStripMenuItem"
+        Me.AideToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.AideToolStripMenuItem.Text = "Aide"
+        '
         'ConsoleWindow
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -185,4 +199,6 @@ Partial Class ConsoleWindow
     Friend WithEvents RevenirÀLaDernièreLigneToolStripMenuItem As Windows.Forms.ToolStripMenuItem
     Friend WithEvents Arduino As System.IO.Ports.SerialPort
     Friend WithEvents SerialWorker As ComponentModel.BackgroundWorker
+    Friend WithEvents MiseEnRouteToolStripMenuItem As Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AideToolStripMenuItem As Windows.Forms.ToolStripMenuItem
 End Class
