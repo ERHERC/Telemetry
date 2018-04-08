@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<HelpFile>
+  <HelpKeys>
+    <Key entry="log" value="log"/>
+    <Key entry="logs" value="log"/>
+    <Key entry="clear" value="clear"/>
+    <Key entry="cls" value="clear"/>
+    <Key entry="help" value="help"/>
+    <Key entry="setup" value="setup"/>
+    <Key entry="init" value="setup"/>
+    <Key entry="initialize" value="setup"/>
+    <Key entry="restart" value="restart"/>
+    <Key entry="reboot" value="restart"/>
+    <Key entry="exit" value="exit"/>
+    <Key entry="quit" value="exit"/>
+    <Key entry="stop" value="exit"/>
+    <Key entry="shutdown" value="exit"/>
+  </HelpKeys>
+  <HelpValues>
+    <Value name="log">
+      <Line>Affiche le contenu de l'invite de commande dans un navigateur internet.</Line>
+    </Value>
+    <Value name="clear">
+      <Line>Efface le contenu de l'invite de commande.</Line>
+    </Value>
+    <Value name="help">
+      <Line>Affiche l'aide.</Line>
+    </Value>
+    <Value name="setup">
+      <Line>Ouvre la fenêtre de mise en route.</Line>
+    </Value>
+    <Value name="exit">
+      <Line>Ferme le programme.</Line>
+      <Line>NOTE: Une confirmation sera demandée.</Line>
+    </Value>
+    <Value name="restart">
+      <Line>Redémarre le programme.</Line>
+      <Line>NOTE: Une confirmation sera demandée.</Line>
+    </Value>
+  </HelpValues>
+</HelpFile>

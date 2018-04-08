@@ -4,6 +4,10 @@ Imports System.Runtime.InteropServices
 Imports System.Text
 Imports System.Windows.Forms
 Imports Telemetry.Reusable
+Imports Telemetry.Xml.Data.Data
+Imports Telemetry.Xml.Data
+Imports Telemetry.Xml
+Imports Telemetry.Xml.Serializer
 
 Public Class ConsoleWindow
     Public AllowClose As Boolean = False
@@ -31,6 +35,8 @@ Public Class ConsoleWindow
     Private Sub Output_KeyDown(sender As Object, e As KeyEventArgs) Handles Output.KeyDown
         e.Handled = True
         e.SuppressKeyPress = True
+        CommandBox.Select()
+        CommandBox.Focus()
     End Sub
 
     Public Delegate Sub OutputCallback(ByVal Parameters As String())
@@ -82,6 +88,13 @@ Public Class ConsoleWindow
         Control.CheckForIllegalCrossThreadCalls = False
         Buffer = New List(Of String) : Buffer.Clear()
         Globals.CommandPrompt = Me
+        Dim SERIALIZER As GenericSerializer(Of HelpFile) = New GenericSerializer(Of HelpFile)()
+        Dim HelpFilePath As String = Application.StartupPath & "\Help\Hardware.xml"
+        If File.Exists(HelpFilePath) Then
+            Globals.Help = SERIALIZER.Deserialize(HelpFilePath)
+        Else
+            Globals.Help = Nothing
+        End If
         Append(AddressOf ConsoleCallbacks.Init, {""})
     End Sub
 

@@ -21,9 +21,9 @@ Module CommandParser
                     Execute.Shutdown({Command})
                 Case "help"
                     If Commands.Count > 1 Then
-                        Select Case Commands(1)
-                            Case ""
-                        End Select
+                        Dim Parameters As List(Of String) = New List(Of String)(Commands)
+                        Parameters.RemoveAt(0)
+                        Execute.Help(Parameters.ToArray())
                     Else
                         Parse("help $all")
                     End If
@@ -91,6 +91,10 @@ GiveUp:
 
     Public Sub CommandError(ByVal Parameters As String())
         Write(AddressOf ConsoleCallbacks.CommandError, {Parameters(0)})
+    End Sub
+
+    Public Sub Help(ByVal Parameters As String())
+        Write(AddressOf ConsoleCallbacks.Help, Parameters)
     End Sub
 End Module
 

@@ -28,6 +28,7 @@ Partial Class ConsoleWindow
         Me.EffacerToutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RevenirÀLaDernièreLigneToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MiseEnRouteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AideToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MainPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
         Me.Output = New ComponentFactory.Krypton.Toolkit.KryptonRichTextBox()
         Me.BottomPanel = New ComponentFactory.Krypton.Toolkit.KryptonPanel()
@@ -36,7 +37,6 @@ Partial Class ConsoleWindow
         Me.ExecuteBtn = New ComponentFactory.Krypton.Toolkit.KryptonButton()
         Me.Arduino = New System.IO.Ports.SerialPort(Me.components)
         Me.SerialWorker = New System.ComponentModel.BackgroundWorker()
-        Me.AideToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsoleMenu.SuspendLayout()
         CType(Me.MainPanel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MainPanel.SuspendLayout()
@@ -80,6 +80,13 @@ Partial Class ConsoleWindow
         Me.MiseEnRouteToolStripMenuItem.Name = "MiseEnRouteToolStripMenuItem"
         Me.MiseEnRouteToolStripMenuItem.Size = New System.Drawing.Size(91, 20)
         Me.MiseEnRouteToolStripMenuItem.Text = "Mise en route"
+        '
+        'AideToolStripMenuItem
+        '
+        Me.AideToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.AideToolStripMenuItem.Name = "AideToolStripMenuItem"
+        Me.AideToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
+        Me.AideToolStripMenuItem.Text = "Aide"
         '
         'MainPanel
         '
@@ -152,13 +159,6 @@ Partial Class ConsoleWindow
         '
         'SerialWorker
         '
-        '
-        'AideToolStripMenuItem
-        '
-        Me.AideToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.AideToolStripMenuItem.Name = "AideToolStripMenuItem"
-        Me.AideToolStripMenuItem.Size = New System.Drawing.Size(43, 20)
-        Me.AideToolStripMenuItem.Text = "Aide"
         '
         'ConsoleWindow
         '

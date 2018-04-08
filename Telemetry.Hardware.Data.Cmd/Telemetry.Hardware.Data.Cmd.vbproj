@@ -192,8 +192,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Text\Telemetry.Data.Hardware.xml">
+    <Content Include="Help\Hardware.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <Import Project="..\Telemetry.API\Telemetry.API.projitems" Label="Shared" />

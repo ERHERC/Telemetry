@@ -91,6 +91,7 @@
     <Compile Include="Data\DownloadManifest\ContentFile.vb" />
     <Compile Include="Data\DownloadManifest\DownloadManifest.vb" />
     <Compile Include="Data\DownloadManifest\FileRepleceMethod.vb" />
+    <Compile Include="Data\HelpFile\HelpFile.vb" />
     <Compile Include="Data\LanguageFile\LanguageFile.vb" />
     <Compile Include="Data\Updater\Updater.vb" />
     <Compile Include="Data\Versions\Version.vb" />
