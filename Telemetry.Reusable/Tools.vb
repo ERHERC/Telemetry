@@ -84,3 +84,17 @@ Partial Public NotInheritable Class Tools
         End Function
     End Class
 'End Namespace
+
+Partial Public NotInheritable Class MathHelper
+    Public Shared Function Constrain(Value As Double, Min As Double, Max As Double) As Double
+        Return Math.Min(Max, Math.Max(Value, Min))
+    End Function
+
+    Public Shared Function Map(Value As Double, From_A As Double, To_A As Double, From_B As Double, TO_B As Double) As Double
+        Return From_B + (Value - From_A) * (TO_B - From_B) / (To_A - From_A)
+    End Function
+
+    Public Shared Function MapConstrain(Value As Double, From_A As Double, To_A As Double, From_B As Double, TO_B As Double) As Double
+        Return Map(Constrain(Value, From_A, To_A), From_A, To_A, From_B, TO_B)
+    End Function
+End Class

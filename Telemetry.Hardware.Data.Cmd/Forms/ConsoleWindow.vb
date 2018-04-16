@@ -96,6 +96,10 @@ Public Class ConsoleWindow
             Globals.Help = Nothing
         End If
         Append(AddressOf ConsoleCallbacks.Init, {""})
+        CommandParser.Parse("setup")
+        If Not Globals.DATA_VALIDATED Then
+            Application.Exit()
+        End If
     End Sub
 
     Private Sub EffacerToutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EffacerToutToolStripMenuItem.Click
@@ -119,6 +123,14 @@ Public Class ConsoleWindow
             For Each Element As String In New List(Of String)(Buffer)
                 Buffer.Remove(Element)
                 Append(AddressOf ConsoleCallbacks.LogMessage, Element)
+
+                If Element Like "battery:*" Then
+                    Dim Battery As Integer = CInt(Element.Split(":")(1))
+                    If API.Init(True) Then
+                        Dim BatteryOutOfHundred As Integer = MathHelper.MapConstrain(Battery, 0, 1023, 0, 100)
+                        API.Instance.SetBattery(CDbl(BatteryOutOfHundred))
+                    End If
+                End If
             Next
             Tools.Wait(0.1)
         End While
